@@ -17,7 +17,7 @@
 	<style>
 		body {font-family: "Droid Sans", "Arial";}
 		.date {font-family: "Droid Sans Mono", "Consolas";}
-		img {max-width: 64px;}
+    img {display: block;}
 }
 	</style>	 
 </head>
@@ -34,25 +34,25 @@
     </header>
 		<article>
   <h1>A Little Bit Irrational</h1>
-	<p style="margin-top: 0px; margin-right: 0px; margin-bottom: 1.5em; margin-left: 0px; font-size: 1.1em; font: inherit; vertical-align: baseline; line-height: 1.5em; text-align: justify; padding: 0px;">One of my uncles, Tim, asked me to come run a card game at the local bowling alley. Shortly after accepting his offer, I discovered that playing the card game was a bad idea.</p>
-<p style="margin-top: 0px; margin-right: 0px; margin-bottom: 1.5em; margin-left: 0px; font-size: 1.1em; font: inherit; vertical-align: baseline; line-height: 1.5em; text-align: justify; padding: 0px;">People buy into the game for one dollar and all of their money is put into a pot that goes to the winner of the game. If nobody wins the game the pot carries over to the next week. All you need to do to win is draw the only specially marked card from a deck of five hundred cards. You have five chances.</p>
-<p style="margin-top: 0px; margin-right: 0px; margin-bottom: 1.5em; margin-left: 0px; font-size: 1.1em; font: inherit; vertical-align: baseline; line-height: 1.5em; text-align: justify; padding: 0px;">Breaking things down we find that with five chances to pick the right card from a 500 card deck, we have a 1% chance of winning. So now if we know the pot size we can calculate how much we can expect to win on average.</p>
-<blockquote style="margin-top: 1em; margin-right: 3em; margin-bottom: 1em; margin-left: 3em; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 1em; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 2px; border-color: initial; font-size: 16px; font: inherit; vertical-align: baseline; color: #999999; border-left-style: solid; border-left-color: #999999;">
-<p style="font-size: 1.1em; font: inherit; vertical-align: baseline; line-height: 1.5em; text-align: justify; padding: 0px; margin: 0px;">Average Win = Chance To Win * Pot Size</p>
-</blockquote>
-<p style="margin-top: 0px; margin-right: 0px; margin-bottom: 1.5em; margin-left: 0px; font-size: 1.1em; font: inherit; vertical-align: baseline; line-height: 1.5em; text-align: justify; padding: 0px;">To get an intuitive sense of why this is so just think for a bit about what the average is. It is the amount won divided by the number of times you played. Now remember that chance to win is a fraction. Even though it looks like you're multiplying when you plug in the numbers your really going to be dividing by 100.</p>
-<p style="margin-top: 0px; margin-right: 0px; margin-bottom: 1.5em; margin-left: 0px; font-size: 1.1em; font: inherit; vertical-align: baseline; line-height: 1.5em; text-align: justify; padding: 0px;">Of course, knowing how much you win isn't very useful unless you factor in how much you had to pay to have a chance at winninga that money. If we put all this together we find that our expected return on each game is our chance to win multiplied by the pot size minus the amount we payed to get into the game.</p>
-<blockquote style="margin-top: 1em; margin-right: 3em; margin-bottom: 1em; margin-left: 3em; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 1em; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 2px; border-color: initial; font-size: 16px; font: inherit; vertical-align: baseline; color: #999999; border-left-style: solid; border-left-color: #999999;">
-<p style="font-size: 1.1em; font: inherit; vertical-align: baseline; line-height: 1.5em; text-align: justify; padding: 0px; margin: 0px;">Average Return = Win Chance * Pot - Buy In</p>
-</blockquote>
-<p style="font-size: 1.1em; font: inherit; vertical-align: baseline; line-height: 1.5em; text-align: justify; padding: 0px; margin: 0px;">So what happens when we plug in our 1% chance to win, our $1 oppurunity cost, and graph the result?</p>
-<p>[[posterous-content:rJaayhsbwEEdjFvkGJic]]</p>
-<p><span style="color: #333333; font-family: OFL Sorts Mill Goudy TT, Georgia, Times, Times New Roman, serif, sans-serif; font-size: 16px; line-height: 16px;"> </span></p>
-<p style="margin-top: 0px; margin-right: 0px; margin-bottom: 1.5em; margin-left: 0px; font-size: 1.1em; font: inherit; vertical-align: baseline; line-height: 1.5em; text-align: justify; padding: 0px;"><span style="color: #333333; font-family: OFL Sorts Mill Goudy TT, Georgia, Times, Times New Roman, serif, sans-serif; font-size: 16px; line-height: 16px;"> </span></p>
-<p style="margin-top: 0px; margin-right: 0px; margin-bottom: 1.5em; margin-left: 0px; font-size: 1.1em; font: inherit; vertical-align: baseline; line-height: 1.5em; text-align: justify; padding: 0px;">We find out that on average you would expect to lose money while playing this game unless the pot had at least $100.</p>
-<p style="font-size: 1.1em; font: inherit; vertical-align: baseline; line-height: 1.5em; text-align: justify; padding: 0px; margin: 0px;">I call this a little bit irrational, because the game is popular.</p>
-<p>&nbsp;</p>
+	<p>My uncle Tim asked me to run a card game at the local bowling alley. People bought into the game for one dollar and all of their money was then put into a pot that goes to the winner of the game. If nobody won the pot would carry over to the next week. The carry over would continue until someone did manage to win. Winning was a little harder. In order to win you had to draw a specially marked card from a deck of five-hundred cards.</p>
 
+<p>When I did the math, I realized that getting into the card game didn&#8217;t make much sense. When I broke things down I found that there was roughly a 1% chance of winning the game. You can use that information to calculate the average amount which will be won.</p>
+
+<blockquote>
+<p>Average Win = Chance To Win * Pot Size</p>
+</blockquote>
+
+<p>Of course, knowing how much you were expected to win isn&#8217;t very useful unless you factor in how much you had to pay to have a chance at winning the money. If we put all this together we find that our expected return on each game is our chance to win multiplied by the pot size minus the amount we payed to get into the game.</p>
+
+<blockquote>
+<p>Average Return = Win Chance * Pot - Buy In</p>
+</blockquote>
+
+<p>So what happens when we plug in our 1% chance to win, our $1 oppurunity cost, and graph the result?</p>
+
+<p><img alt='Average Returns' src='/img/a-little-bit-irrational/average-return.png' /></p>
+
+<p>Basically, unless the pot has more then a hundred dollars in it, you are going in expecting to lose money. So since there is no guarantee that you will stay in every week, it doesn&#8217;t make sense to get into the game, unless you are doing it for the social experience.</p>
 </article>
 		<footer class="well">
       <ul class="inline">
