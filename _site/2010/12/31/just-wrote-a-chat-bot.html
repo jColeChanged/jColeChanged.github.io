@@ -18,11 +18,14 @@
 		body {font-family: "Droid Sans", "Arial";}
 		.date {font-family: "Droid Sans Mono", "Consolas";}
     img {display: block;}
+    .title {text-align: center;}
+
 }
 	</style>	 
 </head>
 <body>
-	<div class="container">
+	<div class="row">
+    <div class="offset4 span8">
     <header>
       <ul class="inline">
         <li><strong>Joshua Cole's</strong> &raquo;</li>
@@ -33,7 +36,7 @@
       </ul>
     </header>
 		<article>
-  <h1>Just Wrote A Chat Bot</h1>
+  <h1 class="title">Just Wrote A Chat Bot</h1>
 	<p><span style="color: #333333; font-family: OFL Sorts Mill Goudy TT, Georgia, Times, Times New Roman, serif, sans-serif; font-size: 16px; line-height: 16px;">
 <p style="margin-top: 0px; margin-right: 0px; margin-bottom: 1.5em; margin-left: 0px; font-size: 1.1em; font: inherit; vertical-align: baseline; line-height: 1.5em; text-align: justify; padding: 0px;">Two weeks ago my uncle came out from South Carolina to visit the family for Christmas. He brought along a laptop for me. I was delighted. The only problem was that the laptop wasn&rsquo;t to keep. He had a license on that laptop that allowed him to run chat bots on Camfrog, a video conferencing platform geared around chat rooms, and he wanted me to help him make one. At first we tried to find a way to copy the dll of an existing bot, because this bot already got its content from a text file. This didn&rsquo;t work, as the bot&rsquo;s architecture didn&rsquo;t allow us to have two separate questions files. So I was forced to pull out the programming belt and hammer out some code.</p>
 <p style="margin-top: 0px; margin-right: 0px; margin-bottom: 1.5em; margin-left: 0px; font-size: 1.1em; font: inherit; vertical-align: baseline; line-height: 1.5em; text-align: justify; padding: 0px;">This wasn&rsquo;t as fun as you might think. Rather than playing around with my new favorite language, Clojure, I had to write an event based C++ dll. This wasn&rsquo;t by choice. The good people at Camfrog have a closed source C++ bot that loads and sends events to the dll. This lets them hide the platform&rsquo;s protocol, which in turn allows them to charge a licensing fee for using a bot. Don&rsquo;t want to buy the their bot hosting program? Good luck making a bot.</p>
@@ -59,6 +62,7 @@
 			<script type="text/javascript">/*<![CDATA[*/ window.olark||(function(k){var g=window,j=document,a=g.location.protocol=="https:"?"https:":"http:",i=k.name,b="load",h="addEventListener";(function(){g[i]=function(){(c.s=c.s||[]).push(arguments)};var c=g[i]._={},f=k.methods.length;while(f--){(function(l){g[i][l]=function(){g[i]("call",l,arguments)}})(k.methods[f])}c.l=k.loader;c.i=arguments.callee;c.p={0:+new Date};c.P=function(l){c.p[l]=new Date-c.p[0]};function e(){c.P(b);g[i](b)}g[h]?g[h](b,e,false):g.attachEvent("on"+b,e);c.P(1);var d=j.createElement("script"),m=document.getElementsByTagName("script")[0];d.type="text/javascript";d.async=true;d.src=a+"//"+c.l;m.parentNode.insertBefore(d,m);c.P(2)})()})({loader:(function(a){return "static.olark.com/jsclient/loader1.js?ts="+(a?a[1]:(+new Date))})(document.cookie.match(/olarkld=([0-9]+)/)),name:"olark",methods:["configure","extend","declare","identify"]}); olark.identify('5923-676-10-4978');/*]]>*/</script>
 		<footer>
 	</div>
+  </div>
 	<script src="http://code.jquery.com/jquery.js"></script>
 	<script src="/js/bootstrap.min.js"></script>
   <script type="text/javascript">

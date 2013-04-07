@@ -18,11 +18,14 @@
 		body {font-family: "Droid Sans", "Arial";}
 		.date {font-family: "Droid Sans Mono", "Consolas";}
     img {display: block;}
+    .title {text-align: center;}
+
 }
 	</style>	 
 </head>
 <body>
-	<div class="container">
+	<div class="row">
+    <div class="offset4 span8">
     <header>
       <ul class="inline">
         <li><strong>Joshua Cole's</strong> &raquo;</li>
@@ -33,7 +36,7 @@
       </ul>
     </header>
 		<article>
-  <h1>Eliza is Only a Chat Bot</h1>
+  <h1 class="title">Eliza is Only a Chat Bot</h1>
 	<p>I&rsquo;m reading through <a href="http://norvig.com/paip.html">Paradigms of Artificial Intelligence: Case Studies in Common Lisp</a> and finding it to be amazing. <a href="http://norvig.com/index.html">Peter Norvig</a>, formerly of NASA and now head of research at Google, has a way of talking AI programs that shaped the field in their time in a way that makes me feel as if I get what is going on.</p>
 
 <p>Its weird though. He does present the material in a brilliant fashion, but at the same time the programs he is talking about are like magic.</p>
@@ -76,6 +79,7 @@
 			<script type="text/javascript">/*<![CDATA[*/ window.olark||(function(k){var g=window,j=document,a=g.location.protocol=="https:"?"https:":"http:",i=k.name,b="load",h="addEventListener";(function(){g[i]=function(){(c.s=c.s||[]).push(arguments)};var c=g[i]._={},f=k.methods.length;while(f--){(function(l){g[i][l]=function(){g[i]("call",l,arguments)}})(k.methods[f])}c.l=k.loader;c.i=arguments.callee;c.p={0:+new Date};c.P=function(l){c.p[l]=new Date-c.p[0]};function e(){c.P(b);g[i](b)}g[h]?g[h](b,e,false):g.attachEvent("on"+b,e);c.P(1);var d=j.createElement("script"),m=document.getElementsByTagName("script")[0];d.type="text/javascript";d.async=true;d.src=a+"//"+c.l;m.parentNode.insertBefore(d,m);c.P(2)})()})({loader:(function(a){return "static.olark.com/jsclient/loader1.js?ts="+(a?a[1]:(+new Date))})(document.cookie.match(/olarkld=([0-9]+)/)),name:"olark",methods:["configure","extend","declare","identify"]}); olark.identify('5923-676-10-4978');/*]]>*/</script>
 		<footer>
 	</div>
+  </div>
 	<script src="http://code.jquery.com/jquery.js"></script>
 	<script src="/js/bootstrap.min.js"></script>
   <script type="text/javascript">
