@@ -1,81 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="author" content="Joshua Lowell Cole" />
-	<link rel="stylesheet" href="/css/bootstrap.min.css" media="screen">
-  <title>{{ page.title }}</title>
-	<script src="http://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js"></script>
-	<script>
-	WebFont.load({
-		google: {
-			families: ['Droid Sans', 'Droid Serif', 'Droid Sans Mono']
-    }
-	});
-	</script>
-	<style>
-		body {font-family: "Droid Sans", "Arial";}
-		.date {font-family: "Droid Sans Mono", "Consolas";}
-    /* Make images stay on their own line and center themselves within the page.*/
-    img {
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-    }
-    .title {text-align: center;}
-
-}
-	</style>	 
-</head>
-<body>
-	<div class="row">
-    <div class="offset4 span8">
-    <header>
-      <ul class="inline">
-        <li><strong>Joshua Cole's</strong> &raquo;</li>
-        <li><a href="/">Home</a></li>
-        <li><a href="/#blog">Blog</a></li>
-        <li><a href="/#projects">Projects</a></li>
-        <li><a href="/#recommendations">Recommendations</a></li>
-      </ul>
-    </header>
-		{{ content }}
-		<footer class="well">
-      <ul class="inline">
-        <li><strong>about</strong> &raquo;</li>
-        <li><a id="about_recs_toggle">my recommendations</a></li>
-        <li><a id="about_projects_toggle">my projects<a></li>
-        <li><a id="about_contact_toggle">contacting me</a></li>
-        <li><a id="about_blog_toggle">my blog</a></li>
-       </ul>
-       <p id="about_contact">You can contact me by using the chat service at the bottom right hand side of the page. Make sure to leave your contact details if I'm not there, that way I can get back to you.</p>
-       <p id="about_blog">I'm writing this blog as an excuse to talk about technical subjects that interest me. I'm also a Christian and very into competitive gaming, so some of that might creep into my writing</p>
-       <p id="about_projects">These are some projects I've worked on that might be useful to someone.</p>
-       <p id="about_recs">Some sites out there deserve page rank. They are awesome and I'm happy to share them with people.</p>
-			<script type="text/javascript">/*<![CDATA[*/ window.olark||(function(k){var g=window,j=document,a=g.location.protocol=="https:"?"https:":"http:",i=k.name,b="load",h="addEventListener";(function(){g[i]=function(){(c.s=c.s||[]).push(arguments)};var c=g[i]._={},f=k.methods.length;while(f--){(function(l){g[i][l]=function(){g[i]("call",l,arguments)}})(k.methods[f])}c.l=k.loader;c.i=arguments.callee;c.p={0:+new Date};c.P=function(l){c.p[l]=new Date-c.p[0]};function e(){c.P(b);g[i](b)}g[h]?g[h](b,e,false):g.attachEvent("on"+b,e);c.P(1);var d=j.createElement("script"),m=document.getElementsByTagName("script")[0];d.type="text/javascript";d.async=true;d.src=a+"//"+c.l;m.parentNode.insertBefore(d,m);c.P(2)})()})({loader:(function(a){return "static.olark.com/jsclient/loader1.js?ts="+(a?a[1]:(+new Date))})(document.cookie.match(/olarkld=([0-9]+)/)),name:"olark",methods:["configure","extend","declare","identify"]}); olark.identify('5923-676-10-4978');/*]]>*/</script>
-		<footer>
-	</div>
-  </div>
-	<script src="http://code.jquery.com/jquery.js"></script>
-	<script src="/js/bootstrap.min.js"></script>
-  <script type="text/javascript">
-  $("#about_projects").hide();
-  $("#about_blog").hide();
-  $("#about_contact").hide();
-  $("#about_recs").hide();
-  $("#about_contact_toggle").click(function(){
-    $("#about_contact").toggle();
-  });
-  $("#about_recs_toggle").click(function(){
-    $("#about_recs").toggle();
-  });
-  $("#about_blog_toggle").click(function(){
-    $("#about_blog").toggle();
-  });
-  $("#about_projects_toggle").click(function(){
-    $("#about_projects").toggle();
-  });
-</script>
-</body>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Joshua Lowell Cole" />
+  	<link rel="stylesheet" href="/css/bootstrap.min.css" media="screen">
+    <link rel="stylesheet" href="/css/blog.css" media="screen">
+    <title>{{ page.title }}</title>
+  	<script src="http://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js"></script>
+  	<script>
+  	WebFont.load({
+  		google: {
+  			families: ['Droid Sans', 'Droid Serif', 'Droid Sans Mono']
+      }
+  	});
+  	</script>
+  </head>
+  <body>
+  	<div class="row">
+      <div class="offset4 span2">
+        <header>
+          <ul class="inline">
+            <li><strong>Joshua Cole's</strong> &raquo;</li>
+          </ul>
+        </header>
+      </div>
+      <div class="span8">
+  		  {{ content }}
+      </div>
+    </div>
+    <div class="row">
+      <div class="offset6 span8">
+    		<footer class="well">
+          <ul class="inline">
+            <li><a id="about_recs_toggle">my recommendations</a></li>
+            <li><a id="about_projects_toggle">my projects<a></li>
+            <li><a id="about_contact_toggle">contacting me</a></li>
+            <li><a id="about_blog_toggle">my blog</a></li>
+          </ul>
+          <p id="about_contact">You can contact me by using the chat service at the bottom right hand side of the page. Make sure to leave your contact details if I'm not there, that way I can get back to you.</p>
+          <p id="about_blog">I'm writing this blog as an excuse to talk about technical subjects that interest me. I'm also a Christian and very into competitive gaming, so some of that might creep into my writing</p>
+          <p id="about_projects">These are some projects I've worked on that might be useful to someone.</p>
+          <p id="about_recs">Some sites out there deserve page rank. They are awesome and I'm happy to share them with people.</p>		
+    		<footer>
+    	</div>
+    </div>
+    <script type="text/javascript">/*<![CDATA[*/ window.olark||(function(k){var g=window,j=document,a=g.location.protocol=="https:"?"https:":"http:",i=k.name,b="load",h="addEventListener";(function(){g[i]=function(){(c.s=c.s||[]).push(arguments)};var c=g[i]._={},f=k.methods.length;while(f--){(function(l){g[i][l]=function(){g[i]("call",l,arguments)}})(k.methods[f])}c.l=k.loader;c.i=arguments.callee;c.p={0:+new Date};c.P=function(l){c.p[l]=new Date-c.p[0]};function e(){c.P(b);g[i](b)}g[h]?g[h](b,e,false):g.attachEvent("on"+b,e);c.P(1);var d=j.createElement("script"),m=document.getElementsByTagName("script")[0];d.type="text/javascript";d.async=true;d.src=a+"//"+c.l;m.parentNode.insertBefore(d,m);c.P(2)})()})({loader:(function(a){return "static.olark.com/jsclient/loader1.js?ts="+(a?a[1]:(+new Date))})(document.cookie.match(/olarkld=([0-9]+)/)),name:"olark",methods:["configure","extend","declare","identify"]}); olark.identify('5923-676-10-4978');/*]]>*/</script>
+  	<script src="http://code.jquery.com/jquery.js"></script>
+  	<script src="/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $("#about_projects").hide();
+      $("#about_blog").hide();
+      $("#about_contact").hide();
+      $("#about_recs").hide();
+      $("#about_contact_toggle").click(function(){
+        $("#about_contact").toggle();
+      });
+      $("#about_recs_toggle").click(function(){
+        $("#about_recs").toggle();
+      });
+      $("#about_blog_toggle").click(function(){
+        $("#about_blog").toggle();
+      });
+      $("#about_projects_toggle").click(function(){
+        $("#about_projects").toggle();
+      });
+    </script>
+  </body>
 </html>

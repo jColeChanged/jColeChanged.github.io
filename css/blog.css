@@ -1,0 +1,23 @@
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Droid Serif";
+  margin: 0;
+  margin-top 2em;
+}
+
+body {
+  font-family: "Droid Sans", "Arial";
+}
+
+.date {
+  font-family: "Droid Sans Mono", "Consolas";
+}
+
+/* Make images stay on their own line and center themselves within the page.*/
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.title {
+  text-align: center;
+}
