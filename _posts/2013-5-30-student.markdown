@@ -1,0 +1,20 @@
+---
+layout: post
+title: Student, It Isolates Variables
+published: false
+---
+Slowly, but surely, I've been working my way through Paradigms of Artificial Intelligence Programming (PAIP). The last chapter I read was on an artificial intelligence program written in the 1960's called Student. Student, like Eliza, uses pattern matching to memorize variables. The difference between the two programs is that while Eliza was written as a chat bot, Student was written to solve math problems.
+
+If you were to say to Eliza, "I have been feeling sad." Eliza would first find the pattern of the form "I have been x*" and then would get that patterns response pair which would be of the form "Why have you been x*?" Using this pattern matching system it would then return "Why have you been feeling sad?"
+
+Student works differently. Instead Student would respond to something like, "x is 5." It would find a rule saying something along the lines of "*x is *y." and then would match that with a response pattern of the form "[= *x *y]". The end result would by a list of the form [= "x" 5].
+
+Naturally, if you gave Eliza input for Student or Student input from Eliza they would both look rather dumb. There pattern matching systems are made by hand and can end up being quite fragile. They aren't actually intelligent. In the case of Student that fragility can actually still produce some very useful programs. Student is an example of how to take the underpinnings of the transformation through pattern matching that created Eliza and then extend it into something even more useful.
+
+Student doesn't stop with one array. It actually can take an entire paragraph for its input and then it can proceed to break it down, one matching pattern at a time, until it has a series of equations which, if its pattern matching was robust enough, will describe the mathematics layed out in the word problem that it was presented with.
+
+Using this information Student will solve the problem by doing basic mathematics. Of course, in this case this means that it has to take a list of equations and solve them. This is where the neatest insight I've gained from working on this program comes through. How do you solve a math problem when you are working on a computer? You do it exactly the same way you would if you were working on it in real life. The only difference is that you now have to generalize much more than you did while solving indiviudal math problems back in school.
+
+First you isolate an equation that has one variable you don't know. Then you solve for that variable. So and so forth until your done. Just one step after the other broken down to the point of understanding it. Its wonderfully simple at the core.
+
+That is something I want to take away from working on Student. You can do some pretty amazing things by doing very simple things. The way to do those amazing things is just to break them down into steps and solve each of those steps. Its fairly straight forward. 

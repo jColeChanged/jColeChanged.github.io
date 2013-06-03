@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Joshua Lowell Cole" />
+  	<link rel="stylesheet" href="/css/bootstrap.min.css" media="screen">
+    <link rel="stylesheet" href="/css/blog.css" media="screen">
+    
+      <title>Joshua Cole: Student, It Isolates Variables</title>
+    
+  	<script src="http://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js"></script>
+  	<script>
+  	WebFont.load({
+  		google: {
+  			families: ['Droid Sans', 'Droid Serif', 'Droid Sans Mono']
+      }
+  	});
+  	</script>
+  </head>
+  <body>
+  	<div class="row-fluid">
+      <div class="span4">
+        <header class="media">
+          <img class="pull-left img-circle media-object" src="http://www.gravatar.com/avatar/dfcd7f132a84516bb79ae96236e94501.png">
+          <div class="media-body">
+            <h4 class="media-heading">My name is <a href="/">Joshua Cole</a>...</h4>
+            I'm a programmer, an aspiring statistican, and a Christian. I'm also into competitive gaming, especially League of Legends. My writing here tends to focus on things I'm learning about through self-study. If that interests you, enjoy!
+          </div>
+        </header>
+      </div>
+      <div class="span6">
+		    <article>
+  <h1><a href="/2013/05/30/student.html">Student, It Isolates Variables</a></h1>
+  <h2 class="muted date"><small>30 May 2013</small></h2>
+	<p>Slowly, but surely, I&#8217;ve been working my way through Paradigms of Artificial Intelligence Programming (PAIP). The last chapter I read was on an artificial intelligence program written in the 1960&#8217;s called Student. Student, like Eliza, uses pattern matching to memorize variables. The difference between the two programs is that while Eliza was written as a chat bot, Student was written to solve math problems.</p>
+
+<p>If you were to say to Eliza, &#8220;I have been feeling sad.&#8221; Eliza would first find the pattern of the form &#8220;I have been x<em>&#8221; and then would get that patterns response pair which would be of the form &#8220;Why have you been x</em>?&#8221; Using this pattern matching system it would then return &#8220;Why have you been feeling sad?&#8221;</p>
+
+<p>Student works differently. Instead Student would respond to something like, &#8220;x is 5.&#8221; It would find a rule saying something along the lines of &#8221;<em>x is</em>y.&#8221; and then would match that with a response pattern of the form &#8221;<span>= <em>x</em>y</span>&#8221;. The end result would by a list of the form <span>= &#8220;x&#8221; 5</span>.</p>
+
+<p>Naturally, if you gave Eliza input for Student or Student input from Eliza they would both look rather dumb. There pattern matching systems are made by hand and can end up being quite fragile. They aren&#8217;t actually intelligent. In the case of Student that fragility can actually still produce some very useful programs. Student is an example of how to take the underpinnings of the transformation through pattern matching that created Eliza and then extend it into something even more useful.</p>
+
+<p>Student doesn&#8217;t stop with one array. It actually can take an entire paragraph for its input and then it can proceed to break it down, one matching pattern at a time, until it has a series of equations which, if its pattern matching was robust enough, will describe the mathematics layed out in the word problem that it was presented with.</p>
+
+<p>Using this information Student will solve the problem by doing basic mathematics. Of course, in this case this means that it has to take a list of equations and solve them. This is where the neatest insight I&#8217;ve gained from working on this program comes through. How do you solve a math problem when you are working on a computer? You do it exactly the same way you would if you were working on it in real life. The only difference is that you now have to generalize much more than you did while solving indiviudal math problems back in school.</p>
+
+<p>First you isolate an equation that has one variable you don&#8217;t know. Then you solve for that variable. So and so forth until your done. Just one step after the other broken down to the point of understanding it. Its wonderfully simple at the core.</p>
+
+<p>That is something I want to take away from working on Student. You can do some pretty amazing things by doing very simple things. The way to do those amazing things is just to break them down into steps and solve each of those steps. Its fairly straight forward.</p>
+</article>
+      </div>
+    </div>
+    <script type="text/javascript">/*<![CDATA[*/ window.olark||(function(k){var g=window,j=document,a=g.location.protocol=="https:"?"https:":"http:",i=k.name,b="load",h="addEventListener";(function(){g[i]=function(){(c.s=c.s||[]).push(arguments)};var c=g[i]._={},f=k.methods.length;while(f--){(function(l){g[i][l]=function(){g[i]("call",l,arguments)}})(k.methods[f])}c.l=k.loader;c.i=arguments.callee;c.p={0:+new Date};c.P=function(l){c.p[l]=new Date-c.p[0]};function e(){c.P(b);g[i](b)}g[h]?g[h](b,e,false):g.attachEvent("on"+b,e);c.P(1);var d=j.createElement("script"),m=document.getElementsByTagName("script")[0];d.type="text/javascript";d.async=true;d.src=a+"//"+c.l;m.parentNode.insertBefore(d,m);c.P(2)})()})({loader:(function(a){return "static.olark.com/jsclient/loader1.js?ts="+(a?a[1]:(+new Date))})(document.cookie.match(/olarkld=([0-9]+)/)),name:"olark",methods:["configure","extend","declare","identify"]}); olark.identify('5923-676-10-4978');/*]]>*/</script>
+  	<script src="http://code.jquery.com/jquery.js"></script>
+  	<script src="/js/bootstrap.min.js"></script>
+  </body>
+</html>

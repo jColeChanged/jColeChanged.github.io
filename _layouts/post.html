@@ -2,6 +2,7 @@
 layout: default
 ---
 <article>
-  <h1 class="title">{{ page.title}}</h1>
+  <h1><a href="{{ page.url }}">{{ page.title }}</a></h1>
+  <h2 class="muted date"><small>{{ page.date | date_to_string }}</small></h2>
 	{{ content }}
 </article>

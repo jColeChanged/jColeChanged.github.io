@@ -1,60 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="author" content="Joshua Lowell Cole" />
-	<link rel="stylesheet" href="/css/bootstrap.min.css" media="screen">
-  <title>A Little Bit Irrational</title>
-	<script src="http://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js"></script>
-	<script>
-	WebFont.load({
-		google: {
-			families: ['Droid Sans', 'Droid Serif', 'Droid Sans Mono']
-    }
-	});
-	</script>
-	<style>
-		body {font-family: "Droid Sans", "Arial";}
-		.date {font-family: "Droid Sans Mono", "Consolas";}
-    /* Make images stay on their own line and center themselves within the page.*/
-    img {
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-    }
-    .title {text-align: center;}
-
-}
-	</style>	 
-</head>
-<body>
-	<div class="row">
-    <div class="offset4 span8">
-    <header>
-      <ul class="inline">
-        <li><strong>Joshua Cole's</strong> &raquo;</li>
-        <li><a href="/">Home</a></li>
-        <li><a href="/#blog">Blog</a></li>
-        <li><a href="/#projects">Projects</a></li>
-        <li><a href="/#recommendations">Recommendations</a></li>
-      </ul>
-    </header>
-		<article>
-  <h1 class="title">A Little Bit Irrational</h1>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Joshua Lowell Cole" />
+  	<link rel="stylesheet" href="/css/bootstrap.min.css" media="screen">
+    <link rel="stylesheet" href="/css/blog.css" media="screen">
+    
+      <title>Joshua Cole: A Little Bit Irrational</title>
+    
+  	<script src="http://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js"></script>
+  	<script>
+  	WebFont.load({
+  		google: {
+  			families: ['Droid Sans', 'Droid Serif', 'Droid Sans Mono']
+      }
+  	});
+  	</script>
+  </head>
+  <body>
+  	<div class="row-fluid">
+      <div class="span4">
+        <header class="media">
+          <img class="pull-left img-circle media-object" src="http://www.gravatar.com/avatar/dfcd7f132a84516bb79ae96236e94501.png">
+          <div class="media-body">
+            <h4 class="media-heading">My name is <a href="/">Joshua Cole</a>...</h4>
+            I'm a programmer, an aspiring statistican, and a Christian. I'm also into competitive gaming, especially League of Legends. My writing here tends to focus on things I'm learning about through self-study. If that interests you, enjoy!
+          </div>
+        </header>
+      </div>
+      <div class="span6">
+		    <article>
+  <h1><a href="/2010/11/03/a-little-bit-irrational.html">A Little Bit Irrational</a></h1>
+  <h2 class="muted date"><small>03 Nov 2010</small></h2>
 	<p>My uncle Tim asked me to run a card game at the local bowling alley. People bought into the game for one dollar and all of their money was then put into a pot that goes to the winner of the game. If nobody won the pot would carry over to the next week. The carry over would continue until someone did manage to win. Winning was a little harder. In order to win you had to draw a specially marked card from a deck of five-hundred cards.</p>
 
 <p>When I did the math, I realized that getting into the card game didn&#8217;t make much sense. When I broke things down I found that there was roughly a 1% chance of winning the game. You can use that information to calculate the average amount which will be won.</p>
 
-<blockquote>
-<p>Average Win = Chance To Win * Pot Size</p>
-</blockquote>
+<pre><code>average win = chance to Win * pot size</code></pre>
 
 <p>Of course, knowing how much you were expected to win isn&#8217;t very useful unless you factor in how much you had to pay to have a chance at winning the money. If we put all this together we find that our expected return on each game is our chance to win multiplied by the pot size minus the amount we payed to get into the game.</p>
 
-<blockquote>
-<p>Average Return = Win Chance * Pot - Buy In</p>
-</blockquote>
+<pre><code>average return = win chance * pot - buy in</code></pre>
 
 <p>So what happens when we plug in our 1% chance to win, our $1 oppurunity cost, and graph the result?</p>
 
@@ -62,41 +49,10 @@
 
 <p>Basically, unless the pot has more then a hundred dollars in it, you are going in expecting to lose money. So since there is no guarantee that you will stay in every week, it doesn&#8217;t make sense to get into the game, unless you are doing it for the social experience.</p>
 </article>
-		<footer class="well">
-      <ul class="inline">
-        <li><strong>about</strong> &raquo;</li>
-        <li><a id="about_recs_toggle">my recommendations</a></li>
-        <li><a id="about_projects_toggle">my projects<a></li>
-        <li><a id="about_contact_toggle">contacting me</a></li>
-        <li><a id="about_blog_toggle">my blog</a></li>
-       </ul>
-       <p id="about_contact">You can contact me by using the chat service at the bottom right hand side of the page. Make sure to leave your contact details if I'm not there, that way I can get back to you.</p>
-       <p id="about_blog">I'm writing this blog as an excuse to talk about technical subjects that interest me. I'm also a Christian and very into competitive gaming, so some of that might creep into my writing</p>
-       <p id="about_projects">These are some projects I've worked on that might be useful to someone.</p>
-       <p id="about_recs">Some sites out there deserve page rank. They are awesome and I'm happy to share them with people.</p>
-			<script type="text/javascript">/*<![CDATA[*/ window.olark||(function(k){var g=window,j=document,a=g.location.protocol=="https:"?"https:":"http:",i=k.name,b="load",h="addEventListener";(function(){g[i]=function(){(c.s=c.s||[]).push(arguments)};var c=g[i]._={},f=k.methods.length;while(f--){(function(l){g[i][l]=function(){g[i]("call",l,arguments)}})(k.methods[f])}c.l=k.loader;c.i=arguments.callee;c.p={0:+new Date};c.P=function(l){c.p[l]=new Date-c.p[0]};function e(){c.P(b);g[i](b)}g[h]?g[h](b,e,false):g.attachEvent("on"+b,e);c.P(1);var d=j.createElement("script"),m=document.getElementsByTagName("script")[0];d.type="text/javascript";d.async=true;d.src=a+"//"+c.l;m.parentNode.insertBefore(d,m);c.P(2)})()})({loader:(function(a){return "static.olark.com/jsclient/loader1.js?ts="+(a?a[1]:(+new Date))})(document.cookie.match(/olarkld=([0-9]+)/)),name:"olark",methods:["configure","extend","declare","identify"]}); olark.identify('5923-676-10-4978');/*]]>*/</script>
-		<footer>
-	</div>
-  </div>
-	<script src="http://code.jquery.com/jquery.js"></script>
-	<script src="/js/bootstrap.min.js"></script>
-  <script type="text/javascript">
-  $("#about_projects").hide();
-  $("#about_blog").hide();
-  $("#about_contact").hide();
-  $("#about_recs").hide();
-  $("#about_contact_toggle").click(function(){
-    $("#about_contact").toggle();
-  });
-  $("#about_recs_toggle").click(function(){
-    $("#about_recs").toggle();
-  });
-  $("#about_blog_toggle").click(function(){
-    $("#about_blog").toggle();
-  });
-  $("#about_projects_toggle").click(function(){
-    $("#about_projects").toggle();
-  });
-</script>
-</body>
+      </div>
+    </div>
+    <script type="text/javascript">/*<![CDATA[*/ window.olark||(function(k){var g=window,j=document,a=g.location.protocol=="https:"?"https:":"http:",i=k.name,b="load",h="addEventListener";(function(){g[i]=function(){(c.s=c.s||[]).push(arguments)};var c=g[i]._={},f=k.methods.length;while(f--){(function(l){g[i][l]=function(){g[i]("call",l,arguments)}})(k.methods[f])}c.l=k.loader;c.i=arguments.callee;c.p={0:+new Date};c.P=function(l){c.p[l]=new Date-c.p[0]};function e(){c.P(b);g[i](b)}g[h]?g[h](b,e,false):g.attachEvent("on"+b,e);c.P(1);var d=j.createElement("script"),m=document.getElementsByTagName("script")[0];d.type="text/javascript";d.async=true;d.src=a+"//"+c.l;m.parentNode.insertBefore(d,m);c.P(2)})()})({loader:(function(a){return "static.olark.com/jsclient/loader1.js?ts="+(a?a[1]:(+new Date))})(document.cookie.match(/olarkld=([0-9]+)/)),name:"olark",methods:["configure","extend","declare","identify"]}); olark.identify('5923-676-10-4978');/*]]>*/</script>
+  	<script src="http://code.jquery.com/jquery.js"></script>
+  	<script src="/js/bootstrap.min.js"></script>
+  </body>
 </html>

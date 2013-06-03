@@ -1,47 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="author" content="Joshua Lowell Cole" />
-	<link rel="stylesheet" href="/css/bootstrap.min.css" media="screen">
-  <title>Just Wrote A Chat Bot</title>
-	<script src="http://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js"></script>
-	<script>
-	WebFont.load({
-		google: {
-			families: ['Droid Sans', 'Droid Serif', 'Droid Sans Mono']
-    }
-	});
-	</script>
-	<style>
-		body {font-family: "Droid Sans", "Arial";}
-		.date {font-family: "Droid Sans Mono", "Consolas";}
-    /* Make images stay on their own line and center themselves within the page.*/
-    img {
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-    }
-    .title {text-align: center;}
-
-}
-	</style>	 
-</head>
-<body>
-	<div class="row">
-    <div class="offset4 span8">
-    <header>
-      <ul class="inline">
-        <li><strong>Joshua Cole's</strong> &raquo;</li>
-        <li><a href="/">Home</a></li>
-        <li><a href="/#blog">Blog</a></li>
-        <li><a href="/#projects">Projects</a></li>
-        <li><a href="/#recommendations">Recommendations</a></li>
-      </ul>
-    </header>
-		<article>
-  <h1 class="title">Just Wrote A Chat Bot</h1>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Joshua Lowell Cole" />
+  	<link rel="stylesheet" href="/css/bootstrap.min.css" media="screen">
+    <link rel="stylesheet" href="/css/blog.css" media="screen">
+    
+      <title>Joshua Cole: Just Wrote A Chat Bot</title>
+    
+  	<script src="http://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js"></script>
+  	<script>
+  	WebFont.load({
+  		google: {
+  			families: ['Droid Sans', 'Droid Serif', 'Droid Sans Mono']
+      }
+  	});
+  	</script>
+  </head>
+  <body>
+  	<div class="row-fluid">
+      <div class="span4">
+        <header class="media">
+          <img class="pull-left img-circle media-object" src="http://www.gravatar.com/avatar/dfcd7f132a84516bb79ae96236e94501.png">
+          <div class="media-body">
+            <h4 class="media-heading">My name is <a href="/">Joshua Cole</a>...</h4>
+            I'm a programmer, an aspiring statistican, and a Christian. I'm also into competitive gaming, especially League of Legends. My writing here tends to focus on things I'm learning about through self-study. If that interests you, enjoy!
+          </div>
+        </header>
+      </div>
+      <div class="span6">
+		    <article>
+  <h1><a href="/2010/12/31/just-wrote-a-chat-bot.html">Just Wrote A Chat Bot</a></h1>
+  <h2 class="muted date"><small>31 Dec 2010</small></h2>
 	<p><span style="color: #333333; font-family: OFL Sorts Mill Goudy TT, Georgia, Times, Times New Roman, serif, sans-serif; font-size: 16px; line-height: 16px;">
 <p style="margin-top: 0px; margin-right: 0px; margin-bottom: 1.5em; margin-left: 0px; font-size: 1.1em; font: inherit; vertical-align: baseline; line-height: 1.5em; text-align: justify; padding: 0px;">Two weeks ago my uncle came out from South Carolina to visit the family for Christmas. He brought along a laptop for me. I was delighted. The only problem was that the laptop wasn&rsquo;t to keep. He had a license on that laptop that allowed him to run chat bots on Camfrog, a video conferencing platform geared around chat rooms, and he wanted me to help him make one. At first we tried to find a way to copy the dll of an existing bot, because this bot already got its content from a text file. This didn&rsquo;t work, as the bot&rsquo;s architecture didn&rsquo;t allow us to have two separate questions files. So I was forced to pull out the programming belt and hammer out some code.</p>
 <p style="margin-top: 0px; margin-right: 0px; margin-bottom: 1.5em; margin-left: 0px; font-size: 1.1em; font: inherit; vertical-align: baseline; line-height: 1.5em; text-align: justify; padding: 0px;">This wasn&rsquo;t as fun as you might think. Rather than playing around with my new favorite language, Clojure, I had to write an event based C++ dll. This wasn&rsquo;t by choice. The good people at Camfrog have a closed source C++ bot that loads and sends events to the dll. This lets them hide the platform&rsquo;s protocol, which in turn allows them to charge a licensing fee for using a bot. Don&rsquo;t want to buy the their bot hosting program? Good luck making a bot.</p>
@@ -52,41 +43,10 @@
 </span></p>
 
 </article>
-		<footer class="well">
-      <ul class="inline">
-        <li><strong>about</strong> &raquo;</li>
-        <li><a id="about_recs_toggle">my recommendations</a></li>
-        <li><a id="about_projects_toggle">my projects<a></li>
-        <li><a id="about_contact_toggle">contacting me</a></li>
-        <li><a id="about_blog_toggle">my blog</a></li>
-       </ul>
-       <p id="about_contact">You can contact me by using the chat service at the bottom right hand side of the page. Make sure to leave your contact details if I'm not there, that way I can get back to you.</p>
-       <p id="about_blog">I'm writing this blog as an excuse to talk about technical subjects that interest me. I'm also a Christian and very into competitive gaming, so some of that might creep into my writing</p>
-       <p id="about_projects">These are some projects I've worked on that might be useful to someone.</p>
-       <p id="about_recs">Some sites out there deserve page rank. They are awesome and I'm happy to share them with people.</p>
-			<script type="text/javascript">/*<![CDATA[*/ window.olark||(function(k){var g=window,j=document,a=g.location.protocol=="https:"?"https:":"http:",i=k.name,b="load",h="addEventListener";(function(){g[i]=function(){(c.s=c.s||[]).push(arguments)};var c=g[i]._={},f=k.methods.length;while(f--){(function(l){g[i][l]=function(){g[i]("call",l,arguments)}})(k.methods[f])}c.l=k.loader;c.i=arguments.callee;c.p={0:+new Date};c.P=function(l){c.p[l]=new Date-c.p[0]};function e(){c.P(b);g[i](b)}g[h]?g[h](b,e,false):g.attachEvent("on"+b,e);c.P(1);var d=j.createElement("script"),m=document.getElementsByTagName("script")[0];d.type="text/javascript";d.async=true;d.src=a+"//"+c.l;m.parentNode.insertBefore(d,m);c.P(2)})()})({loader:(function(a){return "static.olark.com/jsclient/loader1.js?ts="+(a?a[1]:(+new Date))})(document.cookie.match(/olarkld=([0-9]+)/)),name:"olark",methods:["configure","extend","declare","identify"]}); olark.identify('5923-676-10-4978');/*]]>*/</script>
-		<footer>
-	</div>
-  </div>
-	<script src="http://code.jquery.com/jquery.js"></script>
-	<script src="/js/bootstrap.min.js"></script>
-  <script type="text/javascript">
-  $("#about_projects").hide();
-  $("#about_blog").hide();
-  $("#about_contact").hide();
-  $("#about_recs").hide();
-  $("#about_contact_toggle").click(function(){
-    $("#about_contact").toggle();
-  });
-  $("#about_recs_toggle").click(function(){
-    $("#about_recs").toggle();
-  });
-  $("#about_blog_toggle").click(function(){
-    $("#about_blog").toggle();
-  });
-  $("#about_projects_toggle").click(function(){
-    $("#about_projects").toggle();
-  });
-</script>
-</body>
+      </div>
+    </div>
+    <script type="text/javascript">/*<![CDATA[*/ window.olark||(function(k){var g=window,j=document,a=g.location.protocol=="https:"?"https:":"http:",i=k.name,b="load",h="addEventListener";(function(){g[i]=function(){(c.s=c.s||[]).push(arguments)};var c=g[i]._={},f=k.methods.length;while(f--){(function(l){g[i][l]=function(){g[i]("call",l,arguments)}})(k.methods[f])}c.l=k.loader;c.i=arguments.callee;c.p={0:+new Date};c.P=function(l){c.p[l]=new Date-c.p[0]};function e(){c.P(b);g[i](b)}g[h]?g[h](b,e,false):g.attachEvent("on"+b,e);c.P(1);var d=j.createElement("script"),m=document.getElementsByTagName("script")[0];d.type="text/javascript";d.async=true;d.src=a+"//"+c.l;m.parentNode.insertBefore(d,m);c.P(2)})()})({loader:(function(a){return "static.olark.com/jsclient/loader1.js?ts="+(a?a[1]:(+new Date))})(document.cookie.match(/olarkld=([0-9]+)/)),name:"olark",methods:["configure","extend","declare","identify"]}); olark.identify('5923-676-10-4978');/*]]>*/</script>
+  	<script src="http://code.jquery.com/jquery.js"></script>
+  	<script src="/js/bootstrap.min.js"></script>
+  </body>
 </html>

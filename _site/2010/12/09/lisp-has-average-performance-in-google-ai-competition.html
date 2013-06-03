@@ -1,47 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="author" content="Joshua Lowell Cole" />
-	<link rel="stylesheet" href="/css/bootstrap.min.css" media="screen">
-  <title>Lisp Has Average Performance in Google AI Competition</title>
-	<script src="http://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js"></script>
-	<script>
-	WebFont.load({
-		google: {
-			families: ['Droid Sans', 'Droid Serif', 'Droid Sans Mono']
-    }
-	});
-	</script>
-	<style>
-		body {font-family: "Droid Sans", "Arial";}
-		.date {font-family: "Droid Sans Mono", "Consolas";}
-    /* Make images stay on their own line and center themselves within the page.*/
-    img {
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-    }
-    .title {text-align: center;}
-
-}
-	</style>	 
-</head>
-<body>
-	<div class="row">
-    <div class="offset4 span8">
-    <header>
-      <ul class="inline">
-        <li><strong>Joshua Cole's</strong> &raquo;</li>
-        <li><a href="/">Home</a></li>
-        <li><a href="/#blog">Blog</a></li>
-        <li><a href="/#projects">Projects</a></li>
-        <li><a href="/#recommendations">Recommendations</a></li>
-      </ul>
-    </header>
-		<article>
-  <h1 class="title">Lisp Has Average Performance in Google AI Competition</h1>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Joshua Lowell Cole" />
+  	<link rel="stylesheet" href="/css/bootstrap.min.css" media="screen">
+    <link rel="stylesheet" href="/css/blog.css" media="screen">
+    
+      <title>Joshua Cole: Lisp Has Average Performance in Google AI Competition</title>
+    
+  	<script src="http://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js"></script>
+  	<script>
+  	WebFont.load({
+  		google: {
+  			families: ['Droid Sans', 'Droid Serif', 'Droid Sans Mono']
+      }
+  	});
+  	</script>
+  </head>
+  <body>
+  	<div class="row-fluid">
+      <div class="span4">
+        <header class="media">
+          <img class="pull-left img-circle media-object" src="http://www.gravatar.com/avatar/dfcd7f132a84516bb79ae96236e94501.png">
+          <div class="media-body">
+            <h4 class="media-heading">My name is <a href="/">Joshua Cole</a>...</h4>
+            I'm a programmer, an aspiring statistican, and a Christian. I'm also into competitive gaming, especially League of Legends. My writing here tends to focus on things I'm learning about through self-study. If that interests you, enjoy!
+          </div>
+        </header>
+      </div>
+      <div class="span6">
+		    <article>
+  <h1><a href="/2010/12/09/lisp-has-average-performance-in-google-ai-competition.html">Lisp Has Average Performance in Google AI Competition</a></h1>
+  <h2 class="muted date"><small>09 Dec 2010</small></h2>
 	<p>A while back a <a href='http://www.r-chart.com/2010/12/google-ai-challenge-languages-used-by.html'>blog</a> at <a href='http://www.r-chart.com/'>r-chart</a> analyzed the <a href='http://ai-contest.com/'>Google AI Competition</a> rankings. That blog post inspired me to try applying some of the things I&#8217;ve been learning about in courses offered through Carnegie Mellon&#8217;s Open Learning Initiative. Here is how it went.</p>
 
 <p>The first step was to get the data. To do that I used a really cool scraping library called <a href='https://github.com/cgrand/enlive'>Enlive</a> which lets you scrape HTML using CSS selectors. Enlive is actually a templating library, but it allows for such clean separation of presentation and logic that it handles scraping too. To see how I did that in more detail you can look at the code on <a href='https://github.com/jColeChanged/stats-env'>github</a>, but don&#8217;t bother if you&#8217;re only after the data. I figured that some of you might want to do your own analysis so here is a <a href='http://dl.dropbox.com/u/2537320/data.csv'>tab delimited csv file</a> of the rankings and to reduce the barrier to entry that much farther this is a <a href='https://spreadsheets.google.com/ccc?key=0AmdrW-WZLahvdEotcEY4VnJIMGtEWjNueXNzeElDcUE&amp;amp;hl=en'>public google spreadsheet</a> that also has the data.</p>
@@ -60,41 +51,10 @@
 
 <p>It looks like this programming competition hasn&#8217;t shown Lisp to be very special. Though most Lisp users were above average, together they were even closer to average than Java. Java on the other hand was just as expected, average to the core. Let me know in the comments what you think either here or on Hacker News. Thanks for reading.</p>
 </article>
-		<footer class="well">
-      <ul class="inline">
-        <li><strong>about</strong> &raquo;</li>
-        <li><a id="about_recs_toggle">my recommendations</a></li>
-        <li><a id="about_projects_toggle">my projects<a></li>
-        <li><a id="about_contact_toggle">contacting me</a></li>
-        <li><a id="about_blog_toggle">my blog</a></li>
-       </ul>
-       <p id="about_contact">You can contact me by using the chat service at the bottom right hand side of the page. Make sure to leave your contact details if I'm not there, that way I can get back to you.</p>
-       <p id="about_blog">I'm writing this blog as an excuse to talk about technical subjects that interest me. I'm also a Christian and very into competitive gaming, so some of that might creep into my writing</p>
-       <p id="about_projects">These are some projects I've worked on that might be useful to someone.</p>
-       <p id="about_recs">Some sites out there deserve page rank. They are awesome and I'm happy to share them with people.</p>
-			<script type="text/javascript">/*<![CDATA[*/ window.olark||(function(k){var g=window,j=document,a=g.location.protocol=="https:"?"https:":"http:",i=k.name,b="load",h="addEventListener";(function(){g[i]=function(){(c.s=c.s||[]).push(arguments)};var c=g[i]._={},f=k.methods.length;while(f--){(function(l){g[i][l]=function(){g[i]("call",l,arguments)}})(k.methods[f])}c.l=k.loader;c.i=arguments.callee;c.p={0:+new Date};c.P=function(l){c.p[l]=new Date-c.p[0]};function e(){c.P(b);g[i](b)}g[h]?g[h](b,e,false):g.attachEvent("on"+b,e);c.P(1);var d=j.createElement("script"),m=document.getElementsByTagName("script")[0];d.type="text/javascript";d.async=true;d.src=a+"//"+c.l;m.parentNode.insertBefore(d,m);c.P(2)})()})({loader:(function(a){return "static.olark.com/jsclient/loader1.js?ts="+(a?a[1]:(+new Date))})(document.cookie.match(/olarkld=([0-9]+)/)),name:"olark",methods:["configure","extend","declare","identify"]}); olark.identify('5923-676-10-4978');/*]]>*/</script>
-		<footer>
-	</div>
-  </div>
-	<script src="http://code.jquery.com/jquery.js"></script>
-	<script src="/js/bootstrap.min.js"></script>
-  <script type="text/javascript">
-  $("#about_projects").hide();
-  $("#about_blog").hide();
-  $("#about_contact").hide();
-  $("#about_recs").hide();
-  $("#about_contact_toggle").click(function(){
-    $("#about_contact").toggle();
-  });
-  $("#about_recs_toggle").click(function(){
-    $("#about_recs").toggle();
-  });
-  $("#about_blog_toggle").click(function(){
-    $("#about_blog").toggle();
-  });
-  $("#about_projects_toggle").click(function(){
-    $("#about_projects").toggle();
-  });
-</script>
-</body>
+      </div>
+    </div>
+    <script type="text/javascript">/*<![CDATA[*/ window.olark||(function(k){var g=window,j=document,a=g.location.protocol=="https:"?"https:":"http:",i=k.name,b="load",h="addEventListener";(function(){g[i]=function(){(c.s=c.s||[]).push(arguments)};var c=g[i]._={},f=k.methods.length;while(f--){(function(l){g[i][l]=function(){g[i]("call",l,arguments)}})(k.methods[f])}c.l=k.loader;c.i=arguments.callee;c.p={0:+new Date};c.P=function(l){c.p[l]=new Date-c.p[0]};function e(){c.P(b);g[i](b)}g[h]?g[h](b,e,false):g.attachEvent("on"+b,e);c.P(1);var d=j.createElement("script"),m=document.getElementsByTagName("script")[0];d.type="text/javascript";d.async=true;d.src=a+"//"+c.l;m.parentNode.insertBefore(d,m);c.P(2)})()})({loader:(function(a){return "static.olark.com/jsclient/loader1.js?ts="+(a?a[1]:(+new Date))})(document.cookie.match(/olarkld=([0-9]+)/)),name:"olark",methods:["configure","extend","declare","identify"]}); olark.identify('5923-676-10-4978');/*]]>*/</script>
+  	<script src="http://code.jquery.com/jquery.js"></script>
+  	<script src="/js/bootstrap.min.js"></script>
+  </body>
 </html>
