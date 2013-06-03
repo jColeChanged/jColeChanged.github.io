@@ -23,7 +23,7 @@
 			"file": "_layouts/default.html",
 			"settings":
 			{
-				"buffer_size": 2591,
+				"buffer_size": 2564,
 				"line_ending": "Windows"
 			}
 		},
@@ -31,7 +31,7 @@
 			"file": "css/blog.css",
 			"settings":
 			{
-				"buffer_size": 526,
+				"buffer_size": 468,
 				"line_ending": "Windows"
 			}
 		},
@@ -44,18 +44,26 @@
 			}
 		},
 		{
-			"file": "_posts/2010-11-03-a-little-bit-irrational.markdown",
+			"file": "_layouts/post.html",
 			"settings":
 			{
-				"buffer_size": 1635,
+				"buffer_size": 194,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "_layouts/post.html",
+			"file": "_posts/2013-5-30-student.markdown",
 			"settings":
 			{
-				"buffer_size": 100,
+				"buffer_size": 2151,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "",
+			"settings":
+			{
+				"buffer_size": 0,
 				"line_ending": "Windows"
 			}
 		}
@@ -164,6 +172,7 @@
 	},
 	"file_history":
 	[
+		"/C/Users/joshua/Programming/Blog/_posts/2010-11-03-a-little-bit-irrational.markdown",
 		"/C/Windows/System32/drivers/etc/hosts",
 		"/C/Users/joshua/Programming/wagering/templates/scaffolding.html",
 		"/C/Users/joshua/Programming/wagering/templates/wagers/home.html",
@@ -265,7 +274,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 5,
 			"sheets":
 			[
 				{
@@ -273,15 +282,15 @@
 					"file": "_layouts/default.html",
 					"settings":
 					{
-						"buffer_size": 2591,
+						"buffer_size": 2564,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1380,
-								1380
+								1420,
+								1420
 							]
 						],
 						"settings":
@@ -291,7 +300,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 180.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -301,15 +310,15 @@
 					"file": "css/blog.css",
 					"settings":
 					{
-						"buffer_size": 526,
+						"buffer_size": 468,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								164,
-								164
+								127,
+								127
 							]
 						],
 						"settings":
@@ -336,8 +345,8 @@
 						"selection":
 						[
 							[
-								87,
-								87
+								273,
+								273
 							]
 						],
 						"settings":
@@ -354,23 +363,23 @@
 				},
 				{
 					"buffer": 3,
-					"file": "_posts/2010-11-03-a-little-bit-irrational.markdown",
+					"file": "_layouts/post.html",
 					"settings":
 					{
-						"buffer_size": 1635,
+						"buffer_size": 194,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								805,
-								805
+								64,
+								64
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Markdown/Markdown.tmLanguage"
+							"syntax": "Packages/HTML/HTML.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -380,23 +389,49 @@
 				},
 				{
 					"buffer": 4,
-					"file": "_layouts/post.html",
+					"file": "_posts/2013-5-30-student.markdown",
 					"settings":
 					{
-						"buffer_size": 100,
+						"buffer_size": 2151,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								100,
-								100
+								1059,
+								1059
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/HTML/HTML.tmLanguage"
+							"syntax": "Packages/Markdown/Markdown.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 180.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"auto_name": "",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,

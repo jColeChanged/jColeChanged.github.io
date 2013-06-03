@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Joshua Lowell Cole" />
+  	<link rel="stylesheet" href="/css/bootstrap.min.css" media="screen">
+    <link rel="stylesheet" href="/css/blog.css" media="screen">
+    
+      <title>Joshua Cole: Student, It Isolates Variables</title>
+    
+  	<script src="http://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js"></script>
+  	<script>
+  	WebFont.load({
+  		google: {
+  			families: ['Droid Sans', 'Droid Serif', 'Droid Sans Mono']
+      }
+  	});
+  	</script>
+  </head>
+  <body>
+  	<div class="row-fluid">
+      <div class="span4">
+        <header class="media">
+          <img class="pull-left img-circle media-object" src="http://www.gravatar.com/avatar/dfcd7f132a84516bb79ae96236e94501.png">
+          <div class="media-body">
+            <h4 class="media-heading">My name is <a href="/">Joshua Cole</a>...</h4>
+            I'm a programmer, an aspiring statistican, and a Christian. I'm also into competitive gaming, especially League of Legends. My writing here tends to focus on things I'm learning about through self-study. If that interests you, enjoy!
+          </div>
+        </header>
+      </div>
+      <div class="span6">
+		    <article>
+  <h1><a href="/2013/06/03/student.html">Student, It Isolates Variables</a></h1>
+  <h2 class="muted date"><small>03 Jun 2013</small></h2>
+	<p>Slowly, but surely, I&#8217;ve been working my way through Paradigms of Artificial Intelligence Programming (PAIP). I just finished reading up on an AI program named Student. It is a clever little bit of code that can solve word problems that wouldn&#8217;t be out of place in a high-school algebra class.</p>
+
+<p>Though, I&#8217;m not really sure that clever is the best way to describe the code. Really, when it gets down to it, the magic in Student is the same as the magic in Eliza. They both use extremely basic pattern matching: a regex like pattern with capture capabilities and a matching bit of data that the captured input will be transplanted into.</p>
+
+<p>There are a few differences between the two programs. For example, the pattern matching code of Eliza is ready to quit after finding its first match, but Student recursively matches every part of its input. If you give it a paragraph it will keep on breaking the input up until it has a series of equations which model the problem that was given.</p>
+
+<p>Like Eliza, the short fall of the program is pretty obvious. If you give it a bit of math that doesn&#8217;t fit into the patterns that were supplied for it, it won&#8217;t behave properly. Yet it is still pretty cool when it does behave properly. It doesn&#8217;t just spit out a response once it finishes parsing its input. Instead it proceeds to solve the equations it was given.</p>
+
+<p>This turns out to be much simpler than one might expect. If you think about it, the root of most equations in which you are solving for one variable is isolating that one variable. You just keep moving things around using simple rules until the unknown is the only thing on one side of the equals sign. At that point things are solved. So once you type out exactly how to invert each of the mathematical operations that Student is likely to encounter, solving the equations becomes <a href='http://books.google.com/books?id=7papZR4oVssC&amp;pg=PA84&amp;lpg=PA84&amp;dq=trivial+feynman&amp;source=bl&amp;ots=esUV9cqQ_W&amp;sig=HAJwHxBqT6vVxG9eH7O4YE7IzuM&amp;hl=en&amp;sa=X&amp;ei=wCqsUeLCIOSL0QGn0oHQDg&amp;ved=0CDwQ6AEwAg#v=onepage&amp;q=trivial%20feynman&amp;f=false'>trivial</a>.</p>
+</article>
+      </div>
+    </div>
+    <script type="text/javascript">/*<![CDATA[*/ window.olark||(function(k){var g=window,j=document,a=g.location.protocol=="https:"?"https:":"http:",i=k.name,b="load",h="addEventListener";(function(){g[i]=function(){(c.s=c.s||[]).push(arguments)};var c=g[i]._={},f=k.methods.length;while(f--){(function(l){g[i][l]=function(){g[i]("call",l,arguments)}})(k.methods[f])}c.l=k.loader;c.i=arguments.callee;c.p={0:+new Date};c.P=function(l){c.p[l]=new Date-c.p[0]};function e(){c.P(b);g[i](b)}g[h]?g[h](b,e,false):g.attachEvent("on"+b,e);c.P(1);var d=j.createElement("script"),m=document.getElementsByTagName("script")[0];d.type="text/javascript";d.async=true;d.src=a+"//"+c.l;m.parentNode.insertBefore(d,m);c.P(2)})()})({loader:(function(a){return "static.olark.com/jsclient/loader1.js?ts="+(a?a[1]:(+new Date))})(document.cookie.match(/olarkld=([0-9]+)/)),name:"olark",methods:["configure","extend","declare","identify"]}); olark.identify('5923-676-10-4978');/*]]>*/</script>
+  	<script src="http://code.jquery.com/jquery.js"></script>
+  	<script src="/js/bootstrap.min.js"></script>
+  </body>
+</html>

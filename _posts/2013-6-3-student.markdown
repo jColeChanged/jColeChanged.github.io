@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Student, It Isolates Variables
-published: false
+published: true
 ---
 Slowly, but surely, I've been working my way through Paradigms of Artificial Intelligence Programming (PAIP). I just finished reading up on an AI program named Student. It is a clever little bit of code that can solve word problems that wouldn't be out of place in a high-school algebra class.
 
