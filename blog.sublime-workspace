@@ -39,7 +39,7 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 911,
+				"buffer_size": 989,
 				"line_ending": "Windows"
 			}
 		},
@@ -52,18 +52,26 @@
 			}
 		},
 		{
-			"file": "_posts/2013-5-30-student.markdown",
-			"settings":
-			{
-				"buffer_size": 2151,
-				"line_ending": "Windows"
-			}
-		},
-		{
 			"contents": "",
 			"settings":
 			{
 				"buffer_size": 0,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "_posts/2010-12-09-lisp-has-average-performance-in-google-ai-competition.markdown",
+			"settings":
+			{
+				"buffer_size": 4703,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "_posts/6-7-2013-One-Down-More-To-Go.md",
+			"settings":
+			{
+				"buffer_size": 1300,
 				"line_ending": "Windows"
 			}
 		}
@@ -172,6 +180,7 @@
 	},
 	"file_history":
 	[
+		"/C/Users/joshua/Programming/Blog/_posts/2013-5-30-student.markdown",
 		"/C/Users/joshua/Programming/Blog/_posts/2010-11-03-a-little-bit-irrational.markdown",
 		"/C/Windows/System32/drivers/etc/hosts",
 		"/C/Users/joshua/Programming/wagering/templates/scaffolding.html",
@@ -274,7 +283,7 @@
 	"groups":
 	[
 		{
-			"selected": 5,
+			"selected": 6,
 			"sheets":
 			[
 				{
@@ -338,15 +347,15 @@
 					"file": "index.html",
 					"settings":
 					{
-						"buffer_size": 911,
+						"buffer_size": 989,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								273,
-								273
+								0,
+								0
 							]
 						],
 						"settings":
@@ -389,32 +398,6 @@
 				},
 				{
 					"buffer": 4,
-					"file": "_posts/2013-5-30-student.markdown",
-					"settings":
-					{
-						"buffer_size": 2151,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1059,
-								1059
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Markdown/Markdown.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 180.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 5,
 					"settings":
 					{
 						"buffer_size": 0,
@@ -432,6 +415,58 @@
 						{
 							"auto_name": "",
 							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "_posts/2010-12-09-lisp-has-average-performance-in-google-ai-competition.markdown",
+					"settings":
+					{
+						"buffer_size": 4703,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								97,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Markdown/Markdown.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "_posts/6-7-2013-One-Down-More-To-Go.md",
+					"settings":
+					{
+						"buffer_size": 1300,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								31,
+								31
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Markdown/Markdown.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
