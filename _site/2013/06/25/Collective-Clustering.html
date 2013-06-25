@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Joshua Lowell Cole" />
+    <link rel="stylesheet" href="/css/bootstrap.css" media="screen">
+  	<link rel="stylesheet" href="/css/bootstrap-responsive.css" media="screen">
+    <link rel="stylesheet" href="/css/blog.css" media="screen">
+    
+      <title>Joshua Cole: Collective Clustering</title>
+    
+  	<script src="http://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js"></script>
+  	<script>
+  	WebFont.load({
+  		google: {
+  			families: ['Droid Sans', 'Droid Serif', 'Droid Sans Mono']
+      }
+  	});
+  	</script>
+  </head>
+  <body>
+  	<div class="row-fluid">
+      <div class="span4">
+        <header class="media">
+          <img class="pull-left img-circle media-object" src="http://www.gravatar.com/avatar/dfcd7f132a84516bb79ae96236e94501.png">
+          <div class="media-body">
+            <h4 class="media-heading">My name is <a href="/">Joshua Cole</a>...</h4>
+            I'm a programmer, an aspiring statistican, and a Christian. I'm also into competitive gaming, especially League of Legends. My writing here tends to focus on things I'm learning about through self-study. If that interests you, enjoy!
+          </div>
+        </header>
+      </div>
+      <div class="span6">
+		    <article>
+  <h1><a href="/2013/06/25/Collective-Clustering.html">Collective Clustering</a></h1>
+  <h2 class="muted date"><small>25 Jun 2013</small></h2>
+	<p>This is my second post in a series I&#8217;m writing on my foray into Programming Collective Intelligence. In this installment I&#8217;m talking about chapter three, which covers clustering.</p>
+
+<h1 id='hierarchical_clustering'>Hierarchical Clustering</h1>
+
+<p><a href='http://en.wikipedia.org/wiki/Hierarchical_clustering'>Hierarchical clustering</a> starts out by saying that every element that you are looking at is its own distinct cluster. Then it tries to find the two clusters that are closest to each other. Once it finds those clusters it merges them. In some ways things are arbitrary. I can choose to look at any number of clusters I want. If I only want to look at three clusters I can stop running things when I get down to three clusters. However, I can also make a <a href='http://en.wikipedia.org/wiki/Dendrogram'>dendrogram</a> if I make sure to incorporate the tree-like structure of the clustering process into my code.</p>
+
+<p>While working through the last chapter I happened to create a few dendrodgrams. The dendrogram presented below is the result of clustering 100 of the most popular blogs by the words used in their RSS feed. Of particular interest is that Google search related blogs tended to come out near each other.</p>
+
+<p><img alt='Dendrogram of Blog Clustering by Word Use' src='/img/collective-cluster/dend1.jpg' /></p>
+
+<p>A far more interesting dendogram that I produced show what desires tend to be grouped together. A now dead site named zebo.com used to collect information about what people wanted. Using the data that they had made avaialable I made a dendrogram of what things people tended to like. I found persuing this graphic to be quite enjoyable.</p>
+
+<p><img alt='Dendrogram of Desires by Shared Desires' src='/img/collective-cluster/dend2.jpg' /></p>
+
+<h1 id='kmeans_clustering'>k-means Clustering</h1>
+
+<p>Earlier I said that hierarchical clustering compared everything to everything else in order to figure out what two clusters were the closest to each other. As you can imagine this has terrible perforamance. O(n^2) to be more precise. Memoziation can be used to make things a bit faster then that in practice, but the algorithm still doesn&#8217;t have the most wonderful scaling properties even with that. That is where K Means clustering comes in.</p>
+
+<p>In <a href='http://en.wikipedia.org/wiki/K-means_clustering'>k-means clustering</a> you basically establish somy dummy clusters called centroids. You create k of them. Then you find the closest centroid to a cluster. You lose the ability to make a dendrogram, things becomes even more arbitrary since the centroid selection is pretty random, and in exchange you gain an O(nk) search for the nearest element.</p>
+
+<h1 id='multidimensional_scaling'>Multidimensional Scaling</h1>
+
+<p>In multidemensional scaling you keep jiggering things by comparing them to a distance function on two variables and seeing how much that differs from a distant function on all the variables. This lets you drop down variables while maintaining some sense of correlation. It lets you plot things that have multiple dimensions in two dimensional spcae. I have an example of this below too.</p>
+
+<p><img alt='Blogs By Scaled Down Word Count Feature Vector' src='/img/collective-cluster/scaled.jpg' /></p>
+
+<h1 id='things_i_built'>Things I Built</h1>
+
+<ul>
+<li>I visualized delicious data via a dendrogram that I computed.</li>
+
+<li>I implemented euclidean and manhattan distance algorithms and tries them out in clustering.</li>
+
+<li>I experimented with different values of k when using k-means clustering and saw how it affected the clustering error.</li>
+
+<li>I implemented multidimensional scaling for both one dimension and three dimensions.</li>
+</ul>
+</article>
+      </div>
+    </div>
+    <script type="text/javascript">/*<![CDATA[*/ window.olark||(function(k){var g=window,j=document,a=g.location.protocol=="https:"?"https:":"http:",i=k.name,b="load",h="addEventListener";(function(){g[i]=function(){(c.s=c.s||[]).push(arguments)};var c=g[i]._={},f=k.methods.length;while(f--){(function(l){g[i][l]=function(){g[i]("call",l,arguments)}})(k.methods[f])}c.l=k.loader;c.i=arguments.callee;c.p={0:+new Date};c.P=function(l){c.p[l]=new Date-c.p[0]};function e(){c.P(b);g[i](b)}g[h]?g[h](b,e,false):g.attachEvent("on"+b,e);c.P(1);var d=j.createElement("script"),m=document.getElementsByTagName("script")[0];d.type="text/javascript";d.async=true;d.src=a+"//"+c.l;m.parentNode.insertBefore(d,m);c.P(2)})()})({loader:(function(a){return "static.olark.com/jsclient/loader1.js?ts="+(a?a[1]:(+new Date))})(document.cookie.match(/olarkld=([0-9]+)/)),name:"olark",methods:["configure","extend","declare","identify"]}); olark.identify('5923-676-10-4978');/*]]>*/</script>
+  	<script src="http://code.jquery.com/jquery.js"></script>
+  	<script src="/js/bootstrap.min.js"></script>
+  </body>
+</html>
