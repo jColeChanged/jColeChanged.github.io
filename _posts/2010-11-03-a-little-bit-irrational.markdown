@@ -15,7 +15,7 @@ Of course, knowing how much you were expected to win isn't very useful unless yo
 
     average return = win chance * pot - buy in
 
-So what happens when we plug in our 1% chance to win, our $1 oppurunity cost, and graph the result?
+So what happens when we plug in our 1% chance to win, our $1 opportunity cost, and graph the result?
 
 
 ![Average Returns](/img/a-little-bit-irrational/average-return.png "Average Returns")

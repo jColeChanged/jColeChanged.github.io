@@ -25,7 +25,7 @@ In [k-means clustering](http://en.wikipedia.org/wiki/K-means_clustering) you bas
 
 #Multidimensional Scaling#
 
-In multidemensional scaling you keep jiggering things by comparing them to a distance function on two variables and seeing how much that differs from a distant function on all the variables. This lets you drop down variables while maintaining some sense of correlation. It lets you plot things that have multiple dimensions in two dimensional spcae. I have an example of this below too.
+In multidimensional scaling you keep jiggering things by comparing them to a distance function on two variables and seeing how much that differs from a distant function on all the variables. This lets you drop down variables while maintaining some sense of correlation. It lets you plot things that have multiple dimensions in two dimensional space. I have an example of this below too.
 
 ![Blogs By Scaled Down Word Count Feature Vector](/img/collective-cluster/scaled.jpg "Blogs By Scaled Down Word Count Feature Vector")
 

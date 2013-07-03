@@ -26,7 +26,7 @@
           <img class="pull-left img-circle media-object" src="http://www.gravatar.com/avatar/dfcd7f132a84516bb79ae96236e94501.png">
           <div class="media-body">
             <h4 class="media-heading">My name is <a href="/">Joshua Cole</a>...</h4>
-            I'm a programmer, an aspiring statistican, and a Christian. I'm also into competitive gaming, especially League of Legends. My writing here tends to focus on things I'm learning about through self-study. If that interests you, enjoy!
+            I'm a programmer, an aspiring statistician, and a Christian. I'm also into competitive gaming, especially League of Legends. My writing here tends to focus on things I'm learning about through self-study. If that interests you, enjoy!
           </div>
         </header>
       </div>
@@ -40,15 +40,15 @@
 
 <h2 id='a_recommendation_system'>A Recommendation System</h2>
 
-<p>The second chapter is all about building recommendation systems similar in function to the systems that give recommendations to Netflix viewers, Amazon shoppers, and last.fm listeners. The approach that these systems take is rooted in trying to recommend items that people who were similar to you also liked. The real world logic goes something like this: Usually when someone recommends something they like, another person will like it if they like similar things. So a good way to find good recommendations would be to find users who are similar in their prefrences to whoever is getting the recommendation.</p>
+<p>The second chapter is all about building recommendation systems similar in function to the systems that give recommendations to Netflix viewers, Amazon shoppers, and last.fm listeners. The approach that these systems take is rooted in trying to recommend items that people who were similar to you also liked. The real world logic goes something like this: Usually when someone recommends something they like, another person will like it if they like similar things. So a good way to find good recommendations would be to find users who are similar in their preferences to whoever is getting the recommendation.</p>
 
 <p>This broke the problem down into two parts. The first part was coming up with a way to see how similar users were. The second part was using those similar users to generate recommendations.</p>
 
-<p>The first part of that problem can be broken down even further. The first step is to define a distance function. Then the following step is merely sorting users by the distance function to find out who is &#8216;close&#8217; in the prefrence space to the person who is getting recommendations.</p>
+<p>The first part of that problem can be broken down even further. The first step is to define a distance function. Then the following step is merely sorting users by the distance function to find out who is &#8216;close&#8217; in the preference space to the person who is getting recommendations.</p>
 
-<p>There are a lot of distance functions. You can treat ratings as points and see <a href='http://en.wikipedia.org/wiki/Euclidean_distance'>how far from each other they are in euclidean space</a>. You can treat ratings as a dataset and then measure similarity by looking at <a href='https://en.wikipedia.org/wiki/Pearson_product-moment_correlation_coefficient'>the strength of their linear dependence</a>. You can even treat ratings as an admission of having seen something and then have the measure of <a href='http://www.quora.com/Machine-Learning/What-is-Tanimoto-Score-and-when-is-it-used'>distance be the porpotion of items that both parties saw to how many either saw</a>. There are plenty of other distance metrics. The tricky bit is deciding which ones makes the most sense to use.</p>
+<p>There are a lot of distance functions. You can treat ratings as points and see <a href='http://en.wikipedia.org/wiki/Euclidean_distance'>how far from each other they are in euclidean space</a>. You can treat ratings as a dataset and then measure similarity by looking at <a href='https://en.wikipedia.org/wiki/Pearson_product-moment_correlation_coefficient'>the strength of their linear dependencee</a>. You can even treat ratings as an admission of having seen something and then have the measure of <a href='http://www.quora.com/Machine-Learning/What-is-Tanimoto-Score-and-when-is-it-used'>distance be the proportion of items that both parties saw to how many either saw</a>. There are plenty of other distance metrics. The tricky bit is deciding which ones makes the most sense to use.</p>
 
-<p>From there the next thing that was needed was to use the most similar users to generate recommendations. A niave approach would be to take the most similar user and recommend something from them, but if you think about this approach has a drawback. It throws away the opinions of the other people who had good taste. A smarter approach is to factor in their opinions. To do this the author recommends items by the weighted average of their ratings where the weight is similarity between the user who gave the rating and the user receiving the recommendation.</p>
+<p>From there the next thing that was needed was to use the most similar users to generate recommendations. A naive approach would be to take the most similar user and recommend something from them, but if you think about this approach has a drawback. It throws away the opinions of the other people who had good taste. A smarter approach is to factor in their opinions. To do this the author recommends items by the weighted average of their ratings where the weight is similarity between the user who gave the rating and the user receiving the recommendation.</p>
 <table class='table'>
 	<thead>
 		<caption>An example of creating weights</caption>

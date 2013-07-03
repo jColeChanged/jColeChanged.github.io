@@ -20,10 +20,29 @@
 	"buffers":
 	[
 		{
-			"file": "_posts/2013-6-24-Collective-Clustering.md",
+			"contents": "I just finished reading through chapter four of Programming Collective Intelligence. Chapter four went over crawlers, search engines, and neural networks.\n\n#The Crawler#\n\nA crawler is a little like a web scraping job. However, it usually doesn't scrape only one or two web pages. Instead it follows link after link, retrieving information from a host of pages.\n\nI found the part of the book that went over making a crawler to be a little too simplistic. An actual crawler needs features that weren't included in the crawler that the book made. For one, it should support rate limiting so that you don't accidentally DDoS someone. For another he didn't bother mentioning robots.txt or caching.\n\nI actually ended up writing some of the code a little different then he did in this section of the chapter. The web is a graph and I learned a nice way of writing code that searches graphs while reading through Paradigms of Artificial Intelligence Programming: Case Studies in Common Lisp.\n\n#The Search Engine#\n\nJust about everyone should be familiar with Google and their famous search engine. Some people actually think of googling as a synonym for searching. Well, I learned how to make a toy search engine that ranked search results using some of the same scoring metrics that Google is known to have used.\n\nI think the coolest thing I learned from this section was that its pretty easy to use multiple metrics at the same time. You can just sum up the metrics and sort as normal, as long as you've normalized the return values. If you want one thing to be more important then another all you need to do is add a weight to each metric. It becomes not too dissimilar to calculating GPA. You multiple how well it did by how much credit things were worth to get the total amount of credit.\n\nI suppose this section isn't complete unless I touch on the one famous algorithm that I implemented as a part of this chapter.\n\n##Pagerank##\n\nPagerank is a famous algorithm developed by the founders of Google. It defines the rank of every page to be the chance that a user would have reached that page by randomly starting at an initial and website and proceeding to follow links randomly until they decided to stop.\n\nIf you spend some time thinking about it, it should be pretty obvious that really popular sites are linked to frequently. So a person randomly clicking around is more likely to get to one of these websites then a less popular website. So that page would probably receive a high-score when computed using Google’s Pagerank algorithm. Meanwhile, the sites that the popular sites linked to would also tend to be fairly popular.\n",
+			"file": "_posts/A Search Engine Study.md",
+			"file_size": 2652,
+			"file_write_time": 130171983008154197,
 			"settings":
 			{
-				"buffer_size": 3614,
+				"buffer_size": 2629,
+				"line_ending": "Windows",
+				"name": "While reading through Chapter three of Programming"
+			}
+		},
+		{
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "_layouts/default.html",
+			"settings":
+			{
+				"buffer_size": 2641,
 				"line_ending": "Windows"
 			}
 		}
@@ -132,6 +151,8 @@
 	},
 	"file_history":
 	[
+		"/C/Users/joshua/Programming/Blog/index.html",
+		"/C/Users/joshua/Programming/Blog/_posts/2013-6-25-Collective-Clustering.md",
 		"/C/Users/joshua/Programming/Blog/_posts/Learning To Chart.md",
 		"/C/Users/joshua/Programming/Blog/_posts/2013-06-21-Summer-of-Collective-Intelligence.md",
 		"/C/Users/joshua/Programming/Blog/css/blog.css",
@@ -144,7 +165,6 @@
 		"/C/Users/joshua/Programming/Blog/_posts/Summer of Collective Intelligence.md",
 		"/C/Users/joshua/Programming/Blog/_posts/2010-12-09-lisp-has-average-performance-in-google-ai-competition.markdown",
 		"/C/Users/joshua/Programming/Blog/_layouts/post.html",
-		"/C/Users/joshua/Programming/Blog/index.html",
 		"/C/Users/joshua/Programming/Blog/_posts/2013-6-08-MIT-OCW-one down more to go.md",
 		"/C/Users/joshua/Programming/Blog/_posts/2013-5-30-student.markdown",
 		"/C/Users/joshua/Programming/Blog/_posts/2010-11-03-a-little-bit-irrational.markdown",
@@ -250,31 +270,352 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 2,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "_posts/2013-6-24-Collective-Clustering.md",
+					"file": "_posts/A Search Engine Study.md",
 					"settings":
 					{
-						"buffer_size": 3614,
+						"buffer_size": 2629,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3314,
-								3314
+								2629,
+								2629
 							]
 						],
 						"settings":
 						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"auto_name": "While reading through Chapter three of Programming",
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": true,
+							"sublimelinter_gutter_marks_theme": "simple",
+							"sublimelinter_mark_style": "none",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
 							"syntax": "Packages/Markdown/Markdown.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 798.0,
+						"translation.y": 45.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": true,
+							"sublimelinter_gutter_marks_theme": "simple",
+							"sublimelinter_mark_style": "none",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "_layouts/default.html",
+					"settings":
+					{
+						"buffer_size": 2641,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1231,
+								1231
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": true,
+							"sublimelinter_gutter_marks_theme": "simple",
+							"sublimelinter_mark_style": "none",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 225.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
