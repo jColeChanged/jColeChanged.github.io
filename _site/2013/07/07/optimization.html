@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Joshua Lowell Cole" />
+    <link rel="stylesheet" href="/css/bootstrap.css" media="screen">
+  	<link rel="stylesheet" href="/css/bootstrap-responsive.css" media="screen">
+    <link rel="stylesheet" href="/css/blog.css" media="screen">
+    
+      <title>Joshua Cole: Searching A Solution Space</title>
+    
+  	<script src="http://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js"></script>
+  	<script>
+  	WebFont.load({
+  		google: {
+  			families: ['Droid Sans', 'Droid Serif', 'Droid Sans Mono']
+      }
+  	});
+  	</script>
+  </head>
+  <body>
+  	<div class="row-fluid">
+      <div class="span4">
+        <header class="media">
+          <img class="pull-left img-circle media-object" src="http://www.gravatar.com/avatar/dfcd7f132a84516bb79ae96236e94501.png">
+          <div class="media-body">
+            <h4 class="media-heading">My name is <a href="/">Joshua Cole</a>...</h4>
+            I'm a programmer, an aspiring statistician, and a Christian. I'm also into competitive gaming, especially League of Legends. My writing here tends to focus on things I'm learning about through self-study. If that interests you, enjoy!
+          </div>
+        </header>
+      </div>
+      <div class="span6">
+		    <article>
+  <h1><a href="/2013/07/07/optimization.html">Searching A Solution Space</a></h1>
+  <h2 class="muted date"><small>07 Jul 2013</small></h2>
+	<p>In the latest chapter of Programming Collective Intelligence I was introduced to ways to go about solving optimization problems. When I say optimization problem what I&#8217;m really saying is that there is a function to be minimized and a large number of solutions. The famous knapsack problem would be one example of this sort of optimization. However, programming collective intelligence made no mention of the knapsack problem. It wasn&#8217;t interested in showing how to use memoization and dynamic programming to speed up computation.</p>
+
+<p>Instead it talked about a different type of optimization problem. Sometimes the search space is so vast that checking every solution won&#8217;t work. So instead you need a different process. That is where a stochastic optimization comes in. Perhaps the simplest example of a stochastic optimization is taking a simple random sample of the solution space and then checking each of the samples to see how much they would cost and returning the one that was best. The key idea here is your reducing the search space for the sake of saving computation. Of course its easy to see there is a trade off in accuracy. You might save on computation but accuracy isn&#8217;t ensured.</p>
+
+<p>Luckily there are much cleverer stochastic optimizations then random searching. If you were to picture the search space and then add another dimension the result would be something not to different then a landscape with hills and valleys. The hills would be where the cost function was low and the valleys where the cost function was high. At least it would be that way for some types of problems. Making use of this geography allows for different algorithms.</p>
+
+<p>For example, take hill climbing. In hill climbing you look at the surrounding solutions in the solution space instead of all the solutions and try to head towards the highest-quality solutions in an iterative process. This approach is still stochastic, because you start from a random point. If you always started at the same point it wouldn&#8217;t be stochastic. However, by moving down the hills into valleys the hill climbing algorithm will always be able to reach a local minimum. That is to say it will always reach a point where its neighbors are all higher then it, but not won&#8217;t necessarily reach the very lowest point.</p>
+
+<p>This algorithm would be like dropping a ball onto the geography. It would roll downward until coming to rest.</p>
+
+<p>This algorithm, as one can imagine, will not always reach the lowest point. Other algorithms try to increase the likely hood of reaching a lower point by being even more stochastic then hill climbing. In addition to making random changes that make things better, they also introduce changes which might make things worse. This lets them search a greater area of the solution space. Included in this set of algorithms are simulated annealing and genetic algorithms.</p>
+</article>
+      </div>
+    </div>
+    <script type="text/javascript">/*<![CDATA[*/ window.olark||(function(k){var g=window,j=document,a=g.location.protocol=="https:"?"https:":"http:",i=k.name,b="load",h="addEventListener";(function(){g[i]=function(){(c.s=c.s||[]).push(arguments)};var c=g[i]._={},f=k.methods.length;while(f--){(function(l){g[i][l]=function(){g[i]("call",l,arguments)}})(k.methods[f])}c.l=k.loader;c.i=arguments.callee;c.p={0:+new Date};c.P=function(l){c.p[l]=new Date-c.p[0]};function e(){c.P(b);g[i](b)}g[h]?g[h](b,e,false):g.attachEvent("on"+b,e);c.P(1);var d=j.createElement("script"),m=document.getElementsByTagName("script")[0];d.type="text/javascript";d.async=true;d.src=a+"//"+c.l;m.parentNode.insertBefore(d,m);c.P(2)})()})({loader:(function(a){return "static.olark.com/jsclient/loader1.js?ts="+(a?a[1]:(+new Date))})(document.cookie.match(/olarkld=([0-9]+)/)),name:"olark",methods:["configure","extend","declare","identify"]}); olark.identify('5923-676-10-4978');/*]]>*/</script>
+  	<script src="http://code.jquery.com/jquery.js"></script>
+  	<script src="/js/bootstrap.min.js"></script>
+  </body>
+</html>
