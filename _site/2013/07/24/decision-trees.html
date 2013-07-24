@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Joshua Lowell Cole" />
+    <link rel="stylesheet" href="/css/bootstrap.css" media="screen">
+  	<link rel="stylesheet" href="/css/bootstrap-responsive.css" media="screen">
+    <link rel="stylesheet" href="/css/blog.css" media="screen">
+    
+      <title>Joshua Cole: Classification With Trees</title>
+    
+  	<script src="http://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js"></script>
+  	<script>
+  	WebFont.load({
+  		google: {
+  			families: ['Droid Sans', 'Droid Serif', 'Droid Sans Mono']
+      }
+  	});
+  	</script>
+  </head>
+  <body>
+  	<div class="row-fluid">
+      <div class="span4">
+        <header class="media">
+          <img class="pull-left img-circle media-object" src="http://www.gravatar.com/avatar/dfcd7f132a84516bb79ae96236e94501.png">
+          <div class="media-body">
+            <h4 class="media-heading">My name is <a href="/">Joshua Cole</a>...</h4>
+            I'm a programmer, an aspiring statistician, and a Christian. I'm also into competitive gaming, especially League of Legends. My writing here tends to focus on things I'm learning about through self-study. If that interests you, enjoy!
+          </div>
+        </header>
+      </div>
+      <div class="span6">
+		    <article>
+  <h1><a href="/2013/07/24/decision-trees.html">Classification With Trees</a></h1>
+  <h2 class="muted date"><small>24 Jul 2013</small></h2>
+	<p>Yesterday I completed chapter seven of Programming Collective Intelligence. I struggled with the chapter a little, which I found a little suprising. Decision trees were touted as simple, but I still have so many questions about them. Part of the reason that I feel a little less confident is that I was a bit lazy. I skipped over the chapter exercises. However, I did read <a href='http://www.onlamp.com/lpt/a/6464'>an article on decision trees</a> to make up for the fact that I wasn&#8217;t doing the exercises. So I wasn&#8217;t completely lazy.</p>
+
+<p>Decision trees are a machine learning technique that can be used for classification. Unlike a lot of classification algorithms, decision trees are a whitebox. That means you can actually get an explanation for why they classify something the way that they do. The procedure used to generate a decision tree tends to divide up data in a way that is useful. For example, lets say you are getting users coming to your site from various sources and you are classifying on whether they subscribe. Decision trees would quickly surface that some sites are better at converting then others. So decision trees are useful as a tool to learn things about a dataset.</p>
+
+<p>Decision trees do have some problems though. They aren&#8217;t very good at predicting numerical results. They also don&#8217;t support incremental learning; you can&#8217;t give them new data to learn from after their training is done.</p>
+
+<p>Decision trees look about like what you would expect. They are a series of if-then statements that are arranged into a tree. The questions are branches on the tree and the predictions are the leaves. The classification step is pretty easy. You simply move through the branches based on the features of your dataset until you get to a leaf node. Then once your at a leaf node you have your classification.</p>
+
+<p>Training is a little more difficult. The main idea is that at each stage you want to generate a question that splits the dataset such that you learn the most. Fancy math is used to get this result. Basically you use something called entropy to help calculate the information gain.</p>
+</article>
+      </div>
+    </div>
+    <script type="text/javascript">/*<![CDATA[*/ window.olark||(function(k){var g=window,j=document,a=g.location.protocol=="https:"?"https:":"http:",i=k.name,b="load",h="addEventListener";(function(){g[i]=function(){(c.s=c.s||[]).push(arguments)};var c=g[i]._={},f=k.methods.length;while(f--){(function(l){g[i][l]=function(){g[i]("call",l,arguments)}})(k.methods[f])}c.l=k.loader;c.i=arguments.callee;c.p={0:+new Date};c.P=function(l){c.p[l]=new Date-c.p[0]};function e(){c.P(b);g[i](b)}g[h]?g[h](b,e,false):g.attachEvent("on"+b,e);c.P(1);var d=j.createElement("script"),m=document.getElementsByTagName("script")[0];d.type="text/javascript";d.async=true;d.src=a+"//"+c.l;m.parentNode.insertBefore(d,m);c.P(2)})()})({loader:(function(a){return "static.olark.com/jsclient/loader1.js?ts="+(a?a[1]:(+new Date))})(document.cookie.match(/olarkld=([0-9]+)/)),name:"olark",methods:["configure","extend","declare","identify"]}); olark.identify('5923-676-10-4978');/*]]>*/</script>
+  	<script src="http://code.jquery.com/jquery.js"></script>
+  	<script src="/js/bootstrap.min.js"></script>
+  </body>
+</html>
