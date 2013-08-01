@@ -20,26 +20,18 @@
 	"buffers":
 	[
 		{
-			"file": "_layouts/default.html",
-			"settings":
-			{
-				"buffer_size": 2641,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "_posts/2013-6-25-Collective-Clustering.md",
-			"settings":
-			{
-				"buffer_size": 3614,
-				"line_ending": "Windows"
-			}
-		},
-		{
 			"file": "_posts/2013-6-08-MIT-OCW-one-down-more-to-go.md",
 			"settings":
 			{
 				"buffer_size": 1305,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "_posts/2013-07-24-decision-trees.md",
+			"settings":
+			{
+				"buffer_size": 2160,
 				"line_ending": "Windows"
 			}
 		},
@@ -100,11 +92,11 @@
 			}
 		},
 		{
-			"file": "/C/Users/joshua/Programming/ML/josh/chapter7/treepredict.py",
+			"file": "blog.sublime-project",
 			"settings":
 			{
-				"buffer_size": 0,
-				"line_ending": "Windows"
+				"buffer_size": 76,
+				"line_ending": "Unix"
 			}
 		}
 	],
@@ -212,16 +204,17 @@
 	},
 	"file_history":
 	[
+		"/C/Users/joshua/Programming/ML/josh/chapter7/treepredict.py",
+		"/C/Users/joshua/Programming/Blog/_posts/2013-6-25-Collective-Clustering.md",
+		"/C/Users/joshua/Programming/Blog/_layouts/default.html",
 		"/C/Users/joshua/AppData/Roaming/Sublime Text 2/Packages/User/Markdown.sublime-settings",
 		"/C/Users/joshua/Programming/Blog/_posts/2013-07-07-optimization.md",
 		"/C/Users/joshua/Programming/Blog/_posts/2013-7-03-a-search-engine-study.md",
 		"/C/Windows/System32/drivers/etc/hosts",
 		"/C/Users/joshua/Programming/Blog/index.html",
-		"/C/Users/joshua/Programming/Blog/_posts/2013-6-25-Collective-Clustering.md",
 		"/C/Users/joshua/Programming/Blog/_posts/Learning To Chart.md",
 		"/C/Users/joshua/Programming/Blog/_posts/2013-06-21-Summer-of-Collective-Intelligence.md",
 		"/C/Users/joshua/Programming/Blog/css/blog.css",
-		"/C/Users/joshua/Programming/Blog/_layouts/default.html",
 		"/C/Users/joshua/Programming/Blog/_posts/Collective Clustering.md",
 		"/C/Users/joshua/Downloads/ml-100k/ml-100k/README",
 		"/C/Users/joshua/Downloads/ml-100k/ml-100k/u.info",
@@ -334,139 +327,22 @@
 	"groups":
 	[
 		{
-			"selected": 10,
+			"selected": 9,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "_layouts/default.html",
+					"file": "_posts/2013-6-08-MIT-OCW-one-down-more-to-go.md",
 					"settings":
 					{
-						"buffer_size": 2641,
+						"buffer_size": 1305,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1231,
-								1231
-							]
-						],
-						"settings":
-						{
-							"annotations":
-							[
-								"TODO",
-								"README",
-								"FIXME"
-							],
-							"csslint_options":
-							{
-								"adjoining-classes": "warning",
-								"box-model": true,
-								"box-sizing": "warning",
-								"compatible-vendor-prefixes": "warning",
-								"display-property-grouping": true,
-								"duplicate-background-images": "warning",
-								"duplicate-properties": true,
-								"empty-rules": true,
-								"errors": true,
-								"fallback-colors": "warning",
-								"floats": "warning",
-								"font-faces": "warning",
-								"font-sizes": "warning",
-								"gradients": "warning",
-								"ids": "warning",
-								"import": "warning",
-								"important": "warning",
-								"known-properties": true,
-								"outline-none": "warning",
-								"overqualified-elements": "warning",
-								"qualified-headings": "warning",
-								"regex-selectors": "warning",
-								"rules-count": "warning",
-								"shorthand": "warning",
-								"star-property-hack": "warning",
-								"text-indent": "warning",
-								"underscore-property-hack": "warning",
-								"unique-headings": "warning",
-								"universal-selector": "warning",
-								"vendor-prefix": true,
-								"zero-units": "warning"
-							},
-							"gjslint_ignore":
-							[
-								110
-							],
-							"gjslint_options":
-							[
-							],
-							"javascript_linter": "jshint",
-							"jshint_options":
-							{
-								"browser": true,
-								"evil": true,
-								"regexdash": true,
-								"sub": true,
-								"trailing": true,
-								"wsh": true
-							},
-							"pep8": true,
-							"pep8_ignore":
-							[
-								"E501"
-							],
-							"perl_linter": "perlcritic",
-							"pyflakes_ignore":
-							[
-							],
-							"pyflakes_ignore_import_*": true,
-							"sublimelinter": true,
-							"sublimelinter_delay": 2,
-							"sublimelinter_disable":
-							[
-							],
-							"sublimelinter_executable_map":
-							{
-							},
-							"sublimelinter_fill_outlines": false,
-							"sublimelinter_gutter_marks": true,
-							"sublimelinter_gutter_marks_theme": "simple",
-							"sublimelinter_mark_style": "none",
-							"sublimelinter_notes": false,
-							"sublimelinter_objj_check_ascii": false,
-							"sublimelinter_popup_errors_on_save": false,
-							"sublimelinter_syntax_map":
-							{
-								"C++": "c",
-								"Python Django": "python",
-								"Ruby on Rails": "ruby"
-							},
-							"sublimelinter_wrap_find": true,
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "_posts/2013-6-25-Collective-Clustering.md",
-					"settings":
-					{
-						"buffer_size": 3614,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								65,
+								76,
 								0
 							]
 						],
@@ -570,19 +446,19 @@
 					"type": "text"
 				},
 				{
-					"buffer": 2,
-					"file": "_posts/2013-6-08-MIT-OCW-one-down-more-to-go.md",
+					"buffer": 1,
+					"file": "_posts/2013-07-24-decision-trees.md",
 					"settings":
 					{
-						"buffer_size": 1305,
+						"buffer_size": 2160,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								828,
-								828
+								1087,
+								1088
 							]
 						],
 						"settings":
@@ -685,7 +561,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 3,
+					"buffer": 2,
 					"file": "_posts/2013-06-21-Summer-of-Collective-Intelligence.md",
 					"settings":
 					{
@@ -801,7 +677,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 4,
+					"buffer": 3,
 					"file": "_posts/2010-11-03-a-little-bit-irrational.markdown",
 					"settings":
 					{
@@ -916,7 +792,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 5,
+					"buffer": 4,
 					"file": "_posts/2013-07-16-collective-clustering.md",
 					"settings":
 					{
@@ -1031,7 +907,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 6,
+					"buffer": 5,
 					"file": "_posts/2010-12-09-lisp-has-average-performance-in-google-ai-competition.markdown",
 					"settings":
 					{
@@ -1146,7 +1022,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 7,
+					"buffer": 6,
 					"file": "_posts/Finding Better Stories.md",
 					"settings":
 					{
@@ -1261,7 +1137,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 8,
+					"buffer": 7,
 					"file": "_posts/2013-07-07-optimization.md",
 					"settings":
 					{
@@ -1376,7 +1252,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 9,
+					"buffer": 8,
 					"file": "_posts/2013-7-03-a-search-engine-study.md",
 					"settings":
 					{
@@ -1387,8 +1263,8 @@
 						"selection":
 						[
 							[
-								2270,
-								2695
+								2730,
+								2730
 							]
 						],
 						"settings":
@@ -1485,17 +1361,17 @@
 							"syntax": "Packages/Markdown/Markdown.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 180.0,
+						"translation.y": 150.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
-					"buffer": 10,
-					"file": "/C/Users/joshua/Programming/ML/josh/chapter7/treepredict.py",
+					"buffer": 9,
+					"file": "blog.sublime-project",
 					"settings":
 					{
-						"buffer_size": 0,
+						"buffer_size": 76,
 						"regions":
 						{
 						},
@@ -1597,7 +1473,7 @@
 								"Ruby on Rails": "ruby"
 							},
 							"sublimelinter_wrap_find": true,
-							"syntax": "Packages/Python/Python.tmLanguage"
+							"syntax": "Packages/JavaScript/JSON.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
