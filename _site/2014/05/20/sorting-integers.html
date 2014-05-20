@@ -8,7 +8,7 @@
   	<link rel="stylesheet" href="/css/bootstrap-responsive.css" media="screen">
     <link rel="stylesheet" href="/css/blog.css" media="screen">
     
-      <title>Joshua Cole: Student, It Isolates Variables</title>
+      <title>Joshua Cole: Sorting A Million Integers With Memory Constraints</title>
     
   	<script src="http://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js"></script>
   	<script>
@@ -32,17 +32,20 @@
       </div>
       <div class="span6">
 		    <article>
-  <h1><a href="/2013/06/03/student.html">Student, It Isolates Variables</a></h1>
-  <h2 class="muted date"><small>03 Jun 2013</small></h2>
-	<p>Slowly, but surely, I’ve been working my way through Paradigms of Artificial Intelligence Programming (PAIP). I just finished reading up on an AI program named Student. It is a clever little bit of code that can solve word problems that wouldn’t be out of place in a high-school algebra class.</p>
+  <h1><a href="/2014/05/20/sorting-integers.html">Sorting A Million Integers With Memory Constraints</a></h1>
+  <h2 class="muted date"><small>20 May 2014</small></h2>
+	<p>I’ve been reading the textbook Introduction to Algorithms. It’s a famous book widely known as CLRS because it had four authors: Cormen, Leiserson, Rivest, and Stein. Hopefully the acronym is obvious.</p>
 
-<p>Though, I’m not really sure that clever is the best way to describe the code. Really, when it gets down to it, the magic in Student is the same as the magic in Eliza. They both use extremely basic pattern matching: a regex like pattern with capture capabilities and a matching bit of data that the captured input will be transplanted into.</p>
+<p>In the book I’ve been encountering a whole slew of search algorithms. Apparently searching is dearly loved by computer science. While reading the text I’ve encountered insertion, bubble, merge, quick, heap, counting, and bucket sort just to name a few. At some point I ended up using Google to search around for information about sorting in Python. It was then that I encountered an interesting problem: How does one go about sorting a million 32-bit integers in 2MB of RAM in Python?</p>
 
-<p>There are a few differences between the two programs. For example, the pattern matching code of Eliza is ready to quit after finding its first match, but Student recursively matches every part of its input. If you give it a paragraph it will keep on breaking the input up until it has a series of equations which model the problem that was given.</p>
+<p>A similar question was asked to President Obama by Google’s CEO Eric Schmidt, but the person I found who was tackling the problem was none other than the creator of Python himself, Guido van Rossum. He solved the problem by using the tempfile, array, and heapq libraries.</p>
 
-<p>Like Eliza, the short fall of the program is pretty obvious. If you give it a bit of math that doesn’t fit into the patterns that were supplied for it, it won’t behave properly. Yet it is still pretty cool when it does behave properly. It doesn’t just spit out a response once it finishes parsing its input. Instead it proceeds to solve the equations it was given.</p>
+<p>I decided I was going to try tackling the same problem. I’m actually interested in dealing with large datasets so it seemed like the sort of thing I should understand how to do. Like guido I started off by using arrays and tempfiles. Our solutions did end up differing though. I decided to write my own merging algorithm based off merge sort instead of using heapq.</p>
 
-<p>This turns out to be much simpler than one might expect. If you think about it, the root of most equations in which you are solving for one variable is isolating that one variable. You just keep moving things around using simple rules until the unknown is the only thing on one side of the equals sign. At that point things are solved. So once you type out exactly how to invert each of the mathematical operations that Student is likely to encounter, solving the equations becomes <a href="http://books.google.com/books?id=7papZR4oVssC&pg=PA84&lpg=PA84&dq=trivial+feynman&source=bl&ots=esUV9cqQ_W&sig=HAJwHxBqT6vVxG9eH7O4YE7IzuM&hl=en&sa=X&ei=wCqsUeLCIOSL0QGn0oHQDg&ved=0CDwQ6AEwAg#v=onepage&q=trivial%20feynman&f=false">trivial</a>.</p>
+<p>I learned that using generators can get pretty hairy. Generators have the property that once you look at something its gone. This ended up being annoying, because I was dealing with two generators at once and I needed to make decisions based on the contents of the first item in the generator while looping. It led to some really ugly looking code.</p>
+
+<p>Anyway, here is the code I wrote in a gist:</p>
+<script src='https://gist.github.com/jColeChanged/06cecc001d3004a3c45a.js'><![CDATA[]]></script>
 </article>
       </div>
     </div>

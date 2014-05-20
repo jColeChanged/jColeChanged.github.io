@@ -34,38 +34,32 @@
 		    <article>
   <h1><a href="/2013/07/03/a-search-engine-study.html">A Search Engine Study</a></h1>
   <h2 class="muted date"><small>03 Jul 2013</small></h2>
-	<p>I just finished reading through chapter four of Programming Collective Intelligence. Chapter four went over crawlers, search engines, and neural networks.</p>
+	<p>I just finished reading through chapter four of Programming Collective Intelligence. It went over crawlers, search engines, and neural networks. I ended up getting the chance to build an application which used each of these technologies.</p>
 
-<h1 id='the_crawler'>The Crawler</h1>
+<p>Some of the technologies I had actually encountered before. I’m not new to scraping and crawler is just a scraper that ends up following links to continue it’s work. Having already been introduced to the topic before hand I actually found this section of the text to be rather disappointing. I wouldn’t trust the basics of the scraper that was given in this book, because it has a few glaring problems. An actual crawler needs to do things like respect robots.txt and handle rate limiting. It also might be wise to introduce caching so the same page doesn’t get scraped multiple times.</p>
 
-<p>A crawler is a little like a web scraping job. However, it usually doesn&#8217;t scrape only one or two web pages. Instead it follows link after link, retrieving information from a host of pages.</p>
+<p>So when I wrote my scraper I did it a little differently the author did. In fact, I actually took a lot more inspiration from Peter Norvig than I did from Toby Segeran. In Paradigms of Artificial Intelligence Programming there was a beautiful method of treating a graph as a list that Peter ended up using. I recognized that the web was a graph, so I copied the central idea of that code.</p>
 
-<p>I found the part of the book that went over making a crawler to be a little too simplistic. An actual crawler needs features that weren&#8217;t included in the crawler that the book made. For one, it should support rate limiting so that you don&#8217;t accidentally DDoS someone. For another he didn&#8217;t bother mentioning robots.txt or caching.</p>
+<p>The search engine itself was much more interesting to learn about. I learned how to make a toy search engine that ranked search results using some of the same scoring metrics that Google is known to have used.</p>
 
-<p>I actually ended up writing some of the code a little different then he did in this section of the chapter. The web is a graph and I learned a nice way of writing code that searches graphs while reading through Paradigms of Artificial Intelligence Programming: Case Studies in Common Lisp.</p>
+<p>I think the coolest thing I learned from this section was that its pretty easy to use multiple metrics at the same time. You can just sum up the metrics and sort as normal, as long as you’ve normalized the return values. If you want one thing to be more important then another all you need to do is add a weight to each metric. It becomes not too dissimilar to calculating GPA. You multiply how well it did by how much credit things were worth to get the total amount of credit.</p>
 
-<h1 id='the_search_engine'>The Search Engine</h1>
+<p>I suppose this section isn’t complete unless I touch on the one famous algorithm that I implemented as a part of this chapter. Pagerank.</p>
 
-<p>Just about everyone should be familiar with Google and their famous search engine. Some people actually think of googling as a synonym for searching. Well, I learned how to make a toy search engine that ranked search results using some of the same scoring metrics that Google is known to have used.</p>
-
-<p>I think the coolest thing I learned from this section was that its pretty easy to use multiple metrics at the same time. You can just sum up the metrics and sort as normal, as long as you&#8217;ve normalized the return values. If you want one thing to be more important then another all you need to do is add a weight to each metric. It becomes not too dissimilar to calculating GPA. You multiply how well it did by how much credit things were worth to get the total amount of credit.</p>
-
-<p>I suppose this section isn&#8217;t complete unless I touch on the one famous algorithm that I implemented as a part of this chapter.</p>
-
-<h2 id='pagerank'>Pagerank</h2>
-
-<p>Pagerank is a famous algorithm developed by the founders of Google. It defines the rank of every page to be the chance that a user would have reached that page by randomly starting at an initial and website and proceeding to follow links randomly until they decided to stop.</p>
+<p>Pagerank is a famous algorithm developed by the founders of Google. It defines the rank of every page to be the chance that a user would have reached that page by randomly sttarting at an initial website and proceeding to follow links randomly until they decided to stop.</p>
 
 <p>If you spend some time thinking about it, it should be pretty obvious that really popular sites are linked to frequently. So a person randomly clicking around is more likely to get to one of these websites then a less popular website. So that page would probably receive a high-score when computed using Google’s Pagerank algorithm. Meanwhile, the sites that the popular sites linked to would also tend to be fairly popular.</p>
 
-<h1 id='what_i_did'>What I Did</h1>
+<h1 id="what_i_did">What I Did</h1>
 
 <ul>
 <li>I built a crawler.</li>
 
 <li>I built a search engine.</li>
 
-<li>I implemented several scoring functions.</li>
+<li>I implemented several scoring functions, including Pagerank.</li>
+
+<li>I boggled at the neural network code. I’ll need to go back and re-read that section.</li>
 </ul>
 </article>
       </div>
