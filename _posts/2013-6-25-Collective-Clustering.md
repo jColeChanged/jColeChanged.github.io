@@ -13,15 +13,15 @@ While working through the last chapter I happened to create a few dendrodgrams. 
 
 ![Dendrogram of Blog Clustering by Word Use](/img/collective-cluster/dend1.jpg "Dendrogram of Blog Clustering by Word Use")
 
-A far more interesting dendogram that I produced show what desires tend to be grouped together. A now dead site named zebo.com used to collect information about what people wanted. Using the data that they had made avaialable I made a dendrogram of what things people tended to like. I found persuing this graphic to be quite enjoyable.
+A far more interesting dendogram that I produced show what desires tend to be grouped together. A now dead site named zebo.com used to collect information about what people wanted. Using the data that they had made available I made a dendrogram of what things people tended to like. I found pursuing this graphic to be quite enjoyable.
 
 ![Dendrogram of Desires by Shared Desires](/img/collective-cluster/dend2.jpg "Dendrogram of Desires by Shared Desires")
 
 #k-means Clustering#
 
-Earlier I said that hierarchical clustering compared everything to everything else in order to figure out what two clusters were the closest to each other. As you can imagine this has terrible perforamance. O(n^2) to be more precise. Memoziation can be used to make things a bit faster then that in practice, but the algorithm still doesn't have the most wonderful scaling properties even with that. That is where K Means clustering comes in.
+Earlier I said that hierarchical clustering compared everything to everything else in order to figure out what two clusters were the closest to each other. As you can imagine this has terrible performance. O(n^2) to be more precise. Memoziation can be used to make things a bit faster then that in practice, but the algorithm still doesn't have the most wonderful scaling properties even with that. That is where K Means clustering comes in.
 
-In [k-means clustering](http://en.wikipedia.org/wiki/K-means_clustering) you basically establish somy dummy clusters called centroids. You create k of them. Then you find the closest centroid to a cluster. You lose the ability to make a dendrogram, things becomes even more arbitrary since the centroid selection is pretty random, and in exchange you gain an O(nk) search for the nearest element.
+In [k-means clustering](http://en.wikipedia.org/wiki/K-means_clustering) you basically establish some dummy clusters called centroids. You create k of them. Then you find the closest centroid to a cluster. You lose the ability to make a dendrogram, things becomes even more arbitrary since the centroid selection is pretty random, and in exchange you gain an O(nk) search for the nearest element.
 
 #Multidimensional Scaling#
 
