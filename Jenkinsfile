@@ -3,7 +3,11 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                sh 'ruby --version'
+                sh 'gem install bundler jekyll'
+                sh 'bundler --version'
+                sh 'bundle install'
+                sh 'bundle exec jekyll build'
+                sh 'bundle exec htmlproofer ./_site --url-ignore "/#.*/"'
             }
         }
     }
