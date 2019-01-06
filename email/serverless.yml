@@ -1,0 +1,74 @@
+service: joshuas-email
+
+custom:
+  siteName: joshuacol.es
+
+provider:
+  name: aws
+  runtime: python3.6
+  region: us-east-1
+
+resources:
+
+  Resources:
+
+    MailCNAME:
+      Type: "AWS::Route53::RecordSet"
+      Properties:
+        Name: "mail.joshuacol.es."
+        Type: "CNAME"
+        HostedZoneName: ${self:custom.siteName}.
+        TTL: "3600"
+        ResourceRecords:
+          - "privateemail.com."
+
+    AutoDiscoverCNAME:
+      Type: "AWS::Route53::RecordSet"
+      Properties:
+        Name: "autodiscover.joshuacol.es."
+        Type: "CNAME"
+        HostedZoneName: ${self:custom.siteName}.
+        TTL: "3600"
+        ResourceRecords:
+          - "privateemail.com."
+
+    AutoConfigCNAME:
+      Type: "AWS::Route53::RecordSet"
+      Properties:
+        Name: "autoconfig.joshuacol.es."
+        Type: "CNAME"
+        HostedZoneName: ${self:custom.siteName}.
+        TTL: "3600"
+        ResourceRecords:
+          - "privateemail.com."
+
+    EmailConfigMXOne:
+      Type: "AWS::Route53::RecordSet"
+      Properties:
+        Name: "joshuacol.es."
+        Type: "MX"
+        HostedZoneName: ${self:custom.siteName}.
+        TTL: "3600"
+        ResourceRecords:
+          - "10 mx1.privateemail.com."
+          - "10 mx2.privateemail.com."
+
+    EmailConfigTXT:
+      Type: "AWS::Route53::RecordSet"
+      Properties:
+        Name: "joshuacol.es."
+        Type: "TXT"
+        HostedZoneName: ${self:custom.siteName}.
+        TTL: "3600"
+        ResourceRecords:
+          - "\"v=spf1 include:spf.privateemail.com ~all\""
+
+    EmailConfigSRV:
+      Type: "AWS::Route53::RecordSet"
+      Properties:
+        Name: "_autodiscover._tcp.joshuacol.es"
+        Type: "SRV"
+        HostedZoneName: ${self:custom.siteName}.
+        TTL: "3600"
+        ResourceRecords:
+          - "1 0 443 privateemail.com."

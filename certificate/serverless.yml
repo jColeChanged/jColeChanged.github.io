@@ -1,0 +1,22 @@
+service: joshuas-certificate
+
+provider:
+  name: aws
+  runtime: python3.6
+  region: us-east-1
+
+  
+resources:
+  Resources:
+    AcmCertificate:
+      Type: "AWS::CertificateManager::Certificate"
+      Properties:
+        DomainName: "joshuacol.es"
+        ValidationMethod: "EMAIL"
+
+  Outputs:
+    AcmCertificate:
+      Value:
+        Ref: AcmCertificate
+      Export:
+        Name: AcmCertificate
