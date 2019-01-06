@@ -3,8 +3,7 @@ layout: post
 title: A Summer of Collective Intelligence
 published: true
 ---
-This summer I'm reading through Programming Collective Intelligence as part of an independent study group. The book covers a variety of machine learning algorithms that can be used to build a ton of cool things, like recommendation systems and search engines. We plan to get through two chapters each week and then cap each week off with a Google Hangout session in which we share what we wrote. If your interested in the code we write, [we're hosting our work on github](https://github.com/jessicatysu/ML).
-
+This summer I'm reading through Programming Collective Intelligence as part of an independent study group. The book covers a variety of machine learning algorithms that can be used to build a ton of cool things, like recommendation systems and search engines. We plan to get through two chapters each week and then cap each week off with a Google Hangout session in which we share what we wrote.
 
 In addition to sharing what I do with my study group via hangouts, I'm also planning to share on my blog. I figure that it will both help me learn the material and also allow me to better see my progress.
 

@@ -4,22 +4,16 @@ title: Lisp Has Average Performance in Google AI Competition
 published: true
 ---
 A while back a [blog](http://www.r-chart.com/2010/12/google-ai-challenge-languages-used-by.html) at [r-chart](http://www.r-chart.com/) analyzed 
-the [Google AI Competition](http://ai-contest.com/) rankings. That blog post inspired me to try applying some of the 
+the Google AI Competition rankings. That blog post inspired me to try applying some of the 
 things I've been learning about in courses offered through Carnegie Mellon's Open Learning Initiative. 
 
 
 The first step was to get the data. To do that I used a really cool scraping library 
 called [Enlive](https://github.com/cgrand/enlive) which lets you scrape HTML using CSS 
 selectors. Enlive is actually a templating library, but it allows for such clean 
-separation of presentation and logic that it handles scraping too. To see how I 
-did that in more detail you can look at the code on 
-[github](https://github.com/jColeChanged/stats-env), but don't bother if you're only after 
-the data. I figured that some of you might want to do your own analysis so here is a 
-[tab delimited csv file](http://dl.dropbox.com/u/2537320/data.csv) of the rankings and to 
-reduce the barrier to entry that much farther this is a 
-[public google spreadsheet](https://spreadsheets.google.com/ccc?key=0AmdrW-WZLahvdEotcEY4VnJIMGtEWjNueXNzeElDcUE&amp;hl=en) 
-that also has the data.
+separation of presentation and logic that it handles scraping too.
 
+Here is a [public google spreadsheet](https://spreadsheets.google.com/ccc?key=0AmdrW-WZLahvdEotcEY4VnJIMGtEWjNueXNzeElDcUE&amp;hl=en) that has the scraped data.
 
 The next step was to come up with some questions to answer. The obvious ones popped into my head, &ldquo;Is Java really 
 the language of the average programmer? How did Lisp do in comparison to Java?&rdquo; Unfortunately, those questions 
