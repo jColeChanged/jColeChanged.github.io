@@ -115,7 +115,7 @@ pipeline {
             }
             post {
                 always {
-                    archiveArtifacts artifacts: '_site/**/*.*', fingerprint: true
+                    archiveArtifacts artifacts: 'jekyll/_site/**/*.*', fingerprint: true
                 }
             }
         }

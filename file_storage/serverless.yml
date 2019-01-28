@@ -13,7 +13,7 @@ custom:
   aliasDNSName: s3-website-us-east-1.amazonaws.com
   s3Sync:
     - bucketName: ${self:custom.bucketName}
-      localDir: ../_site
+      localDir: ../jekyll/_site
 
 provider:
   name: aws
