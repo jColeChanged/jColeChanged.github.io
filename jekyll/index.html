@@ -2,7 +2,7 @@
 layout: default
 ---
 <section id="blog">
-  <h1>Blog Posts</h1>
+  <h4>Blog Posts</h4>
   <ul class="unstyled">
   {% for post in site.posts %}
     <li><small class="muted date">{{ post.date | date_to_string }}</small> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
@@ -11,7 +11,7 @@ layout: default
 </section>
 
 <section id="projects">
-  <h1>Tools</h1>
+  <h4>Tools</h4>
   <ul class="unstyled">
     <li><a href="/svg2d3.html">SVG To D3.js Compiler</a></li>
   </ul>
