@@ -2,26 +2,19 @@
 layout: default
 ---
 <section id="blog">
-	<h1>Blog Posts</h1>
-	<ul class="unstyled">
-		{% for post in site.posts %}
-			<li><small class="muted date">{{ post.date | date_to_string }}</small> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
-		{% endfor %}
-	</ul>
+  <h1>Blog Posts</h1>
+  <ul class="unstyled">
+  {% for post in site.posts %}
+    <li><small class="muted date">{{ post.date | date_to_string }}</small> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+  {% endfor %}
+  </ul>
 </section>
+
 <section id="projects">
-  <h1>Projects</h1>
+  <h1>Tools</h1>
   <ul class="unstyled">
     <li><a href="/svg2d3.html">SVG To D3.js Compiler</a></li>
-    <li><a href="https://github.com/jColeChanged/html-to-markdown">Enlive to Markdown</a></li>
   </ul>
 </section>
-<section id="recommendations">
-  <h1>Recommendations</h1>
-  <ul class="unstyled">
-    <li><a href="https://www.twitch.tv/">Twitch TV</a></li>
-    <li><a href="https://github.com/">Github</a></li>
-    <li><a href="https://ocw.mit.edu/index.htm">MIT OpenCourseWare</a></li>
-  </ul>
-</section>
+
   
