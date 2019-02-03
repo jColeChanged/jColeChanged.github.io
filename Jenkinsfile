@@ -13,9 +13,16 @@ pipeline {
         LANG = 'C.UTF-8'
     }
     stages {
+        stage('Install') {
+	    steps {
+	        sh 'npm install'
+	        sh 'pipenv install'
+                sh 'gem install bundler'
+                sh 'bundle install'
+	    }
+        }
         stage('build_cf_email') {
             steps {
-                sh 'npm install'
                 sh 'cd email && ../node_modules/serverless/bin/serverless package'
             }
             post {
@@ -26,20 +33,17 @@ pipeline {
         }
         stage('test_cf_email') {
             steps {
-                sh 'pipenv install'
                 sh 'python3 -m pipenv run python -m cfnlint email/.serverless/cloudformation-template-create-stack.json'
                 sh 'python3 -m pipenv run python -m cfnlint email/.serverless/cloudformation-template-update-stack.json'
             }
         }
         stage('deploy_cf_email') {
             steps {
-                sh 'npm install'
                 sh 'cd email && ../node_modules/serverless/bin/serverless deploy --verbose --package'
             }
         }
         stage('build_cf_cert') {
             steps {
-                sh 'npm install'
                 sh 'cd certificate && ../node_modules/serverless/bin/serverless package'
             }
             post {
@@ -50,20 +54,17 @@ pipeline {
         }
         stage('test_cf_cert') {
             steps {
-                sh 'pipenv install'
                 sh 'python3 -m pipenv run python -m cfnlint certificate/.serverless/cloudformation-template-create-stack.json'
                 sh 'python3 -m pipenv run python -m cfnlint certificate/.serverless/cloudformation-template-update-stack.json'
             }
         }
         stage('deploy_cf_cert') {
             steps {
-                sh 'npm install'
                 sh 'cd certificate && ../node_modules/serverless/bin/serverless deploy --verbose --package'
             }
         }
         stage('build_cf_fs') {
             steps {
-                sh 'npm install'
                 sh 'cd file_storage && ../node_modules/serverless/bin/serverless package'
             }
             post {
@@ -74,15 +75,12 @@ pipeline {
         }
         stage('test_cf_fs') {
             steps {
-                sh 'pipenv install'
                 sh 'python3 -m pipenv run python -m cfnlint file_storage/.serverless/cloudformation-template-create-stack.json'
                 sh 'python3 -m pipenv run python -m cfnlint file_storage/.serverless/cloudformation-template-update-stack.json'
             }
         }
         stage('build_files') {
             steps {
-                sh 'gem install bundler'
-                sh 'bundle install'
                 sh 'cd jekyll && bundle exec jekyll build'
                 sh 'cd jekyll && bundle exec htmlproofer ./_site --url-ignore "/#.*/"'
             }
@@ -94,13 +92,11 @@ pipeline {
         }
         stage('deploy_cf_fs') {
             steps {
-                sh 'npm install'
                 sh 'cd file_storage && ../node_modules/serverless/bin/serverless deploy --verbose --package'
             }
         }
         stage('build_cf_cdn') {
             steps {
-                sh 'npm install'
                 sh 'cd cdn && ../node_modules/serverless/bin/serverless package'
             }
             post {
@@ -111,17 +107,14 @@ pipeline {
         }
         stage('test_cf_cdn') {
             steps {
-                sh 'pipenv install'
                 sh 'python3 -m pipenv run python -m cfnlint cdn/.serverless/cloudformation-template-create-stack.json'
                 sh 'python3 -m pipenv run python -m cfnlint cdn/.serverless/cloudformation-template-update-stack.json'
             }
         }
         stage('deploy_cf_cdn') {
             steps {
-                sh 'npm install'
                 sh 'cd cdn && ../node_modules/serverless/bin/serverless deploy --verbose --package'
             }
         }
-
     }
 }
