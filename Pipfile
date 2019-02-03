@@ -8,6 +8,7 @@ verify_ssl = true
 [packages]
 pytest = "*"
 cfn-lint = "*"
+pyyaml = ">=3.13"
 
 [requires]
 python_version = "3.6"
