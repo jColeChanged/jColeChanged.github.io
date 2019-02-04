@@ -2,46 +2,47 @@
 <html lang="en">
   <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Joshua Lowell Cole" />
     <link rel="stylesheet" href="/css/bootstrap.css" media="screen">
-  	<link rel="stylesheet" href="/css/bootstrap-responsive.css" media="screen">
+    <link rel="stylesheet" href="/css/bootstrap-responsive.css" media="screen">
     <link rel="stylesheet" href="/css/blog.css" media="screen">
     {% if page.title %}
       <title>Joshua Cole: {{ page.title }}</title>
     {% else %}
       <title>Joshua Cole: Home</title>
     {% endif %}
-  	<script src="https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js"></script>
-  	<script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js"></script>
+    <script>
   	WebFont.load({
-  		google: {
-  			families: ['Droid Sans', 'Droid Serif', 'Droid Sans Mono']
-      }
+            google: {
+                families: ['Droid Sans', 'Droid Serif', 'Droid Sans Mono']
+            }
   	});
-  	</script>
+    </script>
   </head>
   <body>
-  	<div class="row-fluid">
-      <div class="span4">
-        <header class="media">
-          <img
-	    class="pull-left img-circle media-object"
-	    src="https://www.gravatar.com/avatar/dfcd7f132a84516bb79ae96236e94501.png"
-	    alt="Joshua's Gravatar"
-	    >
-          <div class="media-body">
-            <h4 class="media-heading">My name is <a href="/">Joshua Cole</a>...</h4>
-                I'm a software engineer by day and a competitive gamer by night.
-          </div>
-        </header>
-      </div>
-      <div class="span6">
-		    {{ content }}
-      </div>
+  <div class="row-fluid">
+    <div class="span4">
+      <header class="media">
+        <img
+	  class="pull-left img-circle media-objectt"
+	  src="https://www.gravatar.com/avatar/dfcd7f132a84516bb79ae96236e94501.png"
+	  alt="Joshua's Gravatar">
+        <div class="media-body">
+          <h4 class="media-heading">My name is Joshua</h4>
+	  I'm a software engineer who wants to make state of the art machine learning backed
+	  products. When I'm not learning or working, I'm likely to be playing video games or
+	  reading books. 
+        </div>
+      </header>
     </div>
-    <script type="text/javascript">/*<![CDATA[*/ window.olark||(function(k){var g=window,j=document,a=g.location.protocol=="https:"?"https:":"http:",i=k.name,b="load",h="addEventListener";(function(){g[i]=function(){(c.s=c.s||[]).push(arguments)};var c=g[i]._={},f=k.methods.length;while(f--){(function(l){g[i][l]=function(){g[i]("call",l,arguments)}})(k.methods[f])}c.l=k.loader;c.i=arguments.callee;c.p={0:+new Date};c.P=function(l){c.p[l]=new Date-c.p[0]};function e(){c.P(b);g[i](b)}g[h]?g[h](b,e,false):g.attachEvent("on"+b,e);c.P(1);var d=j.createElement("script"),m=document.getElementsByTagName("script")[0];d.type="text/javascript";d.async=true;d.src=a+"//"+c.l;m.parentNode.insertBefore(d,m);c.P(2)})()})({loader:(function(a){return "static.olark.com/jsclient/loader1.js?ts="+(a?a[1]:(+new Date))})(document.cookie.match(/olarkld=([0-9]+)/)),name:"olark",methods:["configure","extend","declare","identify"]}); olark.identify('5923-676-10-4978');/*]]>*/</script>
-  	<script src="https://code.jquery.com/jquery.js"></script>
-  	<script src="/js/bootstrap.min.js"></script>
+    <div class="span6">
+      {{ content }}
+    </div>
+    
+  </div>
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <script src="/js/bootstrap.min.js"></script>
   </body>
 </html>
