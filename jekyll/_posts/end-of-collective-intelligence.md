@@ -1,3 +1,0 @@
-I haven't been reading through Proramming Collective Intelligence anymore. Most of the group stopped and there are only two chapters left. One of those chapters actually covers material I have already been exposed to. Basically, I'm done with the book and ready to move on to new material. Or rather, I'm ready to move back to material I had been working on prior to starting my summer projects.
-
-That means I went back to working through various MIT courses, namely: Statistics, Linear Algebra, and Calculus. This week I finished a chapter from a Statistics textbook. The material covered probability distributions.
