@@ -19,7 +19,7 @@ provider:
 resources:
 
   Resources:
-
+    
     SiteCDN:
       Type: "AWS::CloudFront::Distribution"
       Properties:
@@ -46,6 +46,10 @@ resources:
           ViewerCertificate:
             SslSupportMethod: "sni-only"
             AcmCertificateArn: ${cf:joshuas-certificate-dev.AcmCertificate}
+          Logging:
+            Bucket: ${cf:joshuas-static-blog-dev.LogBucketAddress}
+            IncludeCookies: false
+            Prefix: "cdn"
 
     DnsRecordA:
       Type: "AWS::Route53::RecordSet"

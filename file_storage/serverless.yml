@@ -24,6 +24,12 @@ resources:
 
   Resources:
 
+    LogBucket:
+      Type: AWS::S3::Bucket
+      Properties:
+        AccessControl: "Private"
+        BucketName: "jcolesitelogs"
+
     StaticSite:
       Type: AWS::S3::Bucket
       Properties:
@@ -57,8 +63,15 @@ resources:
                 ]
 
   Outputs:
+    LogBucketAddress:
+      Value:
+        "Fn::GetAtt": [ "LogBucket", "DomainName" ]
+      Export:
+        Name: LogBucketAddress
     StaticSite:
       Value:
         Ref: StaticSite
       Export:
         Name: StaticSite
+
+    
