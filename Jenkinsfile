@@ -1,9 +1,9 @@
 pipeline {
     agent {
         dockerfile {
-	    // https://stackoverflow.com/questions/44805076/
-	    args '-u 0:0' 
-	}
+            // https://stackoverflow.com/questions/44805076/
+            args '-u 0:0'
+        }
     }
     environment {
         HOME = '/home'
@@ -14,12 +14,12 @@ pipeline {
     }
     stages {
         stage('Install') {
-	    steps {
-	        sh 'npm install'
-	        sh 'pipenv install'
+            steps {
+                sh 'npm install'
+                sh 'pipenv install'
                 sh 'gem install bundler'
                 sh 'bundle install'
-	    }
+            }
         }
         stage('Email') {
             steps {
@@ -42,6 +42,8 @@ pipeline {
                 sh 'cd file_storage && ../node_modules/serverless/bin/serverless package'
                 sh 'python3 -m pipenv run python -m cfnlint file_storage/.serverless/cloudformation-template-create-stack.json'
                 sh 'python3 -m pipenv run python -m cfnlint file_storage/.serverless/cloudformation-template-update-stack.json'
+                sh 'mdl jekyll/_posts'
+                sh 'proselint jekyll/_posts'
                 sh 'cd jekyll && bundle exec jekyll build'
                 sh 'cd jekyll && bundle exec htmlproofer ./_site --url-ignore "/#.*/"'
                 sh 'cd file_storage && ../node_modules/serverless/bin/serverless deploy --verbose --package'

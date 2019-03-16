@@ -9,6 +9,7 @@ verify_ssl = true
 pytest = "*"
 cfn-lint = "*"
 pyyaml = ">=3.13"
+proselint = "*"
 
 [requires]
 python_version = "3.6"
