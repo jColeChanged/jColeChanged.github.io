@@ -39,7 +39,6 @@ familiar with the language:
    "Why do you want ?*y"))
 ```
 
-
 So what we have above is a list of two items. The first item is a string and
 the second item is a list. That first string, it is a pattern. Whenever Eliza
 is told something it will check this rule and look at the pattern. It will then

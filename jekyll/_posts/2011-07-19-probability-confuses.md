@@ -3,7 +3,6 @@ layout: post
 title: Probability Confuses
 published: true
 ---
-
 Most of the people who read this blog have already discovered that I'm
 interested in both probability and statistics. What they might not guess is
 that this passion of mine leads to minor conflict with my family. Not serious
@@ -33,7 +32,7 @@ worlds highest IQ, published what it is now known as the
 > Behind one door is a car; behind the others, goats. You pick a door, say No.
 > 1, and the host, who knows what's behind the doors, opens another door, say
 > No. 3, which has a goat. He then says to you, “Do you want to pick door No.
-> 2?” Is it to your advantage to switch your choice?
+> 2?” Is it to your advantage to switch your choice?
 
 Savant claimed that the best thing to do in this situation would be to switch
 doors. She correctly reasoned that by switching doors you would give yourself

@@ -20,7 +20,7 @@ calculate the average amount which will be won.
 average win = chance to Win * pot size
 ```
 
-Of course, knowing how much I was expected to win isn't enough to know if 
+Of course, knowing how much I was expected to win isn't enough to know if
 the game is worth playing. I also factor in how much I had to pay to have a
 chance at winning the money. The expected return on each game is actually our
 chance to win multiplied by the pot size minus the amount we payed to get into

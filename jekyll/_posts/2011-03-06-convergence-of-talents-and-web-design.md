@@ -3,7 +3,6 @@ layout: post
 title: Visualization and Web Design
 published: true
 ---
-
 I recently started reading Edward Tufte&rsquo;s &ldquo;The Visual Display of
 Quantitative Information.&rdquo; In it Tufte spends some time going over the
 history of the field. He notes that many charts require both artistic and
@@ -39,5 +38,5 @@ being the former. When these three talents converge you get both a good
 graphic and a good website design.
 
 [1]: https://chess.com/
-[2]: https://lh6.googleusercontent.com/yOK8dZ4pyci7m_yhx08iTg2nFQGpNmqeb2jDMNJZZamWl1Ia5GyURhyB8cuL6P--wltsL7p0eAXwutSoM_68G_U_OJ3WAE5vvE3sps9ztm4W64o_4liH9e5INS8g3q4e "Picture of an interactive table view of available chess games"
-[3]: https://lh4.googleusercontent.com/Pa1pZjFWgrtTCpqXbCZBV8QPYLdiLuTYjJWXqp5fYjHqSHBx0fDlpSSr9rvXkB9Zr-BZxZv7vwMSwcl05tldY5OwfldGmMEY4LXzRaXmyNsIuaCWULpToD8K_bSoZcf3 "Picture of Interactive Chart with time controls as the x axis and rating as the y axis"
+[2]: https://lh6.googleusercontent.com/yOK8dZ4pyci7m_yhx08iTg2nFQGpNmqeb2jDMNJZZamWl1Ia5GyURhyB8cuL6P--wltsL7p0eAXwutSoM_68G_U_OJ3WAE5vvE3sps9ztm4W64o_4liH9e5INS8g3q4e
+[3]: https://lh4.googleusercontent.com/Pa1pZjFWgrtTCpqXbCZBV8QPYLdiLuTYjJWXqp5fYjHqSHBx0fDlpSSr9rvXkB9Zr-BZxZv7vwMSwcl05tldY5OwfldGmMEY4LXzRaXmyNsIuaCWULpToD8K_bSoZcf3
