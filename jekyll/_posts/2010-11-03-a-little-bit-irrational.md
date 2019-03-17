@@ -13,16 +13,16 @@ marked card from a deck of five-hundred cards.
 
 When I did the math, I realized that getting into the card game didn't make
 much sense. When I broke things down I found that there was roughly a 1%
-chance of winning the game. You can use that information to calculate the
-average amount which will be won.
+chance of winning the game. I knew that I could use that information to
+calculate the average amount which will be won.
 
 ```
 average win = chance to Win * pot size
 ```
 
-Of course, knowing how much you were expected to win isn't very useful unless
-you factor in how much you had to pay to have a chance at winning the money. If
-we put all this together we find that our expected return on each game is our
+Of course, knowing how much I was expected to win isn't enough to know if 
+the game is worth playing. I also factor in how much I had to pay to have a
+chance at winning the money. The expected return on each game is actually our
 chance to win multiplied by the pot size minus the amount we payed to get into
 the game.
 
@@ -35,9 +35,10 @@ and graph the result?
 
 ![Average Returns][1]
 
-Basically, unless the pot has more then a hundred dollars in it, you are going
-in expecting to lose money. So since there is no guarantee that you will stay
-in every week, it doesn't make sense to get into the game, unless you are doing
-it for the social experience.
+Basically, unless the pot has more then a hundred dollars in it, we are going
+in expecting to lose money. So since there is no guarantee that we will stay
+in every week, it doesn't make sense to get into the game. Though I suppose
+people could get non-monetary returns, like social opportunity, which might
+overwhelm the trivial pot sizes.
 
 [1]: /img/a-little-bit-irrational/average-return.png "Average Returns"

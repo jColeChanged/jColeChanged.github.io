@@ -18,11 +18,14 @@ Here is a [public google spreadsheet][4] that has the scraped data.
 The next step was to come up with some questions to answer. I've read a lot
 of the writing of Paul Graham, including his strong advocation for Lisp. So
 some of the questions which popped into my head as worth investigating were
-"Is Java really the language of the average programmer and how did Lisp do in
-comparison to Java?" Unfortunately, those questions can't be answered with
-these rankings due [selection bias][5]. There is a sample bias in the dataset.
-Average programmers aren't joining AI competitions.  So I had to come up with a
-better, more narrow, set of question.
+related to the truth of the language's superiority. I wondered things like,
+“Is Java really the language of the average programmer?” and “How did Lisp do
+in comparison to Java?”
+
+Unfortunately, those questions can't be answered with these rankings for
+several reasons, including [selection bias][5]. There is a sample bias in the
+dataset. Average programmers aren't joining AI competitions. So I had to come
+up with a better, more narrow, set of question.
 
 My second go produced much tamer variants of the previous questions. The first
 was: How close to the average are the Java programmers in this tournament?
@@ -58,10 +61,9 @@ were above average, but the ones that weren't tended to be so below average as
 to drag them down. The [density diagram][9] shown on the blog that I mentioned
 earlier seems to support this assessment.
 
-It looks like this programming competition hasn't shown Lisp to be very
-special. Though most Lisp users were above average, together they were even
-closer to average than Java. Java on the other hand was just as expected,
-average to the core.
+The programming competition hasn't shown Lisp to be special. Though most Lisp
+users ranked above the median, they were even closer to average than Java. Java
+on the other hand was just as expected, average to the core.
 
 That wasn't what I expected going into this, so I'm glad I got this result.
 

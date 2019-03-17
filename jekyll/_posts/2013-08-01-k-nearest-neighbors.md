@@ -21,12 +21,12 @@ there are some gotchas with the distance function that are worth re-visiting.
 Lets say that you have date of birth as one attribute and the month you first
 spoke as another attribute. Chances are when your computing distance you don't
 want the age that someone spoke to be factoring into the distance. It would
-throw off the computation, because it really isn't very relevant. So how do you
+throw off the computation, because it isn't relevant. So how do you
 go about solving thing? Just normalizing things doesn't help. Some of this
 stuff doesn't matter. The solution? Weighted averages let you weight some
 attributes more then others.
 
-But wait there's more. Once you've given things weights you now have a new
+Once you've given things weights you now have a new
 problem. You have the ability to choose the best weights. The goal is to
 minimize the error of the algorithm and the solution is naturally a set of
 weights to use. See where this is going? An optimization problem! You can use

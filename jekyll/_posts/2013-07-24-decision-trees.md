@@ -7,9 +7,8 @@ Yesterday I completed chapter seven of Programming Collective Intelligence. I
 struggled with the chapter a little, which I found a little surprising.
 Decision trees were touted as simple, but I still have so many questions about
 them. Part of the reason that I feel a little less confident is that I was a
-bit lazy. I skipped over the chapter exercises. However, I did read
-[an article on decision trees](http://www.onlamp.com/lpt/a/6464) to make up for
-the fact that I wasn't doing the exercises. So I wasn't completely lazy.
+bit lazy. I skipped the chapter exercises in favor of reading
+[an article on decision trees](http://www.onlamp.com/lpt/a/6464).
 
 Decision trees are a machine learning technique that can be used for
 classification. Unlike a lot of classification algorithms, decision trees are a
@@ -21,9 +20,10 @@ on whether they subscribe. Decision trees would quickly surface that some
 sites are better at converting then others. So decision trees are useful as a
 tool to learn things about a dataset.
 
-Decision trees do have some problems though. They aren't very good at
-predicting numerical results. They also don't support incremental learning;
-you can't give them new data to learn from after their training is done.
+Decision trees do have some problems though. They are discrete decision
+boundaries. Other techniques end up handling continuous data problems better.
+They also don't support learning; you can't give them new data to learn from
+after their training is done.
 
 Decision trees look about like what you would expect. They are a series of
 if-then statements that are arranged into a tree. The questions are branches

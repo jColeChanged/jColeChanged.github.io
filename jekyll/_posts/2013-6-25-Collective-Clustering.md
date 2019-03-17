@@ -53,10 +53,9 @@ gain an O(nk) search for the nearest element.
 
 In multidimensional scaling you keep jiggering things by comparing them to a
 distance function on two variables and seeing how much that differs from a
-distant function on all the variables. This lets you drop down variables while
-maintaining some sense of correlation. It lets you plot things that have
-multiple dimensions in two dimensional space. I have an example of this below
-too.
+distant function on all the variables. This lets you reduce the number of
+variables while maintaining some sense of correlation. It also lets you plot
+things that have multiple dimensions in two dimensional space.
 
 ![Blogs By Scaled Down Word Count Feature Vector][6]
 
