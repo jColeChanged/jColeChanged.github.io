@@ -133,6 +133,6 @@ A thousand draws tell a different story:
 [7]: https://en.wikipedia.org/wiki/Monty_Hall_problem
 [8]: https://www.nytimes.com/1991/07/21/us/behind-monty-hall-s-doors-puzzle-debate-and-answer.html?src=pm
 [9]: https://www.youtube.com/watch?v=Zr_xWfThjJ0
-[10]: https://wexler.free.fr/library/files/gilovich%20(1985)%20the%20hot%20hand%20in%20basketball.%20on%20the%20misperception%20of%20random%20sequences.pdf
+[10]: http://wexler.free.fr/library/files/gilovich%20(1985)%20the%20hot%20hand%20in%20basketball.%20on%20the%20misperception%20of%20random%20sequences.pdf
 [11]: https://norvig.com/experiment-design.html
 [12]: https://en.wikipedia.org/wiki/Introduction_to_Algorithms
