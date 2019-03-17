@@ -11,6 +11,7 @@ pipeline {
         AWS_SECRET_ACCESS_KEY = credentials('jenkins-aws-secret-access-key')
         LC_ALL = 'C.UTF-8'
         LANG = 'C.UTF-8'
+        XDG_CONFIG_HOME = '.'
     }
     stages {
         stage('Install') {
