@@ -5,7 +5,27 @@ layout: default
 
 <div class="row">
     <div class="col-sm-6">
-        <section id="blog">
+        <section id="">
+                <h4>Recent Posts</h4>
+                <p class="blog">
+    
+                </p>
+                <ul class="list-unstyled">
+                    {% for post in site.posts %}
+                        {% assign post_year = post.date | date: "%Y" %}
+                        {% if "2019" contains post_year %}
+                        <li>
+                            <small class="text-muted text-monospace">
+                                {{ post.date | date_to_string }}
+                            </small>
+                            &raquo;
+                            <a href="{{ post.url }}">{{ post.title }}</a>
+                        </li>
+                        {%endif%}
+                    {% endfor %}
+                </ul>
+            </section>
+        <section id="early_blog">
             <h4>Early Blog Posts</h4>
             <p class="lead">
                 My early blog posts, published between 2010 and 2014, were about probability,

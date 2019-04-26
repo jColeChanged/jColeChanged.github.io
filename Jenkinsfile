@@ -43,6 +43,7 @@ pipeline {
                 sh 'cd file_storage && ../node_modules/serverless/bin/serverless package'
                 sh 'python3 -m pipenv run python -m cfnlint file_storage/.serverless/cloudformation-template-create-stack.json'
                 sh 'python3 -m pipenv run python -m cfnlint file_storage/.serverless/cloudformation-template-update-stack.json'
+                sh 'jupyter jekyll/_jupyter/*.ipynb --to markdown --output-dir jekyll/_posts'
                 sh 'mdl -r ~MD033 jekyll/_posts'
                 sh 'python3 -m pipenv run proselint jekyll/_posts'
                 sh 'cd jekyll && bundle exec jekyll build'
