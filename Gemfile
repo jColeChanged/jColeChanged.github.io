@@ -9,3 +9,4 @@ gem "html-proofer" # For testing the static pages
 gem "jekyll-paginate" # For Pagination in jekyll
 gem "jekyll-gist" # Fot gist integration with jekyll
 gem "mdl"
+gem "rogue"
