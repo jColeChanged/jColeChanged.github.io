@@ -96,14 +96,14 @@ when seen through this lens of an effort scalar it is just recommending sets of
 things which have the effect of increasing the amount of work done per unit of
 effort invested.
 
- - Documentation increases understanding acquisition per effort investment on
+- Documentation increases understanding acquisition per effort investment on
 the part of the reader, but it also effectively the automation of an explanation
 from the perspective of the writer. They give the explanation once, but each
 time they would have been asked in the future, the documentation is able to
 provide the answer.
- - Tests automate verification processes. So potentially expensive verification
+- Tests automate verification processes. So potentially expensive verification
 becomes relatively effortless.
- - Modularity facilitating code reuse reduces the effort needed to accomplish
+- Modularity facilitating code reuse reduces the effort needed to accomplish
 the next derived feature. The first visualization took a bit of effort,
 but the second only minutes.
 
