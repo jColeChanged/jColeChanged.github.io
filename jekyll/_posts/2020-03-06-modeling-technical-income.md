@@ -16,9 +16,7 @@ path.line {
 
 </style>
 
-You may have heard of technical debt and you may have heard of best practice,
-but what you may not have realized is that there is a relationship between the
-two concepts.
+You may have heard of technical debt and you may have heard of best practice, but what you may not have realized is that there is a relationship between the two concepts.
 
 A lot of best practices and bad practices in software engineering can be better
 understood through the concepts of technical debt and technical income.
@@ -104,8 +102,7 @@ provide the answer.
 - Tests automate verification processes. So potentially expensive verification
 becomes relatively effortless.
 - Modularity facilitating code reuse reduces the effort needed to accomplish
-the next derived feature. The first visualization took a bit of effort,
-but the second only minutes.
+the next derived feature. The first visualization took a bit of effort, but the second only minutes.
 
 These things aren't always obvious in the moment. From the workers perspective,
 there is a set amount of effort and it can feel like the environment has a
