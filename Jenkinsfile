@@ -44,7 +44,7 @@ pipeline {
                 sh 'python3 -m pipenv run python -m cfnlint file_storage/.serverless/cloudformation-template-create-stack.json'
                 sh 'python3 -m pipenv run python -m cfnlint file_storage/.serverless/cloudformation-template-update-stack.json'
                 sh 'python3 -m pipenv run jupyter nbconvert jekyll/_jupyter/*.ipynb --to markdown --output-dir jekyll/_posts'
-                sh 'mdl -r ~MD033,~MD009,~MD046,~MD013,~MD012,~MD002 jekyll/_posts'
+                sh 'mdl -r ~MD033,~MD009,~MD046,~MD013,~MD012,~MD002,~MD032 jekyll/_posts'
                 sh 'python3 -m pipenv run proselint jekyll/_posts'
                 sh 'cd jekyll && bundle exec jekyll build'
                 sh 'cd jekyll && bundle exec htmlproofer ./_site --url-ignore "/#.*/"'
