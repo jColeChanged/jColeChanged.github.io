@@ -4,83 +4,105 @@ layout: default
 
 
 <div class="row">
-    <div class="col-sm-6">
-        <section id="">
-                <h1>Recent Posts</h1>
-                <p class="blog">
-		  
-                </p>
-                <ul class="list-unstyled">
-                    {% for post in site.posts %}
-                        {% assign post_year = post.date | date: "%Y" %}
-                        {% if "2019" contains post_year or "2020" contains post_year %}
-                        <li>
-                            <small class="text-muted text-monospace">
-                                {{ post.date | date_to_string }}
-                            </small>
-                            &raquo;
-                            <a href="{{ post.url }}">{{ post.title }}</a>
-                        </li>
-                        {%endif%}
-                    {% endfor %}
-                </ul>
-            </section>
-        <section id="early_blog">
-            <h1>Early Blog Posts</h1>
-            <p class="lead">
-                My early blog posts, published between 2010 and 2014, were about probability,
-                statistics, data visualization, software development, artificial intelligence, and machine
-                learning.
-            </p>
-            <ul class="list-unstyled">
-                {% for post in site.posts %}
-                    {% assign post_year = post.date | date: "%Y" %}
-                    {% if "2010 2011 2012 2013" contains post_year %}
-                    <li>
-                        <small class="text-muted text-monospace">
-                            {{ post.date | date_to_string }}
-                        </small>
-                        &raquo;
-                        <a href="{{ post.url }}">{{ post.title }}</a>
-                    </li>
-                    {%endif%}
-                {% endfor %}
-            </ul>
-        </section>
-    </div>
-    <div class="col-sm-6">
-        <section id="projects">
-            <h1>Tools</h1>
-            <ul class="list-unstyled">
-                <li><a href="/svg2d3.html">SVG To D3.js Compiler</a></li>
-            </ul>
-        </section>
-    </div>
-
-    <div class="col-sm-6">
-      <section id="nexus">
-	<h1>Elsewhere On The Internet</h1>
-	<p>
-	  In addition to the content I host here on my own domain, I also have works
-	  on other websites.
-	  If you would like to support my online presence, you can do so at
-	  my <a href="https://www.patreon.com/toojoshua">Patreon.</a>
-
-	  If you would like to watch my video game related content either live or
-	  in recorded form you should follow my
-	  <a href="https://www.twitch.tv/toojoshua">Twitch</a> and
-	  <a href="https://youtube.com/jcolechanged">YouTube</a> channels.
-	  If you would like to read my stories you can follow me on
-	  <a href="https://www.fanfiction.net/~toojoshua">fanfiction.net</a> and
-	  <a href="https://forums.spacebattles.com/members/toojoshua.315351/">SpaceBattles</a>.
-
-	  You can also follow me on
-	  <a href="https://www.twitter.com/jcolechanged">Twitter</a>,
-	  <a href="https://www.quora.com/profile/Joshua-Cole-185">Quora</a>,
-	  <a href="https://www.reddit.com/u/jcolechanged">Reddit</a>,
-	  <a href="https://news.ycombinator.com/user?id=JoshCole">Hacker News</a>,
-	  and <a href="https://www.github.com/jcolechanged">GitHub</a>.
-	</p>
-      </section>
-    </div>
+  <div class="col-sm-6">
+    <p class="lead">
+      This is Joshua Cole's personal website. Among other things, I write
+      here about software engineering, machine learning, competitive
+      gaming, and game theory.
+    </p>
+  </div>
 </div>
+
+<div class="row">
+  <div class="col-sm-6">
+    <h1>On Sofware Engineering</h1>
+    <p class="lead">
+      These blog posts were written after years working as a professional
+      software engineer. In my estimation, they are more worth reading than
+      my earlier works. 
+    </p>
+    <ul class="list-unstyled">
+      {% for post in site.posts %}
+      {% assign post_year = post.date | date: "%Y" %}
+      {% if "2019" contains post_year or "2020" contains post_year %}
+      <li>
+        <small class="text-muted text-monospace">
+          {{ post.date | date_to_string }}
+        </small>
+        &raquo;
+        <a href="{{ post.url }}">{{ post.title }}</a>
+      </li>
+      {%endif%}
+      {% endfor %}
+    </ul>
+  </div>
+  <div class="col-sm-6">
+    <h1>Early Blog Posts</h1>
+    <p class="lead">
+      My early blog posts, published between 2010 and 2014, were about probability,
+      statistics, data visualization, software development, artificial intelligence, and machine
+      learning. For the most part, they were written while I was learning, rather than after I
+      had gained some expertise.
+    </p>
+    <ul class="list-unstyled">
+      {% for post in site.posts %}
+      {% assign post_year = post.date | date: "%Y" %}
+      {% if "2010 2011 2012 2013" contains post_year %}
+      <li>
+        <small class="text-muted text-monospace">
+          {{ post.date | date_to_string }}
+        </small>
+        &raquo;
+        <a href="{{ post.url }}">{{ post.title }}</a>
+      </li>
+      {%endif%}
+      {% endfor %}
+    </ul>
+  </div>
+  <div class="col-sm-6">
+    <h1>Tools</h1>
+    <p class="lead">
+      Some minor tools I've made and made publicly available. Nothing special here.
+    </p>
+    <ul class="list-unstyled">
+      <li><a href="/svg2d3.html">SVG To D3.js Compiler</a></li>
+    </ul>
+  </div>
+
+  <div class="col-sm-6">
+    <h1>Elsewhere On The Internet</h1>
+    <p class="lead">
+      In addition to the content I host here on my own domain, I also have works
+      on other websites. If you would like to support my online presence
+      or see other content by me, please follow me on these other platforms.
+    </p>
+    <ul class="list-unstyled">
+      <li>
+	<a href="https://www.patreon.com/toojoshua">Patreon</a>
+      </li>
+      
+      <li>
+	<a href="https://www.twitch.tv/toojoshua">Twitch</a>
+      </li>
+
+      <li>
+	<a href="https://youtube.com/jcolechanged">YouTube</a>
+      </li>
+
+      <li>
+	<a href="https://www.fanfiction.net/~toojoshua">fanfiction.net</a>
+      </li>
+
+      <li>
+	<a href="https://forums.spacebattles.com/members/toojoshua.315351/">SpaceBattles</a>
+      </li>
+      
+      <li><a href="https://www.twitter.com/jcolechanged">Twitter</a></li>
+      <li><a href="https://www.quora.com/profile/Joshua-Cole-185">Quora</a></li>
+      <li><a href="https://www.reddit.com/u/jcolechanged">Reddit</a></li>
+      <li><a href="https://news.ycombinator.com/user?id=JoshCole">Hacker News</a></li>
+      <li><a href="https://www.github.com/jcolechanged">GitHub</a></li>
+    </p>
+  </div>  
+</div>
+
