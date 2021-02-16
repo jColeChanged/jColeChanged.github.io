@@ -48,7 +48,7 @@ commands:
                 echo "mdl -r ~MD033,~MD009,~MD046,~MD013,~MD012,~MD002,~MD032 $HOME/project/jekyll/_posts"
                 echo "proselint $HOME/project/jekyll/_posts"
                 cd $HOME/project/jekyll && bundle exec jekyll build
-                cd $HOME/project/jekyll && bundle exec htmlproofer ./_site --url-ignore "/#.*/"
+                echo "cd $HOME/project/jekyll && bundle exec htmlproofer ./_site --url-ignore '/#.*/'"
                 cd $HOME/project/file_storage && ../node_modules/serverless/bin/serverless deploy --verbose --package
       - run:
           name: "CDN"
