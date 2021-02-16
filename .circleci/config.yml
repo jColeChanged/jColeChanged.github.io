@@ -1,0 +1,75 @@
+version: 2.1
+
+executors:
+  blog-executor:
+    docker:
+      - image: circleci/python:3.6.11-buster-node
+        environment:
+          LC_ALL: "C.UTF-8"
+          LANG: "C.UTF-8"
+
+defaults: &defaults
+  executor: blog-executor
+
+commands:
+  build-deploy:
+     steps:
+      - run:
+          name: "Install"
+          command: |
+            sudo apt-get install -y ruby-full ruby-dev zlib1g-dev curl
+            sudo gem update --system
+            python -m pip install pipenv
+            npm install
+            pipenv install --system --deploy
+            sudo gem install bundler
+            bundle install
+      - run:
+         name: "Email"
+         command: |
+                cd email && ../node_modules/serverless/bin/serverless package
+                cfn-lint $HOME/project/email/.serverless/cloudformation-template-create-stack.json
+                cfn-lint $HOME/project/email/.serverless/cloudformation-template-update-stack.json
+                cd $HOME/project/email && ../node_modules/serverless/bin/serverless deploy --verbose --package
+      - run:
+          name: "Certificate"
+          command: |
+                cd certificate && ../node_modules/serverless/bin/serverless package
+                cfn-lint $HOME/project/certificate/.serverless/cloudformation-template-create-stack.json
+                cfn-lint $HOME/project/certificate/.serverless/cloudformation-template-update-stack.json
+                cd $HOME/project/certificate && ../node_modules/serverless/bin/serverless deploy --verbose --package
+      - run:
+          name: "S3"
+          command: |
+                cd file_storage && ../node_modules/serverless/bin/serverless package
+                cfn-lint $HOME/project/file_storage/.serverless/cloudformation-template-create-stack.json
+                cfn-lint $HOME/project/file_storage/.serverless/cloudformation-template-update-stack.json
+                jupyter nbconvert $HOME/project/jekyll/_jupyter/*.ipynb --to markdown --output-dir $HOME/project/jekyll/_posts
+                mdl -r ~MD033,~MD009,~MD046,~MD013,~MD012,~MD002,~MD032 $HOME/project/jekyll/_posts
+                proselint $HOME/project/jekyll/_posts
+                cd $HOME/project/jekyll && bundle exec jekyll build
+                cd $HOME/project/jekyll && bundle exec htmlproofer ./_site --url-ignore "/#.*/"
+                cd $HOME/project/file_storage && ../node_modules/serverless/bin/serverless deploy --verbose --package
+      - run:
+          name: "CDN"
+          command: |
+                cd cdn && ../node_modules/serverless/bin/serverless package
+                cfn-lint $HOME/project/cdn/.serverless/cloudformation-template-create-stack.json
+                cfn-lint $HOME/project/cdn/.serverless/cloudformation-template-update-stack.json
+                cd $HOME/project/cdn && ../node_modules/serverless/bin/serverless deploy --verbose --package
+jobs:
+  build-deploy:
+    <<: *defaults
+    steps:
+      - checkout
+      - build-deploy
+
+workflows:
+  version: 2
+  build-and-deploy:
+    jobs:
+      - build-deploy:
+          filters:
+            branches:
+              only:
+                - setup-circle-ci
