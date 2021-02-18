@@ -7,7 +7,7 @@ executors:
         environment:
           LC_ALL: "C.UTF-8"
           LANG: "C.UTF-8"
-          XDG_CONFIG: "/home/circleci/project"
+          XDG_CONFIG_HOME: "/home/circleci/project"
 
 defaults: &defaults
   executor: blog-executor
