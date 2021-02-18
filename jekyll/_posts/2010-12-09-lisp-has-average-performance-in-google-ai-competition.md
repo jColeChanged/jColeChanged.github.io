@@ -67,8 +67,8 @@ on the other hand was just as expected, average to the core.
 
 That wasn't what I expected going into this, so I'm glad I got this result.
 
-[1]: http://www.r-chart.com/2010/12/google-ai-challenge-languages-used-by.html
-[2]: http://www.r-chart.com/
+[1]: https://web.archive.org/web/20120204055202/http://www.r-chart.com/2010/12/google-ai-challenge-languages-used-by.html
+[2]: https://web.archive.org/web/20101104134158/http://www.r-chart.com/
 [3]: https://github.com/cgrand/enlive
 [4]: https://spreadsheets.google.com/ccc?key=0AmdrW-WZLahvdEotcEY4VnJIMGtEWjNueXNzeElDcUE&amp;hl=en
 [5]: http://en.wikipedia.org/wiki/Selection_bias
