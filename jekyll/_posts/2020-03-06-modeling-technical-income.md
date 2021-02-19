@@ -2,6 +2,7 @@
 layout: post
 title: Modeling Technical Income
 published: true
+author: joshuacole
 ---
 
 <style type="text/css">

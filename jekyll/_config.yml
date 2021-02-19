@@ -13,6 +13,11 @@ highlighter: rouge
 markdown:    kramdown
 permalink:   date
 
+plugins:
+  - jekyll-feed
+
+author: joshuacole
+
 maruku:
   use_tex:    false
   use_divs:   false
