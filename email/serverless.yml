@@ -18,7 +18,7 @@ resources:
         Name: "mail.joshuacol.es."
         Type: "CNAME"
         HostedZoneName: ${self:custom.siteName}.
-        TTL: "3600"
+        TTL: 3600
         ResourceRecords:
           - "privateemail.com."
 
@@ -28,7 +28,7 @@ resources:
         Name: "autodiscover.joshuacol.es."
         Type: "CNAME"
         HostedZoneName: ${self:custom.siteName}.
-        TTL: "3600"
+        TTL: 3600
         ResourceRecords:
           - "privateemail.com."
 
@@ -38,7 +38,7 @@ resources:
         Name: "autoconfig.joshuacol.es."
         Type: "CNAME"
         HostedZoneName: ${self:custom.siteName}.
-        TTL: "3600"
+        TTL: 3600
         ResourceRecords:
           - "privateemail.com."
 
@@ -48,7 +48,7 @@ resources:
         Name: "joshuacol.es."
         Type: "MX"
         HostedZoneName: ${self:custom.siteName}.
-        TTL: "3600"
+        TTL: 3600
         ResourceRecords:
           - "10 mx1.privateemail.com."
           - "10 mx2.privateemail.com."
@@ -59,7 +59,7 @@ resources:
         Name: "joshuacol.es."
         Type: "TXT"
         HostedZoneName: ${self:custom.siteName}.
-        TTL: "3600"
+        TTL: 3600
         ResourceRecords:
           - "\"v=spf1 include:spf.privateemail.com ~all\""
 
@@ -69,6 +69,6 @@ resources:
         Name: "_autodiscover._tcp.joshuacol.es"
         Type: "SRV"
         HostedZoneName: ${self:custom.siteName}.
-        TTL: "3600"
+        TTL: 3600
         ResourceRecords:
           - "1 0 443 privateemail.com."
