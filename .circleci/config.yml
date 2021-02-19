@@ -15,10 +15,12 @@ defaults: &defaults
 commands:
   build-deploy:
      steps:
+      - ruby/install:
+          version:  '2.7'
       - run:
           name: "Install"
           command: |
-            sudo apt-get install -y ruby-full ruby-dev zlib1g-dev curl
+            sudo apt-get install -y zlib1g-dev curl
             sudo gem update --system
             python -m pip install pipenv
             npm install
@@ -74,3 +76,6 @@ workflows:
             branches:
               only:
                 - master
+
+orbs:
+  ruby: circleci/ruby@1.1.2
