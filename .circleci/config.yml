@@ -21,12 +21,10 @@ commands:
           name: "Install"
           command: |
             sudo apt-get install -y zlib1g-dev curl
-            sudo gem update --system
             python -m pip install pipenv
             npm install
             pipenv install --system --deploy
-            sudo gem install bundler
-            bundle install
+      - ruby/install-deps
       - run:
          name: "Email"
          command: |
