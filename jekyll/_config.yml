@@ -1,11 +1,15 @@
 safe:        false
 port:        4000
-baseurl:     /
-url:         http://localhost:4000
-
+url:         https://joshuacol.es
 source:      .
 destination: ./_site
 plugins_dir: ./_plugins
+
+title: Joshua Cole's Personal Website
+description:
+  This is Joshua Cole's personal website. Among other things, I write 
+  here about software engineering, machine learning, competitive
+  gaming, and game theory.
 
 future:      true
 lsi:         false
