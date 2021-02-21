@@ -11,3 +11,4 @@ gem "jekyll-gist"     # For gist integration with jekyll
 gem "mdl"             # For linting markdown
 gem "rogue"
 gem "jekyll-feed"     # For RSS integration
+gem 'jekyll-seo-tag'  # For search engines
