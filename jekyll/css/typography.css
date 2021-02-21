@@ -1,3 +1,14 @@
 .blockquote {
     font-style: italic;
 }
+.subscribe {
+    color: orange;
+}
+.subscribe:hover {
+    color: darkorange;
+}
+
+.svgIcon {
+    width: 32px;
+    height: 32px;
+}
