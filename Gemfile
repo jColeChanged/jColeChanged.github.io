@@ -12,3 +12,4 @@ gem "mdl"             # For linting markdown
 gem "rogue"
 gem "jekyll-feed"     # For RSS integration
 gem 'jekyll-seo-tag'  # For search engines
+gem 'jekyll-sitemap'  # Add sitemap for search engines
