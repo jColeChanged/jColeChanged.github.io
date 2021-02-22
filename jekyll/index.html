@@ -33,7 +33,7 @@ layout: default
     <ul class="list-unstyled">
       {% for post in site.posts %}
       {% assign post_year = post.date | date: "%Y" %}
-      {% if "2019" contains post_year or "2020" contains post_year %}
+      {% if "2019" contains post_year or "2020" contains post_year or "2021" contains post_year %}
       <li>
         <small class="text-muted text-monospace">
           {{ post.date | date_to_string }}
