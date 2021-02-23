@@ -39,19 +39,22 @@ Send packet CA->Netherlands->CA   | 150,000,000   ns | 150,000 us  | 150 ms |
 
 Notes
 -----
+
 1 ns = 10^-9 seconds
 1 us = 10^-6 seconds = 1,000 ns
 1 ms = 10^-3 seconds = 1,000 us = 1,000,000 ns
 
 Credit
 ------
-By Jeff Dean:               http://research.google.com/people/jeff/
-Originally by Peter Norvig: http://norvig.com/21-days.html#answers
+
+By Jeff Dean:               <http://research.google.com/people/jeff/>
+Originally by Peter Norvig: <http://norvig.com/21-days.html#answers>
 
 Contributions
 -------------
-'Humanized' comparison:  https://gist.github.com/hellerbarde/2843375
-Visual comparison chart: http://i.imgur.com/k0t1e.png
+
+'Humanized' comparison:  <https://gist.github.com/hellerbarde/2843375>
+Visual comparison chart: <http://i.imgur.com/k0t1e.png>
 
 
 [1]: https://softwareengineering.stackexchange.com/questions/312485/how-can-jeff-deans-latency-numbers-every-programmer-should-know-be-accurate-i
