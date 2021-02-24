@@ -5,10 +5,14 @@ published: false
 author: joshuacole
 ---
 
-In 2010 Jeff Dean gave a talk at Stanford on performance numbers every programmer 
-should know. Peter Norvig also thought that knowing these numbers was important. 
-Years have passed since then. The numbers have changed, but the importance of 
-what the numbers measure still matters when building software. 
+In 2010 [Jeff][Wiki: Jeff] [Dean][Google: Jeff] gave a talk at [Stanford][Stanford] on 
+performance numbers every programmer should know. [Peter Norvig][Wiki: Peter] also thought 
+that [knowing these numbers][Answers: Peter] was important. Years have passed since then. The numbers have changed, but the importance of what the numbers measure still matters when building software. This post is intended to [increase factfullness][destiny instinct] in software engineering by refreshing our knowledge of these now outdated numbers. 
+
+
+The numbers that the aforementioned people think software engineers ought to know concern 
+performance. If you're not interested in the details, but just want the general idea 
+
 
 Some people have claimed that since the numbers are changing it only makes sense 
 to know the numbers in terms of magnitude in relation to each other [1]. Others 
@@ -62,10 +66,12 @@ Visual comparison chart: <http://i.imgur.com/k0t1e.png>
 [3]: https://gist.github.com/jboner/2841832
 
 [1]: https://en.wikipedia.org/wiki/2010)
-[2]: https://en.wikipedia.org/wiki/Stanford_University
+[Stanford]: https://en.wikipedia.org/wiki/Stanford_University
 
-[Jeff Dean]: (https://en.wikipedia.org/wiki/Jeff_Dean) 
-[Jeff Dean]: http://research.google.com/people/jeff/
+[Wiki: Jeff]: https://en.wikipedia.org/wiki/Jeff_Dean
+[Google: Jeff]: https://research.google.com/people/jeff/
 
-[4]: https://en.wikipedia.org/wiki/Peter_Norvig
-[5]: http://norvig.com/21-days.html#answers
+[Wiki: Peter]: https://en.wikipedia.org/wiki/Peter_Norvig
+[Answers: Peter]: https://norvig.com/21-days.html#answers
+
+[destiny instinct]: https://www.gapminder.org/factfulness/destiny/
