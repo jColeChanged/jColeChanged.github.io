@@ -41,6 +41,10 @@ Read 1 MB sequentially from disk  |  20,000,000   ns |  20,000 us  | 20 ms  | 80
 Send packet CA->Netherlands->CA   | 150,000,000   ns | 150,000 us  | 150 ms |
 
 
+
+![2020 Estimates](/img/programming_numbers/model_estimate_2020.png)
+
+
 Notes
 -----
 
