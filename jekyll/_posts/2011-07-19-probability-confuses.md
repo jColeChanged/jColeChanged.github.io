@@ -3,6 +3,7 @@ layout: post
 title: Probability Confuses
 published: true
 ---
+
 Most of the people who read this blog have already discovered that I'm
 interested in both probability and statistics. What they might not guess is
 that this passion of mine leads to minor conflict with my family. Not serious
@@ -17,7 +18,7 @@ interesting. Each of these letters was exceedingly polite so much so that a
 modern reader use to discourse on the internet and the counsel that they ought
 to always be concise might think the polite wordings were some sort of joke.
 
-In these letters [changed the way people see the world][2] the two intellectual
+In these letters which [changed the way people see the world][2] the two intellectual
 giants were trying to figure out the correct way to solve the
 [divide the pot of an unfinished game][5], but they did not agree about how to
 do it. Even from the start probability problems were showing themselves to be
@@ -123,6 +124,8 @@ A thousand draws tell a different story:
 ;; user> (count (filter ascending? (repeatedly 6000 draw-cards)))
 ;; 1027
 ```
+
+{% bibliography -f probability_confuses.bib %}
 
 [1]: https://www.york.ac.uk/depts/maths/histstat/pascal.pdf
 [2]: https://www.youtube.com/watch?v=3pRM4v0O29o#t=5m00s
