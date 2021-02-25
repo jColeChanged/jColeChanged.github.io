@@ -4,6 +4,7 @@ url:         https://joshuacol.es
 source:      .
 destination: ./_site
 plugins_dir: ./_plugins
+comments: true
 
 title: Joshua Cole's Personal Website
 description:
