@@ -19,9 +19,9 @@ the respective topics.
 Metric                            | Time in ns       | Time in us  | Time in ms | Relative time
 ----------------------------------|------------------|-------------|------------|---------------
 [L1 cache reference][wiki: cache] |           0.5 ns |             |            |
-Branch mispredict                 |           5   ns |             |            |
+[Branch mispredict][Wiki: predict]|           5   ns |             |            |
 [L2 cache reference][Wiki: cache] |           7   ns |             |            | 14x L1 cache
-Mutex lock/unlock                 |          25   ns |             |            |
+[Mutex lock/unlock][Wiki: lock]   |          25   ns |             |            |
 Main memory reference             |         100   ns |             |            | 20x L2 cache, 200x L1 cache
 Compress 1K bytes with Zippy      |       3,000   ns |       3 us  |            |
 Send 1K bytes over 1 Gbps network |      10,000   ns |      10 us  |            |
@@ -41,6 +41,14 @@ isn't in either the L1 cache or the L2 cache then the CPU is going to be busy fe
 In terms that are more relatable the difference between getting a cache hit versus accessing main 
 memory is like the difference between doing something that takes one minute versus doing something 
 which takes a bit more than three hours.
+
+Combine that with how branch predictions gone wrong are ten times more expensive than an L1 cache 
+hit and we can start to see some of why it is that these numbers are so important to know. If you 
+write your low level code so that the computer has a good idea of what data it needs and what paths 
+it might be taking it can speed up execution by a considerable constant factor.
+
+In practice, this means that the best algorithm for solving some problems isn't the one with the 
+time complexity in terms of big O. It is the one that best exploits the capability of the hardware.
 
 
 
@@ -105,3 +113,5 @@ Visual comparison chart: <http://i.imgur.com/k0t1e.png>
 
 
 [Wiki: cache]: https://en.wikipedia.org/wiki/CPU_cache
+[Wiki: predict]: https://en.wikipedia.org/wiki/Branch_predictor
+[Wiki: lock]: https://en.wikipedia.org/wiki/Lock_(computer_science)
