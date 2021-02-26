@@ -38,15 +38,9 @@ with main memory reference. If data is already in the cache it can be fetched in
 isn't in either the L1 cache or the L2 cache then the CPU is going to be busy fetching data for 
 100-200 times longer than it would have if the data was in the cache.
 
-Imagine you go into the airport and are expecting to board your flight at the end of the day. You 
-know better than to expect that you will actually get to board on time. You're expecting that after 
-the usual delay of most of a day you will get to board your flight. Then it turns out you are stuck 
-in the airport for the next hundred days. Being at the airport so long, you're no doubt going to get 
-hungry. So you head over to the fast food court and after observing the lines you notice that the lines 
-for Chik'Fil'A are going the fastest. From them you can get your food in only one second. Or so you think. 
-As soon as you hop in the line an airport official abducts the Chik'Fil'A manager, leaving an airport 
-official in their stead. Needless to say, after two minutes of being searched, you are given your chicken 
-sandwhich a full two hundred times later than you had expected to get it.
+In terms that are more relatable the difference between getting a cache hit versus accessing main 
+memory is like the difference between doing something that takes one minute versus doing something 
+which takes a bit more than three hours.
 
 
 
