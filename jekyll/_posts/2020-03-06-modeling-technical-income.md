@@ -17,7 +17,9 @@ path.line {
 
 </style>
 
-You may have heard of technical debt and you may have heard of best practice, but what you may not have realized is that there is a relationship between the two concepts.
+You may have heard of technical debt and you may have heard of best practice, 
+but what you may not have realized is that there is a relationship between the 
+two concepts.
 
 A lot of best practices and bad practices in software engineering can be better
 understood through the concepts of technical debt and technical income.
@@ -39,7 +41,9 @@ technical income as an __effort scalar__ with an acquisition cost.
 Interestingly, a lot of the common wisdom about engineering excellence and
 technical debt emerges from the model \[1\].
 
+<aside>
 <div id="effortToAccomplishmentChartShortTimeFrame"></div>
+</aside>
 
 Notice that in short projects all the usual caveats people give about technical
 debt being fine and the practice of engineering excellence being premature are
@@ -49,7 +53,9 @@ units of accomplishment, you accomplish it more quickly with a hasty approach.
 The added accomplishment from easing future work doesn't produce enough benefit
 to pay for its creation.
 
+<aside>
 <div id="effortToAccomplishmentChartLongTimeFrame"></div>
+</aside>
 
 However, the benefits of technical income are immense in long
 term projects. Over short time frames the hasty approach is fine, but as an
