@@ -224,8 +224,7 @@ section > ul {
     -webkit-padding-start: 5%;
 }
 
-dt:not(:first-child),
-li:not(:first-child) {
+dt:not(:first-child) {
     margin-top: 0.25rem;
 }
 
