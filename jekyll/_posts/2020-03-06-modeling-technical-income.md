@@ -17,12 +17,28 @@ path.line {
 
 </style>
 
-You may have heard of technical debt and you may have heard of best practice, 
-but what you may not have realized is that there is a relationship between the 
-two concepts.
+For some people technical debt is all the things people tell them that 
+they shouldn't do and best practices are all the things people tell them 
+that they should do. They question the utility of the advice, because 
+they recognize times where taking on technical debt is good and times where 
+applying best practices is wasteful busy work. These people aren't completely 
+wrong. There are times when it is good to take on technical debt and there 
+are times when best practices aren't appropriate to adopt. 
+
+My own perspective is that technical debt and best practices are actually 
+the same thing. They are both derived from the same model of how effort gets 
+converted into accomplishment. So the underlying factor in whether or not 
+they are appropriate is controlled by the time horizon at which success is 
+measured.
+
+Let me explain what I mean by that. 
+
+As a first step, I'm going to ditch the word best practice. I don't consider it 
+helpful for explaining this, because it doesn't prima facie suggest its complement. 
 
 A lot of best practices and bad practices in software engineering can be better
-understood through the concepts of technical debt and technical income.
+understood through the concepts of technical debt and *technical income*.
+
 __Technical debt__ is often understood as things which reduce the amount
 of work that can be completed over a time period per unit of effort expended.
 Technical income is a term I've made up which is the opposite of technical
