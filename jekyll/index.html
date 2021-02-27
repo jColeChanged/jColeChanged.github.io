@@ -23,15 +23,11 @@ layout: default
       software engineer. In my estimation, they are more worth reading than
       my earlier works. 
     </p>
-    <ul class="list-unstyled">
+    <ul>
       {% for post in site.posts %}
       {% assign post_year = post.date | date: "%Y" %}
       {% if "2019" contains post_year or "2020" contains post_year or "2021" contains post_year %}
       <li>
-        <small class="text-muted text-monospace">
-          {{ post.date | date_to_string }}
-        </small>
-        &raquo;
         <a href="{{ post.url }}">{{ post.title }}</a>
       </li>
       {%endif%}
@@ -46,15 +42,11 @@ layout: default
       learning. For the most part, they were written while I was learning, rather than after I
       had gained some expertise.
     </p>
-    <ul class="list-unstyled">
+    <ul>
       {% for post in site.posts %}
       {% assign post_year = post.date | date: "%Y" %}
       {% if "2010 2011 2012 2013" contains post_year %}
       <li>
-        <small class="text-muted text-monospace">
-          {{ post.date | date_to_string }}
-        </small>
-        &raquo;
         <a href="{{ post.url }}">{{ post.title }}</a>
       </li>
       {%endif%}
