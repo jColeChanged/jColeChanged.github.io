@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Numbers Programmers Should Know
+title: Latency Numbers Programmers Should Know
 published: false
 author: joshuacole
 ---
@@ -45,10 +45,10 @@ which takes a bit more than three hours.
 Combine that with how branch predictions gone wrong are ten times more expensive than an L1 cache 
 hit and we can start to see some of why it is that these numbers are so important to know. If you 
 write your low level code so that the computer has a good idea of what data it needs and what paths 
-it might be taking it can speed up execution by a considerable constant factor.
+it might be taking it can [speed up execution by a considerable constant factor][so: speedy].
 
-In practice, this means that the best algorithm for solving some problems isn't the one with the 
-time complexity in terms of big O. It is the one that best exploits the capability of the hardware.
+
+
 
 
 
@@ -115,3 +115,6 @@ Visual comparison chart: <http://i.imgur.com/k0t1e.png>
 [Wiki: cache]: https://en.wikipedia.org/wiki/CPU_cache
 [Wiki: predict]: https://en.wikipedia.org/wiki/Branch_predictor
 [Wiki: lock]: https://en.wikipedia.org/wiki/Lock_(computer_science)
+
+[so: speedy]: https://stackoverflow.com/questions/11227809/why-is-processing-a-sorted-array-faster-than-processing-an-unsorted-array
+
