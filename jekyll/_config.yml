@@ -15,7 +15,8 @@ description:
 future:      true
 lsi:         false
 highlighter: rouge
-markdown:    kramdown
+
+
 permalink:   date
 
 plugins:
@@ -23,6 +24,10 @@ plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
   - jekyll/scholar
+
+
+markdown: kramdown
+
 
 author: joshuacole
 
@@ -44,3 +49,5 @@ kramdown:
   footnote_nr: 1
   entity_output: as_char
   toc_levels: 1..6
+  parse_block_html: false
+  parse_span_html: false
