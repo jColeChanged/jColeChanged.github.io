@@ -3,12 +3,18 @@ layout: default
 ---
 <article>
     <h1><a href="{{ page.url }}">{{ page.title }}</a></h1>
+    {% if page.date %}
     <p class="text-muted text-monospace">
         <small>Published: {{ page.date | date_to_string }}</small>
     </p>
+    {% endif %}
+
+
+
+
     <div class="row">
         <div class="col-md-8">
-        {{ content }}
+            {{ content }}
         </div>
     </div>
 </article>
