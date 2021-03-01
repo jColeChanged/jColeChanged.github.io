@@ -134,18 +134,32 @@ becomes relatively effortless.
 - Modularity facilitating code reuse reduces the effort needed to accomplish
 the next derived feature. The first visualization took a bit of effort, but the second only minutes.
 
-These things aren't always obvious in the moment. From the workers perspective,
-there is a set amount of effort and it can feel like the environment has a
-linear return on work accomplished. After all, over the course of moments
-each action has a reaction. It takes consideration to realize that the seconds
-of work to fix an error caught by automated testing is so different than the
-weeks that might have gone into it had someone new to the domain had to solve
-the same problem and it takes an expanded perspective to realize that the
-effort that wasn't expended delivering an explanation a second time still
-generated accomplishment \[2\].
+<div class="p">
+  These things aren't always obvious in the moment. From the workers perspective,
+  there is a set amount of effort and it can feel like the environment has a
+  linear return on work accomplished. After all, over the course of moments
+  each action has a reaction. It takes consideration to realize that the seconds
+  of work to fix an error caught by automated testing is so different than the
+  weeks that might have gone into it had someone new to the domain had to solve
+  the same problem and it takes an expanded perspective to realize that the
+  effort that wasn't expended delivering an explanation a second time still
+  generated accomplishment<label for="sn-gratitude" class="margin-toggle sidenote-number"></label>.
+  <input type="checkbox"
+        id="sn-gratitude"
+        class="margin-toggle"/>
+    <div class="sidenote">
+    A suprising corollary here is that one hueristic that can help to maximize accomplishment 
+    is to thank people for the accomplishments of technical income which generates value for 
+    you. Since the person who took the action isn't necessarily aware that 
+    their actions benefited others failing to thank them can cause them to underestimate their 
+    impact whereas thanking them can help them to better realize the value they created. 
+    Gratitude in these cases incents the creation of technical income.
+  </div>
+</div>
 
-Perhaps more interesting from the perspective of an organization are some
-corollaries in the concepts of technical debt and technical income.
+So lets spend a bit more time considering. What does it look like when 
+you are in the position of having a lot of technical debt? What does it 
+look like when you have technical income?
 
 In a dysfunctional organization with high technical debt, the activation cost
 of moving from technical debt to technical income is higher, not just because of
@@ -163,7 +177,7 @@ So one of the differences between a dysfunctional organizations and a thriving
 organization is that the dysfunctional organization will care more about the
 short term and the thriving organizations will care more about the long term.
 
-Definitely of more import is that none of this is strictly about software
+None of this is strictly about software
 engineering; it has much more broad applicability. We can see graphs like what
 this model produces in technology in general as we look at the progression of
 our technology over time.
@@ -210,10 +224,4 @@ Make it easy and take it easy.
 
 <div id="effortScalarView"></div>
 
-\[2\]: A corollary here is that the thanks that are most worth sending via the
-thanks tool are the thanks that a person doesn't even know they merited. If
-they were no longer aware of their participating in the value creation, it is
-harder for them to correctly estimate the return on their effort investment.
 
-One of the ways to best maximize accomplishment is to thank people for the
-accomplishments that didn't require them to expend additional effort to accrue.
