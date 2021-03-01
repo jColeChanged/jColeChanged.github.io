@@ -86,11 +86,13 @@ technical debt emerges from the model \[1\].
   accomplishable with minimal amounts of effort investment.
 </div>
 
-So we can see that short projects aren't helped by paying for technical income,
-since they are short enough that the investment is paid back. Short projects
-also can afford to take on technical debt, because they don't have to deal with
-it over the long term. Longer projects benefit greatly from technical income
-and are killed by technical debt.
+This model shows us that short projects aren't helped by paying for technical income. 
+The gains from the effort investment take too long to accrue for the investment to be 
+paid back by the time the project ends. The model also shows that longer projects 
+benefit greatly from technical income and are killed by technical debt. Over the long 
+term taking on technical debt without paying it down before the effort scalar diminishes 
+progress accomplished per effort invested kills the project by making it so that effort 
+investment doesn't accomplish work. 
 
 So far we have talked about these things abstractly and modeled them, but
 without examples it might be hard to tie that to the daily practice of software
