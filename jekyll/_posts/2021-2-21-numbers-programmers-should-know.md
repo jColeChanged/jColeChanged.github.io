@@ -23,7 +23,7 @@ Metric                            | Time in ns       | Time in us  | Time in ms 
 [L2 cache reference][Wiki: cache] |           7   ns |             |            | 14x L1 cache
 [Mutex lock/unlock][Wiki: lock]   |          25   ns |             |            |
 [Main memory reference][Wiki: mem]|         100   ns |             |            | 20x L2 cache, 200x L1 cache
-Compress 1K bytes with Zippy      |       3,000   ns |       3 us  |            |
+[Compress 1K bytes with Zippy][Wiki: zippy] |       3,000   ns |       3 us  |            |
 Send 1K bytes over 1 Gbps network |      10,000   ns |      10 us  |            |
 Read 4K randomly from SSD*        |     150,000   ns |     150 us  |            | ~1GB/sec SSD
 Read 1 MB sequentially from memory|     250,000   ns |     250 us  |            |
@@ -116,6 +116,7 @@ Visual comparison chart: <http://i.imgur.com/k0t1e.png>
 [Wiki: predict]: https://en.wikipedia.org/wiki/Branch_predictor
 [Wiki: lock]: https://en.wikipedia.org/wiki/Lock_(computer_science)
 [Wiki: mem]: https://en.wikipedia.org/wiki/Computer_data_storage#Primary_storage
+[Wiki: zippy]: https://en.wikipedia.org/wiki/Snappy_(compression)
 
 [so: speedy]: https://stackoverflow.com/questions/11227809/why-is-processing-a-sorted-array-faster-than-processing-an-unsorted-array
 
