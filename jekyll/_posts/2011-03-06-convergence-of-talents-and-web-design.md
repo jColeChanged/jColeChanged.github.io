@@ -18,7 +18,11 @@ select the games they will play by searching through a list of all games.
 The list is usually a table which lets you sort by the attributes that you're
 interested in.
 
-![an interactive table view of available chess games][2]
+<figure>
+<img 
+    src="https://lh6.googleusercontent.com/yOK8dZ4pyci7m_yhx08iTg2nFQGpNmqeb2jDMNJZZamWl1Ia5GyURhyB8cuL6P--wltsL7p0eAXwutSoM_68G_U_OJ3WAE5vvE3sps9ztm4W64o_4liH9e5INS8g3q4e"
+    alt="an interactive table view of available chess games">
+</figure>
 
 This site takes a slightly novel approach. In addition to a table they also
 offer a graph through which you can select your opponent. The x-axis of the
@@ -27,7 +31,10 @@ the game will be played. Unlike the tabular format you don&rsquo;t need to sort
 based on the attribute you're interested in, since everything is already
 sorted. Unrated games are distinguished by a white circle.
 
-![Interactive Chart with time controls as the x axis and rating as the y axis][3]
+<figure>
+<img src="https://lh4.googleusercontent.com/Pa1pZjFWgrtTCpqXbCZBV8QPYLdiLuTYjJWXqp5fYjHqSHBx0fDlpSSr9rvXkB9Zr-BZxZv7vwMSwcl05tldY5OwfldGmMEY4LXzRaXmyNsIuaCWULpToD8K_bSoZcf3"
+     alt="Interactive Chart with time controls as the x axis and rating as the y axis">
+</figure>
 
 What strikes me about this convergence is that it has produced something that
 is highly intuitive and easy to use. Tufte has emphasized that some of
@@ -38,5 +45,3 @@ being the former. When these three talents converge you get both a good
 graphic and a good website design.
 
 [1]: https://chess.com/
-[2]: https://lh6.googleusercontent.com/yOK8dZ4pyci7m_yhx08iTg2nFQGpNmqeb2jDMNJZZamWl1Ia5GyURhyB8cuL6P--wltsL7p0eAXwutSoM_68G_U_OJ3WAE5vvE3sps9ztm4W64o_4liH9e5INS8g3q4e
-[3]: https://lh4.googleusercontent.com/Pa1pZjFWgrtTCpqXbCZBV8QPYLdiLuTYjJWXqp5fYjHqSHBx0fDlpSSr9rvXkB9Zr-BZxZv7vwMSwcl05tldY5OwfldGmMEY4LXzRaXmyNsIuaCWULpToD8K_bSoZcf3
