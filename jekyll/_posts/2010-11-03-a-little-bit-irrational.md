@@ -16,9 +16,7 @@ much sense. When I broke things down I found that there was roughly a 1%
 chance of winning the game. I knew that I could use that information to
 calculate the average amount which will be won.
 
-```
-average win = chance to Win * pot size
-```
+<code>average_win = chance_to_win * pot_size</code>
 
 Of course, knowing how much I was expected to win isn't enough to know if
 the game is worth playing. I also factor in how much I had to pay to have a
@@ -26,14 +24,15 @@ chance at winning the money. The expected return on each game is actually our
 chance to win multiplied by the pot size minus the amount we payed to get into
 the game.
 
-```
-average return = win chance * pot - buy in
-```
+<code>average_return = win_chance * pot - buy_in</code>
 
 So what happens when we plug in our 1% chance to win, our $1 opportunity cost,
 and graph the result?
 
-![Average Returns][1]
+<figure>
+    <img src="/img/a-little-bit-irrational/average-return.png" alt="Average Returns" />
+</figure>
+
 
 Basically, unless the pot has more then a hundred dollars in it, we are going
 in expecting to lose money. So since there is no guarantee that we will stay
@@ -41,4 +40,3 @@ in every week, it doesn't make sense to get into the game. Though I suppose
 people could get non-monetary returns, like social opportunity, which might
 overwhelm the trivial pot sizes.
 
-[1]: /img/a-little-bit-irrational/average-return.png "Average Returns"
