@@ -34,7 +34,9 @@ fix a bug. Where did bug come from? The answer will shock you. Canada. Yep, you
 heard that right, it came from Canada. Here is the proof, see how this Canadian
 doesn't come from an organization? My code expected a string.
 
-![Snippet of Google AI Competition Rankings][6]
+<figure>
+<img src="/img/ai-comp/snippet.png" alt="Snippet of Google AI Competition Rankings" />
+</figure>
 
 That really *bugged* me, but I ended up getting my hat on straight. It turned
 out that the average elo of all the programs was about 2030, while the average
@@ -50,7 +52,10 @@ intrigued me enough to try to ask the same question in a different way. There
 are multiple measures of center after all. That investigation led to a
 box plot of the Java and Lisp elo scores.
 
-![Boxplot of Java and Lisp Elo Rankings][7]
+
+<figure>
+<img src="/img/ai-comp/boxplot.png" alt="Boxplot of Java and Lisp Elo Rankings" />
+</figure>
 
 I noticed when I looked at this was that the winner of the competition, a Lisp
 program, was an outlier. That seems to go against some of the
@@ -72,7 +77,6 @@ That wasn't what I expected going into this, so I'm glad I got this result.
 [3]: https://github.com/cgrand/enlive
 [4]: https://spreadsheets.google.com/ccc?key=0AmdrW-WZLahvdEotcEY4VnJIMGtEWjNueXNzeElDcUE&amp;hl=en
 [5]: http://en.wikipedia.org/wiki/Selection_bias
-[6]: /img/ai-comp/snippet.png
-[7]: /img/ai-comp/boxplot.png "Boxplot of Java and Lisp Elo Rankings"
+
 [8]: http://www.zdnet.com/blog/burnette/hungarian-lisp-developer-walks-away-with-google-ai-contest/2131
 [9]: http://3.bp.blogspot.com/_FsLa1cMTCWU/TPgyBXF3PhI/AAAAAAAAAjg/M6v-8WEvv98/s1600/lisp_density_plot.png
