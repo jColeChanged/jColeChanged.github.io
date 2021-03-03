@@ -47,7 +47,19 @@ hit and we can start to see some of why it is that these numbers are so importan
 write your low level code so that the computer has a good idea of what data it needs and what paths 
 it might be taking it can [speed up execution by a considerable constant factor][so: speedy].
 
+Next lets break down compression and relate it to reading data. It takes 3000 ns to compress 
+1K bytes, but it takes 10,000 ns to send that many bytes over the network. We can assume that 
+compressing 4k bytes is going to take 12000 ns, but reading 4k bytes from an SSD will take 
+150,000 ns. That is an ideal for reading from storage devices and via the network. Things 
+start getting much more expensive as we progress down the list.
 
+If you think about this for a bit it implies something. There is a point at which speed is 
+going to be increased by compressing data, because compressing a lot of data and sending the 
+small amount of resulting data is faster than not compressing and sending the raw data 
+and you start gaining a latency advantage in terms of sending data at a lower data threshold 
+than might seem intuitive when thinking about things from a human perspective.
+
+Packing your bags before you go flying can be a lot faster than sending your bags one by one.
 
 
 
