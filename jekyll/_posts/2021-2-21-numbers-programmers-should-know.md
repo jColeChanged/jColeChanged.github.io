@@ -134,5 +134,3 @@ Visual comparison chart: <http://i.imgur.com/k0t1e.png>
 [Wiki: hd]: https://en.wikipedia.org/wiki/Hard_disk_drive
 
 [so: speedy]: https://stackoverflow.com/questions/11227809/why-is-processing-a-sorted-array-faster-than-processing-an-unsorted-array
-
-https://en.wikipedia.org/wiki/Solid-state_drivehttps://en.wikipedia.org/wiki/Hard_disk_drive
