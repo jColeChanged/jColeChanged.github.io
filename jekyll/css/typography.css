@@ -1,12 +1,7 @@
 @charset "UTF-8";
 
 
-.subscribe {
-    color: orange;
-}
-.subscribe:hover {
-    color: darkorange;
-}
+
 
 .svgIcon {
     width: 32px;
@@ -455,4 +450,11 @@ label.margin-toggle:not(.sidenote-number) {
     img {
         width: 100%;
     }
+}
+
+a.subscribe {
+    color: orange;
+}
+a.subscribe:hover {
+    color: darkorange;
 }
