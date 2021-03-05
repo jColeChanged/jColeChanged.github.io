@@ -54,7 +54,7 @@ in the way that is best over the long term.
 With these definitions in place, we can model _both_ technical debt _and_
 technical income as an __effort scalar__ with an acquisition cost.
 Interestingly, a lot of the common wisdom about engineering excellence and
-technical debt emerges from the model \[1\].
+technical debt emerges from the model <sup id="fnr-code">code</sup>. 
 
 <div class="p">
   <div class="marginnote">
@@ -220,8 +220,8 @@ Make it easy and take it easy.
 {% include tech_income/tech_debt.js %}
 </script>
 
-\[1\]: The code to generate the visualization:
-
+<div id="fn-code">
+The code to generate the visualization:
 <div id="effortScalarView"></div>
-
+</div>
 
