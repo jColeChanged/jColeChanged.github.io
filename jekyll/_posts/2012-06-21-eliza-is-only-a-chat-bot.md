@@ -32,13 +32,17 @@ actual Eliza that I wrote in Clojure, one of my favorite programming languages.
 I&rsquo;m hoping it will be pretty readable even if you aren&rsquo;t
 familiar with the language:
 
-```
+
+<div>
+<code>
+<pre>
 ("?*x I want ?*y"
   ("What would it mean if you got ?*y"
    "Suppose you got ?*y soon?"
    "Why do you want ?*y"))
-```
-
+</pre>
+</code>
+</div>
 So what we have above is a list of two items. The first item is a string and
 the second item is a list. That first string, it is a pattern. Whenever Eliza
 is told something it will check this rule and look at the pattern. It will then
