@@ -38,6 +38,8 @@ with main memory reference. If data is already in the cache it can be fetched in
 isn't in either the L1 cache or the L2 cache then the CPU is going to be busy fetching data for 
 100-200 times longer than it would have if the data was in the cache.
 
+The time taken to fetch one cache line from memory (read latency due to a cache miss) matters because the CPU will run out of things to do while waiting for the cache line. When a CPU reaches this state, it is called a stall. As CPUs become faster compared to main memory, stalls due to cache misses displace more potential computation; modern CPUs can execute hundreds of instructions in the time taken to fetch a single cache line from main memory.
+
 In terms that are more relatable the difference between getting a cache hit versus accessing main 
 memory is like the difference between doing something that takes one minute versus doing something 
 which takes a bit more than three hours.
@@ -58,7 +60,7 @@ going to be increased by compressing data, because compressing a lot of data and
 small amount of resulting data is faster than not compressing and sending the raw data 
 and you start gaining a latency advantage in terms of sending data at a lower data threshold 
 than might seem intuitive when thinking about things from a human perspective. One way to think 
-about why compression before sending is better is to conver these numbers to your intuition. Packing 
+about why compression before sending is better is to convert these numbers to your intuition. Packing 
 your bag before you hop on a flight is a bit faster than taking a plane trip per item. 
 
 The exact amount of when it becomes worthwhile to do this is a bit hard to say without knowing 
@@ -80,13 +82,14 @@ maybe in preperation for feeding that data into a nueral network, and the size o
 requires you to split up the computation across multiple computers which itself involves a 
 step in which data must be transferred to those computers by some mechanism we might expect 
 to have a nearly 2x reduction in file size. This could result in a nearly 2x improvement 
-in time spent reading data from the network. So don't forget to explore you're cluster 
-computing environments data compression options.
+in time spent reading data from the network and time spent reading data from disk. Which, 
+as shown in the stats, is one of the most costly operations.
 
-![https://databricks.com/session/best-practice-of-compression-decompression-codes-in-apache-spark]()
+Another thing to notice is the difference between having the data already in-memory versus 
+having to get that data from the disk.
 
 
-The time taken to fetch one cache line from memory (read latency due to a cache miss) matters because the CPU will run out of things to do while waiting for the cache line. When a CPU reaches this state, it is called a stall. As CPUs become faster compared to main memory, stalls due to cache misses displace more potential computation; modern CPUs can execute hundreds of instructions in the time taken to fetch a single cache line from main memory.
+
 
 The numbers that the aforementioned people think software engineers ought to know concern 
 performance. If you're not interested in the details, but just want the general idea 
