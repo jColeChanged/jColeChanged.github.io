@@ -1,12 +1,55 @@
 ---
 layout: post
-title: Collective Clustering
+title: Clustering
 published: true
 ---
 
-This is my second post in a series I'm writing on my foray into Programming
-Collective Intelligence. In this installment I'm talking about chapter three,
-which covers clustering.
+Clustering is a bit like classification in that data points needs to be 
+categorized, but whereas classification is a supervised learning task in 
+which labels that help to guide classification, clustering is an unsupervised 
+learning task in which labels must be discovered.
+
+When I was first introduced to code which could be used to cluster it was 
+in Tony Seagan's book Programming Collective Intelligence. Following his 
+writing, I implemented hierachical clustering, k means clustering, and 
+multidimensional scaling.
+
+As I've learned more about clustering and where it is used I've realized 
+that clustering is an essential tool to thinking well not just for AI, but 
+also for humans. We cluster so often and so naturally as humans that we 
+often don't notice just how many categories we have created for ourselves. 
+We cluster books by topic, and by genre. We cluster buildings by size. We 
+cluster sentences according to the logical structure. We cluster the various 
+domains of life. We even cluster situations about which we know nothing: 
+we distinguish between known knowns, known unknowns, and unknown unknowns. 
+
+<div class="p">
+One of the reasons clustering is essential is the world is extremely 
+complicated. It is necessary to simplify reality in order to be able to 
+think about it a time and space effecient manner. Without some tricks 
+that simplify or relax the problem of understanding a messy reality 
+the problem is quite literally not solvable, because it isn't possible to 
+fit the necessary computation into the limited time available to make that 
+computation.<label for="sn-biases" class="margin-toggle sidenote-number"></label>
+  <input type="checkbox"
+        id="sn-biases"
+        class="margin-toggle"/>
+
+  <div class="sidenote">
+    <p>
+      For related reasons, some cognitive biases people refer to as failings are 
+      actually deeply rational. The mistake people make in talking about this is 
+      that they confuse the problems they are solving with the problems the mind 
+      is solving. They solve the problem in a non-realtime context, but the mind 
+      is solving it in a realtime context. They are solving the problem in a 
+      manner that applies attention to the important details. The mind doesn't 
+      start with details. It starts with a sensory feed that must be converted 
+      and transformed into something meaningful. That sensory feed is so large 
+      that it can't even process all of it. It has to guess at what the important 
+      bits are if it is going to have a hope of keeping up.
+    </p>
+  </div>
+</div>
 
 # Hierarchical Clustering
 
