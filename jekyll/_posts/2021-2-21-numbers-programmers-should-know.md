@@ -86,13 +86,21 @@ in time spent reading data from the network and time spent reading data from dis
 as shown in the stats, is one of the most costly operations.
 
 Another thing to notice is the difference between having the data already in-memory versus 
-having to get that data from the disk.
+having to get that data from the disk. If data is already in-memory then that data is going 
+to be taking only 100 ns to access. Loading 1 MB of data on the other hand can take 
+1,000,000 ns and then you're still going to be referencing it after you load it regardless.
+The implications are that keeping your data in-memory rather than on disk can have huge 
+performance benefits. In fact, since transferring data over the network within a datacenter 
+is less expensive than reading data from disk, if speed of computation is your goal then it 
+can make sense to store data in memory even if your computer doesn't have enough memory to 
+store the data in memory.
 
+So if you ever wondered why so many of those cache servers and databases make a point of advertising 
+that they are serving data from memory? Now you know. Doing so is a lot faster than serving that 
+same data from disk.
 
-
-
-The numbers that the aforementioned people think software engineers ought to know concern 
-performance. If you're not interested in the details, but just want the general idea 
+So that is what the numbers were and what the implications of the numbers being what they were is.
+What are the numbers now? How have they been changing? Does it even matter?
 
 
 Some people have claimed that since the numbers are changing it only makes sense 
