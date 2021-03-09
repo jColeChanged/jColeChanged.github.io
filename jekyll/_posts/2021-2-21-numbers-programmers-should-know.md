@@ -12,6 +12,8 @@ The numbers have changed, but the importance of what the numbers measure still m
 building software. This post is intended to [increase factfullness][destiny instinct] in 
 software engineering by refreshing our knowledge of these now outdated numbers. 
 
+## The Original Numbers
+
 The original numbers can be seen in the table below. On the off chance that readers are 
 unfamiliar with these terms, I've amended the table with links to wikipedia articles about 
 the respective topics.
@@ -103,19 +105,20 @@ So that is what the numbers were and what the implications of the numbers being 
 What are the numbers now? How have they been changing? Does it even matter?
 
 
+## The Numbers As Reported Elsewhere
+
+Earlier I mentioned that the numbers have been changing. They have been. 
 Some people have claimed that since the numbers are changing it only makes sense 
-to know the numbers in terms of magnitude in relation to each other [1]. Others 
-have tried to use models to give estimates of the numbers [2].
+to know the numbers in terms of magnitude in relation to each other [1]. This is 
+a great point and it does help protect a person from the fact that the numbers 
+are changing and there information may get out of date. However, that doesn't 
+mean we don't have to validate the assumption that the numbers haven't changed. 
+Test all things, hold fast that which is good.
 
-I think it would be valuable to have a resource for learning these numbers as they 
-are, because refreshing your data is an important part of thinking well. Facts can 
-change and if you aren't refreshing your data you risk using a mental model which 
-was true in the past, but isn't true in the present.
-
-According to data compiled by jboner, in 2012 the numbers were being reported as:
-
-
-
+An infographic was produced which goes over estimates of what the numbers could be 
+as the years go by. You can see a picture of this infographic here. If we dig into 
+the sourcing of it what we will discover is the estimates are based on models. Worse
+those models haven't been particularly accurate.
 
 ![2020 Estimates](/img/programming_numbers/model_estimate_2020.png)
 
