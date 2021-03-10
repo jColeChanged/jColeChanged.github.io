@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Latency Numbers Programmers Should Know
-published: false
+published: true
 author: joshuacole
 ---
 
@@ -17,6 +17,39 @@ software engineering by refreshing our knowledge of these now outdated numbers.
 The original numbers can be seen in the table below. On the off chance that readers are 
 unfamiliar with these terms, I've amended the table with links to wikipedia articles about 
 the respective topics.
+
+<div class="p">
+    <div class="marginnote">
+        <p>
+            One way of understanding nanoseconds is the definition of nanoseconds.
+        </p>
+            <table>
+                <tr>
+                    <td>
+                        1 <code>ns</code>=10<sup>-9</sup> seconds
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        1 <code>us</code>=10<sup>-6</sup> seconds=1000 <code>ns</code>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        1 <code>ms</code>=10<sup>-3</sup> seconds=1000 <code>us</code>=1000000 <code>ns</code>
+                    </td>
+                </tr>
+            </table>
+        <p>
+            It can be pretty hard to tie this definition to the real world implication of a 
+            nanoseconds and microseconds. A better way to think of a nanosecond is as the roughly 
+            eight inches that light can travel in a nanosecond and a better way to think of a 
+            microsecond is as the roughly nine hundred and eighty four feet of rope that 
+            <a href="https://www.youtube.com/watch?v=9eyFDBPk4Yw">Grace Hooper suggests 
+            wrapping around the neck of software engineers who throw away microseconds</a>.
+        </p>    
+    </div>
+</div>
 
 Metric                            | Time in ns       | Time in us  | Time in ms | Relative time
 ----------------------------------|------------------|-------------|------------|---------------
@@ -128,21 +161,11 @@ those models haven't been particularly accurate.
 
 
 
-Notes
------
 
-1 ns = 10^-9 seconds
-1 us = 10^-6 seconds = 1,000 ns
-1 ms = 10^-3 seconds = 1,000 us = 1,000,000 ns
 
-Credit
-------
 
-By Jeff Dean:               <http://research.google.com/people/jeff/>
-Originally by Peter Norvig: <http://norvig.com/21-days.html#answers>
 
-Contributions
--------------
+
 
 'Humanized' comparison:  <https://gist.github.com/hellerbarde/2843375>
 Visual comparison chart: <http://i.imgur.com/k0t1e.png>
