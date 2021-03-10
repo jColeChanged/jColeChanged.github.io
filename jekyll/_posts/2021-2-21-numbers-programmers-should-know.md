@@ -120,7 +120,12 @@ as the years go by. You can see a picture of this infographic here. If we dig in
 the sourcing of it what we will discover is the estimates are based on models. Worse
 those models haven't been particularly accurate.
 
-![2020 Estimates](/img/programming_numbers/model_estimate_2020.png)
+
+<figure class="fullwidth">
+    <figcaption>Model Based Estimate of Latency Numbers</figcaption>
+    <img src="/img/programming_numbers/model_estimate_2020.png" alt="a visualization of 2020 latency numbers" />
+</figure>
+
 
 
 Notes
