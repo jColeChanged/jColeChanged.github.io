@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Latency Numbers Programmers Should Know
-published: true
+published: false
 author: joshuacole
 ---
 
