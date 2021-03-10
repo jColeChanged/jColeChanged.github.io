@@ -8,7 +8,13 @@
     height: 32px;
 }
 
-
+div.footnotepopup {
+    position: absolute;
+    width: 720px;
+    background: #fffff8;
+    border: 1px solid #636363;
+    padding: 10px;
+}
 
 
 /* Import ET Book styles
