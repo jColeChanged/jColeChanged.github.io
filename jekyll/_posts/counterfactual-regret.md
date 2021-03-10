@@ -17,7 +17,7 @@ they would. I'm going to share it using language that people who enjoy playing
 games competitively will be able to easily grasp.
 
 For most people playing well in a game starts with the realization that you are 
-absolutely shit at playing games. Which leads the natural question of how 
+terrible at playing games. Which leads the natural question of how 
 do I not suck at the game I'm playing since I'm definitely going to play video 
 games all day regardless of what others think I should be doing with my life? 
 This question has an obvious answer. Get good. Someone might then ask, Joshua, 
