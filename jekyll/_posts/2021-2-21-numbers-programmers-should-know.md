@@ -145,8 +145,32 @@ Some people have claimed that since the numbers are changing it only makes sense
 to know the numbers in terms of magnitude in relation to each other [1]. This is 
 a great point and it does help protect a person from the fact that the numbers 
 are changing and there information may get out of date. However, that doesn't 
-mean we don't have to validate the assumption that the numbers haven't changed. 
+mean we don't have to validate the assumption that the numbers haven't changed.
+
 Test all things, hold fast that which is good.
+
+<figure class="fullwidth">
+    <figcaption>Model Based Estimate of Latency Numbers</figcaption>
+    <img src="/img/programming_numbers/model_estimate_2020.png" alt="a visualization of 2020 latency numbers" />
+</figure>
+
+Metric                            | 2012 Numbers     | 2020 Model Based Estimates | Delta |
+----------------------------------|------------------|----------------------------|-------|
+[L1 cache reference][wiki: cache] |           0.5 ns |         1 ns               | -0.5 ns|
+[Branch mispredict][Wiki: predict]|           5   ns |         3 ns               | 2 ns      |
+[L2 cache reference][Wiki: cache] |           7   ns |         4 ns               | 3 ns      |
+[Mutex lock/unlock][Wiki: lock]   |          25   ns |         17 ns              | 8 ns      |
+[Main memory reference][Wiki: mem]|         100   ns |         100 ns             | 0 ns      |
+[Compress 1K bytes with Zippy][Wiki: zippy] |  3,000 ns |      2,000 ns            | 1,000 ns      |
+[Send 1K bytes over 1 Gbps network][Wiki: network] | 10,000   ns | 44 ns          | 9,956 ns      |
+[Read 4K randomly from SSD][Wiki: ssd]  |     150,000   ns | 16,000 ns            | 134,000 ns |
+Read 1 MB sequentially from memory |     250,000   ns |      3,000 ns              | 247,000 ns |
+Round trip within same datacenter |     500,000   ns |       500,000 ns           | 0 ns      |
+[Read 1 MB sequentially from SSD][Wiki: ssd] |   1,000,000   ns | 49,000 ns       | 95,1000 ns  |
+[Disk seek][Wiki: HD]             |  10,000,000   ns  |      2,000,000 ns         | 8,000,000 ns | 
+[Read 1 MB sequentially from disk][Wiki: HD]  |  20,000,000   ns | 1,000,000 ns   | 19,000,000 ns      | 
+Send packet CA->Netherlands->CA   | 150,000,000   ns |     150,000,000 ns         | 0 ns      |
+
 
 An infographic was produced which goes over estimates of what the numbers could be 
 as the years go by. You can see a picture of this infographic here. If we dig into 
@@ -154,10 +178,6 @@ the sourcing of it what we will discover is the estimates are based on models. W
 those models haven't been particularly accurate.
 
 
-<figure class="fullwidth">
-    <figcaption>Model Based Estimate of Latency Numbers</figcaption>
-    <img src="/img/programming_numbers/model_estimate_2020.png" alt="a visualization of 2020 latency numbers" />
-</figure>
 
 
 
