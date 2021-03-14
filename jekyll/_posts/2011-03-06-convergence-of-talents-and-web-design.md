@@ -3,8 +3,8 @@ layout: post
 title: Visualization and Web Design
 published: true
 ---
-I recently started reading Edward Tufte&rsquo;s &ldquo;The Visual Display of
-Quantitative Information.&rdquo; In it Tufte spends some time going over the
+I recently started reading Edward Tufte's  [The Visual Display of Quantitative Information](book). 
+In it Tufte spends some time going over the
 history of the field. He notes that many charts require both artistic and
 statistical ability which are rarely found together. So a lot of the charts
 that could have been made in ancient times have only been created in the last
@@ -45,3 +45,4 @@ being the former. When these three talents converge you get both a good
 graphic and a good website design.
 
 [1]: https://chess.com/
+[book]: https://www.amazon.com/gp/product/0961392142/ref=as_li_tl?ie=UTF8&tag=joshuacoles-20&camp=1789&creative=9325&linkCode=as2&creativeASIN=0961392142&linkId=eec0b6ed2e59a747b2175279ad83af2d

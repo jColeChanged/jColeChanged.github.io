@@ -4,20 +4,20 @@ title: Eliza is Only a Chat Bot
 published: true
 ---
 
-I&rsquo;m reading through <a href="http://norvig.com/paip.html">Paradigms of
-Artificial Intelligence: Case Studies in Common Lisp</a> and finding it to be
- amazing. <a href="http://norvig.com/index.html">Peter Norvig</a>, formerly of
-NASA and now head of research at Google, has a way of talking AI programs that
-shaped the field in their time in a way that makes me feel as if I get what is
-going on.
+I've been reading and enjoying [Paradigms of Artificial Intelligence: Case Studies in Common Lisp](book).
+It is an amazing book written by <a href="http://norvig.com/index.html">Peter Norvig</a>, formerly of
+NASA and now head of research at Google. Norvig has a way of talking about AI programs that
+shaped the field in their time in a way that educates rather than confuses.
 
-Its weird though. He does present the material in a brilliant fashion, but
-at the same time the programs he is talking about are like magic.
-
-You know, they seem baffling and astounding. Then you find out what is
+The programs he talks about start out seeming like magic, but because he is 
+good at giving explanations the magic tricks quickly fade, replaced by explanation.
+This is very enjoyable. They seem baffling and astounding. Then you find out what is
 <a href="http://www.youtube.com/watch?v=2H81A3bU68k">really going on</a> and
 it might still be cool, but its a different kind of cool. Once you know
 the trick behind it, the entire program is seen in a new light.
+
+This feeling, the opposite of magic, is actually at the root of what it even means to 
+communicate explanations well. Magic hides the explanation for events. Norvig doesn't.
 
 To show you what I mean I&rsquo;m going to go over an AI that Norvig talks
 about in the book called Eliza. Eliza is a chat bot built way back when and it
@@ -43,6 +43,7 @@ familiar with the language:
 </pre>
 </code>
 </div>
+
 So what we have above is a list of two items. The first item is a string and
 the second item is a list. That first string, it is a pattern. Whenever Eliza
 is told something it will check this rule and look at the pattern. It will then
@@ -77,3 +78,6 @@ you&rsquo;re interested in all of that you can check out some of the code in
 a <a href="https://gist.github.com/2970757">github gist</a>. Be
 warned&hellip;. I&rsquo;m using mutually recursive functions and there are a
 whole lot of parentheses.
+
+
+[book]: https://www.amazon.com/gp/product/1558601910/ref=as_li_tl?ie=UTF8&tag=joshuacoles-20&camp=1789&creative=9325&linkCode=as2&creativeASIN=1558601910&linkId=d42b5a7ed5037f5566cabdb8ca59f9cb
