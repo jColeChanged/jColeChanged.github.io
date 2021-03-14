@@ -3,15 +3,16 @@ layout: post
 title: A Summer of Collective Intelligence
 published: true
 ---
-This summer I'm reading through Programming Collective Intelligence as part of
-an independent study group. The book covers a variety of machine learning
-algorithms that can be used to build a ton of cool things, like recommendation
-systems and search engines. We plan to get through two chapters each week and
-then cap each week off with a Google Hangout session in which we share what we
-wrote.
 
-In addition to sharing what I do with my study group via hangouts, I'm also
-planning to share on my blog. I figure that it will both help me learn the
+During the summer of 2013 I was reading [Programming Collective Intelligence](book) as part of
+an independent study group. The book covers a variety of machine learning
+algorithms that can be used to build recommendation systems and search engines, among 
+other things. Our plan was to get through two chapters each week and
+then cap each week off with a Google Hangout session in which we shared what 
+we learned.
+
+I decided not just share this with the study group, but with anyone who wanted to 
+read about my learning on my blog. I figured that it will both help me learn the
 material and also allow me to better see my progress.
 
 # A Recommendation System
@@ -87,3 +88,5 @@ While working through this chapter and its example code I built:
 
 While working through this project I developed a patch for pydelicious. I found
 a bug in the pydelicious source and sent a fix upstream.
+
+[book]: https://www.amazon.com/gp/product/0596529325/ref=as_li_tl?ie=UTF8&tag=joshuacoles-20&camp=1789&creative=9325&linkCode=as2&creativeASIN=0596529325&linkId=6e48c22fa422df9f35994c4acd00ac10

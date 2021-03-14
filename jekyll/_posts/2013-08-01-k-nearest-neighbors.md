@@ -37,5 +37,5 @@ The only catch is how you compute the error. To do that you have to use
 something called cross-validation. Basically, you split up the dataset into a
 training set and a test set and run the predictions on the test set.
 
-[1]: https://www.amazon.com/Programming-Collective-Intelligence-Building-Applications/dp/0596529325/
+[1]: https://www.amazon.com/gp/product/0596529325/ref=as_li_tl?ie=UTF8&tag=joshuacoles-20&camp=1789&creative=9325&linkCode=as2&creativeASIN=0596529325&linkId=6e48c22fa422df9f35994c4acd00ac10
 [2]: https://en.wikipedia.org/wiki/K-nearest_neighbors_algorithm

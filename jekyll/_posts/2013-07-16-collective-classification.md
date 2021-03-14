@@ -4,7 +4,7 @@ title: Collective Classification
 published: true
 ---
 This is another blog post in my series of blogs posts covering my reading of
-Programming Collective Intelligence. A lot of the group members have had
+[Programming Collective Intelligence](book). A lot of the group members have had
 full-plates as of late. Some are working on start-ups, others are working
 through other books, and some are doing additional study groups. As a result
 the group has decided to cut back to one chapter per week. I'm finding that
@@ -27,3 +27,6 @@ probability. You can consider getting fancy and give preferential treatment
 to some categories. For example in the case of classifying spam, you might
 give special treatment to the not-spam category in order to ensure that users
 don't miss their mail.
+
+
+[book]: https://www.amazon.com/gp/product/0596529325/ref=as_li_tl?ie=UTF8&tag=joshuacoles-20&camp=1789&creative=9325&linkCode=as2&creativeASIN=0596529325&linkId=6e48c22fa422df9f35994c4acd00ac10

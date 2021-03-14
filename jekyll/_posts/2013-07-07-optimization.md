@@ -44,7 +44,7 @@ algorithms which try to reduce the likelihood of getting stuck in local optima.
 Included in this set of algorithms are [simulated annealing][8] and
 [genetic algorithms][9].
 
-[1]: https://www.amazon.com/Programming-Collective-Intelligence-Building-Applications-ebook/dp/B00F8QDZWG
+[1]: https://www.amazon.com/gp/product/0596529325/ref=as_li_tl?ie=UTF8&tag=joshuacoles-20&camp=1789&creative=9325&linkCode=as2&creativeASIN=0596529325&linkId=6e48c22fa422df9f35994c4acd00ac10
 [2]: https://en.wikipedia.org/wiki/Optimization_problem
 [3]: https://en.wikipedia.org/wiki/Knapsack_problem
 [4]: https://en.wikipedia.org/wiki/Stochastic_optimization

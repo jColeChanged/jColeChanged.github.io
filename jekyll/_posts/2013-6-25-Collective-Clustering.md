@@ -10,7 +10,7 @@ which labels that help to guide classification, clustering is an unsupervised
 learning task in which labels must be discovered.
 
 When I was first introduced to code which could be used to cluster it was 
-in Tony Seagan's book Programming Collective Intelligence. Following his 
+in Tony Seagan's book [Programming Collective Intelligence](book). Following his 
 writing, I implemented hierachical clustering, k means clustering, and 
 multidimensional scaling.
 
@@ -116,3 +116,4 @@ things that have multiple dimensions in two dimensional space.
 [4]: /img/collective-cluster/dend2.jpg "Dendrogram of Desires by Shared Desires"
 [5]: https://en.wikipedia.org/wiki/K-means_clustering
 [6]: /img/collective-cluster/scaled.jpg "Blogs Scaled Down"
+[book]: https://www.amazon.com/gp/product/0596529325/ref=as_li_tl?ie=UTF8&tag=joshuacoles-20&camp=1789&creative=9325&linkCode=as2&creativeASIN=0596529325&linkId=6e48c22fa422df9f35994c4acd00ac10
