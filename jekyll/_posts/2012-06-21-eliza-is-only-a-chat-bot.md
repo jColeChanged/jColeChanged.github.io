@@ -11,7 +11,7 @@ shaped the field in their time in a way that educates rather than confuses.
 
 The programs he talks about start out seeming like magic, but because he is 
 good at giving explanations the magic tricks quickly fade, replaced by explanation.
-This is very enjoyable. They seem baffling and astounding. Then you find out what is
+They seem baffling and astounding. Then you find out what is
 <a href="http://www.youtube.com/watch?v=2H81A3bU68k">really going on</a> and
 it might still be cool, but its a different kind of cool. Once you know
 the trick behind it, the entire program is seen in a new light.
