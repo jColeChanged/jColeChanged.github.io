@@ -171,11 +171,41 @@ Round trip within same datacenter |     500,000   ns |       500,000 ns         
 [Read 1 MB sequentially from disk][Wiki: HD]  |  20,000,000   ns | 1,000,000 ns   | 19,000,000 ns      | 
 Send packet CA->Netherlands->CA   | 150,000,000   ns |     150,000,000 ns         | 0 ns      |
 
+The first thing that really jumps out at me from these numbers is the 2020 estimate of 
+the cost of sending 1k bytes over a 1 Gbps network. This is calculated via:
 
-An infographic was produced which goes over estimates of what the numbers could be 
-as the years go by. You can see a picture of this infographic here. If we dig into 
-the sourcing of it what we will discover is the estimates are based on models. Worse
-those models haven't been particularly accurate.
+```
+function getNetworkPayloadBytes() {
+    // 2KB
+    return 2 * Math.pow(10,3);
+}
+
+function getNICTransmissionDelay(payloadBytes) {
+    // NIC bandwidth doubles every 2 years
+    // [source: http://ampcamp.berkeley.edu/wp-content/uploads/2012/06/Ion-stoica-amp-camp-21012-warehouse-scale-computing-intro-final.pdf]
+    // TODO: should really be a step function
+    // 1Gb/s = 125MB/s = 125*10^6 B/s in 2003
+    // 125*10^6 = a*b^x
+    // b = 2^(1/2)
+    // -> a = 125*10^6 / 2^(2003.5)
+    var a = 125 * Math.pow(10,6) / Math.pow(2,shift(2003) * 0.5);
+    var b = Math.pow(2, 1.0/2);
+    var bw = a * Math.pow(b, shift(year));
+    // B/s * s/ns = B/ns
+    var ns = payloadBytes / (bw / Math.pow(10,9));
+    return ns;
+}
+
+
+var network = new Metric(getNICTransmissionDelay(getNetworkPayloadBytes()), "10us",
+    "Send " + addCommas(getNetworkPayloadBytes()) + " bytes over commodity network: ", "network");
+```
+
+In the code we see that the assumption was that NIC bandwidth would double 
+every two years. We also see the author was aware that the calculation wasn't 
+accurate even when the function was written from the TODO referencing a step 
+function.
+
 
 
 
