@@ -16,7 +16,6 @@ var Footnotes = {
     },
     footnoteover: function() {
         clearTimeout(Footnotes.footnotetimeout);
-        $('#footnotediv').stop();
         $('#footnotediv').remove();
         
         var id = $(this).attr('href').substr(1);
@@ -29,12 +28,8 @@ var Footnotes = {
 
         var el = document.getElementById(id);
         div.html($(el).html());
-        
-        div.css({
-            position:'absolute',
-            width:'400px',
-            opacity:0.9
-        });
+        div.addClass("footnotepopup")
+
         $(document.body).append(div);
 
         var left = position.left;
@@ -50,24 +45,17 @@ var Footnotes = {
     },
     footnoteoout: function() {
         Footnotes.footnotetimeout = setTimeout(function() {
-            $('#footnotediv').animate({
-                opacity: 0
-            }, 600, function() {
-                $('#footnotediv').remove();
-            });
-        },100);
+            $('#footnotediv').remove();
+        }, 100);
     },
     divover: function() {
         clearTimeout(Footnotes.footnotetimeout);
-        $('#footnotediv').stop();
-        $('#footnotediv').css({
-                opacity: 0.9
-        });
     }
 }
 
 
 $(document).ready(function() {
+    /*
     var sups = document.getElementsByTagName('sup');
     var footnotehtml = [];
     for(var i=0; i<sups.length; i++) {
@@ -104,6 +92,6 @@ $(document).ready(function() {
             };
         }
     }
-
+    */
     Footnotes.setup();    
 });
