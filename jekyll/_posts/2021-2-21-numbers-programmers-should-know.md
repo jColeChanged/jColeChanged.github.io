@@ -120,6 +120,19 @@ to have a nearly 2x reduction in file size. This could result in a nearly 2x imp
 in time spent reading data from the network and time spent reading data from disk. Which, 
 as shown in the stats, is one of the most costly operations.
 
+<div class="p">
+    <div class="marginnote">
+        <blockquote>
+            For data queries that need to scan over millions of rows, a big bottleneck is the bandwidth for getting data from disk into memory. However, that is not the only bottleneck. Developers of analytic databases also worry about efficiently using the bandwidth from main memory into CPU cache, avoiding branch misprediction and bubbles in the CPU instruction processing pipeline, and making use of single-instruction multiple-data instructions in modern CPUs.
+        </blockquote>
+        <footer>
+            <a target="_blank" href="https://www.amazon.com/gp/product/1449373321/ref=as_li_tl?ie=UTF8&amp;tag=joshuacoles-20&amp;camp=1789&amp;creative=9325&amp;linkCode=as2&amp;creativeASIN=1449373321&amp;linkId=94ba2266d30810326c298c93c92b9296">
+                Designing Data Intensive Applications
+            </a>
+        </footer>
+    </div>
+</div>
+
 Another thing to notice is the difference between having the data already in-memory versus 
 having to get that data from the disk. If data is already in-memory then that data is going 
 to be taking only 100 ns to access. Loading 1 MB of data on the other hand can take 
@@ -136,7 +149,6 @@ same data from disk.
 
 So that is what the numbers were and what the implications of the numbers being what they were is.
 What are the numbers now? How have they been changing? Does it even matter?
-
 
 ## The Numbers As Reported Elsewhere
 
