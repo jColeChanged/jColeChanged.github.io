@@ -5,14 +5,42 @@ published: false
 author: joshuacole
 ---
 
-In 2010 [Jeff][Wiki: Jeff] [Dean][Google: Jeff] gave a talk at [Stanford][Stanford] on 
-performance numbers every programmer should know. [Peter Norvig][Wiki: Peter] also thought 
-that [knowing these numbers][Answers: Peter] was important. Years have passed since then. 
-The numbers have changed, but the importance of what the numbers measure still matters when 
-building software. This post is intended to [increase factfullness][destiny instinct] in 
-software engineering by refreshing our knowledge of these now outdated numbers. 
+
+Many well known great software engineers believe that it takes more than a 
+solid understanding of the [run time complexity](https://en.wikipedia.org/wiki/Big_O_notation)
+of the algorithms being used to write performant software. In particular they claim that 
+the latency numbers associated with computer hardware are essential knowledge. Despite the claimed 
+importance there is little factful information about this topic readily available online.
+
+The general assumption has been that the first viral spread of published numbers, originally 
+posted in 2010, have changed, but not by a magnitude which would change our intuition. 
+The current updates to the number which are popularly 
+shared online are not the actual numbers, but numbers produced by a model. The degree to which 
+they match reality has not been tested and primae facie investigation of the models claims 
+makes me skeptical that the model is accurate especially as of 2021.
+
+This post is intended to [increase factfullness][destiny instinct] in software engineering by refreshing our knowledge of these now outdated numbers.
+
+It is also not just merely an update to these numbers, but an update with context. In prior 
+times when these numbers have been shared they have been shared without much context being 
+given to what the numbers mean in practice. What I hope to show is not just what the numbers 
+are, but the changes in decision making that these numbers are supposed to motivate.
+
+Althought the numers have changed, there importance has only increased with time. In the 
+past these numbers were important and we were also seeing our software become faster and 
+faster on account of advances in hardware. In recent years the free lunch of hardware speed 
+increases has been slowing.
+
+Over the short history of computing software engineers have done an amazing job of destroying all performance gains brought on by improved hardware. So this is also an important topic for those 
+engineers who don't care about performance. Without a deeper understanding of latency numbers 
+it could be the case that, quite by accident, an engineer who does not care about performance 
+writes code that is nevertheless performant.
 
 ## The Original Numbers
+
+In 2010 [Jeff][Wiki: Jeff] [Dean][Google: Jeff] gave a talk at [Stanford](Stanford) on 
+latency numbers he thought every programmer should know. [Peter Norvig][Wiki: Peter] also thought 
+that [knowing these numbers][Answers: Peter] was important. Years have passed since then. 
 
 The original numbers can be seen in the table below. On the off chance that readers are 
 unfamiliar with these terms, I've amended the table with links to wikipedia articles about 
@@ -68,15 +96,14 @@ Round trip within same datacenter |     500,000   ns |     500 us  |            
 [Read 1 MB sequentially from disk][Wiki: HD]  |  20,000,000   ns |  20,000 us  | 20 ms      | 80x memory, 20X SSD
 Send packet CA->Netherlands->CA   | 150,000,000   ns | 150,000 us  | 150 ms     |
 
-Lets break down why these numbers matter. First lets start with the L1 cache and put it in context 
+## Why The Numbers Matter
+First lets start with the L1 cache and put it in context 
 with main memory reference. If data is already in the cache it can be fetched in 0.5 ns, but if it 
 isn't in either the L1 cache or the L2 cache then the CPU is going to be busy fetching data for 
 100-200 times longer than it would have if the data was in the cache.
 
-The time taken to fetch one cache line from memory (read latency due to a cache miss) matters because the CPU will run out of things to do while waiting for the cache line. When a CPU reaches this state, it is called a stall. As CPUs become faster compared to main memory, stalls due to cache misses displace more potential computation; modern CPUs can execute hundreds of instructions in the time taken to fetch a single cache line from main memory.
-
-In terms that are more relatable the difference between getting a cache hit versus accessing main 
-memory is like the difference between doing something that takes one minute versus doing something 
+The time taken to fetch one cache line from memory (read latency due to a cache miss) matters because the CPU will run out of things to do while waiting for the cache line. When a CPU reaches this state, it is called a stall. As CPUs become faster compared to main memory, stalls due to cache misses displace more potential computation; modern CPUs can execute hundreds of instructions in the time taken to fetch a single cache line from main memory. In terms that are more 
+relatable the difference between getting a cache hit versus accessing main memory is like the difference between doing something that takes one minute versus doing something 
 which takes a bit more than three hours.
 
 Combine that with how branch predictions gone wrong are ten times more expensive than an L1 cache 
@@ -220,18 +247,6 @@ function.
 
 TODO: Update this section.
 
-
-
-
-
-
-
-
-
-
-
-'Humanized' comparison:  <https://gist.github.com/hellerbarde/2843375>
-Visual comparison chart: <http://i.imgur.com/k0t1e.png>
 
 
 [1]: https://softwareengineering.stackexchange.com/questions/312485/how-can-jeff-deans-latency-numbers-every-programmer-should-know-be-accurate-i
