@@ -97,6 +97,7 @@ Round trip within same datacenter |     500,000   ns |     500 us  |            
 Send packet CA->Netherlands->CA   | 150,000,000   ns | 150,000 us  | 150 ms     |
 
 ## Why The Numbers Matter
+
 First lets start with the L1 cache and put it in context 
 with main memory reference. If data is already in the cache it can be fetched in 0.5 ns, but if it 
 isn't in either the L1 cache or the L2 cache then the CPU is going to be busy fetching data for 
