@@ -73,6 +73,17 @@ you get bored and move on to other things
 
 Don't lose your work. If you invest in an hour of your time into something make sure that you save your progress in a durable way. If your computer dies, you shouldn't lose the work you've done. If a hard drive dies, you shouldn't lose the work you've done. Save your work. Put it on multiple computers rather than just one. You might think nothing will ever happen that will destroy your work. You're statistically incorrect, which is the worst kind of incorrect to be. You'll think yourself wise for saving time by not doing that extra bit of work, right up until your work is destroyed. Perhaps the easiest way to level up as a software engineer is to use source control to distribute duplicate copies of your work to additional servers.
 
+<div class="p">
+    <div class="marginnote">
+        <p>
+            For a successful technology, reality must take precedence over public relations, for Nature cannot be fooled.
+        </p>
+        <footer>
+            Richard P. Feynman, “What Do You Care What Other People Think?”
+        </footer>
+    </div>
+</div>
+
 I recommend learning a distributed version control system. Any system will help you learn, but the good ideas in distributed source control correspond with the good ideas in database design and software engineering. You'll be learning good mental models for building reliable and horizontally scalable programs as you learn to work in a distributed version control system, even though you probably won't recognize that you're learning about that until well into your career if not for me having mentioned it here.
 
 Saving your work is so obvious that it might seem strange that I mention it as a way to become a better software engineer. It might especially seem strange when you consider that using source control is something that people doing software engineering routinely do. Despite this there will come a time where you might not feel like sharing your work. For example, you might not be done with something and you might be worried about it being judged. So you might not put it into the source control software. Or maybe you will, but you won't share it up to a server that others can download from. Then your computer hard drive might die. On reflection, you wouldn't have lost that data because you didn't know how to keep it. You lost it because of ego. You were afraid of showing work that wasn't done and being judged as bad, so you did something that was actually a bad practice - not having backups.
@@ -123,9 +134,7 @@ correct. It sounds wrong. It isn't and that confounds people all the time and th
                 I will raise up Cyrus in righteousness,
                 and I will make all his ways straight.
                 He will rebuild My city
-                and set My exiles free,
-                but not for payment or reward,
-                says the LORD of Hosts.”
+                and set My exiles free...
             </p>
             <footer>
                 The Lord Of Hosts to Cryus his annointed in Isaiah 45
