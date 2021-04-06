@@ -260,6 +260,19 @@ img {
     position: relative;
 }
 
+.marginnote blockquote div.p,
+.marginnote blockquote p {
+    width: 90%;
+    margin-right: 40px;
+}
+
+.marginnote blockquote footer {
+    width: 55%;
+    font-size: 1.1rem;
+    text-align: right;
+}
+
+
 .sidenote-number {
     counter-increment: sidenote-counter;
 }
