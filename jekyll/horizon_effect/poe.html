@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <style>
+            .three-col {
+                display: flex;
+                justify-content: space-around;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <article>
+            <h1>Prefer Improving Vision To Judging Others</h1>
+            <p>
+                More knowledge can lead to optimal decisions which appear sub-optimal to the blind. As a consequence, prefer learning to judgement. This logic extends especially unto God who knows more then all. The fall out of this would seem to be that a person should prefer gaining more information in order to make better decisions. Also worth noting is that the two space agent who knows more can prefer longer paths and have worse then one-move only average short-terms despite being logically greater in the long-term.
+            </p>
+            <section class="three-col">            
+                <section>
+                    <h2>Full Board</h2>
+                    <svg id="fullBoard"></svg>
+                </section>
+            
+                <section>
+                    <h2>An Agent Which Can See One Space</h2>
+                    <svg id="oneSpaceAgent"></svg>
+                    <p>Score: <span id="oneSpaceScore"></span></p>
+                    <p>Moves: <span id="oneSpaceMoves"></span></p>
+                    <p>Average Score Per Move: <span id="oneSpaceAverage"></span></p>
+                </section>
+            
+                <section>
+                    <h2>An Agent Which Can See Two Spaces</h2>
+                    <svg id="twoSpaceAgent"></svg>
+                    <p>Score: <span id="twoSpaceScore"></span></p>
+                    <p>Moves: <span id="twoSpaceMoves"></span></p>
+                    <p>Average Score Per Move: <span id="twoSpaceAverage"></span></p>
+                </section>
+            </section>
+        <article>
+        
+        <script src="js/d3/d3.js" type="text/javascript" charset="utf-8"></script>
+        <script src="js/underscore.js"></script>
+        <script src="js/board.js" type="text/javascript"></script>
+        <script src="js/players.js" type="text/javascript"></script>
+        
+        <script type="text/javascript">
+        
+        function playRound(id, player, board) {
+            console.log("?playRound=started");
+            if (board[0][1] !== "P") {
+                var board = player.takeTurn(board);
+                update(id + "Agent", board, player.getVisible(board));
+                var statistics = player.getStatistics();
+                d3.select(id + "Score").text(statistics[0]);
+                d3.select(id + "Moves").text(statistics[1]);
+                d3.select(id + "Average").text(statistics[2]);
+            }
+        }
+        
+        BOARD_SIZE_X = 10;
+        BOARD_SIZE_Y = 10;
+        var fullBoard = generateBoard(BOARD_SIZE_X, BOARD_SIZE_Y);
+        populateBoard(fullBoard, randomStrategy);
+        
+        update("#fullBoard", fullBoard, null);
+        
+        var oneSpaceAgent = new Player(1),
+            oneSpaceBoard = JSON.parse(JSON.stringify(fullBoard));
+        update("#oneSpaceAgent", oneSpaceBoard, oneSpaceAgent.getVisible(oneSpaceBoard));
+        setInterval(playRound, 100, "#oneSpace", oneSpaceAgent, oneSpaceBoard);
+        
+        var twoSpaceAgent = Player(2),
+            twoSpaceBoard = JSON.parse(JSON.stringify(fullBoard));
+        update("#twoSpaceAgent", twoSpaceBoard, twoSpaceAgent.getVisible(twoSpaceBoard));
+        setInterval(playRound, 100, "#twoSpace", twoSpaceAgent, twoSpaceBoard);
+
+        </script>
+    </body>
+</html>
