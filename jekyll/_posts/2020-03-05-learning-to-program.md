@@ -187,7 +187,7 @@ we have to. We can't always think deeply about something. That would lead to us 
 The point of intentionally destroying your laptop is to solve the problem of laziness. When you know you are going to die, know that a country is going to collapse, know that a laptop is going to be destroyed - it changes priorities. Ideas can't be saved in a centralized manner, because if they are it is going to be destroyed 
 when the central system is destroyed. 
 
-Right now one, as I write this, one of my laptops is broken. Apple did an update and it didn't play well with the fact that my laptop was encrypted and now I can't get it to boot up. I anticipated these sort of eventualities: nothing was lost when this happened. I was able to recover gracefully.
+Right now, as I write this, one of my laptops is broken. Apple did an update and it didn't play well with the fact that my laptop was encrypted and now I can't get it to boot up. I anticipated these sort of eventualities: nothing was lost when this happened. I was able to recover gracefully.
 
 Geometric probability distributions tell us that these sort of catacylcisms are inevitable. It doesn't feel like that each day: you live, you live, you live, 
 therefore it seems like you live forever. Except you are going to die. Creating systems which bring the future closer to the present helps us 
