@@ -72,7 +72,8 @@ really don't undestand something and you're learning, you're not going to be bor
 exciting and fun. You are gaining mastery over the thing. You can stop when you get bored and move on to 
 other things; things which don't bore you.
 
-## Recover Gracefully
+
+## <a id="grace" href="#grace">Recover Gracefully</a>
 
 Staying on the subject of obvious mistakes and easy to correct issues common to new programmers, one thing 
 that happens often, but really shouldn't, is that new programmers lose the work that they do. This happens 
@@ -98,6 +99,15 @@ Perhaps the easiest way to level up as a software engineer is to use source cont
 doesn't just give you the opportunity to not lose work. It opens up the opportunity for you to collaborate with others and learn from them.
 
 I recommend learning a distributed version control system. Any system will help you learn, but the good ideas in distributed source control correspond with the good ideas in database design and software engineering. You'll be learning good mental models for building reliable and horizontally scalable programs as you learn to work in a distributed version control system, even though you probably won't recognize that you're learning about that until well into your career if not for me having mentioned it here.
+
+<div class="p">
+    <div class="marginnote">
+        You can find some resources to begin learning git at <a href="https://try.github.io/">https://try.github.io/</a>.
+        In particular I suggest trying <a href="https://learngitbranching.js.org/">https://learngitbranching.js.org/</a> 
+        to get the basic ideas down and then to proceed to getting git installed on your own computer and getting a project 
+        put online.
+    </div>
+</div>
 
 Saving your work is so obvious that it might seem strange that I mention it as a way to become a better software engineer. It might especially seem strange when you consider that using source control is something that people doing software engineering routinely do. Despite this there will come a time where you might not feel like sharing your work. For example, you might not be done with something and you might be worried about it being judged. So you might not put it into the source control software. Or maybe you will, but you won't share it up to a server that others can download from. Then your computer hard drive might die.
 
