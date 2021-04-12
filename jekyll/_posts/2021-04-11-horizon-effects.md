@@ -7,7 +7,7 @@ author: joshuacole
 
 <style>
     .three-col {
-        display: flex;
+        display: flex;000
         justify-content: center;
     }
     .three-col section {
@@ -54,11 +54,14 @@ despite being logically greater in the long-term.
 </div>
 
 
-<script src="/js/underscore.js" type="text/javascript"></script>
-
-
-<script type="text/javascript" id="horizon">
-{% include horizon/simulation.js %}
+<script type="text/javascript" id="horizonSimulation">
+{% include horizons/simulation.js %}
 </script>
 
+<div id="fn-code">
+<a href="#visualization">Jump back to visualization.</a>
+The code to generate the visualization:
+<div id="horizonSimulationView"></div>
+<a href="#visualization">Jump back to visualization.</a>
+</div>
 
