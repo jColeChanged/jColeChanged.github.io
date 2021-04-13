@@ -46,7 +46,7 @@ commands:
                 cfn-lint $HOME/project/file_storage/.serverless/cloudformation-template-create-stack.json
                 cfn-lint $HOME/project/file_storage/.serverless/cloudformation-template-update-stack.json
                 jupyter nbconvert $HOME/project/jekyll/_jupyter/*.ipynb --to markdown --output-dir $HOME/project/jekyll/_posts
-                bundle exec mdl -r ~MD033,~MD009,~MD046,~MD013,~MD012,~MD002,~MD032 $HOME/project/jekyll/_posts
+                bundle exec mdl -r ~MD034,~MD033,~MD009,~MD046,~MD013,~MD012,~MD002,~MD032 $HOME/project/jekyll/_posts
                 echo "proselint $HOME/project/jekyll/_posts"
                 cd $HOME/project/jekyll && bundle exec jekyll build
                 echo "cd $HOME/project/jekyll && bundle exec htmlproofer ./_site --url-ignore '/#.*/'"
