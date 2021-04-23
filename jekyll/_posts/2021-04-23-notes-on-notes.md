@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Notes on Notes
-published: false
+published: true
 author: joshuacole
 ---
 
