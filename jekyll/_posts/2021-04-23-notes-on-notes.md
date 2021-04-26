@@ -9,25 +9,32 @@ For a long time I wasn't happy with my note taking process, but I've been
 getting better at taking notes. I figured that I would share a 
 little about what I've learned about note taking by writing a review of 
 two books that recommend cohesive note taking systems. The two books 
-I'm reviewing and recommending are The Bullet Journal method 
-and How To Take Smarter Notes.
+I'm reviewing are The Bullet Journal method and How To Take Smarter Notes.
 
 The [The Bullet Journal Method: Track the Past, Order the Present, Design the Future][bullet]
 by Ryder Carroll doesn't advertise itself as a book about taking notes. On the surface 
 it is a journaling method. In particular it is a journaling method that is optimized for 
-speed. Bullet has two meanings: bullet as in, as fast as a bullet and bullet as in, the 
-typographical bullet point. So it might seem strange that I would start a post about 
+speed. Bullet has two meanings: bullet as in "as fast as a bullet" and bullet as in, "typographical 
+bullet point." So it might seem strange that I would start a post about 
 note taking books by talking about journaling.
 
 The reason I think starting with a talk about this book is appropriate is because 
-of the way our minds work. What I've observed is that we have two systems in our minds. 
+of the way our minds work. What I've observed is that we have [two systems][fastslow] in our minds. 
 One is adapted for speed. The other is adapted for thinking well. We have to make tradeoffs 
 along this time dimension because of limited mental bandwidth. As the name implies, the 
 bullet journal is a system that is highly adapted to working quickly. As a result it 
 works well as the component of a note taking system that acknowleges our time constraints.
 
-Other note taking strategies acknowledge this too. If you read about note taking systems 
-one concept that you are likely to encounter is the 
+The Bullet Jornal methodology is by default a methodology that caters to our fast 
+thinking system. However, unlike note taking systems or task tracking systems, it 
+doesn't limit itself in what it covers. So you can put many different types of writing 
+into it.
+
+It is a note taking system that does a good job of catering to our need to take 
+notes quickly. 
+
+It is worth noting that most other good note taking strategies acknowledge this need as 
+well. If you read about note taking systems one concept that you are likely to encounter is the 
 idea that all things should be written down as notes immediately. People point out that 
 notes should be put somewhere and then processed later. The advise that 
 there needs to be a fast way to write things down. The mechanism by which many suggest 
@@ -74,8 +81,7 @@ Journal.
 You have to be real time before you can handle being non-real time. So I covered the speed aspect 
 of note taking first. Now I'm going to move on to getting more and more value from your notes over
 time.
-
-[How to Take Smart Notes: One Simple Technique to Boost Writing, Learning and Thinking – for Students, Academics and Nonfiction Book Writers](smarter) is a book by Sönke Ahrens. It is the best book I've encountered on the subject of note taking. Sönke is one of the authors who realizes that our mediums are part of the thinking process, though like many, he limits this idea that our environments are thinking environments to just the idea that our writing is our thinking environment.
+https://en.wikipedia.org/wiki/Thinking,_Fast_and_Slowidea that our writing is our thinking environment.
 
 This is a common error: mediums have natural incentives and incentives control behavior. So mediums end up influence what is produced within them. They aren't neutral. Since in practice writing has better incentives for thinking, it is the natural medium for good thinking. People recognize this and end up thinking that writing is thinking. In reality, all our interactions with the environment are a part of thinking, writing just tends to be better thinking and other mediums tend to corrupt it.
 
@@ -97,5 +103,5 @@ after the initial inboxing work. It is a system for developing thoughts. It is b
 then getting value from those notes in the future.
 
 [bullet]: https://www.amazon.com/gp/product/0525533338/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0525533338&linkCode=as2&tag=joshuacoles-20&linkId=ef58f3b997f7e8c7fd2622b1147e25d8
-
+[fastslow]: https://en.wikipedia.org/wiki/Thinking,_Fast_and_Slow
 [smarter]: https://www.amazon.com/gp/product/1542866502/ref=as_li_tl?ie=UTF8&tag=joshuacoles-20&camp=1789&creative=9325&linkCode=as2&creativeASIN=1542866502&linkId=ba677752efcd991d0396eae7d42e5c93 
