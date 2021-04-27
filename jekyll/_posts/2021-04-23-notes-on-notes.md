@@ -77,13 +77,12 @@ the Bullet Journal.
 
 # Sprint to Smart
 
-You have to be real time before you can handle being non-real time. So I covered the speed aspect 
-of note taking first. Now I'm going to move on to getting more and more value from your notes over
-time.
+You have to be real time. So I covered the speed aspect of note taking first. Now I'm going to move on 
+to getting more and more value from your notes over time.
 
 [How To Take Smarter Notes: 10 Principles to Revolutionize Your Note-Taking and Writing][smarter] is a book by Sönke Ahrens. It is the best book I've encountered on the subject of note taking. Sönke is one of the authors who realizes that our mediums are part of the thinking process, though like many, he limits this idea that our environments are thinking environments to just the idea that our writing is our thinking environment.
 
-This is a common error: mediums have natural incentives and incentives control behavior. So mediums end up influence what is produced within them. They aren't neutral. Since in practice writing has better incentives for thinking, it is the natural medium for good thinking. People recognize this and end up thinking that writing is thinking. In reality, all our interactions with the environment are a part of thinking, writing just tends to be better thinking and other mediums tend to corrupt it.
+This is a common error: mediums have natural incentives and incentives control behavior. So mediums end up influence what is produced within them. They aren't neutral. Since in practice writing has better incentives for thinking, it is the natural medium for good thinking. People recognize this and end up thinking that writing is thinking. In reality, all our interactions with the environment are a part of thinking, writing just tends to be incentivize better thinking and other mediums tend to corrupt it.
 
 What the book is really about though isn't so much note taking in general as it is a specific note taking strategy. To oversimplify for the sake of communicating the main idea, there was a person who was not formally educated who innovated in the methodology that he used to take notes. This innovation led to his notes becoming such a powerful tool that he leveraged them to produce upwards of fifty books. So great was the enhancement to his productivity that it stood out notably and became an object of study based on the merit of its enhancement.
 
@@ -97,10 +96,24 @@ Although simple to explain to someone who is already familiar with both the web 
 
 The thing is, the act of writing these larger paragraphs represents real cognitive investment. You're basically using your note taking process to 
 do what people often think of as homework - writing essays or truly ambitious work - writing a book. Or more to the point - you're thinking. 
-In practice that means that this method of taking 
-notes requires time. It doesn't fit well into our real time working environments. It is a system that works very well as a processing step which goes 
-after the initial inboxing work. It is a system for developing thoughts. It is basically solving the problem of thinking about the notes we take and 
-then getting value from those notes in the future.
+In practice that means that this method of taking notes requires time. It doesn't fit well into our real time working environments. It is a system that works very well as a processing step which goes after the initial inboxing work. It is a system for developing thoughts. It is basically solving the problem of thinking about the notes we take and then getting value from those notes in the future.
+
+This process - encoding your notes so as to be walked on a graph - is extremely powerful. This isn't just a technique you can use to 
+increase the amount of writing you do via your notes. It is also a technique of memory. The memory palace technique encodes facts into a 
+format that can be parsed later so as to produce knowledge and it is also stored in a graph: a walk through a place that you know. Ahrens is 
+quick to dimiss memory techniques in the book and his writing on them comes across as deeply ignorant of the field. So he doesn't discuss 
+this and ends up arguing that graph walking and good encoding of information isn't wortwhile when he discusses memory techniques.
+
+In a certain sense, I don't want to recommend Ahrens because of this intellectual laziness, but at the same time the integration of graph 
+walking structures into the note taking system is too brilliant to not encourage. It is one of the cleverest things you can do to improve 
+your note taking process.
+
+# Conclusion
+
+I want to point out something. If we look at good database systems they have the same properties as the combined form of these two note taking 
+systems. They have a log. They process that log to produce a graph structure. That graph structure can then be queried to fetch information. 
+The reason I'm thinking my note taking process has gotten better is because I've seen parallels with the design of information retrieval systems 
+emerge in my note taking process.
 
 [bullet]: https://www.amazon.com/gp/product/0525533338/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0525533338&linkCode=as2&tag=joshuacoles-20&linkId=ef58f3b997f7e8c7fd2622b1147e25d8
 [fastslow]: https://en.wikipedia.org/wiki/Thinking,_Fast_and_Slow
