@@ -80,7 +80,7 @@ the Bullet Journal.
 You have to be real time. So I covered the speed aspect of note taking first. Now I'm going to move on 
 to getting more and more value from your notes over time.
 
-[How To Take Smarter Notes: 10 Principles to Revolutionize Your Note-Taking and Writing][smarter] is a book by Sönke Ahrens. It is the best book I've encountered on the subject of note taking. Sönke is one of the authors who realizes that our mediums are part of the thinking process, though like many, he limits this idea that our environments are thinking environments to just the idea that our writing is our thinking environment.
+[How to Take Smart Notes: One Simple Technique to Boost Writing, Learning and Thinking – for Students, Academics and Nonfiction Book Writers][smarter] is a book by Sönke Ahrens. It is the best book I've encountered on the subject of note taking. Sönke is one of the authors who realizes that our mediums are part of the thinking process, though like many, he limits this idea that our environments are thinking environments to just the idea that our writing is our thinking environment.
 
 This is a common error: mediums have natural incentives and incentives control behavior. So mediums end up influence what is produced within them. They aren't neutral. Since in practice writing has better incentives for thinking, it is the natural medium for good thinking. People recognize this and end up thinking that writing is thinking. In reality, all our interactions with the environment are a part of thinking, writing just tends to be incentivize better thinking and other mediums tend to corrupt it.
 
