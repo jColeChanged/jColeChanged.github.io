@@ -14,9 +14,8 @@ I'm reviewing are The Bullet Journal method and How To Take Smarter Notes.
 The [The Bullet Journal Method: Track the Past, Order the Present, Design the Future][bullet]
 by Ryder Carroll doesn't advertise itself as a book about taking notes. On the surface 
 it is a journaling method. In particular it is a journaling method that is optimized for 
-speed. Bullet has two meanings: bullet as in "as fast as a bullet" and bullet as in, "typographical 
-bullet point." So it might seem strange that I would start a post about 
-note taking books by talking about journaling.
+speed. Bullet has two meanings: bullet as in "as fast as a bullet" and bullet as in "bullet point." 
+It might seem strange that I would start a post about note taking books by talking about journaling.
 
 The reason I think starting with a talk about this book is appropriate is because 
 of the way our minds work. What I've observed is that we have [two systems][fastslow] in our minds. 
@@ -25,58 +24,58 @@ along this time dimension because of limited mental bandwidth. As the name impli
 bullet journal is a system that is highly adapted to working quickly. As a result it 
 works well as the component of a note taking system that acknowleges our time constraints.
 
-The Bullet Jornal methodology is by default a methodology that caters to our fast 
-thinking system. However, unlike note taking systems or task tracking systems, it 
-doesn't limit itself in what it covers. So you can put many different types of writing 
-into it.
+Other good note taking and task handling strategies acknowledge this need as well. 
+The mechanism by which many suggest doing this is a sort of note inbox. Quick notes 
+go into it like it is a queue and then get processed later.
 
-It is a note taking system that does a good job of catering to our need to take 
-notes quickly. 
-
-It is worth noting that most other good note taking strategies acknowledge this need as 
-well. If you read about note taking systems one concept that you are likely to encounter is the 
-idea that all things should be written down as notes immediately. People point out that 
-notes should be put somewhere and then processed later. The advise that 
-there needs to be a fast way to write things down. The mechanism by which many suggest 
-doing this is a sort of note inbox.
-
-For me, I've found that the bullet journal method is a good place to put these types of 
-quick notes. In particular, I've found it to be more useful than the note inbox abstraction. 
-The bullet journal acts as a kind of structured log that we can process later, which is the 
-critical thing, but it is also more powerful and general than the inboxing abstraction.
-
-To dig a bit deeper into what I mean by that: the inboxing abstraction treats itself like 
-a queue. Put things into it and later remove things from it as appropriate. The Bullet 
-Journal method initially works in the same way. Things are put into the log. However, that 
-log is part of a task scheduling framework. Tasks can be pushed to a future log, they 
-can be scheduled to a particular month, and there is a built in mechanism for ensuring that 
-the log gets processed.
+I've found that the bullet journal method is a better place to put these types of 
+quick notes. The journal produces a more durable log rather than a queue which is 
+thrown away. So it ends up producing more value over the long term. The journal 
+also sees itself as a more general and holistic system. It accepts more inputs and 
+is more adaptable to my needs.
 
 In the inbox abstraction people expect you to process the queue implicitly. In the bullet 
 journal method each day starts with the process of moving notes from the daily log to the 
-next daily log. That steps is a natural point for the queue to be processed and priotized.
-It is also a natural time for other journal entries which are concerned with tracking the 
-year, month, and week to be updated as appropriate based on the contents of the daily log.
-The inbox abstraction is treating your notes as things to be processed and forgotten. The 
-bullet method is treating your daily logs as a kind of structured log that gets processed 
-once it has reached a certain size.
+next daily log. That steps is a natural point for the log to be processed and prioritized.
+Some entries get moved forward to the next day, but sometimes journal entries which are 
+concerned with tracking the year, month, and week are updated.
+
+In doing that we've just moved across time scales in our fast thinking system. The 
+inbox abstraction is treating your notes as things to be processed and pushed to a task management 
+system too, but it forgets an important element of good database design - keep a log to reconstruct the 
+past. It is perfectly fine to treat that log as a queue, but it isn't a queue. A queue doesn't 
+let you reconstruct the past: that is what a log does.
+
+<div class="p">
+    <div class="marginnote">
+        <p>
+            The Bullet Journal was created to solve a particular problem for Ryder. He has ADHD. He needed to be 
+            able to control his attention and work with his fast thinking mind. That is what the journal helped 
+            him to do.
+        </p>
+    </div>
+</div>
 
 Not a lot of people talk about the bullet journal using this sort of language. 
 People who post their journals publicly are spending a lot of time on form rather than function, 
 which is fine from an athestic point of view, but rather against the spirit which motivates 
 the use of a bullet journal methodology. In practice, the Bullet Journal isn't so great for 
-art. It is great for controlling attention and keeping track of things when there is little 
-time available to do so. So most public discussion of the bullet journal doesn't tend to meditate 
-on this aspect and a lot of people confuse using the bullet journal method with drawing pretty 
-pictures.
+art using the default spreads. It is great for controlling attention and keeping track of things 
+when there is little time available to do so. 
 
-Basically what I'm trying to get at is that if you're using the bullet journaling methodology, 
-you shouldn't adopt an inbox methodology, but if you are using the inbox technique it is 
-probably worthwhile to upgrade your inbox by transitioning to a bullet journal. If you don't 
-take any notes at all though, this is a place to start. Critically, don't be confused by why 
-you are using the system. People will draw pretty pictures and because they are pretty that is 
-what you will see from people using the Bullet Journal, but that isn't the point of the Bullet 
-Journal.
+I think and feel that this confuses most public discussion of the bullet journal. People don't 
+tend to meditate on the performance aspect, because the pretty is what is most visible. So a lot 
+of people confuse using the bullet journal method with drawing pretty pictures.
+
+So if you're using the bullet journaling methodology, you shouldn't adopt an inbox methodology, but 
+if you are using the inbox technique it is probably worthwhile to upgrade your inbox by transitioning 
+to a bullet journal. If you don't take any notes at all though, this is a place to start. Critically, 
+don't be confused by why you are using the system. People will draw pretty pictures and because they 
+are pretty that is what you will see from people using the Bullet Journal, but that isn't the point of 
+the Bullet Journal.
+
+
+# Fast to Smart
 
 You have to be real time before you can handle being non-real time. So I covered the speed aspect 
 of note taking first. Now I'm going to move on to getting more and more value from your notes over
@@ -105,3 +104,4 @@ then getting value from those notes in the future.
 [bullet]: https://www.amazon.com/gp/product/0525533338/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0525533338&linkCode=as2&tag=joshuacoles-20&linkId=ef58f3b997f7e8c7fd2622b1147e25d8
 [fastslow]: https://en.wikipedia.org/wiki/Thinking,_Fast_and_Slow
 [smarter]: https://www.amazon.com/gp/product/1542866502/ref=as_li_tl?ie=UTF8&tag=joshuacoles-20&camp=1789&creative=9325&linkCode=as2&creativeASIN=1542866502&linkId=ba677752efcd991d0396eae7d42e5c93 
+[logstructured]: https://en.wikipedia.org/wiki/Log-structured_merge-tree
