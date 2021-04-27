@@ -46,16 +46,6 @@ system too, but it forgets an important element of good database design - keep a
 past. It is perfectly fine to treat that log as a queue, but it isn't a queue. A queue doesn't 
 let you reconstruct the past: that is what a log does.
 
-<div class="p">
-    <div class="marginnote">
-        <p>
-            The Bullet Journal was created to solve a particular problem for Ryder. He has ADHD. He needed to be 
-            able to control his attention and work with his fast thinking mind. That is what the journal helped 
-            him to do.
-        </p>
-    </div>
-</div>
-
 Not a lot of people talk about the bullet journal using this sort of language. 
 People who post their journals publicly are spending a lot of time on form rather than function, 
 which is fine from an athestic point of view, but rather against the spirit which motivates 
@@ -67,6 +57,16 @@ I think and feel that this confuses most public discussion of the bullet journal
 tend to meditate on the performance aspect, because the pretty is what is most visible. So a lot 
 of people confuse using the bullet journal method with drawing pretty pictures.
 
+<div class="p">
+    <div class="marginnote">
+        <p>
+            The Bullet Journal was created to solve a particular problem for Ryder. He has ADHD. He needed to be 
+            able to control his attention and work with his fast thinking mind. That is what the journal helped 
+            him to do.
+        </p>
+    </div>
+</div>
+
 So if you're using the bullet journaling methodology, you shouldn't adopt an inbox methodology, but 
 if you are using the inbox technique it is probably worthwhile to upgrade your inbox by transitioning 
 to a bullet journal. If you don't take any notes at all though, this is a place to start. Critically, 
@@ -75,12 +75,13 @@ are pretty that is what you will see from people using the Bullet Journal, but t
 the Bullet Journal.
 
 
-# Fast to Smart
+# Sprint to Smart
 
 You have to be real time before you can handle being non-real time. So I covered the speed aspect 
 of note taking first. Now I'm going to move on to getting more and more value from your notes over
 time.
-https://en.wikipedia.org/wiki/Thinking,_Fast_and_Slowidea that our writing is our thinking environment.
+
+[How To Take Smarter Notes: 10 Principles to Revolutionize Your Note-Taking and Writing][smarter] is a book by Sönke Ahrens. It is the best book I've encountered on the subject of note taking. Sönke is one of the authors who realizes that our mediums are part of the thinking process, though like many, he limits this idea that our environments are thinking environments to just the idea that our writing is our thinking environment.
 
 This is a common error: mediums have natural incentives and incentives control behavior. So mediums end up influence what is produced within them. They aren't neutral. Since in practice writing has better incentives for thinking, it is the natural medium for good thinking. People recognize this and end up thinking that writing is thinking. In reality, all our interactions with the environment are a part of thinking, writing just tends to be better thinking and other mediums tend to corrupt it.
 
