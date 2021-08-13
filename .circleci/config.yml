@@ -76,4 +76,4 @@ workflows:
                 - master
 
 orbs:
-  ruby: circleci/ruby@1.1.2
+  ruby: circleci/ruby@1.1.4
