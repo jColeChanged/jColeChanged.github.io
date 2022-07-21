@@ -16,19 +16,17 @@ path.line {
 }
 </style>
 
-For some people technical debt is all the things people tell them that 
-they shouldn't do and best practices are all the things people tell them 
-that they should do. They question the utility of the advice, because 
-they recognize times where taking on technical debt is good and times where 
-applying best practices is wasteful busy work. These people aren't completely 
-wrong. There are times when it is good to take on technical debt and there 
-are times when best practices aren't appropriate to adopt. 
+For some technical debt is just a list of shouldn't and best practice a list of should.
+I find this to be a poor framing and one prone to producing bitterness.
 
-My own perspective is that technical debt and best practices are actually 
-the same thing. They are both derived from the same model of how effort gets 
-converted into accomplishment. So the underlying factor in whether or not 
-they are appropriate is controlled by the time horizon at which success is 
-measured.
+My own perspective is that technical debt and best practices are actually the same thing. 
+That must sound strange - how can they be the same thing: one is supposed to be good and the other bad, right?
+
+Nope - it just seems that way because the utility generation is subject to a horizon effect.
+In my mental model both lists are derived from how effort gets converted into accomplishment. 
+They are both good. 
+They are both bad.
+Time windows control the utility perception.
 
 Let me explain what I mean by that. 
 

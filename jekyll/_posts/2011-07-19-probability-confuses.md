@@ -93,9 +93,7 @@ sure: I was wrong, and he was right.
 
 A thousand draws tell a different story:
 
-<div>
-<code>
-<pre>
+```clojure
 ;; A deck of ten cards each bearing a distinct number
 ;; between one and ten are shuffled in order to mix the
 ;; cards thoroughly. Three cards are removed from the
@@ -125,9 +123,7 @@ A thousand draws tell a different story:
 
 ;; user> (count (filter ascending? (repeatedly 6000 draw-cards)))
 ;; 1027
-</pre>
-</code>
-</div>
+```
 
 {% bibliography -f probability_confuses.bib %}
 
