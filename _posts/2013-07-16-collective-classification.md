@@ -3,6 +3,8 @@ layout: post
 title: Collective Classification
 published: true
 ---
+
+Testing
 This is another blog post in my series of blogs posts covering my reading of
 [Programming Collective Intelligence](book). A lot of the group members have had
 full-plates as of late. Some are working on start-ups, others are working

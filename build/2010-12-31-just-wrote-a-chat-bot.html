@@ -1,0 +1,90 @@
+<html><head><meta charset="UTF-8" /><title>Just Wrote A Chat Bot</title><meta content="Toto document" name="description" /><meta content="" name="keywords" /><meta content="width=device-width, initial-scale=1" name="viewport" /><style>/* some style */
+
+@font-face {
+    font-family: "LatinModernRomanWOFF";
+    /*src: url('https://www.albany.edu/~hammond/webfonts/lmroman12-regular.woff');*/
+    src: url('http://ozviz.io/fonts/lmroman12-regular.woff');
+}
+
+/* for math fonts? */
+/*@font-face {*/
+    /*font-family: "LatinModernMathWOFF";*/
+    /*src: url('https://www.albany.edu/~hammond/webfonts/latinmodern-math.woff');*/
+    /*font-weight: bold;*/
+/*}*/
+
+
+body {
+  padding: 30px;
+  line-height: 1.7;
+  font-family: 'Open Sans', sans-serif;
+}
+
+div#app {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+blockquote {
+  font-style: italic;
+  color: #606060;
+}
+
+h1, h2, h3, h4 {
+  font-family: "LatinModernRomanWOFF", serif;
+  line-height: 1.4;
+  /*font-family: 'Open Sans', sans-serif;*/
+}
+
+.fancy {
+  font-family: "LatinModernRomanWOFF", serif;
+}
+.plain {
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+  font-size: 50px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+h2{
+  font-size: 30px;
+  margin-top: 50px;
+  margin-bottom: 15px;
+}
+
+h3 {
+  font-size: 23px;
+  margin-top: 40px;
+  margin-bottom: 13px;
+}
+
+h4 {font-size: 18px;}
+
+code {
+  line-height: 1.5;
+  font-size: 14.5px;
+  color: #606060;
+  margin-right: 4px;
+  margin-left: 4px;
+}
+
+pre {
+  line-height: 1.5;
+  font-size: 14.5px;
+  color: #606060;
+}
+
+a {
+  color: darkblue;
+}
+
+div.vega-embed div.chart-wrapper {
+  height: auto;
+}
+
+
+</style><link href="http://ozviz.io/fonts/lmroman12-regular.woff" rel="stylesheet" /><link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" /></head><body><div><p>Two weeks ago my uncle came out from South Carolina to visit us for Christmas. He brought along a laptop which had a license on it which allowed him to run chat bots on Camfrog, Camfrog is a video conferencing platform geared around chat rooms. He wanted me to create a bot for the program and I was happy to do so.</p><p>At first we tried to find a way to copy the dll of an existing bot, because it already did something really close to what we needed. This didn’t work, as the bot’s architecture didn’t allow it to have two separate questions files. So I was forced to put on the programming belt and hammer out some code.</p><p>This wasn’t as fun as you might think. Rather than playing around with my new favorite language, Clojure, I had to write an event based C++ dll. This wasn’t by choice. The good people at Camfrog have a closed source C++ bot that loads and sends events to the dll. This lets them hide the platform’s protocol, which in turn allows them to charge a licensing fee for using a bot. Don’t want to buy the their bot hosting program? Good luck making a bot.</p><p>Despite this disadvantage I forged ahead, spending the entire week and entirely too much time making my uncle his bot. By the end of the week I had code in place that kept track of user scores, asked questions with a time limit, and a bit more. My uncle was satisfied.</p><p>I wasn’t. Despite the project being far harder than the hardest program I had been asked to write in the Introduction to C++ course I took last year, I felt I could do better. The program I had just made was currently a copy of the dll I had tried to work with at the beginning of this story, but that dll failed me. It wasn’t set up to allow its use in multiple games. It should have been.</p><p>So I set about making my bot configurable. After a while the bot wasn’t some game. It was a platform on which you could host as many question and answer games as you would like. All that you would need was a file to put settings and a file with your questions. I went from an instance of a question and answer game to question and answer game class. Now I was satisfied.</p><p>When I finished the bot, the week was over and my uncle left for home. When I woke up in the morning my uncle’s laptop was gone and a question had been left in its place. How would my untested code fare in the wild? Thinking about it helps me to understand why it is that developers love web apps so much. It will be such a pain to push out updates if this bot doesn’t work.</p></div></body></html>

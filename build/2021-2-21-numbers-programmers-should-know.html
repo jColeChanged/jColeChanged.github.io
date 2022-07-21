@@ -1,0 +1,158 @@
+<html><head><meta charset="UTF-8" /><title>Latency Numbers Programmers Should Know</title><meta content="Toto document" name="description" /><meta content="joshuacole" name="author" /><meta content="" name="keywords" /><meta content="width=device-width, initial-scale=1" name="viewport" /><style>/* some style */
+
+@font-face {
+    font-family: "LatinModernRomanWOFF";
+    /*src: url('https://www.albany.edu/~hammond/webfonts/lmroman12-regular.woff');*/
+    src: url('http://ozviz.io/fonts/lmroman12-regular.woff');
+}
+
+/* for math fonts? */
+/*@font-face {*/
+    /*font-family: "LatinModernMathWOFF";*/
+    /*src: url('https://www.albany.edu/~hammond/webfonts/latinmodern-math.woff');*/
+    /*font-weight: bold;*/
+/*}*/
+
+
+body {
+  padding: 30px;
+  line-height: 1.7;
+  font-family: 'Open Sans', sans-serif;
+}
+
+div#app {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+blockquote {
+  font-style: italic;
+  color: #606060;
+}
+
+h1, h2, h3, h4 {
+  font-family: "LatinModernRomanWOFF", serif;
+  line-height: 1.4;
+  /*font-family: 'Open Sans', sans-serif;*/
+}
+
+.fancy {
+  font-family: "LatinModernRomanWOFF", serif;
+}
+.plain {
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+  font-size: 50px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+h2{
+  font-size: 30px;
+  margin-top: 50px;
+  margin-bottom: 15px;
+}
+
+h3 {
+  font-size: 23px;
+  margin-top: 40px;
+  margin-bottom: 13px;
+}
+
+h4 {font-size: 18px;}
+
+code {
+  line-height: 1.5;
+  font-size: 14.5px;
+  color: #606060;
+  margin-right: 4px;
+  margin-left: 4px;
+}
+
+pre {
+  line-height: 1.5;
+  font-size: 14.5px;
+  color: #606060;
+}
+
+a {
+  color: darkblue;
+}
+
+div.vega-embed div.chart-wrapper {
+  height: auto;
+}
+
+
+</style><link href="http://ozviz.io/fonts/lmroman12-regular.woff" rel="stylesheet" /><link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" /></head><body><div><p>Many well known great software engineers believe that it takes more than a  solid understanding of the <a href="https://en.wikipedia.org/wiki/Big_O_notation">run time complexity</a> of the algorithms being used to write performant software. In particular they claim that  the latency numbers associated with computer hardware are essential knowledge. Despite the claimed  importance there is little factful information about this topic readily available online.</p><p>The general assumption has been that the first viral spread of published numbers, originally  posted in 2010, have changed, but not by a magnitude which would change our intuition.  The current updates to the number which are popularly  shared online are not the actual numbers, but numbers produced by a model. The degree to which  they match reality has not been tested and primae facie investigation of the models claims  makes me skeptical that the model is accurate especially as of 2021.</p><p>This post is intended to [increase factfullness][destiny instinct] in software engineering by refreshing our knowledge of these now outdated numbers.</p><p>It is also not just merely an update to these numbers, but an update with context. In prior  times when these numbers have been shared they have been shared without much context being  given to what the numbers mean in practice. What I hope to show is not just what the numbers  are, but the changes in decision making that these numbers are supposed to motivate.</p><p>Althought the numers have changed, there importance has only increased with time. In the  past these numbers were important and we were also seeing our software become faster and  faster on account of advances in hardware. In recent years the free lunch of hardware speed  increases has been slowing.</p><p>Over the short history of computing software engineers have done an amazing job of destroying all performance gains brought on by improved hardware. So this is also an important topic for those  engineers who don't care about performance. Without a deeper understanding of latency numbers  it could be the case that, quite by accident, an engineer who does not care about performance  writes code that is nevertheless performant.</p><h2>The Original Numbers</h2><p>In 2010 [Jeff][Wiki: Jeff] [Dean][Google: Jeff] gave a talk at <a href="Stanford">Stanford</a> on  latency numbers he thought every programmer should know. [Peter Norvig][Wiki: Peter] also thought  that [knowing these numbers][Answers: Peter] was important. Years have passed since then. </p><p>The original numbers can be seen in the table below. On the off chance that readers are  unfamiliar with these terms, I've amended the table with links to wikipedia articles about  the respective topics.</p><p></p><div class="p"><pre><code><div class="marginnote">
+    <p>
+        One way of understanding nanoseconds is the definition of nanoseconds.
+    </p>
+        <table>
+            <tr>
+                <td>
+                    1 <code>ns</code>=10<sup>-9</sup> seconds
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    1 <code>us</code>=10<sup>-6</sup> seconds=1000 <code>ns</code>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    1 <code>ms</code>=10<sup>-3</sup> seconds=1000 <code>us</code>=1000000 <code>ns</code>
+                </td>
+            </tr>
+        </table>
+    <p>
+        It can be pretty hard to tie this definition to the real world implication of a 
+        nanoseconds and microseconds. A better way to think of a nanosecond is as the roughly 
+        eight inches that light can travel in a nanosecond and a better way to think of a 
+        microsecond is as the roughly nine hundred and eighty four feet of rope that 
+        <a href="https://www.youtube.com/watch?v=9eyFDBPk4Yw">Grace Hooper suggests 
+        wrapping around the neck of software engineers who throw away microseconds</a>.
+    </p>    
+</div> </code></pre></div><p></p><p>Metric                            | Time in ns       | Time in us  | Time in ms | Relative time ———————————-|——————|————-|————|————— [L1 cache reference][wiki: cache] |           0.5 ns |             |            | [Branch mispredict][Wiki: predict]|           5   ns |             |            | [L2 cache reference][Wiki: cache] |           7   ns |             |            | 14x L1 cache [Mutex lock/unlock][Wiki: lock]   |          25   ns |             |            | [Main memory reference][Wiki: mem]|         100   ns |             |            | 20x L2 cache, 200x L1 cache [Compress 1K bytes with Zippy][Wiki: zippy] |       3,000   ns |       3 us  |            | [Send 1K bytes over 1 Gbps network][Wiki: network] |      10,000   ns |      10 us  |            | [Read 4K randomly from SSD][Wiki: ssd]        |     150,000   ns |     150 us  |            | ~1GB/sec SSD Read 1 MB sequentially from memory |     250,000   ns |     250 us  |            | Round trip within same datacenter |     500,000   ns |     500 us  |            | [Read 1 MB sequentially from SSD][Wiki: ssd] |   1,000,000   ns |   1,000 us  | 1 ms       |~1GB/sec SSD, 4X memory [Disk seek][Wiki: HD]                         |  10,000,000   ns |  10,000 us  | 10 ms      |20x datacenter roundtrip [Read 1 MB sequentially from disk][Wiki: HD]  |  20,000,000   ns |  20,000 us  | 20 ms      | 80x memory, 20X SSD Send packet CA->Netherlands->CA   | 150,000,000   ns | 150,000 us  | 150 ms     |</p><h2>Why The Numbers Matter</h2><p>First lets start with the L1 cache and put it in context  with main memory reference. If data is already in the cache it can be fetched in 0.5 ns, but if it  isn't in either the L1 cache or the L2 cache then the CPU is going to be busy fetching data for  100-200 times longer than it would have if the data was in the cache.</p><p>The time taken to fetch one cache line from memory (read latency due to a cache miss) matters because the CPU will run out of things to do while waiting for the cache line. When a CPU reaches this state, it is called a stall. As CPUs become faster compared to main memory, stalls due to cache misses displace more potential computation; modern CPUs can execute hundreds of instructions in the time taken to fetch a single cache line from main memory. In terms that are more  relatable the difference between getting a cache hit versus accessing main memory is like the difference between doing something that takes one minute versus doing something  which takes a bit more than three hours.</p><p>Combine that with how branch predictions gone wrong are ten times more expensive than an L1 cache  hit and we can start to see some of why it is that these numbers are so important to know. If you  write your low level code so that the computer has a good idea of what data it needs and what paths  it might be taking it can [speed up execution by a considerable constant factor][so: speedy].</p><p>Next lets break down compression and relate it to reading data. It takes 3000 ns to compress  1K bytes, but it takes 10,000 ns to send that many bytes over the network. We can assume that  compressing 4k bytes is going to take 12000 ns, but reading 4k bytes from an SSD will take  150,000 ns. That is an ideal for reading from storage devices and via the network. Things  start getting much more expensive as we progress down the list.</p><p>If you think about this for a bit it implies something. There is a point at which speed is  going to be increased by compressing data, because compressing a lot of data and sending the  small amount of resulting data is faster than not compressing and sending the raw data  and you start gaining a latency advantage in terms of sending data at a lower data threshold  than might seem intuitive when thinking about things from a human perspective. One way to think  about why compression before sending is better is to convert these numbers to your intuition. Packing  your bag before you hop on a flight is a bit faster than taking a plane trip per item. </p><p>The exact amount of when it becomes worthwhile to do this is a bit hard to say without knowing  your data. Some data formats are already compressed so you don't get as much utility from  compresing them. For Snappy in particular as a compression mechanism the Google repo for the project  says it performs as follows:</p><p></p><div class="p"><pre><code><blockquote>
+    Typical compression ratios (based on the benchmark suite) are about 1.5-1.7x for plain text, about 2-4x for HTML, and of course 1.0x for JPEGs, PNGs and other already-compressed data. Similar numbers for zlib in its fastest mode are 2.6-2.8x, 3-7x and 1.0x, respectively. More sophisticated algorithms are capable of achieving yet higher compression rates, although usually at the expense of speed. Of course, compression ratio will vary significantly with the input.
+</blockquote>
+<footer>
+    <a href="https://github.com/google/snappy/blob/ea368c2f07de5f31146a10214f27d15091b09771/README.md#performance">Google Snappy Github README</a>
+</footer> </code></pre></div><p></p><p>In the hypothetical where you are dealing with processing of a large amount of text data,  maybe in preperation for feeding that data into a nueral network, and the size of the data  requires you to split up the computation across multiple computers which itself involves a  step in which data must be transferred to those computers by some mechanism we might expect  to have a nearly 2x reduction in file size. This could result in a nearly 2x improvement  in time spent reading data from the network and time spent reading data from disk. Which,  as shown in the stats, is one of the most costly operations.</p><p></p><div class="p"><pre><code><div class="marginnote">
+    <blockquote>
+        For data queries that need to scan over millions of rows, a big bottleneck is the bandwidth for getting data from disk into memory. However, that is not the only bottleneck. Developers of analytic databases also worry about efficiently using the bandwidth from main memory into CPU cache, avoiding branch misprediction and bubbles in the CPU instruction processing pipeline, and making use of single-instruction multiple-data instructions in modern CPUs.
+    </blockquote>
+    <footer>
+        <a target="_blank" href="https://www.amazon.com/gp/product/1449373321/ref=as_li_tl?ie=UTF8&amp;tag=joshuacoles-20&amp;camp=1789&amp;creative=9325&amp;linkCode=as2&amp;creativeASIN=1449373321&amp;linkId=94ba2266d30810326c298c93c92b9296">
+            Designing Data Intensive Applications
+        </a>
+    </footer>
+</div> </code></pre></div><p></p><p>Another thing to notice is the difference between having the data already in-memory versus  having to get that data from the disk. If data is already in-memory then that data is going  to be taking only 100 ns to access. Loading 1 MB of data on the other hand can take  1,000,000 ns and then you're still going to be referencing it after you load it regardless. The implications are that keeping your data in-memory rather than on disk can have huge  performance benefits. In fact, since transferring data over the network within a datacenter  is less expensive than reading data from disk, if speed of computation is your goal then it  can make sense to store data in memory even if your computer doesn't have enough memory to  store the data in memory.</p><p>So if you ever wondered why so many of those cache servers and databases make a point of advertising  that they are serving data from memory? Now you know. Doing so is a lot faster than serving that  same data from disk.</p><p>So that is what the numbers were and what the implications of the numbers being what they were is. What are the numbers now? How have they been changing? Does it even matter?</p><h2>The Numbers As Reported Elsewhere</h2><p>Earlier I mentioned that the numbers have been changing. They have been.  Some people have claimed that since the numbers are changing it only makes sense  to know the numbers in terms of magnitude in relation to each other [1]. This is  a great point and it does help protect a person from the fact that the numbers  are changing and there information may get out of date. However, that doesn't  mean we don't have to validate the assumption that the numbers haven't changed.</p><p>Test all things, hold fast that which is good.</p><p></p><figure class="fullwidth"><pre><code><figcaption>Model Based Estimate of Latency Numbers</figcaption>
+<img src="/img/programming_numbers/model_estimate_2020.png" alt="a visualization of 2020 latency numbers" /> </code></pre></figure><p></p><p>Metric                            | 2012 Numbers     | 2020 Model Based Estimates | Delta | ———————————-|——————|—————————-|——-| [L1 cache reference][wiki: cache] |           0.5 ns |         1 ns               | -0.5 ns| [Branch mispredict][Wiki: predict]|           5   ns |         3 ns               | 2 ns      | [L2 cache reference][Wiki: cache] |           7   ns |         4 ns               | 3 ns      | [Mutex lock/unlock][Wiki: lock]   |          25   ns |         17 ns              | 8 ns      | [Main memory reference][Wiki: mem]|         100   ns |         100 ns             | 0 ns      | [Compress 1K bytes with Zippy][Wiki: zippy] |  3,000 ns |      2,000 ns            | 1,000 ns      | [Send 1K bytes over 1 Gbps network][Wiki: network] | 10,000   ns | 44 ns          | 9,956 ns      | [Read 4K randomly from SSD][Wiki: ssd]  |     150,000   ns | 16,000 ns            | 134,000 ns | Read 1 MB sequentially from memory |     250,000   ns |      3,000 ns              | 247,000 ns | Round trip within same datacenter |     500,000   ns |       500,000 ns           | 0 ns      | [Read 1 MB sequentially from SSD][Wiki: ssd] |   1,000,000   ns | 49,000 ns       | 95,1000 ns  | [Disk seek][Wiki: HD]             |  10,000,000   ns  |      2,000,000 ns         | 8,000,000 ns |  [Read 1 MB sequentially from disk][Wiki: HD]  |  20,000,000   ns | 1,000,000 ns   | 19,000,000 ns      |  Send packet CA->Netherlands->CA   | 150,000,000   ns |     150,000,000 ns         | 0 ns      |</p><p>The first thing that really jumps out at me from these numbers is the 2020 estimate of  the cost of sending 1k bytes over a 1 Gbps network. This is calculated via:</p><pre><code>function getNetworkPayloadBytes() {
+    // 2KB
+    return 2 * Math.pow(10,3);
+}
+
+function getNICTransmissionDelay(payloadBytes) {
+    // NIC bandwidth doubles every 2 years
+    // [source: http://ampcamp.berkeley.edu/wp-content/uploads/2012/06/Ion-stoica-amp-camp-21012-warehouse-scale-computing-intro-final.pdf]
+    // TODO: should really be a step function
+    // 1Gb/s = 125MB/s = 125*10^6 B/s in 2003
+    // 125*10^6 = a*b^x
+    // b = 2^(1/2)
+    // -> a = 125*10^6 / 2^(2003.5)
+    var a = 125 * Math.pow(10,6) / Math.pow(2,shift(2003) * 0.5);
+    var b = Math.pow(2, 1.0/2);
+    var bw = a * Math.pow(b, shift(year));
+    // B/s * s/ns = B/ns
+    var ns = payloadBytes / (bw / Math.pow(10,9));
+    return ns;
+}
+
+
+var network = new Metric(getNICTransmissionDelay(getNetworkPayloadBytes()), "10us",
+    "Send " + addCommas(getNetworkPayloadBytes()) + " bytes over commodity network: ", "network");
+</code></pre><p>In the code we see that the assumption was that NIC bandwidth would double  every two years. We also see the author was aware that the calculation wasn't  accurate even when the function was written from the TODO referencing a step  function.</p><p>TODO: Update this section.</p><p>[1]: https://softwareengineering.stackexchange.com/questions/312485/how-can-jeff-deans-latency-numbers-every-programmer-should-know-be-accurate-i [2]: https://colin-scott.github.io/personal<i>website/research/interactive</i>latency.html [3]: https://gist.github.com/jboner/2841832</p><p>[1]: https://en.wikipedia.org/wiki/2010) [Stanford]: https://en.wikipedia.org/wiki/Stanford_University</p><p>[Wiki: Jeff]: https://en.wikipedia.org/wiki/Jeff_Dean [Google: Jeff]: https://research.google.com/people/jeff/</p><p>[Wiki: Peter]: https://en.wikipedia.org/wiki/Peter_Norvig [Answers: Peter]: https://norvig.com/21-days.html#answers</p><p>[destiny instinct]: https://www.gapminder.org/factfulness/destiny/</p><p>[Wiki: cache]: https://en.wikipedia.org/wiki/CPU_cache [Wiki: predict]: https://en.wikipedia.org/wiki/Branch_predictor [Wiki: lock]: https://en.wikipedia.org/wiki/Lock<i>(computer</i>science) [Wiki: mem]: https://en.wikipedia.org/wiki/Computer<i>data</i>storage#Primary_storage [Wiki: zippy]: https://en.wikipedia.org/wiki/Snappy_(compression) [Wiki: network]: https://en.wikipedia.org/wiki/Network_traffic [Wiki: ssd]: https://en.wikipedia.org/wiki/Solid-state_drive [Wiki: hd]: https://en.wikipedia.org/wiki/Hard<i>disk</i>drive</p><p>[so: speedy]: https://stackoverflow.com/questions/11227809/why-is-processing-a-sorted-array-faster-than-processing-an-unsorted-array</p></div></body></html>

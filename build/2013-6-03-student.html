@@ -1,0 +1,90 @@
+<html><head><meta charset="UTF-8" /><title>Student, It Isolates Variables</title><meta content="Toto document" name="description" /><meta content="" name="keywords" /><meta content="width=device-width, initial-scale=1" name="viewport" /><style>/* some style */
+
+@font-face {
+    font-family: "LatinModernRomanWOFF";
+    /*src: url('https://www.albany.edu/~hammond/webfonts/lmroman12-regular.woff');*/
+    src: url('http://ozviz.io/fonts/lmroman12-regular.woff');
+}
+
+/* for math fonts? */
+/*@font-face {*/
+    /*font-family: "LatinModernMathWOFF";*/
+    /*src: url('https://www.albany.edu/~hammond/webfonts/latinmodern-math.woff');*/
+    /*font-weight: bold;*/
+/*}*/
+
+
+body {
+  padding: 30px;
+  line-height: 1.7;
+  font-family: 'Open Sans', sans-serif;
+}
+
+div#app {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+blockquote {
+  font-style: italic;
+  color: #606060;
+}
+
+h1, h2, h3, h4 {
+  font-family: "LatinModernRomanWOFF", serif;
+  line-height: 1.4;
+  /*font-family: 'Open Sans', sans-serif;*/
+}
+
+.fancy {
+  font-family: "LatinModernRomanWOFF", serif;
+}
+.plain {
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+  font-size: 50px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+h2{
+  font-size: 30px;
+  margin-top: 50px;
+  margin-bottom: 15px;
+}
+
+h3 {
+  font-size: 23px;
+  margin-top: 40px;
+  margin-bottom: 13px;
+}
+
+h4 {font-size: 18px;}
+
+code {
+  line-height: 1.5;
+  font-size: 14.5px;
+  color: #606060;
+  margin-right: 4px;
+  margin-left: 4px;
+}
+
+pre {
+  line-height: 1.5;
+  font-size: 14.5px;
+  color: #606060;
+}
+
+a {
+  color: darkblue;
+}
+
+div.vega-embed div.chart-wrapper {
+  height: auto;
+}
+
+
+</style><link href="http://ozviz.io/fonts/lmroman12-regular.woff" rel="stylesheet" /><link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" /></head><body><div><p>I've been working my way through [Paradigms of Artificial Intelligence Programming (PAIP)](book). I just finished reading up on an AI program named Student. It is a clever little bit of code that can solve word problems that wouldn't be out of place in a high-school algebra class.</p><p>The root of most equations in which you are solving for one variable is isolating that one variable. You just keep moving things around using simple rules until the unknown is the only thing on one side of the equals sign. At that point things are solved. So once you type out exactly how to invert each of the mathematical operations that Student is likely to encounter, solving the equations becomes <a href="http://books.google.com/books?id=7papZR4oVssC&amp;pg=PA84&amp;lpg=PA84&amp;dq=trivial+feynman&amp;source=bl&amp;ots=esUV9cqQ_W&amp;sig=HAJwHxBqT6vVxG9eH7O4YE7IzuM&amp;hl=en&amp;sa=X&amp;ei=wCqsUeLCIOSL0QGn0oHQDg&amp;ved=0CDwQ6AEwAg#v=onepage&amp;q=trivial%20feynman&amp;f=false">trivial</a>.</p><p>However, we don't give Student equations. We give it paragraphs. It is solving word  problems.</p><p>A modern reader might suppose this means that advanced AI is being used to understand  language and then on the basis of that understanding the text is parsed into equations.  Actually, it is far simpler than that. The parsing of word problems into equations in  Student is the same technique I've talked about before in <a href="eliza">Eliza</a>. They both use  extremely basic pattern matching.</p><p>There are a few differences between the two programs. For example, the pattern matching code of Eliza is ready to quit after finding its first match, but Student recursively matches every part of its input. If you give it a paragraph it will keep on breaking the input up until it has a series of equations which model the problem that was given.</p><p>Like Eliza, the short fall of the program is that if you give it a bit of math that doesn't fit into the patterns that were supplied for it, it won't behave properly. </p><p>[book]: https://www.amazon.com/gp/product/1558601910/ref=as<i>li</i>tl?ie=UTF8&tag=joshuacoles-20&camp=1789&creative=9325&linkCode=as2&creativeASIN=1558601910&linkId=d42b5a7ed5037f5566cabdb8ca59f9cb [eliza]: http://joshuacol.es/2012/06/21/eliza-is-only-a-chat-bot.html</p></div></body></html>
