@@ -20,9 +20,8 @@ commands:
       - run:
           name: "Install"
           command: |
-            sudo apt-get install -y zlib1g-dev curl jq
+            sudo apt-get install -y zlib1g-dev curl jq nodejs npm
             python -m pip install pipenv
-            sudo apt-get install nodejs
             npm install
             pipenv install --system --deploy
       - ruby/install-deps
