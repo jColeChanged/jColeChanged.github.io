@@ -3,15 +3,13 @@ layout: post
 title: Lisp Has Average Performance in Google AI Competition
 published: true
 ---
-A while back a [blog][1] at [r-chart][2] analyzed the Google AI Competition
-rankings. That blog post inspired me to try applying some of the things I've
-been learning about in courses offered through Carnegie Mellon's Open Learning
-Initiative.
+ 
+A [blog][1] at [r-chart][2] analyzed Google AI Competition rankings. 
+That blog post inspired me to try applying some of the things I've been learning about in courses offered through Carnegie Mellon's Open Learning Initiative.
 
-The first step was to get the data. To do that I used a really cool scraping
-library called [Enlive][3] which lets you scrape HTML using CSS selectors.
-Enlive is actually a templating library, but it allows for such clean
-separation of presentation and logic that it handles scraping too.
+The first step was to get the data. 
+To do that I used a really cool scraping library called [Enlive][3] which lets you scrape HTML using CSS selectors.
+Enlive is actually a templating library, but it allows for such clean separation of presentation and logic that it handles scraping too.
 
 Here is a [public google spreadsheet][4] that has the scraped data.
 

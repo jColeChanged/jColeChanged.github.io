@@ -4,14 +4,11 @@ title: Contributing to an Open Source Chat Bot
 published: true
 ---
 
-My first ever contribution to an open source project that wasn&rsquo;t my
-own was a plugin for an IRC chat bot in #clojure on freenode. The plugin was
-called findfn, because that is what it did. When someone types something in
-IRC along the lines of <code>findfn 2 2 4</code> it would return a list of all
-the functions which would return <code>4</code> after being passed
-<code>2</code> twice. In that example it would probably return the operators
-for both addition and multiplication. Other times it might return first, last,
-map, or any number of other functions.
+My first ever contribution to an open source project that wasn't my own was a plugin for an IRC chat bot in `#clojure` on `freenode`. 
+The plugin was called `findfn`, because that is what it did. 
+When someone types something in IRC along the lines of <code>findfn 2 2 4</code> it would return a list of all the functions which would return <code>4</code> after being passed <code>2</code> twice. 
+In that example it would probably return the operators for both addition and multiplication. 
+Other times it might return first, last, map, or any number of other functions.
 
 To do this the plugin took a brute force approach. There weren&rsquo;t any
 clever means of figuring out what would return what, though it would be
