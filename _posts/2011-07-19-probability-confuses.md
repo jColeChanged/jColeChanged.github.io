@@ -125,8 +125,6 @@ A thousand draws tell a different story:
 ;; 1027
 ```
 
-# {% bibliography -f probability_confuses.bib %}
-
 [1]: https://www.york.ac.uk/depts/maths/histstat/pascal.pdf
 [2]: https://www.youtube.com/watch?v=3pRM4v0O29o#t=5m00s
 [3]: https://en.wikipedia.org/wiki/Blaise_Pascal
