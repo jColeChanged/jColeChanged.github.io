@@ -14,6 +14,6 @@ gem "github-pages", "227", group: :jekyll_plugins
 # gem "jekyll-feed"     # For RSS integration
 # gem 'jekyll-seo-tag'  # For search engines
 # gem 'jekyll-sitemap'  # For adding sitemap for search engines
-# gem 'jekyll-scholar'  # For better support for citations and references
+gem 'jekyll-scholar'  # For better support for citations and references
 
 gem "webrick", "~> 1.7"
