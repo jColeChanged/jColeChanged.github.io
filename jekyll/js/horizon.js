@@ -315,44 +315,30 @@ function randomStrategy(i, j) {
     }
 }
 
+function encodePosition(cell) {
+    return cell[0] + "," + cell[1];
+}
+
 function update(svg, board, visibles) {
     console.log("?called=update&board=", board, "&svg=", svg, "&visibles=", visibles);
-    var cols = board[0].length,
-        rows = board.length,
-        cellHeight = 20,
+    var cellHeight = 20,
         cellWidth = 20,
         cellPadding = 5,
-        visibleMap = {},
-        xSize = (cellPadding + cellWidth) * cols,
-        ySize = (cellPadding + cellWidth) * rows;
+        visibleMap = {};
 
           
     if (visibles) {
         visibles.map(function(d) {
-            visibleMap[d[0] + "," + d[1]] = true;
+            visibleMap[encodePosition(d)] = true;
         });
     }
     
     var cells = [];
     for (var i=0; i < board.length; i++) {
         for (var j=0; j < board[i].length; j++) {
-            var visible, textColor = "black";
             // when there is no present visibility strat, everything is visible
-            if (!visibles) {
-                visible = true;
-            }
-            else {
-                visible = Boolean(visibleMap[i + "," + j]) || board[i][j] === "P" || board[i][j] === "E";
-            }
-            if (visible && !isNaN(board[i][j])) {
-                if (board[i][j] > 0) {
-                    textColor = "green";
-                }
-                else if (board[i][j] < 0) {
-                    textColor = "red";
-                }
-                
-            }
+            var visible = visibles === null || Boolean(visibleMap[i + "," + j]) || board[i][j] === "P" || board[i][j] === "E";
+            var textColor = !isNaN(board[i][j]) && board[i][j] < 0 ? "red" : "green";
             cells.push({
                x: (cellWidth + cellPadding) * j,
                y: (cellHeight + cellPadding) * i,
@@ -366,6 +352,7 @@ function update(svg, board, visibles) {
         }
     }
     
+    console.log(cells);
     var canvas = d3.select(svg);
 
     console.log(canvas, svg);
@@ -413,6 +400,6 @@ function playRound(id, player, board) {
         var statistics = player.getStatistics();
         d3.select(id + "Score").text(statistics[0]);
         d3.select(id + "Moves").text(statistics[1]);
-        d3.select(id + "Average").text(statistics[2]);
+        d3.select(id + "Average").text(statistics[2].toFixed(2));
     }
 }

@@ -6,8 +6,6 @@ function runSimulation() {
     var fullBoard = generateBoard(BOARD_SIZE_X, BOARD_SIZE_Y);
     populateBoard(fullBoard, randomStrategy);
 
-    update("#fullBoard", fullBoard, null);
-
     var oneSpaceAgent = new Player(1),
         oneSpaceBoard = JSON.parse(JSON.stringify(fullBoard));
     update("#oneSpaceAgent", oneSpaceBoard, oneSpaceAgent.getVisible(oneSpaceBoard));
