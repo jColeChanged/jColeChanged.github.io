@@ -31,14 +31,7 @@ The Monty Hall problem is famous for having sparked so much disagreement. It is
 taught about in statistics courses across the country. The
 [problem has even been covered in the movie 21][9].
 
-This is the sort of debate I'm talking about. Debates about non-intuitive
-probability problems.
-
-I once gave the problem to my family. When I shared with them the correct
-answer they refused to accept it. We argued over it for hours before I managed
-to convince them that I was right. The thing is, there are more disagreements
-than just this one. People get probability wrong *all the time*; This is just a
-famous example.
+People get probability wrong *all the time*; This is just a famous example.
 
 Sports fans believe that hot streaks are a real thing. They might be angry
 with a coach for not putting the game in the hands of a hot player. Studies
@@ -107,7 +100,7 @@ A thousand draws tell a different story:
 ;; Now lets say we try drawing a few thousands time…
 ;; How frequently will the cards be in ascending order?
 
-;; user> (count (filter ascending? (repeatedly 6000 draw-cards)))
+(count (filter ascending? (repeatedly 6000 draw-cards)))
 ;; 1027
 ```
 
