@@ -4,26 +4,12 @@ title: Probability Confuses
 published: true
 ---
 
-Most of the people who read this blog have already discovered that I'm
-interested in both probability and statistics. What they might not guess is
-that this passion of mine leads to minor conflict with my family. Not serious
-conflict. I'm not talking about anger, raised voices, and strained
-relationships. I'm talking about the sort of conflicts which always seem to be
-sprouting up when probability is under discussion.
-
-It took a long time before humanity got a grip on modeling probabilities. The
-first formal treatment of the subject I'm aware of were the [letters][1]
-between [Blaise Pascal][3] and [Pierre de Fermat][4]. Reading them was
-interesting. Each of these letters was exceedingly polite so much so that a
-modern reader use to discourse on the internet and the counsel that they ought
-to always be concise might think the polite wordings were some sort of joke.
-
-In these letters which [changed the way people see the world][2] the two intellectual
-giants were trying to figure out the correct way to solve the
-[divide the pot of an unfinished game][5], but they did not agree about how to
-do it. Even from the start probability problems were showing themselves to be
-confusing to the brightest. Hundreds of years later probability still confuses
-us.
+It took a long time before humanity got a grip on modeling probabilities.
+The first formal treatment of the subject I'm aware of were the [letters][1] between [Blaise Pascal][3] and [Pierre de Fermat][4].
+In these letters which [changed the way people see the world][2] the two intellectual giants were trying to figure out the correct way to solve the [divide the pot of an unfinished game][5], but they did not agree about how to do it.
+Even from the start probability problems were showing themselves to be confusing to the brightest.
+This, despite thousands of years of preperation for contending with the problems.
+Now, mere hundreds of years later, probability still confuses.
 
 In 1975 [Marilyn vos Savant][6] who was in the record books for having the
 worlds highest IQ, published what it is now known as the
