@@ -5,8 +5,6 @@ published: true
 author: joshuacole
 ---
 
-# Computational Graph Notebook
-
 This blog post is about some philosophical motivations behind a tool I'm building to help intelligences which think via language think lazily, efficiently, and in accordance with principles which help to produce thoughtful output. So to start I'm going to explain the basic idea behind the tool.
 
 The basic idea is templatize known to be good structures: things like Polya's guide to reasoning about how to solve a problem, the Eisenhower matrix for thinking about prioritization, or the laws of probabilities. Then using those templates we transform away from linear documents to a graph representation whose continuations are in accordance with the templates. In some cases, like with the laws of probability, the templatized continuations are an automatic regurgitation of known to be structurally correct reasoning. In other cases as when solving a novel problem a great deal of creativity will need to be exercised by the document writer. Regardless the writer is expected to fill in the template if they care about reasoning correctly - or leave a path empty if they are too lazy to complete the work of thinking. After writing they can then walk a path through their graph to materialize a thoughtful and well structured document which explores the topic which is of interest to them in a manner optimized according to their intended use of the document.
