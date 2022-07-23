@@ -25,40 +25,17 @@ layout: default
 
 {% include notifications.html %}
 
-  <div class="col-sm-6">
-    <h2>Elsewhere On The Internet</h2>
-    <p>
-      In addition to the content I host here on my own domain, I also have works
-      on other websites. If you would like to support my online presence
-      or see other content by me, please follow me on these other platforms.
-    </p>
-    <ul class="list-unstyled">
-      <li>
-	<a href="https://www.patreon.com/toojoshua">Patreon</a>
-      </li>
-      
-      <li>
-	<a href="https://www.twitch.tv/toojoshua">Twitch</a>
-      </li>
+## Elsewhere On The Internet
 
-      <li>
-	<a href="https://youtube.com/jcolechanged">YouTube</a>
-      </li>
+In addition to the content I host here on my own domain, I also have works on other websites. If you would like to support my online presence or see other content by me, please follow me on these other platforms.
 
-      <li>
-	<a href="https://www.fanfiction.net/~toojoshua">fanfiction.net</a>
-      </li>
-
-      <li>
-	<a href="https://forums.spacebattles.com/members/toojoshua.315351/">SpaceBattles</a>
-      </li>
-      
-      <li><a href="https://www.twitter.com/jcolechanged">Twitter</a></li>
-      <li><a href="https://www.quora.com/profile/Joshua-Cole-185">Quora</a></li>
-      <li><a href="https://www.reddit.com/u/jcolechanged">Reddit</a></li>
-      <li><a href="https://news.ycombinator.com/user?id=JoshCole">Hacker News</a></li>
-      <li><a href="https://www.github.com/jcolechanged">GitHub</a></li>
-    </p>
-  </div>  
-</div>
-
+*   [Patreon](https://www.patreon.com/toojoshua)
+*   [Twitch](https://www.twitch.tv/toojoshua)
+*   [YouTube](https://youtube.com/jcolechanged)
+*   [fanfiction.net](https://www.fanfiction.net/~toojoshua)
+*   [SpaceBattles](https://forums.spacebattles.com/members/toojoshua.315351/)
+*   [Twitter](https://www.twitter.com/jcolechanged)
+*   [Quora](https://www.quora.com/profile/Joshua-Cole-185)
+*   [Reddit](https://www.reddit.com/u/jcolechanged)
+*   [Hacker News](https://news.ycombinator.com/user?id=JoshCole)
+*   [GitHub](https://www.github.com/jcolechanged)
