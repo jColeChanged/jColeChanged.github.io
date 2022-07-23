@@ -12,3 +12,5 @@ node_modules
 .nrepl-port
 .calva
 target
+build
+.vscode

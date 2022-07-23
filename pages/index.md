@@ -1,3 +1,7 @@
+---
+title: joshuacol.es
+---
+
 Hi, I'm Joshua Cole.
 Thanks for taking the time to visit my website.
 

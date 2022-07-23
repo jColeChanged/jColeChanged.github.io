@@ -4,118 +4,22 @@ layout: post
 updated: 2021-3-06
 ---
 
-<section>
-    <p>
-        One of the projects I'm working on right now is a 
-        better way to visualize progress over time. Eventually 
-        this page will be a showcase for that approach to 
-        visualizing progress.
-    </p>
-    <p>
-        Right now this isn't that.
-    </p>
-    <h2>Current Projects</h2>
-    <ul>
-        <li>Contributing to EQOA revial project</li>
-        <li>Building a Spark Cluster</li>
-        <li>A Better Progress Visualization</li>
-        <li>A Better UI/UX For IDE Keybindngs</li>
-        <li>Writing A Refresh to Numbers Every Programmer Should Know</li>
-        <li>Long-term Mastery Learning Project</li>
-        <li>Migrating my stories to a domain under my control</li>
-    </ul>
-    <h2>Books I'm Currently Reading</h2>
-    <ul>
 
-        <li> 
-            <a target="_blank" href="https://www.amazon.com/gp/product/0134094239/ref=as_li_tl?ie=UTF8&tag=joshuacoles-20&camp=1789&creative=9325&linkCode=as2&creativeASIN=0134094239&linkId=3007a0708b40c3a2dbc0af38a8edd8f4">
-                Practical Augmented Reality.</a>
-        </li>
-        <li>
-            <a target="_blank" href="https://www.amazon.com/gp/product/1449373321/ref=as_li_tl?ie=UTF8&tag=joshuacoles-20&camp=1789&creative=9325&linkCode=as2&creativeASIN=1449373321&linkId=94ba2266d30810326c298c93c92b9296">
-                Designing Data Intensive Applications
-            </a>
-        </li>
+Completed Books
+---------------
 
-    </ul>
-    <h2>Completed Books</h2>
-    <ul>
-        <li>
-           <p>
-                I read 
-                <a target="_blank" href="https://www.amazon.com/gp/product/1542866502/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=1542866502&linkCode=as2&tag=joshuacoles-20&linkId=d6b6a100e58bffec1c7e5b0ca454cb75">
-                    How to Take Smart Notes: One Simple Technique to Boost Writing, Learning and Thinking – for Students, Academics and Nonfiction Book Writers
-                </a>
-                in 2021 and highly recommend it. It can help you get more long term value from your notes.
-                For more information on why I feel it is worth reading see 
-                <a href="https://joshuacol.es/2021/04/23/notes-on-notes.html">Notes on Notes.</a>
-            </p>
-        </li>
-        <li>
-            <p>
-                In 2021, I read 
-                <a href="https://www.amazon.com/gp/product/0961392126/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0961392126&linkCode=as2&tag=joshuacoles-20&linkId=3eda24cb7ee6bf0e21c1522e9e0f5f3e">
-                    Visual Explanations: Images and Quantities, Evidence and Narrative
-                </a>, a book by Edward R. Tufte. The book dives deep into the 
-                subject of how to explain things visually. Tufte is an author who clearly articulates the 
-                principle that our mediums of communication are actually mediums of thought, not just in 
-                writing, but also in the sharing of graphics. He brings to bear rules of thought and the 
-                communication of the truth in order to give expert guidance on how to construct worthwhile 
-                graphics. He grounds this discussion in examples of consequential real world information 
-                visualization. The book is a treat both for the mind, because of it's rich depth, but also 
-                for the eye, because of it's beauty.
-            </p>
-        </li>
-        <li>
-            <p>
-                Toward the middle of 2021 I read 
-                <a target="_blank" href="https://www.amazon.com/gp/product/1492036730/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=1492036730&linkCode=as2&tag=joshuacoles-20&linkId=a7db53a020ca44dc6d7d69bdddc294a4">Docker: Up &amp; Running: Shipping Reliable Containers in Production</a>.
-                The book is about the container technology Docker. Before reading the book I was already 
-                somewhat familiar with Docker having used it in several projects. So reading the book was 
-                more about getting a deeper understanding of Docker then learning the basics. One point the 
-                authors made worth repeating and applying more generally is that making different things look 
-                the same as each other is wise. Both in the shipping industry and in the software industry 
-                having containers which look the same from the outside enables a surrounding infrastructure that 
-                dramatically reduces shipping costs. While reading through this book I contributed to it's 
-                errata.
-            </p>
-        </li>
-        <li>
-            <a target="_blank" href="https://www.amazon.com/gp/product/1491912219/ref=as_li_tl?ie=UTF8&tag=joshuacoles-20&camp=1789&creative=9325&linkCode=as2&creativeASIN=1491912219&linkId=2f14297717ce826b6749914f96322d09">
-                Spark The Definitive Guide
-            </a>
-        </li>
-        <li>
-            <a target="_blank" href="https://www.amazon.com/gp/product/0143120530/ref=as_li_tl?ie=UTF8&tag=joshuacoles-20&camp=1789&creative=9325&linkCode=as2&creativeASIN=0143120530&linkId=85ce8e0542cba3b87197b6d412faade7">
-                Moonwalking with Einstein
-            </a>
-        </li>
-        <li>
-            <a target="_blank" href="https://www.amazon.com/gp/product/1907486976/ref=as_li_tl?ie=UTF8&tag=joshuacoles-20&camp=1789&creative=9325&linkCode=as2&creativeASIN=1907486976&linkId=3ffc98f9fcc17e6ceb923d7c9bb86c94">
-                You Can Have An Amazing Memory
-            </a>
-        </li>
-        <li>
-            <a target="_blank" href="https://www.amazon.com/gp/product/0765326388/ref=as_li_tl?ie=UTF8&tag=joshuacoles-20&camp=1789&creative=9325&linkCode=as2&creativeASIN=0765326388&linkId=36555ab45264f48152bd968ae0b5f68a">
-                Rythym of War
-            </a>
-        </li>
-        <li>
-            <a target="_blank" href="https://www.amazon.com/gp/product/B01N3ASJU3/ref=as_li_tl?ie=UTF8&tag=joshuacoles-20&camp=1789&creative=9325&linkCode=as2&creativeASIN=B01N3ASJU3&linkId=816cbe526fc57b5587c51e44fdccb48b">
-                Snapshot
-            </a>
-        </li>
-        <li>
-            <a target="_blank" href="https://www.amazon.com/gp/product/0979019710/ref=as_li_tl?ie=UTF8&tag=joshuacoles-20&camp=1789&creative=9325&linkCode=as2&creativeASIN=0979019710&linkId=b54e2137dbfcaa078be27734e022567e">
-                Miracle Morning
-            </a>
-        </li>
-        <li>
-            <a target="_blank" href="https://www.amazon.com/gp/product/1491986360/ref=as_li_tl?ie=UTF8&tag=joshuacoles-20&camp=1789&creative=9325&linkCode=as2&creativeASIN=1491986360&linkId=19459aa6f48fff6c30def268e0ff032f">
-                Building Evolutionary Architectures
-            </a>
-        </li>
-        <li>Data Science With Python and Dask</li>
-        <li>Memory, Memory</li>
-    </ul>
-</section>
+*   I read [How to Take Smart Notes: One Simple Technique to Boost Writing, Learning and Thinking – for Students, Academics and Nonfiction Book Writers](https://www.amazon.com/gp/product/1542866502/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=1542866502&linkCode=as2&tag=joshuacoles-20&linkId=d6b6a100e58bffec1c7e5b0ca454cb75) in 2021 and highly recommend it. It can help you get more long term value from your notes. For more information on why I feel it is worth reading see [Notes on Notes.](https://joshuacol.es/2021/04/23/notes-on-notes.html)
+    
+*   In 2021, I read [Visual Explanations: Images and Quantities, Evidence and Narrative](https://www.amazon.com/gp/product/0961392126/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0961392126&linkCode=as2&tag=joshuacoles-20&linkId=3eda24cb7ee6bf0e21c1522e9e0f5f3e) , a book by Edward R. Tufte. The book dives deep into the subject of how to explain things visually. Tufte is an author who clearly articulates the principle that our mediums of communication are actually mediums of thought, not just in writing, but also in the sharing of graphics. He brings to bear rules of thought and the communication of the truth in order to give expert guidance on how to construct worthwhile graphics. He grounds this discussion in examples of consequential real world information visualization. The book is a treat both for the mind, because of it's rich depth, but also for the eye, because of it's beauty.
+    
+*   Toward the middle of 2021 I read [Docker: Up & Running: Shipping Reliable Containers in Production](https://www.amazon.com/gp/product/1492036730/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=1492036730&linkCode=as2&tag=joshuacoles-20&linkId=a7db53a020ca44dc6d7d69bdddc294a4). The book is about the container technology Docker. Before reading the book I was already somewhat familiar with Docker having used it in several projects. So reading the book was more about getting a deeper understanding of Docker then learning the basics. One point the authors made worth repeating and applying more generally is that making different things look the same as each other is wise. Both in the shipping industry and in the software industry having containers which look the same from the outside enables a surrounding infrastructure that dramatically reduces shipping costs. While reading through this book I contributed to it's errata.
+    
+*   [Spark The Definitive Guide](https://www.amazon.com/gp/product/1491912219/ref=as_li_tl?ie=UTF8&tag=joshuacoles-20&camp=1789&creative=9325&linkCode=as2&creativeASIN=1491912219&linkId=2f14297717ce826b6749914f96322d09)
+*   [Moonwalking with Einstein](https://www.amazon.com/gp/product/0143120530/ref=as_li_tl?ie=UTF8&tag=joshuacoles-20&camp=1789&creative=9325&linkCode=as2&creativeASIN=0143120530&linkId=85ce8e0542cba3b87197b6d412faade7)
+*   [You Can Have An Amazing Memory](https://www.amazon.com/gp/product/1907486976/ref=as_li_tl?ie=UTF8&tag=joshuacoles-20&camp=1789&creative=9325&linkCode=as2&creativeASIN=1907486976&linkId=3ffc98f9fcc17e6ceb923d7c9bb86c94)
+*   [Rythym of War](https://www.amazon.com/gp/product/0765326388/ref=as_li_tl?ie=UTF8&tag=joshuacoles-20&camp=1789&creative=9325&linkCode=as2&creativeASIN=0765326388&linkId=36555ab45264f48152bd968ae0b5f68a)
+*   [Snapshot](https://www.amazon.com/gp/product/B01N3ASJU3/ref=as_li_tl?ie=UTF8&tag=joshuacoles-20&camp=1789&creative=9325&linkCode=as2&creativeASIN=B01N3ASJU3&linkId=816cbe526fc57b5587c51e44fdccb48b)
+*   [Miracle Morning](https://www.amazon.com/gp/product/0979019710/ref=as_li_tl?ie=UTF8&tag=joshuacoles-20&camp=1789&creative=9325&linkCode=as2&creativeASIN=0979019710&linkId=b54e2137dbfcaa078be27734e022567e)
+*   [Building Evolutionary Architectures](https://www.amazon.com/gp/product/1491986360/ref=as_li_tl?ie=UTF8&tag=joshuacoles-20&camp=1789&creative=9325&linkCode=as2&creativeASIN=1491986360&linkId=19459aa6f48fff6c30def268e0ff032f)
+*   Data Science With Python and Dask
+*   Memory, Memory
