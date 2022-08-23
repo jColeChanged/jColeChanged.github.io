@@ -26,26 +26,20 @@ In addition to the content I host here on my own domain, I also have works on ot
 
 - [GitHub](https://www.github.com/jcolechanged)
 
-<div class="row">
-  <div class="col-sm-6">
-    <h2>Writing</h2>
-    <ul>
-      {% for post in site.posts %}
-      <li class="unstyled">
-        <a href="{{ post.url }}">{{ post.title }}</a>
-      </li>
-      {% endfor %}
-    </ul>
-  </div>
-  <div class="col-sm-6">
-    <h2>Tools</h2>
-    <p>
-      Some minor tools I've made and made publicly available. Nothing special here.
-    </p>
-    <ul class="list-unstyled">
-      <li><a href="/svg2d3.html">SVG To D3.js Compiler</a></li>
-    </ul>
-  </div>
+## Writing
+
+{% for post in site.posts %}
+
+  - [{{ post.title }}]({{ post.url }})
+
+{% endfor %}
+
+
+## Tools
+
+Some minor tools I've made and made publicly available. Nothing special here.
+
+ - [SVG To D3.js Compiler](/svg2d3.html)
 
 
 {% include notifications.html %}
