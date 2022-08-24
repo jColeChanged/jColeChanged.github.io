@@ -3,6 +3,10 @@ title: Index
 layout: default
 ---
 
+This is Joshua Cole's personal website - my website. 
+In my professional life I'm a generalist software engineer with expertise in artificial intelligence, game theory, and machine learning.
+I'm currently employed at Amazon where I work on Alexa.
+Outside of work I'm a competitive gaming enthusiast and hobbyist writer.
 
 ## Writing
 
