@@ -1,4 +1,5 @@
 ---
+title: Index
 layout: default
 ---
 
