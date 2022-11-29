@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Computational Graph Notebook
-published: true
+published: false
 author: joshuacole
 ---
 

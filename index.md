@@ -8,6 +8,8 @@ In my professional life I'm a generalist software engineer with expertise in art
 I'm currently employed at Amazon where I work on Alexa.
 Outside of work I'm a competitive gaming enthusiast and hobbyist writer.
 
+
+
 ## Writing
 
 {% for post in site.posts %}
