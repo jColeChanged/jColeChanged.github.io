@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="/css/bootstrap.min.css" />
     <link rel="stylesheet" href="/css/monokai.css" />
     <link rel="stylesheet" href="/css/typography.css" />
+    <link rel="stylesheet" href="/css/custom-styles.css" />
 
     <script>
         window.d3VizInits = [];
@@ -59,18 +60,42 @@
         body {
             font-family: 'Arial', sans-serif;
             line-height: 1.6;
+            margin: 0;
+            padding: 0;
         }
         .navbar {
             background-color: #333;
+            padding: 10px 20px;
         }
         .navbar-nav .nav-link {
             color: #fff;
+            margin-right: 15px;
         }
         .navbar-toggler-icon {
             color: #fff;
         }
         .container {
             margin-top: 20px;
+        }
+        .about-me {
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 5px;
+        }
+        .writing-section {
+            margin-top: 40px;
+        }
+        .writing-post {
+            margin-bottom: 20px;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: #fff;
+        }
+        .writing-post strong {
+            display: block;
+            font-size: 1.2em;
+            margin-bottom: 5px;
         }
         footer {
             background-color: #333;
