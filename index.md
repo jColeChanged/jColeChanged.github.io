@@ -3,12 +3,15 @@ title: Index
 layout: default
 ---
 
-This is Joshua Cole's personal website - my website. 
-In my professional life I'm a generalist software engineer with expertise in artificial intelligence, game theory, and machine learning.
-I'm currently employed at Amazon where I work on Alexa.
-Outside of work I'm a competitive gaming enthusiast and hobbyist writer.
+## About Me
 
+Generalist Software Engineer | AI & Machine Learning Expert | Founder of [TackTech](https://tacktech.ai).
 
+Welcome to my blog.  I'm Joshua Cole, CEO of TackTech, an AI startup providing [personalized AI](https://tacktech.ai).
+
+I spend most of my time thinking about software engineering, artificial intelligence, game theory, and machine learning problems.  I sometimes write about my thoughts on this blog.  Often I do it to avoid repeating myself.  
+
+I also enjoy writing and competitive gaming in my spare time.
 
 ## Writing
 
@@ -28,6 +31,8 @@ Some minor tools I've made and made publicly available. Nothing special here.
 ## Elsewhere On The Internet
 
 In addition to the content I host here on my own domain, I also have works on other websites. If you would like to support my online presence or see other content by me, please follow me on these other platforms.
+
+- [TackTech](https://tacktech.ai/)
 
 - [Patreon](https://www.patreon.com/toojoshua)
 
