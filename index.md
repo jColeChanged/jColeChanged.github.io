@@ -7,6 +7,7 @@ layout: default
   <h2>About Me</h2>
   <p>
     I'm a generalist Software Engineer, AI & Machine Learning Expert, and CEO of TackTech, an AI startup providing <a href="https://tacktech.ai">personalized AI</a>.
+  </p>
   <p>
     I spend most of my time thinking about software engineering, artificial intelligence, game theory, and machine learning problems.  I sometimes write about my thoughts on this blog.  Often I do it to avoid repeating myself.  
   </p>
