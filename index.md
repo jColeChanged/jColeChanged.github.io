@@ -18,7 +18,7 @@ I also enjoy writing and competitive gaming in my spare time.
 {% for post in site.posts %}
 <p>
   <strong>{{ post.date | date: "%B %d, %Y" }}:</strong> <a href="{{ post.url }}">{{ post.title }}</a><br>
-  {{ post.content | strip_html | truncatewords: 20 }}
+  {{ post.content | strip_html | truncatewords: 255 }}
 </p>
 {% endfor %}
 
