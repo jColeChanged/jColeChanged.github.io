@@ -3,6 +3,7 @@ title: Index
 layout: default
 ---
 
+<div class="about-me">
 ## About Me
 
 Generalist Software Engineer | AI & Machine Learning Expert | Founder of [TackTech](https://tacktech.ai).
@@ -12,16 +13,18 @@ Welcome to my blog.  I'm Joshua Cole, CEO of TackTech, an AI startup providing [
 I spend most of my time thinking about software engineering, artificial intelligence, game theory, and machine learning problems.  I sometimes write about my thoughts on this blog.  Often I do it to avoid repeating myself.  
 
 I also enjoy writing and competitive gaming in my spare time.
+</div>
 
+<div class="writing-section">
 ## Writing
 
 {% for post in site.posts %}
-<p>
+<div class="writing-post">
   <strong>{{ post.date | date: "%B %d, %Y" }}:</strong> <a href="{{ post.url }}">{{ post.title }}</a><br>
   {{ post.content | strip_html | truncatewords: 50 }}
-</p>
+</div>
 {% endfor %}
-
+</div>
 
 ## Tools
 
