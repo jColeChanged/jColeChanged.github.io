@@ -13,7 +13,4 @@ While exploring ways to reduce RAM usage, I ended up hitting on a good idea that
 
 The basic idea is that instead of storing paths through the graph we can store compressed paths through the graph.  Once I point it out in these terms: if memory usage is an issue, consider compression as a solution, the idea of compressing the action sequence paths seems somewhat obvious.
 
-There are a lot of ways to do graph path compression, but the way I did it was by training a huffman encoder and bit packing [1].  Huffman encoding has a proof associated with it: for memoryless compression, where each symbol is assumed to be independent of previous ones, it guarantees the average bit length of compressed messages is as low as it can be.
-
-
-[1]: This is probably why the path compression technique I'm using wasn't mentioned.  With so many different ways to compress a sequence, people choose a different method.  My technique is just interesting in that it can be applied after the fact on top of existing methods of abstracting a game tree, which is where most of the research is focused.
+There are a lot of ways to do graph path compression, but the way I did it was by training a huffman encoder and bit packing.  Huffman encoding has a proof associated with it: for memoryless compression, where each symbol is assumed to be independent of previous ones, it guarantees the average bit length of compressed messages is as low as it can be.  Most of the research I've read is more focused on compression for the sake of abstracting the game tree, but a 90% reduction in memory is nothing to scoff at, even if it isn't worthy of a research paper, and you can toss this on top of some of the existing compression methods which reduce the game tree size.
