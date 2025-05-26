@@ -9,7 +9,7 @@ I ended up getting the chance to build an application which used each of these
 technologies.
 
 Some of the technologies I had encountered before. I'm not new to scraping and
-a crawler is just a scraper that ends up following links to continue it's work.
+a crawler is just a scraper that ends up following links to continue its work.
 Having already been introduced to the topic before hand I actually found this
 section of the text to be rather disappointing. I wouldn't trust the basics of
 the scraper that was given in this book, because it has a few glaring problems.
