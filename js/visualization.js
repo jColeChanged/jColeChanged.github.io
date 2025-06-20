@@ -234,6 +234,6 @@ function numberLineControlledLineChart(selection) {
 }
 
 
-document.addEventListener('DOMContentLoaded', function() {
+$(document).ready(function() {
   window.d3VizInits.forEach(function(viz) { viz(); });
 });
