@@ -1,45 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
 body {
-    font-family: "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
-    line-height: 1.6;
+    font-family: 'Inter', sans-serif;
+    line-height: 1.7;
     margin: 0;
     padding: 0;
-    background-color: #fdfdfd;
-    color: #111;
+    background-color: #fff;
+    color: #333;
+}
+
+a {
+    color: #0d6efd;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #0a58ca;
+    text-decoration: underline;
 }
 .navbar {
-    background-color: #333;
-    padding: 10px 20px;
+    background-color: #ffffff;
+    padding: 12px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 .navbar-brand, .navbar-nav .nav-link {
-    color: #fff !important;
+    color: #333 !important;
     font-size: 18px;
+    font-weight: 700;
 }
 .navbar-nav .nav-link {
     margin-right: 15px;
     padding: 10px 15px;
-    transition: background-color 0.3s, color 0.3s;
+    transition: color 0.3s;
 }
 .navbar-nav .nav-link:hover {
-    background-color: #555;
-    color: #fff;
+    color: #0d6efd;
+    background-color: transparent;
 }
 .container {
-    margin-top: 20px;
-}
-.about-me {
-    padding: 20px;
-    background-color: #f9f9f9;
-    border-radius: 5px;
-}
-.writing-section {
     margin-top: 40px;
 }
+.about-me {
+    padding: 20px 30px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+}
+.writing-section {
+    margin-top: 60px;
+}
 .writing-post {
-    margin-bottom: 20px;
-    padding: 15px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    background-color: #fff;
+    margin-bottom: 30px;
+    padding: 20px 25px;
+    border: 1px solid #e5e5e5;
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
 }
 .writing-post strong {
     display: block;
@@ -47,11 +62,16 @@ body {
     margin-bottom: 5px;
 }
 footer {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 0;
+    background-color: #f8f9fa;
+    color: #6c757d;
+    padding: 20px 0;
     text-align: center;
+    margin-top: auto;
 }
 footer a {
-    color: #fff;
+    color: #6c757d;
+    text-decoration: none;
+}
+footer a:hover {
+    color: #0d6efd;
 }
