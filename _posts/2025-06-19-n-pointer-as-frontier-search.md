@@ -170,15 +170,16 @@ Now clearly it happens all the time that we encounter instances of search proble
 
 ```clojure
 (defn two-sum-frontier
-  "Frontier‑search implementation of Two Sum."
+  "Frontier-search implementation of Two Sum."
   [nums target]
   (let [goal?     (two-sum-goal?     nums target)
-        neighbors (two-sum-neighbors nums target)]
+        succ (two-sum-neighbors nums target)
+        neighbors  (fn [state] (when-let [n (succ state)] [n]))]
     (when-let [[l r]
                (frontier-search (stack-frontier)
-                                 goal?
-                                 neighbors
-                                 [0 (dec (count nums))])]
+                                goal?
+                                neighbors
+                                [0 (dec (count nums))])]
       [(nums l) (nums r)])))
 ```
 
