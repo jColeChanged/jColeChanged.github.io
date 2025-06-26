@@ -49,7 +49,7 @@ In addition to the content I host here on my own domain, I also have works on ot
 
 - [SpaceBattles](https://forums.spacebattles.com/members/toojoshua.315351/)
 
-- [Twitter](https://www.twitter.com/jcolechanged)
+- [Twitter](https://www.twitter.com/combinatoricole)
 
 - [Quora](https://www.quora.com/profile/Joshua-Cole-185)
 
