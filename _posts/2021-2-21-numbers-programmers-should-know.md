@@ -10,23 +10,23 @@ Many well known great software engineers believe that it takes more than a
 solid understanding of the [run time complexity](https://en.wikipedia.org/wiki/Big_O_notation)
 of the algorithms being used to write performant software. In particular they claim that 
 the latency numbers associated with computer hardware are essential knowledge. Despite the claimed 
-importance there is little factful information about this topic readily available online.
+importance there is little factual information about this topic readily available online.
 
 The general assumption has been that the first viral spread of published numbers, originally 
 posted in 2010, have changed, but not by a magnitude which would change our intuition. 
 The current updates to the number which are popularly 
 shared online are not the actual numbers, but numbers produced by a model. The degree to which 
-they match reality has not been tested and primae facie investigation of the models claims 
+they match reality has not been tested and prima facie investigation of the model's claims 
 makes me skeptical that the model is accurate especially as of 2021.
 
-This post is intended to [increase factfullness][destiny instinct] in software engineering by refreshing our knowledge of these now outdated numbers.
+This post is intended to [increase factfulness][destiny instinct] in software engineering by refreshing our knowledge of these now outdated numbers.
 
 It is also not just merely an update to these numbers, but an update with context. In prior 
 times when these numbers have been shared they have been shared without much context being 
 given to what the numbers mean in practice. What I hope to show is not just what the numbers 
 are, but the changes in decision making that these numbers are supposed to motivate.
 
-Althought the numers have changed, there importance has only increased with time. In the 
+Although the numbers have changed, their importance has only increased with time. In the 
 past these numbers were important and we were also seeing our software become faster and 
 faster on account of advances in hardware. In recent years the free lunch of hardware speed 
 increases has been slowing.
@@ -98,7 +98,7 @@ Send packet CA->Netherlands->CA   | 150,000,000   ns | 150,000 us  | 150 ms     
 
 ## Why The Numbers Matter
 
-First lets start with the L1 cache and put it in context 
+First let's start with the L1 cache and put it in context 
 with main memory reference. If data is already in the cache it can be fetched in 0.5 ns, but if it 
 isn't in either the L1 cache or the L2 cache then the CPU is going to be busy fetching data for 
 100-200 times longer than it would have if the data was in the cache.
@@ -112,7 +112,7 @@ hit and we can start to see some of why it is that these numbers are so importan
 write your low level code so that the computer has a good idea of what data it needs and what paths 
 it might be taking it can [speed up execution by a considerable constant factor][so: speedy].
 
-Next lets break down compression and relate it to reading data. It takes 3000 ns to compress 
+Next let's break down compression and relate it to reading data. It takes 3000 ns to compress 
 1K bytes, but it takes 10,000 ns to send that many bytes over the network. We can assume that 
 compressing 4k bytes is going to take 12000 ns, but reading 4k bytes from an SSD will take 
 150,000 ns. That is an ideal for reading from storage devices and via the network. Things 
@@ -128,7 +128,7 @@ your bag before you hop on a flight is a bit faster than taking a plane trip per
 
 The exact amount of when it becomes worthwhile to do this is a bit hard to say without knowing 
 your data. Some data formats are already compressed so you don't get as much utility from 
-compresing them. For Snappy in particular as a compression mechanism the Google repo for the project 
+compressing them. For Snappy in particular as a compression mechanism the Google repo for the project 
 says it performs as follows:
 
 <div class="p">
@@ -136,7 +136,7 @@ says it performs as follows:
         Typical compression ratios (based on the benchmark suite) are about 1.5-1.7x for plain text, about 2-4x for HTML, and of course 1.0x for JPEGs, PNGs and other already-compressed data. Similar numbers for zlib in its fastest mode are 2.6-2.8x, 3-7x and 1.0x, respectively. More sophisticated algorithms are capable of achieving yet higher compression rates, although usually at the expense of speed. Of course, compression ratio will vary significantly with the input.
     </blockquote>
     <footer>
-        <a href="https://github.com/google/snappy/blob/ea368c2f07de5f31146a10214f27d15091b09771/README.md#performance">Google Snappy Github README</a>
+<a href="https://github.com/google/snappy/blob/ea368c2f07de5f31146a10214f27d15091b09771/README.md#performance">Google Snappy GitHub README</a>
     </footer>
 </div>
 
@@ -155,7 +155,7 @@ as shown in the stats, is one of the most costly operations.
         </blockquote>
         <footer>
             <a target="_blank" href="https://www.amazon.com/gp/product/1449373321/ref=as_li_tl?ie=UTF8&amp;tag=joshuacoles-20&amp;camp=1789&amp;creative=9325&amp;linkCode=as2&amp;creativeASIN=1449373321&amp;linkId=94ba2266d30810326c298c93c92b9296">
-                Designing Data Intensive Applications
+Designing Data-Intensive Applications
             </a>
         </footer>
     </div>

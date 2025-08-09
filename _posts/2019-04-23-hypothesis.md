@@ -55,7 +55,7 @@ except AssertionError:
 
 What a test *is* is a measurement of program execution under specific
 conditions. Since a test is a measurement, it follows that it is a
-[statistic](https://en.wikipedia.org/wiki/Statistic). So reallly, every
+[statistic](https://en.wikipedia.org/wiki/Statistic). So really, every
 set of tests is a sampling from the population of possible program
 executions.
 
@@ -80,7 +80,7 @@ when it's arguments aren't positive numbers, but there are
 
 One thing we know from statistics is that larger sample sizes are better
 than smaller sample sizes. Can we write our tests to include more
-samples, to help make our sample more represenative of all the possible
+samples, to help make our sample more representative of all the possible
 ways the program could be executed?
 
 We can. It is possible to write a hundred variants of the add testing
@@ -139,19 +139,19 @@ def add(a, b):
 skip = 3
 a_few = 99
 
-# An example of a bunch of tests, using paramaterized tests
+# An example of a bunch of tests, using parameterized tests
 
-def test_paramaterized_sum_positive(a, b):
+def test_parameterized_sum_positive(a, b):
     assert add(a, b) > 0
 
-def paramaterized_test_runner():   
-    test_paramaterized_sum_positive(1, 2)
-    test_paramaterized_sum_positive(skip, a_few)
+def parameterized_test_runner():   
+    test_parameterized_sum_positive(1, 2)
+    test_parameterized_sum_positive(skip, a_few)
     # ... snip
-    test_paramaterized_sum_positive(99, 100)
+    test_parameterized_sum_positive(99, 100)
 
 try:
-    paramaterized_test_runner()
+    parameterized_test_runner()
     print("The tests passed!")
 except AssertionError:
     print("A test failed.")
@@ -172,8 +172,8 @@ potential sources of error is considerable. By this metric,
 parameterized tests are exceedingly better than unparameterized tests.
 
   -----------|------------|-------|--------------------|---------------------
-  Function   |Argument    |\#     | Lines for          | Lines for
-  Length     |Length      |Tests  | Paramterized Tests | Unparamterized Tests
+   Function   |Argument    |\#     | Lines for          | Lines for
+   Length     |Length      |Tests  | Parameterized Tests | Unparameterized Tests
   -----------|------------|-------|--------------------|--------------------
   2          | 1          | 100   | 102                | 200
   10         | 1          | 100   | 110                | 1000
@@ -316,7 +316,7 @@ list of argument with our previous approach of writing out each argument
 individually in terms of how many lines it takes to write the tests.
 
   ---------------------------|---------------------------|---------------
-  Test Paramterizations      | Lines for hand  specification | Lines for programmatic creation
+  Test Parameterizations      | Lines for hand  specification | Lines for programmatic creation
   ---------------------------| --------------------------|--------------
   1                          | 1                         | 2
   2                          | 2                         | 2
@@ -334,7 +334,7 @@ where n is the number of test cases.
 
 This is a great improvement, especially if the constant size of each
 argument is high, but even with the add function **generating a million
-test paramterizations programmatically is cheaper in terms of hand
+ test parameterizations programmatically is cheaper in terms of hand
 movement than writing three manually**.
 
 With that power in mind, one weakness of creating a list of test cases
@@ -389,7 +389,7 @@ def test_sum_positive(a, b):
 
 
   ------------------------------|-------------------------------|-----------
-  Test Paramterizations         | Memory used for list creation | Memory used in lazy evaluation
+  Test Parameterizations         | Memory used for list creation | Memory used in lazy evaluation
   ------------------------------|-------------------------------|-----------
   1                             | 1 MB                          | 1 MB
   2                             | 2 MB                          | 1 MB
@@ -725,14 +725,14 @@ def test_sum_positive(a, b):
 If you've been playing with these examples, you may have noticed that
 hypothesis has found breaking examples quite easily. Not just ones where
 the function returned a negative result, but actual errors. The add
-function isn't overloaded so as to support adding arbitray numeric
+ function isn't overloaded so as to support adding arbitrary numeric
 types. If it wasn't an error you expected to see, than you may begin to
 understand just how useful this search for falsifying examples is. It
 doesn't just give you confidence that your code works. It can end up
 teaching you something you hadn't known.
 
 At the same time, you might not have seen these errors. When hypothesis
-runs tests, it generates them stoachastically. It's possible for two
+runs tests, it generates them stochastically. It's possible for two
 different runs of hypothesis to generate different examples.
 
 This is an important thing to keep in mind when using `hypothesis`. It
@@ -831,7 +831,7 @@ tests. It provides tools for limiting both the runtime of tests
 according to the clock and for limiting the runtime of tests in terms of
 the number of test cases it checks.
 
-On the topic of a contiual test loop, it's also nice to keep a record
+On the topic of a continual test loop, it's also nice to keep a record
 of what tests fail and than re-run those tests on the next run of the
 tester. `hypothesis` does this too.
 
@@ -851,7 +851,7 @@ def test_this_a_little(x):
     
 
 @given(strategies.integers())
-def test_this_with_default_setttings(x):
+def test_this_with_default_settings(x):
     assert True
     
 @given(strategies.integers())
@@ -923,7 +923,7 @@ flow can be fast so as to maximize engineer productivity.
 
 ## [Library integration](#library-integration)
 
-Hypothesis has support for many popular python librarys, including
+Hypothesis has support for many popular Python libraries, including
 django. It can infer strategy creation from a Django model or form. In a
 hypothetical example, let's say you have an email address model which
 is related to a contact model, which is related to an organization
@@ -976,7 +976,7 @@ Consider PowerPoint.
 One humorous example of PowerPoint struggling to capture importance is  
 <a href="https://norvig.com/Gettysburg/">Peter Norvig's Gettysburg address</a>.
 But there are much more horrific <a href="https://www.edwardtufte.com/bboard/q-and-a-fetch-msg?msg_id=0001yB">examples</a>.
-These structual implications are part of the underyling reason behind why  companies like Amazon are
+These structural implications are part of the underlying reason behind why  companies like Amazon are
 <a href="https://www.inc.com/carmine-gallo/jeff-bezos-bans-powerpoint-in-meetings-his-replacement-is-brilliant.html">forsaking PowerPoint in favor of the written
 word</a>.
 </p>

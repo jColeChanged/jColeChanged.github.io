@@ -6,10 +6,10 @@ author: joshuacole
 ---
 
 This essay is about some philosophical motivations behind a tool I'm building to help intelligences which think via language.
-The idea it to help think lazily, efficiently, and in accordance with principles which help to produce thoughtful output. 
+The idea is to help think lazily, efficiently, and in accordance with principles which help to produce thoughtful output. 
 So to start I'm going to explain the basic idea behind the tool.
 
-The basic idea is templatize known to be good structures: things like Polya's guide to reasoning about how to solve a problem, the Eisenhower matrix for thinking about prioritization, or the laws of probabilities. Then using those templates we transform away from linear documents to a graph representation whose continuations are in accordance with the templates. In some cases, like with the laws of probability, the templatized continuations are an automatic regurgitation of known to be structurally correct reasoning. In other cases as when solving a novel problem a great deal of creativity will need to be exercised by the document writer. Regardless the writer is expected to fill in the template if they care about reasoning correctly - or leave a path empty if they are too lazy to complete the work of thinking. After writing they can then walk a path through their graph to materialize a thoughtful and well structured document which explores the topic which is of interest to them in a manner optimized according to their intended use of the document.
+The basic idea is to templatize known‑good structures: things like Polya's guide to reasoning about how to solve a problem, the Eisenhower matrix for thinking about prioritization, or the laws of probability. Then, using those templates, we transform away from linear documents to a graph representation whose continuations are in accordance with the templates. In some cases, like with the laws of probability, the templatized continuations are an automatic regurgitation of known‑to‑be‑structurally‑correct reasoning. In other cases, as when solving a novel problem, a great deal of creativity will need to be exercised by the document writer. Regardless, the writer is expected to fill in the template if they care about reasoning correctly — or leave a path empty if they are too lazy to complete the work of thinking. After writing they can then walk a path through their graph to materialize a thoughtful and well‑structured document which explores the topic which is of interest to them in a manner optimized according to their intended use of the document.
 
 Breaking down the above there are three important things to call attention to:
 
@@ -27,9 +27,9 @@ Letters compose to form morphemes which compose to form words which compose to f
 
 Tragically - apparently not.
 
-We run into two problems. The first is cultural: attribution. People who craft a nice paragraph like to be recognized for it and feel cheated if you reuse it. Putting aside their theft of our shared language for their own selfish gain we still have another problem. Copying paragraph after paragraph in writing isn't especially tractable. Words are juts a few characters. Paragraphs are many. Writing a document which copies many paragraph would mean doing a lot of writing - a lot of work.
+We run into two problems. The first is cultural: attribution. People who craft a nice paragraph like to be recognized for it and feel cheated if you reuse it. Putting aside their theft of our shared language for their own selfish gain we still have another problem. Copying paragraph after paragraph in writing isn't especially tractable. Words are just a few characters. Paragraphs are many. Writing a document which copies many paragraphs would mean doing a lot of writing - a lot of work.
 
-We can solve both problems by using a graph structure. The first problem is solved because we can attribute the author of the paragraph as metadata on the graph path that describes a document. Plagarism is not citation. Documents are path descriptions through a graph - not claims to the writing along the content of the path description. The second problem is solved for much the same reason. Since we are giving a path description through the graph we don't have to worry about the character cost of typing out each paragraph. We just have to write out the edge. 
+We can solve both problems by using a graph structure. The first problem is solved because we can attribute the author of the paragraph as metadata on the graph path that describes a document. Plagiarism is not citation. Documents are path descriptions through a graph - not claims to the writing along the content of the path description. The second problem is solved for much the same reason. Since we are giving a path description through the graph we don't have to worry about the character cost of typing out each paragraph. We just have to write out the edge. 
 
 ## Templatized Graph Structure
 

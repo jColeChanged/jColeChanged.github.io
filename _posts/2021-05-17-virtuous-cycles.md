@@ -145,7 +145,7 @@ Are there things you should be rewarding but aren't? Are there places where feed
 If you are already in a cycle is there a way to go through it more quickly so that you can get more benefit
 from that cycle?
 
-Understanding implies the existence of underwalking which implies the existence of undersprinting. So get
+Understanding implies the existence of under‑walking which implies the existence of under‑sprinting. So get
 going. Knowing without applying means little.
 
 
