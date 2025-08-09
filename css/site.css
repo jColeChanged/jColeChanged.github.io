@@ -1,49 +1,68 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
 
+/* Base typography */
 body {
-    font-family: 'Inter', sans-serif;
+    font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Inter, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji";
     line-height: 1.7;
     margin: 0;
     padding: 0;
     background-color: #fff;
-    color: #333;
+    color: #1f2937;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
 }
 
-a {
-    color: #0d6efd;
+a:not(.btn):not(.btn-secondary),
+a:link:not(.btn):not(.btn-secondary),
+a:visited:not(.btn):not(.btn-secondary) {
+    color: #0a58ca;
     text-decoration: none;
 }
 
-a:hover {
-    color: #0a58ca;
+a:hover,
+a:focus,
+a:active {
+    color: #084298;
     text-decoration: underline;
+    border-bottom: none !important;
 }
-.navbar {
-    background-color: #ffffff;
-    padding: 12px 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+/* Deprecated Bootstrap nav styles retained for safety; header now Tailwind */
+.container { margin-top: 24px; }
+/* Remove extra underline effect from nav links */
+header nav a {
+    border-bottom: none !important;
 }
-.navbar-brand, .navbar-nav .nav-link {
-    color: #333 !important;
-    font-size: 18px;
-    font-weight: 700;
-}
-.navbar-nav .nav-link {
-    margin-right: 15px;
-    padding: 10px 15px;
-    transition: color 0.3s;
-}
-.navbar-nav .nav-link:hover {
-    color: #0d6efd;
-    background-color: transparent;
-}
-.container {
-    margin-top: 40px;
+header nav a:hover,
+header nav a:focus {
+    text-decoration: underline;
+    border-bottom: none !important;
 }
 .about-me {
-    padding: 20px 30px;
-    background-color: #f8f9fa;
-    border-radius: 8px;
+    padding: 48px 36px;
+    background: linear-gradient(180deg, #f8fafc 0%, #ffffff 100%);
+    border: 1px solid #eef2f7;
+    border-radius: 12px;
+}
+.hero {
+    margin-top: 32px;
+    padding: 48px 36px;
+    border-radius: 16px;
+    background: linear-gradient(135deg, #f1f5ff 0%, #ffffff 60%);
+    border: 1px solid #e5ecff;
+}
+.hero h1 {
+    font-size: 42px;
+    line-height: 1.2;
+    margin-bottom: 12px;
+}
+.hero p.lead {
+    font-size: 20px;
+    color: #334155;
+}
+.hero-cta { margin-top: 16px; }
+.badge-strip {
+    gap: 8px;
 }
 .writing-section {
     margin-top: 60px;
@@ -52,7 +71,7 @@ a:hover {
     margin-bottom: 30px;
     padding: 20px 25px;
     border: 1px solid #e5e5e5;
-    border-radius: 8px;
+    border-radius: 10px;
     background-color: #ffffff;
     box-shadow: 0 1px 3px rgba(0,0,0,0.05);
 }
@@ -60,6 +79,90 @@ a:hover {
     display: block;
     font-size: 1.2em;
     margin-bottom: 5px;
+}
+/* Content width and rhythm */
+.content-prose {
+    max-width: 72ch;
+}
+.content-prose p,
+.content-prose ul,
+.content-prose ol,
+.content-prose blockquote {
+    font-size: 1.125rem;
+    line-height: 1.8;
+    margin: 1rem 0 1.25rem;
+}
+.content-prose h1 { font-size: 2.25rem; line-height: 1.2; margin: 1.5rem 0 0.75rem; }
+.content-prose h2 { font-size: 1.75rem; line-height: 1.3; margin: 1.25rem 0 0.5rem; }
+.content-prose h3 { font-size: 1.375rem; line-height: 1.4; margin: 1rem 0 0.5rem; }
+.content-prose code { font-size: 0.95em; }
+.content-prose pre { padding: 0.75rem 1rem; background: #f8fafc; border-radius: 8px; overflow: auto; }
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 16px;
+}
+.card-lite {
+    border: 1px solid #edf1f5;
+    border-radius: 12px;
+    padding: 16px;
+    background: #fff;
+}
+/* Visualization container tweaks */
+.viz-card { background: #ffffff; border: 1px solid #e2e8f0; border-radius: 12px; padding: 12px; }
+.viz-card svg { max-width: 100%; height: auto; }
+.viz-caption { font-size: 0.875rem; color: #64748b; margin-top: 6px; }
+/* Ensure Tailwind buttons are not clipped by line-height/underline rules */
+.inline-flex {
+    line-height: 1.25;
+}
+
+/* Ensure white text on primary buttons remains white on hover/focus */
+.text-white:hover,
+.text-white:focus,
+.text-white:active {
+    color: #ffffff !important;
+}
+/* Ensure base state for Tailwind text-white is not overridden by global link color */
+.text-white { color: #ffffff !important; }
+
+/* Button components (consistent across header and hero) */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    border-radius: 0.5rem; /* rounded-lg */
+    padding: 0.625rem 1.25rem; /* px-5 py-2.5 */
+    font-weight: 600;
+    color: #ffffff !important;
+    background-color: #1d4ed8; /* blue-700 */
+    box-shadow: 0 1px 2px rgba(0,0,0,0.06);
+    text-decoration: none;
+}
+.btn:hover,
+.btn:focus {
+    background-color: #1e40af; /* blue-800 */
+    text-decoration: none;
+}
+.btn:focus-visible {
+    outline: 2px solid #1d4ed8;
+    outline-offset: 2px;
+}
+
+.btn-secondary {
+    display: inline-flex;
+    align-items: center;
+    border-radius: 0.5rem;
+    padding: 0.625rem 1.25rem;
+    font-weight: 600;
+    color: #0f172a !important; /* slate-900 */
+    background-color: transparent;
+    border: 1px solid #cbd5e1; /* slate-300 */
+    text-decoration: none;
+}
+.btn-secondary:hover,
+.btn-secondary:focus {
+    background-color: #f1f5f9; /* slate-100 */
+    text-decoration: none;
 }
 footer {
     background-color: #f8f9fa;
@@ -74,4 +177,123 @@ footer a {
 }
 footer a:hover {
     color: #0d6efd;
+}
+
+/* Epigraph / sidebar helpers for posts */
+.epigraph { margin: 1rem 0; }
+.epigraph .epigraph-body { font-size: 0.95rem; color: #475569; }
+
+/* Margin notes rebuilt (used by `meta.md`) */
+.marginnote {
+    display: block;
+    margin: 0.75rem 0;
+    color: #475569;
+}
+.marginnote :where(p, blockquote) { margin: 0.25rem 0; }
+
+@media (min-width: 1024px) {
+  .marginnote {
+    float: right;
+    clear: right;
+    max-width: 20rem; /* slightly wider to accommodate charts */
+    margin-left: 1rem;
+    margin-right: 0;
+    background: #ffffff;
+    border: 1px solid #e2e8f0; /* slate-200 */
+    border-radius: 0.5rem; /* rounded-lg */
+    padding: 0.75rem; /* p-3 */
+  }
+  .marginnote figure, .marginnote div[id^="effortTo"], .marginnote span[id^="effortTo"], .marginnote svg {
+    display: block;
+    max-width: 100%;
+  }
+}
+
+/* Floating words visual (homepage principle card) */
+.floating-words {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+.floating-words span {
+  position: absolute;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  opacity: 0.18;
+  background-image: linear-gradient(90deg, #60a5fa, #e879f9, #22d3ee);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-shadow: 0 0 30px rgba(99, 102, 241, 0.15);
+  animation: drift var(--dur, 10s) ease-in-out var(--delay, 0s) alternate infinite;
+}
+@keyframes drift {
+  from { transform: translateY(var(--start, 0px)) translateX(0px) rotate(0deg); }
+  to   { transform: translateY(calc(var(--start, 0px) - 28px)) translateX(4px) rotate(1deg); }
+}
+
+/* Love lines (large, gradient, gently animated) */
+.love-lines {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.love-line {
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+  font-size: clamp(20px, 2.4vw, 38px);
+  background-image: linear-gradient(90deg, #60a5fa, #e879f9, #22d3ee);
+  background-size: 200% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: loveShine 8s ease-in-out infinite alternate, loveBob var(--dur, 6s) ease-in-out infinite alternate;
+}
+@keyframes loveShine {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
+}
+@keyframes loveBob {
+  from { transform: translateY(0px); }
+  to   { transform: translateY(-6px); }
+}
+
+/* Orbiting word ring */
+.word-ring {
+  position: absolute;
+  top: -20px;
+  right: -20px;
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+  opacity: 0.25;
+  filter: blur(0.2px);
+  animation: spin360 36s linear infinite;
+}
+.word-ring span {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.04em;
+  background-image: linear-gradient(90deg, #60a5fa, #e879f9, #22d3ee);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  transform-origin: 0 -100px;
+}
+.word-ring span:nth-child(1){ transform: rotate(0deg); }
+.word-ring span:nth-child(2){ transform: rotate(51.4deg); }
+.word-ring span:nth-child(3){ transform: rotate(102.8deg); }
+.word-ring span:nth-child(4){ transform: rotate(154.2deg); }
+.word-ring span:nth-child(5){ transform: rotate(205.6deg); }
+.word-ring span:nth-child(6){ transform: rotate(257deg); }
+.word-ring span:nth-child(7){ transform: rotate(308.4deg); }
+
+@keyframes spin360 {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
 }

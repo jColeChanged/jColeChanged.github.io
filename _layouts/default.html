@@ -8,10 +8,7 @@
     {% feed_meta %}
 
     <!-- Styling and Visuals -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" crossorigin="anonymous" />
-    <link rel="stylesheet" href="/css/monokai.css" />
-
-    <link rel="stylesheet" href="/css/typography.css" />
+    <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
     <link rel="stylesheet" href="/css/site.css" />
 
     <script>
@@ -59,46 +56,33 @@
 
 </head>
 
-<body class="d-flex flex-column min-vh-100">
-    <div class="container">
-        <nav class="navbar navbar-expand-lg navbar-dark">
-            <a class="navbar-brand" href="/">Joshua Cole</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="/">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/writing.html">Writing</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/projects.html">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/links.html">Links</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/meta.html">Meta</a>
-                    </li>
-                </ul>
-            </div>
+<body class="min-h-screen flex flex-col bg-white">
+    <header class="border-b bg-white/80 backdrop-blur">
+      <div class="max-w-6xl mx-auto w-full px-4 py-3 flex items-center justify-between">
+        <a class="text-slate-900 font-bold text-lg" href="/">Joshua Cole</a>
+        <nav class="flex items-center gap-4">
+          <a class="text-slate-700 hover:text-blue-700" href="/">Home</a>
+          <a class="text-slate-700 hover:text-blue-700" href="/writing.html">Writing</a>
+          <a class="text-slate-700 hover:text-blue-700" href="/projects.html">Projects</a>
+          <a class="text-slate-700 hover:text-blue-700" href="/research.html">Research</a>
+          <a class="text-slate-700 hover:text-blue-700" href="/links.html">Links</a>
+          <a class="text-slate-700 hover:text-blue-700" href="/meta.html">Meta</a>
+          <a class="btn"
+             href="mailto:joshua@tacktech.ai">Get in touch</a>
         </nav>
-    </div>
-    <div class="container">
-        {{ content }}
-    </div>
+      </div>
+    </header>
+    <main class="max-w-6xl mx-auto w-full px-4 py-6">
+      {{ content }}
+    </main>
 
     <script type="text/javascript" src="/js/jquery-3.3.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
     <script type="text/javascript" src="/js/d3.5.9.1.min.js"></script>
     <script type="text/javascript" src="/js/underscore.js"></script>
     <script type="text/javascript" src="/js/visualization.js"></script>
     <script type="text/javascript" src="/js/horizon.js"></script>
     <script type="text/javascript" src="/js/popfoots.js"></script>
+    {% include footer.html %}
 </body>
 
 </html>

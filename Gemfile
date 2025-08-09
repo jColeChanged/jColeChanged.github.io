@@ -5,7 +5,7 @@ Encoding.default_external = Encoding::UTF_8
 Encoding.default_internal = Encoding::UTF_8
 
 #gem "jekyll"          # For generating the static blog
-gem "github-pages", "227", group: :jekyll_plugins
+gem "github-pages", "232", group: :jekyll_plugins
 # gem "html-proofer"    # For testing the static pages
 # gem "jekyll-paginate" # For Pagination in jekyll
 # gem "jekyll-gist"     # For gist integration with jekyll
@@ -16,4 +16,4 @@ gem "github-pages", "227", group: :jekyll_plugins
 # gem 'jekyll-sitemap'  # For adding sitemap for search engines
 # gem 'jekyll-scholar'  # For better support for citations and references
 
-gem "webrick", "~> 1.7"
+gem "webrick", "~> 1.8"

@@ -1,0 +1,8 @@
+{% assign c = include.content | default: include.body %}
+<aside class="md:float-right md:ml-6 md:mt-1 md:max-w-xs md:w-80 not-prose ring-1 ring-slate-200 rounded-lg p-4 bg-white text-sm text-slate-700">
+  {% if include.title %}
+  <div class="font-semibold text-slate-900 mb-1">{{ include.title }}</div>
+  {% endif %}
+  {{ c }}
+</aside>
+

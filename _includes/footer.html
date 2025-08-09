@@ -1,8 +1,19 @@
-<footer class="mt-auto m-1">
-    <section class="feedback">
-        <p>
-            If you would like to give anonymous feedback you can do so 
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLScV6zNVngqOdYlG0hjGFCTytVKfG-0mvW4GewxA_yKmHTwnrA/viewform?usp=sf_link">here.</a>
-        </p>
+<footer class="mt-auto mt-5 py-6 border-t">
+  <div class="max-w-6xl mx-auto w-full px-4">
+    <div class="flex flex-col md:flex-row justify-between text-sm text-slate-600 gap-2">
+      <div>© {{ site.time | date: "%Y" }} Joshua Cole</div>
+      <nav class="flex flex-wrap gap-3">
+        <a class="hover:text-blue-700" href="/writing.html">Writing</a>
+        <a class="hover:text-blue-700" href="/projects.html">Projects</a>
+        <a class="hover:text-blue-700" href="/research.html">Research</a>
+        <a class="hover:text-blue-700" href="/links.html">Links</a>
+        <a class="hover:text-blue-700" href="mailto:joshua@tacktech.ai">Contact</a>
+      </nav>
+    </div>
+    <section class="feedback mt-3">
+      <p class="m-0">Anonymous feedback welcome
+        <a class="underline" href="https://docs.google.com/forms/d/e/1FAIpQLScV6zNVngqOdYlG0hjGFCTytVKfG-0mvW4GewxA_yKmHTwnrA/viewform?usp=sf_link">here</a>.
+      </p>
     </section>
+  </div>
 </footer>

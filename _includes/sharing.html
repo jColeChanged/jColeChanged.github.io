@@ -1,8 +1,12 @@
-<section class="sharing">
-    <p>
-        If you think this content might valuable to someone else please 
-        consider sharing it with them.
+<section class="mt-10 border-t border-slate-200 pt-6">
+  <div class="flex items-center justify-between flex-wrap gap-3">
+    <p class="text-sm text-slate-600 m-0">
+      Found this useful? Share it with someone who might benefit.
     </p>
-    <div class="sharethis-inline-share-buttons"></div>
-
+    <div class="flex items-center gap-2">
+      <a class="btn-secondary" href="https://twitter.com/intent/tweet?text={{ page.title | uri_escape }}&url={{ page.url | absolute_url | uri_escape }}" target="_blank" rel="noopener">Tweet</a>
+      <a class="btn-secondary" href="https://www.linkedin.com/sharing/share-offsite/?url={{ page.url | absolute_url | uri_escape }}" target="_blank" rel="noopener">Share on LinkedIn</a>
+      <a class="btn-secondary" href="mailto:?subject={{ page.title | uri_escape }}&body={{ page.url | absolute_url | uri_escape }}">Email</a>
+    </div>
+  </div>
 </section>
