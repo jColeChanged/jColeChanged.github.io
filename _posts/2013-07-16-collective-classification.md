@@ -3,14 +3,14 @@ layout: post
 title: Collective Classification
 published: true
 ---
-This is another blog post in my series of blogs posts covering my reading of
+This is another blog post in my series of blog posts covering my reading of
 [Programming Collective Intelligence](book). A lot of the group members have had
 full-plates as of late. Some are working on start-ups, others are working
 through other books, and some are doing additional study groups. As a result
 the group has decided to cut back to one chapter per week. I'm finding that
 pace to be quite comfortable.
 
-This weeks chapter was on document classification. I've done something a bit
+This week's chapter was on document classification. I've done something a bit
 like it before when as a part of my Google internship application I wrote a
 Naïve Bayes Classifier minus the classification which ranked job applicants
 according to their chances of being hired. So in a way this chapter was a bit

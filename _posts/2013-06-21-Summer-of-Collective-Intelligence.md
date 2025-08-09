@@ -11,8 +11,8 @@ other things. Our plan was to get through two chapters each week and
 then cap each week off with a Google Hangout session in which we shared what 
 we learned.
 
-I decided not just share this with the study group, but with anyone who wanted to 
-read about my learning on my blog. I figured that it will both help me learn the
+I decided not just to share this with the study group, but with anyone who wanted to 
+read about my learning on my blog. I figured that it would both help me learn the
 material and also allow me to better see my progress.
 
 # A Recommendation System
@@ -36,7 +36,7 @@ users by the distance function to find out who is 'close' in the preference
 space to the person who is getting recommendations.
 
 There are a lot of distance functions. You can treat ratings as points and
-see [how far from each other they are in euclidean space](http://en.wikipedia.org/wiki/Euclidean_distance).
+see [how far from each other they are in Euclidean space](http://en.wikipedia.org/wiki/Euclidean_distance).
 You can treat ratings as a dataset and then measure similarity by looking
 at [the strength of their linear dependence](https://en.wikipedia.org/wiki/Pearson_product-moment_correlation_coefficient).
 You can even treat ratings as an admission of having seen something and then
@@ -66,13 +66,13 @@ recommendation.
   <tbody>
     <tr><td>1</td><td>1</td><td>1</td></tr>
     <tr><td>.5</td><td>1</td><td>.5</td></tr>
-    <tr><th>Average Similarity</th><th>Average Rating</th><th>Average Weighed Rating</th></tr>
+    <tr><th>Average Similarity</th><th>Average Rating</th><th>Average Weighted Rating</th></tr>
     <tr><td>.75</td><td>1</td><td>.75</td></tr>
   </tbody>
 </table>
 
 Of course once you have the weighted average there is still one gotcha. What if
-some movies got more reviews then others? This can be solved by making sure
+some movies got more reviews than others? This can be solved by making sure
 that you then proceed to adjust the weighted average by the sum of the
 similarity.
 

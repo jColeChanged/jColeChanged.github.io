@@ -8,11 +8,11 @@ It took a long time before humanity got a grip on modeling probabilities.
 The first formal treatment of the subject I'm aware of were the [letters][1] between [Blaise Pascal][3] and [Pierre de Fermat][4].
 In these letters which [changed the way people see the world][2] the two intellectual giants were trying to figure out the correct way to solve the [divide the pot of an unfinished game][5], but they did not agree about how to do it.
 Even from the start probability problems were showing themselves to be confusing to the brightest.
-This, despite thousands of years of preperation for contending with the problems.
+This, despite thousands of years of preparation for contending with the problems.
 Now, mere hundreds of years later, probability still confuses.
 
 In 1975 [Marilyn vos Savant][6] who was in the record books for having the
-worlds highest IQ, published what it is now known as the
+world's highest IQ, published what is now known as the
 [Monty Hall problem][7]:
 
 > Suppose you're on a game show, and you're given the choice of three doors:
@@ -24,14 +24,14 @@ worlds highest IQ, published what it is now known as the
 Savant claimed that the best thing to do in this situation would be to switch
 doors. She correctly reasoned that by switching doors you would give yourself
 a 2/3 chance of having the right door, but that by staying with the door you
-had chosen you would have only have a 1/3 chance at having selected the correct
+had chosen you would have only a 1/3 chance at having selected the correct
 door. Many people disagreed with her. Not just people who knew nothing about
-probability, even [PHD's were telling her][8] she had gotten the wrong answer.
+probability, even [PhDs were telling her][8] she had gotten the wrong answer.
 The Monty Hall problem is famous for having sparked so much disagreement. It is
 taught about in statistics courses across the country. The
 [problem has even been covered in the movie 21][9].
 
-People get probability wrong *all the time*; This is just a famous example.
+People get probability wrong all the time; this is just a famous example.
 
 Sports fans believe that hot streaks are a real thing. They might be angry
 with a coach for not putting the game in the hands of a hot player. Studies
@@ -45,7 +45,7 @@ There is also a study in which doctors were asked to determine
 how likely a patient was to have cancer. They were given all the numbers they
 would need to come to the right answer, but almost all of them didn't. Most of
 the doctors claimed that the patients were likely to have cancer. In
-truth, there chance of having cancer wasn't high. The doctors got
+truth, their chance of having cancer wasn't high. The doctors got
 the answer wrong by an order of magnitude despite their education.
 
 The list of ways humans make mistakes when thinking and working with
@@ -79,7 +79,7 @@ A thousand draws tell a different story:
 ;; deck one at a time. What is the probability that the
 ;; three cards are selected in sorted order?
 
-;; First lets create the deck…
+;; First let's create the deck…
 (def cards (range 1 11)) ;; > [1 2 3 … 9 10]
 
 ;; Next we draw cards from a shuffled deck by
@@ -97,7 +97,7 @@ A thousand draws tell a different story:
 ;; operator to do that pretty simply
 (defn ascending? [draws] (apply < draws))
 
-;; Now lets say we try drawing a few thousands time…
+;; Now let's say we try drawing a few thousand times…
 ;; How frequently will the cards be in ascending order?
 
 (count (filter ascending? (repeatedly 6000 draw-cards)))

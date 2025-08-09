@@ -22,7 +22,7 @@ of the way our minds work. What I've observed is that we have [two systems][fast
 One is adapted for speed. The other is adapted for thinking well. We have to make tradeoffs 
 along this time dimension because of limited mental bandwidth. As the name implies, the 
 bullet journal is a system that is highly adapted to working quickly. As a result it 
-works well as the component of a note taking system that acknowleges our time constraints.
+works well as the component of a note taking system that acknowledges our time constraints.
 
 Other good note taking and task handling strategies acknowledge this need as well. 
 The mechanism by which many suggest doing this is a sort of note inbox. Quick notes 
@@ -48,7 +48,7 @@ let you reconstruct the past: that is what a log does.
 
 Not a lot of people talk about the bullet journal using this sort of language. 
 People who post their journals publicly are spending a lot of time on form rather than function, 
-which is fine from an athestic point of view, but rather against the spirit which motivates 
+which is fine from an aesthetic point of view, but rather against the spirit which motivates 
 the use of a bullet journal methodology. In practice, the Bullet Journal isn't so great for 
 art using the default spreads. It is great for controlling attention and keeping track of things 
 when there is little time available to do so. 
@@ -92,9 +92,9 @@ Graphs come up a lot when we are doing work. As an example, when we are writing 
 
 We could plan out what we are going to create from the beginning and then do the work. Alternatively we could keep taking the next step as it becomes natural. Or we could operate somewhere in the middle, doing up-front planning sometimes and not following natural continuations at other times. In writing circles people call use the label architect and gardener to describe the difference between these approaches. In software engineering people use the labels waterfall and agile. Regardless of the label this is just the ordering of certain types of work. The important point is that we have a graph structure that represents that work and we are choosing how to expand that graph.
 
-In recognizing that these graphs exist and that we need to fill them in eventually we can structure out note taking process in accordance with the work that we already suspect that we will need to do. Even though we might not be writing a book yet, we assume that we are. Then we write the natural continuations as we take notes and interact with our existing body of notes.
+In recognizing that these graphs exist and that we need to fill them in eventually we can structure our note taking process in accordance with the work that we already suspect that we will need to do. Even though we might not be writing a book yet, we assume that we are. Then we write the natural continuations as we take notes and interact with our existing body of notes.
 
-In a traditional note taking system, writing a book is a task that we do. In this note taking system books are written as a side-effect of expanding our notes. A person could become a published author by extracting a walk from the graph of their notes instead of by explciitly setting out to write a book by creating that same graph.
+In a traditional note taking system, writing a book is a task that we do. In this note taking system books are written as a side-effect of expanding our notes. A person could become a published author by extracting a walk from the graph of their notes instead of by explicitly setting out to write a book by creating that same graph.
 
 Although simple to explain to someone who is already familiar with both the web and writing the combination of mediums has surprising power and is worth reading the book to understand more fully. Especially since there are many other valuable insights about note taking in the book.
 
@@ -105,8 +105,8 @@ In practice that means that this method of taking notes requires time. It doesn'
 This process - encoding your notes so as to be walked on a graph - is extremely powerful. This isn't just a technique you can use to 
 increase the amount of writing you do via your notes. It is also a technique of memory. The memory palace technique encodes facts into a 
 format that can be parsed later so as to produce knowledge and it is also stored in a graph: a walk through a place that you know. Ahrens is 
-quick to dimiss memory techniques in the book and his writing on them comes across as deeply ignorant of the field. So he doesn't discuss 
-this and ends up arguing that graph walking and good encoding of information isn't wortwhile when he discusses memory techniques.
+quick to dismiss memory techniques in the book and his writing on them comes across as deeply ignorant of the field. So he doesn't discuss 
+this and ends up arguing that graph walking and good encoding of information isn't worthwhile when he discusses memory techniques.
 
 In a certain sense, I don't want to recommend Ahrens because of this intellectual laziness, but at the same time the integration of graph 
 walking structures into the note taking system is too brilliant to not encourage. It is one of the cleverest things you can do to improve 

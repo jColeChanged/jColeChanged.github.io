@@ -25,12 +25,12 @@ in comparison to Java?”
 Unfortunately, those questions can't be answered with these rankings for
 several reasons, including [selection bias][5]. There is a sample bias in the
 dataset. Average programmers aren't joining AI competitions. So I had to come
-up with a better, more narrow, set of question.
+up with a better, more narrow, set of questions.
 
 My second go produced much tamer variants of the previous questions. The first
 was: How close to the average are the Java programmers in this tournament?
 Unfortunately, it would be a while before I managed to answer that, as I had to
-fix a bug. Where did bug come from? The answer will shock you. Canada. Yep, you
+fix a bug. Where did the bug come from? The answer will shock you. Canada. Yep, you
 heard that right, it came from Canada. Here is the proof, see how this Canadian
 doesn't come from an organization? My code expected a string.
 
@@ -39,28 +39,28 @@ doesn't come from an organization? My code expected a string.
 </figure>
 
 That really *bugged* me, but I ended up getting my hat on straight. It turned
-out that the average elo of all the programs was about 2030, while the average
-elo of the Java programs was close to 2060. This is well within one standard
-deviation so to the answer to my first question is that Java programs are
+out that the average Elo of all the programs was about 2030, while the average
+Elo of the Java programs was close to 2060. This is well within one standard
+deviation so the answer to my first question is that Java programs are
 pretty average.
 
 The second question was also fairly tame. I asked whether or not Lisp programs
 tended to do better than Java programs. It turned out that they didn't. The
-average Lisp programs elo was 2040. Which is lower than Java, which I wouldn't
+average Lisp program's Elo was 2040, which is lower than Java, which I wouldn't
 expect given the sort of things that Paul Graham says about Lisp. This
 intrigued me enough to try to ask the same question in a different way. There
 are multiple measures of center after all. That investigation led to a
-box plot of the Java and Lisp elo scores.
+box plot of the Java and Lisp Elo scores.
 
 
 <figure>
 <img src="/img/ai-comp/boxplot.png" alt="Boxplot of Java and Lisp Elo Rankings" />
 </figure>
 
-I noticed when I looked at this was that the winner of the competition, a Lisp
+What I noticed when I looked at this was that the winner of the competition, a Lisp
 program, was an outlier. That seems to go against some of the
 [language attribution][8] that was going on when the winner was first
-announced. Lisp does gets a little redemption though as the median Lisp program
+announced. Lisp does get a little redemption though as the median Lisp program
 was a good bit above the average. This means that most of the Lisp programs
 were above average, but the ones that weren't tended to be so below average as
 to drag them down. The [density diagram][9] shown on the blog that I mentioned

@@ -10,16 +10,16 @@ technologies.
 
 Some of the technologies I had encountered before. I'm not new to scraping and
 a crawler is just a scraper that ends up following links to continue its work.
-Having already been introduced to the topic before hand I actually found this
+Having already been introduced to the topic beforehand I actually found this
 section of the text to be rather disappointing. I wouldn't trust the basics of
 the scraper that was given in this book, because it has a few glaring problems.
 An actual crawler needs to do things like respect robots.txt and handle rate
 limiting. It also might be wise to introduce caching so the same page doesn't
 get scraped multiple times.
 
-So when I wrote my scraper I did it a little differently the author did. In
+So when I wrote my scraper I did it a little differently than the author did. In
 fact, I actually took a lot more inspiration from Peter Norvig than I did from
-Toby Segeran. In Paradigms of Artificial Intelligence Programming there was a
+Toby Segaran. In Paradigms of Artificial Intelligence Programming there was a
 beautiful method of treating a graph as a list that Peter ended up using. I
 recognized that the web was a graph, so I copied the central idea of that code.
 
@@ -27,18 +27,18 @@ The search engine itself was much more interesting to learn about. I learned
 how to make a toy search engine that ranked search results using some of the
 same scoring metrics that Google is known to have used.
 
-I think the coolest thing I learned from this section was that its pretty easy
+I think the coolest thing I learned from this section was that it's pretty easy
 to use multiple metrics at the same time. You can just sum up the metrics and
 sort as normal, as long as you've normalized the return values. If you want one
-thing to be more important then another all you need to do is add a weight to
+thing to be more important than another all you need to do is add a weight to
 each metric. It becomes not too dissimilar to calculating GPA. You multiply how
 well it did by how much credit things were worth to get the total amount of
 credit.
 
 I suppose this section isn't complete unless I touch on the one famous
-algorithm that I implemented as a part of this chapter. Pagerank.
+algorithm that I implemented as a part of this chapter. PageRank.
 
-Pagerank is a famous algorithm developed by the founders of Google. It defines
+PageRank is a famous algorithm developed by the founders of Google. It defines
 the rank of every page to be the chance that a user would have reached that
 page given that they had started at a random initial website and proceeding to
 follow links randomly for a while.

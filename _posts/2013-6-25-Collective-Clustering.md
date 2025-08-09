@@ -4,14 +4,14 @@ title: Clustering
 published: true
 ---
 
-Clustering is a bit like classification in that data points needs to be 
+Clustering is a bit like classification in that data points need to be 
 categorized, but whereas classification is a supervised learning task in 
-which labels that help to guide classification, clustering is an unsupervised 
+which labels help to guide classification, clustering is an unsupervised 
 learning task in which labels must be discovered.
 
-When I was first introduced to code which could be used to cluster it was 
-in Tony Seagan's book [Programming Collective Intelligence](book). Following his 
-writing, I implemented hierachical clustering, k means clustering, and 
+When I was first introduced to code that could be used for clustering it was 
+in Toby Segaran's book [Programming Collective Intelligence](book). Following his 
+writing, I implemented hierarchical clustering, k-means clustering, and 
 multidimensional scaling.
 
 As I've learned more about clustering and where it is used I've realized 
@@ -26,7 +26,7 @@ we distinguish between known knowns, known unknowns, and unknown unknowns.
 <div class="p">
 One of the reasons clustering is essential is the world is extremely 
 complicated. It is necessary to simplify reality in order to be able to 
-think about it a time and space effecient manner. Without some tricks 
+think about it a time and space efficient manner. Without some tricks 
 that simplify or relax the problem of understanding a messy reality 
 the problem is quite literally not solvable, because it isn't possible to 
 fit the necessary computation into the limited time available to make that 
@@ -62,14 +62,14 @@ running things when I get down to three clusters. However, I can also make a
 [dendrogram][2] if I make sure to incorporate the tree-like structure of the
 clustering process into my code.
 
-While working through the last chapter I created a few dendrogram. The
+While working through the last chapter I created a few dendrograms. The
 dendrogram presented below is the result of clustering 100 of the most popular
 blogs by the words used in their RSS feed. Of particular interest is that
 Google search related blogs tended to come out near each other.
 
 ![Dendrogram of Blog Clustering by Word Use][3]
 
-A far more interesting dendrogram that I produced show what desires tend to be
+A far more interesting dendrogram that I produced shows what desires tend to be
 grouped together. A now dead site named zebo.com used to collect information
 about what people wanted. Using the data that they had made available I made a
 dendrogram of what things people tended to like. I found pursuing this graphic
@@ -82,7 +82,7 @@ to be quite enjoyable.
 Earlier I said that hierarchical clustering compared everything to everything
 else in order to figure out what two clusters were the closest to each other.
 As you can imagine this has terrible performance. O(n^2) to be more precise.
-Memoization can be used to make things a bit faster then that in practice, but
+Memoization can be used to make things a bit faster than that in practice, but
 the algorithm still doesn't have the most wonderful scaling properties even
 with that. That is where K Means clustering comes in.
 
@@ -96,9 +96,9 @@ gain an O(nk) search for the nearest element.
 
 In multidimensional scaling you keep jiggering things by comparing them to a
 distance function on two variables and seeing how much that differs from a
-distant function on all the variables. This lets you reduce the number of
+distance function on all the variables. This lets you reduce the number of
 variables while maintaining some sense of correlation. It also lets you plot
-things that have multiple dimensions in two dimensional space.
+things that have multiple dimensions in two-dimensional space.
 
 ![Blogs By Scaled Down Word Count Feature Vector][6]
 

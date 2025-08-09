@@ -11,7 +11,7 @@ Yet sometimes, in practice rather than theory, people fail to recognize this tri
 For example, people often explain cognitive bias in terms of the errors they cause rather than the good they produce, but a lot of what people treat as fallacious biased thinking is really just good thinking given tight time constraints. 
 The time saving optimizations that their mind is taking advantage of short-circuit the evaluation in situations where knowing one of the datasets is hard.
 
-For a more contentious example of the same flawed thinking lets consider the infamous problem of evil.
+For a more contentious example of the same flawed thinking let's consider the infamous problem of evil.
 It states:
 
 <div class="p">
@@ -22,8 +22,8 @@ It states:
         introduced. We know there is a <code>subset(x)</code> because we aren't omniscient. 
       </p>
       <p>
-        It declares a guaranteed equality of evaluation function over all possible data subsets of an omniscience 
-        entity. Humans evaluate <code>f(subset(x))</code>. The omnscient evaluates <code>f(x)</code>. 
+        It declares a guaranteed equality of evaluation function over all possible data subsets of an omniscient 
+        entity. Humans evaluate <code>f(subset(x))</code>. The omniscient evaluates <code>f(x)</code>. 
       </p>
       <p>
         If <code>f(subset(x)) = f(x)</code> in a general way then subsets are equal to sets. If the problem of evil 
@@ -52,7 +52,7 @@ It states:
       </p>
 
       <p>
-        A somewhat interesting caveat of great import only to certain personalitites is the 
+        A somewhat interesting caveat of great import only to certain personalities is the 
         that the average game length for the more observant agent is higher. This has radical 
         implications for how an intelligent agent ought to be made.
       </p>
@@ -66,14 +66,14 @@ It states:
 > __C1.__ Therefore, an omnipotent, omnibenevolent and omniscient god does not exist.   
 
 Thinking through the implications of being omniscient is, when reasoning about the 
-evil that we observe in the world, rather hard. A lot of strategic lazinesss has been 
+evil that we observe in the world, rather hard. A lot of strategic laziness has been 
 applied to not thinking about what omniscience would actually imply. Obviously if we 
 point to evil, it is evil. Case closed right?
 
 Not so fast. Literally, don't try to think fast. Your mind is good at being hasty, 
 but that doesn't mean you are right. It just means you skipped thinking. 
 
-Lets think about this more slowly. Below I've built a simulation. It has two agents.
+Let's think about this more slowly. Below I've built a simulation. It has two agents.
 One agent can see one space in front of it. The other is ever so slightly expanded 
 in terms of what it can see. It can see one additional unit. Observe that despite 
 sharing the same function for valuing situations, the two agents can disagree as 
@@ -85,7 +85,7 @@ information.
 
 
 What we're seeing here is that when you evaluate the problem of evil from first 
-priniciple, using the part of the mind that is comfortable with thinking about 
+principle, using the part of the mind that is comfortable with thinking about 
 things slowly and in depth, rather than using the intuitive part of the mind which 
 short-circuits evaluation, the argument reveals itself to be fundamentally broken. 
 Not only is it not true that omniscience results in a lack of evil, it creates the 
@@ -113,7 +113,7 @@ effective. So people do it and sometimes they make the inevitable mistakes.
 
 We can't explore every frontier. We can't push every horizon outward. We simply don't have 
 the time to do so.
-If just one step of additional information is enough to cause differing evaluation functions, it is quite obvious that extending it an infinte amount 
+If just one step of additional information is enough to cause differing evaluation functions, it is quite obvious that extending it an infinite amount 
 opens up the opportunity to even more divergence.
 
 This might feel like sloppy reasoning to someone who really likes the problem of evil.
