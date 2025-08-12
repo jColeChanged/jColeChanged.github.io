@@ -32,9 +32,11 @@ When the exact coloring still yields too many distinct colors, we can trade a li
 
 Crucially, this can be done with quantitative controls so we can talk about how close the clustered abstraction is to the exact (lossless) one and, in turn, how learning quality is affected.
 
-### Extending to unknown graphs (online abstraction)
+### Extending to unknown graphs
 
-Real systems often begin with only a **partially explored** game graph. The same ideas work if we allow an explicit “unexplored” marker in the transition counts: we can begin learning immediately and refine the abstraction as new parts of the graph are discovered. We call this **online abstraction** (abstraction as you go) to distinguish it from a full, step‑by‑step offline pass on a known graph.
+One kind of interesting thing, to me at least, is trying to extend the idea to games we don't really know yet.  Real life tends to be only partially explored.  Interestingly, The same ideas work if we allow an explicit "unexplored" marker in the transition counts: we can begin learning immediately and refine the abstraction as new parts of the graph are discovered. 
+
+I've been calling this **online abstraction** (abstraction as you go) to distinguish it from a full, step‑by‑step offline pass on a known graph.  It can be paired with learning as you.  The result is an algorithm that has some nice properties with respect to quality of solution at any particular stopping time.
 
 ### Why this matters
 
