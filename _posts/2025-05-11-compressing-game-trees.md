@@ -111,6 +111,6 @@ Here is the code that builds the tree and the corresponding codebook:
                     (make-huffman-codebook right (conj path 1))))))
 ```
 
-## Game Actions To Effecient Game Actions
+## Game Actions To Efficient Game Actions
 
-Next we take the simple step of figuring out the frequencies over actions.  Then assign them the shortest code.  In combination with a technique like bitpacking to store things in a single computer-word I've seen this technique decrease memoery usage by 90% on terabyte sized game model datasets.
+Next we take the simple step of figuring out the frequencies over actions.  Then assign them the shortest code.  In combination with a technique like bitpacking to store things in a single computer-word I've seen this technique decrease memory usage by 90% on terabyte sized game model datasets.
