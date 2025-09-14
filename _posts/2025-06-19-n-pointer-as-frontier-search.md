@@ -7,7 +7,7 @@ author: joshuacole
 
 # Frontier Search for N-Pointer Problems
 
-Many common [n‑pointer problems](https://leetcode.com/problem-list/two-pointers/) are actually **frontier search** problems in disguise.  In this post I’m going to remove that disguise and then show how the refactoring pushes the design into a space in which important properties become explicable.  There are many reasons this is worthwhile, but one that the article will touch on is that having explicable properties leads to more robust software by enabling [better testing strategies](https://joshuacol.es/2019/04/23/hypothesis.html) and promoting code reuse.
+Many common [n‑pointer problems](https://leetcode.com/problem-list/two-pointers/) are actually **frontier search** problems in disguise.  In this post, I'm going to remove that disguise and show how refactoring pushes the design into a space where important properties become explicable.  There are many reasons this is worthwhile, but one that the article will touch on is that having explicable properties leads to more robust software by enabling [better testing strategies](https://joshuacol.es/2019/04/23/hypothesis.html) and promoting code reuse.
 
 ## Frontier Search Recap
 

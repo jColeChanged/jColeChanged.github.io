@@ -19,8 +19,8 @@ layout: default
         <span class="inline-flex items-center rounded-md bg-slate-100 px-2 py-1">Ex-Meta</span>
       </div>
       <div class="mt-6 flex gap-4 text-slate-700">
-        <a class="flex items-center gap-2 hover:text-blue-700" href="https://tacktech.ai/" target="_blank">{% include social_icon.html name="tacktech" %} <span>TackTech</span></a>
         <a class="flex items-center gap-2 hover:text-blue-700" href="https://github.com/jcolechanged" target="_blank">{% include social_icon.html name="github" %} <span>GitHub</span></a>
+        <a class="flex items-center gap-2 hover:text-blue-700" href="https://tacktech.ai/" target="_blank">{% include social_icon.html name="tacktech" %} <span>TackTech</span></a>
         <a class="flex items-center gap-2 hover:text-blue-700" href="https://www.twitter.com/combinatoricole" target="_blank">{% include social_icon.html name="twitter" %} <span>Twitter</span></a>
       </div>
     </div>
@@ -116,11 +116,11 @@ layout: default
     <a class="small" href="/links.html">All links →</a>
   </div>
   <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-    <a class="ring-1 ring-slate-200 rounded-xl p-4 bg-white hover:ring-slate-300 transition flex items-center gap-2" href="https://tacktech.ai/" target="_blank">
-      {% include social_icon.html name="tacktech" %} <span>TackTech</span>
-    </a>
     <a class="ring-1 ring-slate-200 rounded-xl p-4 bg-white hover:ring-slate-300 transition flex items-center gap-2" href="https://github.com/jcolechanged" target="_blank">
       {% include social_icon.html name="github" %} <span>GitHub</span>
+    </a>
+    <a class="ring-1 ring-slate-200 rounded-xl p-4 bg-white hover:ring-slate-300 transition flex items-center gap-2" href="https://tacktech.ai/" target="_blank">
+      {% include social_icon.html name="tacktech" %} <span>TackTech</span>
     </a>
     <a class="ring-1 ring-slate-200 rounded-xl p-4 bg-white hover:ring-slate-300 transition flex items-center gap-2" href="https://www.twitter.com/combinatoricole" target="_blank">
       {% include social_icon.html name="twitter" %} <span>Twitter</span>

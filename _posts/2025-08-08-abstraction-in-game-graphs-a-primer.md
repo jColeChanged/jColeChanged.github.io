@@ -34,9 +34,9 @@ Crucially, this can be done with quantitative controls so we can talk about how 
 
 ### Extending to unknown graphs
 
-One kind of interesting thing, to me at least, is trying to extend the idea to games we don't really know yet.  Real life tends to be only partially explored.  Interestingly, The same ideas work if we allow an explicit "unexplored" marker in the transition counts: we can begin learning immediately and refine the abstraction as new parts of the graph are discovered. 
+One interesting direction is extending the idea to games we don't fully know yet. Real life tends to be only partially explored. Interestingly, the same ideas work if we allow an explicit "unexplored" marker in the transition counts: we can begin learning immediately and refine the abstraction as new parts of the graph are discovered. 
 
-I've been calling this **online abstraction** (abstraction as you go) to distinguish it from a full, step‑by‑step offline pass on a known graph.  It can be paired with learning as you.  The result is an algorithm that has some nice properties with respect to quality of solution at any particular stopping time.
+I've been calling this **online abstraction** (abstraction as you go) to distinguish it from a full, step‑by‑step offline pass on a known graph.  It can be paired with learning as you go.  The result is an algorithm that has some nice properties with respect to quality of solution at any particular stopping time.
 
 ### Why this matters
 

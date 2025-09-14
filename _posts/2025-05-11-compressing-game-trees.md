@@ -5,7 +5,7 @@ published: true
 author: joshuacole
 ---
 
-Something is complex when it consists of many different and connected parts.  So complexity is a great word for describing the central challenged faced by game solving algorithms.  Game graphs branch with each action and then branch again with the next, growing combinatorically, a growth rate which outpaces even exponential growth.  To make progress, we need clever ways to manage this complexity.
+Something is complex when it consists of many different and connected parts.  So complexity is a great word for describing the central challenge faced by game solving algorithms.  Game graphs branch with each action and then branch again with the next, growing combinatorially, a growth rate which outpaces even exponential growth.  To make progress, we need clever ways to manage this complexity.
 
 I cover in another post on [graph abstraction](/2025/08/08/abstraction-in-game-graphs-a-primer.html) how to take a game graph which is complex and reduce it to an equivalent or near equivalent graph which is less complex.  However, even with this technique we're still left with a staggering amount of complexity.  How can we make things more tractable?
 
@@ -113,4 +113,4 @@ Here is the code that builds the tree and the corresponding codebook:
 
 ## Game Actions To Efficient Game Actions
 
-Next we take the simple step of figuring out the frequencies over actions.  Then assign them the shortest code.  In combination with a technique like bitpacking to store things in a single computer-word I've seen this technique decrease memory usage by 90% on terabyte sized game model datasets.
+Next we take the simple step of figuring out the frequencies over actions.  Then assign them the shortest code.  In combination with a technique like bitpacking to store things in a single computer-word I've seen this technique decrease memory usage by 90% on terabyte-sized game model datasets.
