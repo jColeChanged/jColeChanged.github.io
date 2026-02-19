@@ -59,11 +59,6 @@ Programmers will notice what’s happening: this is essentially a **binary searc
 
 Entropy is the **average number of such halving steps required**: the expected depth of the binary search tree when the elements are not equally likely, but weighted by their true probabilities.
 
-<figure class="viz-card">
-  <img src="/img/entropy-question-tree.svg" alt="Tree diagram illustrating two good binary questions that narrow a deck of cards down to the remaining suits" loading="lazy" />
-  <figcaption class="viz-caption">Smart questions cut the search space in half. After two good questions only diamonds remain; the chart elides the rest of the question series for space, though they follow the same narrowing pattern.</figcaption>
-</figure>
-
 If Alice was asking the best possible questions, then on average she would end up asking $\log_{2}52 \approx 5.7$ questions. So an intuitive way to think about entropy is that it is the expectation of how many questions we would need to ask if we were really good at asking questions.
 
 For this reason many people will frame entropy as a measure of uncertainty. It is kind of like the minimum distance you would need to cross in order to figure out where you are given you were not certain where you were if you were very intelligent.
