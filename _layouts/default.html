@@ -27,32 +27,6 @@
     </script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
-    <!-- Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-134626494-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-        gtag('config', 'UA-134626494-1');
-    </script>
-    <script>
-        !function (f, b, e, v, n, t, s) {
-            if (f.fbq) return; n = f.fbq = function () {
-                n.callMethod ?
-                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
-            };
-            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
-            n.queue = []; t = b.createElement(e); t.async = !0;
-            t.src = v; s = b.getElementsByTagName(e)[0];
-            s.parentNode.insertBefore(t, s)
-        }(window, document, 'script',
-            'https://connect.facebook.net/en_US/fbevents.js');
-        fbq('init', '415975845779669');
-        fbq('track', 'PageView');
-    </script>
-    <noscript><img height="1" width="1" style="display:none" alt="FB Pixel"
-        src="https://www.facebook.com/tr?id=415975845779669&ev=PageView&noscript=1" /></noscript>
-
     <!-- Page metadata -->
     {% if page.title %}
     <title>Joshua Cole: {{ page.title }}</title>
@@ -61,10 +35,52 @@
     {% endif %}
     {% seo %}
 
-    <!-- Sharing Tool Integration -->
-    <script type='text/javascript'
-        src='https://platform-api.sharethis.com/js/sharethis.js#property=6035bcacf860700011e71dd5&product=inline-share-buttons'
-        async='async'></script>
+    <!-- Structured data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Person",
+          "@id": "https://joshuacol.es/#person",
+          "name": "Joshua Cole",
+          "url": "https://joshuacol.es",
+          "image": "https://joshuacol.es/img/joshua.png",
+          "jobTitle": "CEO & Founder",
+          "worksFor": { "@id": "https://joshuacol.es/#organization" },
+          "alumniOf": [
+            { "@type": "Organization", "name": "Walmart", "url": "https://tech.walmart.com/" },
+            { "@type": "Organization", "name": "Meta", "url": "https://ai.meta.com/" },
+            { "@type": "Organization", "name": "Amazon", "url": "https://developer.amazon.com/alexa" }
+          ],
+          "knowsAbout": ["game theory", "counterfactual regret minimization", "information theory", "machine learning", "software engineering", "equilibrium computation"],
+          "sameAs": [
+            "https://github.com/jcolechanged",
+            "https://twitter.com/combinatoricole",
+            "https://news.ycombinator.com/user?id=JoshCole"
+          ]
+        },
+        {
+          "@type": "Organization",
+          "@id": "https://joshuacol.es/#organization",
+          "name": "Mieza",
+          "alternateName": "TackTech AI",
+          "url": "https://tacktech.ai",
+          "founder": { "@id": "https://joshuacol.es/#person" },
+          "description": "Game-theoretic AI company that computes provably optimal strategies for domains with hidden information and adversarial dynamics."
+        }{% if page.layout == "post" %},
+        {
+          "@type": "Article",
+          "headline": {{ page.title | jsonify }},
+          "author": { "@id": "https://joshuacol.es/#person" },
+          "publisher": { "@id": "https://joshuacol.es/#organization" },
+          "url": "{{ page.url | absolute_url }}"{% if page.date %},
+          "datePublished": "{{ page.date | date_to_xmlschema }}"{% endif %}{% if page.description %},
+          "description": {{ page.description | jsonify }}{% endif %}
+        }{% endif %}
+      ]
+    }
+    </script>
 
 </head>
 
@@ -72,18 +88,38 @@
     <header class="border-b bg-white/80 backdrop-blur">
       <div class="max-w-6xl mx-auto w-full px-4 py-3 flex items-center justify-between">
         <a class="text-slate-900 font-bold text-lg" href="/">Joshua Cole</a>
-        <nav class="flex items-center gap-4">
+        <button id="nav-toggle" class="md:hidden p-2 text-slate-700" aria-label="Toggle navigation">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+        </button>
+        <nav id="nav-menu" class="hidden md:flex items-center gap-4">
           <a class="text-slate-700 hover:text-blue-700" href="/">Home</a>
           <a class="text-slate-700 hover:text-blue-700" href="/writing.html">Writing</a>
           <a class="text-slate-700 hover:text-blue-700" href="/projects.html">Projects</a>
           <a class="text-slate-700 hover:text-blue-700" href="/research.html">Research</a>
           <a class="text-slate-700 hover:text-blue-700" href="/links.html">Links</a>
-          <a class="text-slate-700 hover:text-blue-700" href="/meta.html">Meta</a>
           <a class="btn"
              href="mailto:joshua@tacktech.ai">Get in touch</a>
         </nav>
       </div>
+      <div id="nav-mobile" class="hidden md:hidden border-t border-slate-200 px-4 py-3">
+        <div class="flex flex-col gap-3">
+          <a class="text-slate-700 hover:text-blue-700" href="/">Home</a>
+          <a class="text-slate-700 hover:text-blue-700" href="/writing.html">Writing</a>
+          <a class="text-slate-700 hover:text-blue-700" href="/projects.html">Projects</a>
+          <a class="text-slate-700 hover:text-blue-700" href="/research.html">Research</a>
+          <a class="text-slate-700 hover:text-blue-700" href="/links.html">Links</a>
+          <a class="btn text-center"
+             href="mailto:joshua@tacktech.ai">Get in touch</a>
+        </div>
+      </div>
     </header>
+    <script>
+      document.getElementById('nav-toggle').addEventListener('click', function() {
+        document.getElementById('nav-mobile').classList.toggle('hidden');
+      });
+    </script>
     <main class="max-w-6xl mx-auto w-full px-4 py-6">
       {{ content }}
     </main>

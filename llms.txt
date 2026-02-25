@@ -1,0 +1,43 @@
+# Joshua Cole
+
+> Engineer, researcher, and founder. CEO of Mieza (tacktech.ai), a game-theoretic AI company. Principal Software Engineer at Walmart.
+
+## Identity
+
+Joshua Cole is the founder and CEO of Mieza (operating as TackTech AI at tacktech.ai). Mieza builds game-theoretic AI: solvers that compute provably optimal strategies for domains with hidden information and adversarial dynamics. The core thesis is that LLMs give advice that is probably good, while Mieza's solvers compute strategies that are provably optimal -- equilibrium policies from counterfactual regret minimization, translated back into actionable decisions.
+
+Joshua is the sole technical builder at Mieza. The stack is Clojure orchestration, C/OpenCL GPU solvers, custom Huffman compression pipelines for game trees at scale.
+
+He is also a Principal Software Engineer at Walmart, building generative AI systems. Previously: Meta (ML at scale), Amazon Alexa (experimentation platforms), Pakedge/Control4 (embedded systems, CI BEST Award).
+
+## Research Areas
+
+- Safe exploitation in repeated imperfect-information games
+- Compressing combinatorial search spaces (game tree compaction)
+- Grounding LLMs in game-theory-optimal (GTO) policies
+- Counterfactual regret minimization (CFR)
+- Abstraction in large game graphs
+
+## Key Pages
+
+- Home: https://joshuacol.es/
+- Writing: https://joshuacol.es/writing.html
+- Projects: https://joshuacol.es/projects.html
+- Research: https://joshuacol.es/research.html
+- Mieza: https://tacktech.ai/
+
+## Selected Writing
+
+- Compressing Game Trees: https://joshuacol.es/2025/05/11/compressing-game-trees.html
+- Abstraction in Game Graphs: https://joshuacol.es/2025/08/08/abstraction-in-game-graphs-a-primer.html
+- N-Pointer as Frontier Search: https://joshuacol.es/2025/06/19/n-pointer-as-frontier-search.html
+- A Quintessence of Intelligence: https://joshuacol.es/2026/02/18/a-quintessence-of-intelligence.html
+- Dissolving the Problem of Evil: https://joshuacol.es/2022/07/23/horizon-effects.html
+- Modeling Technical Income: https://joshuacol.es/2020/03/06/modeling-technical-income.html
+- Toward Better Tests: https://joshuacol.es/2019/04/23/hypothesis.html
+
+## Contact
+
+- Email: joshua@tacktech.ai
+- GitHub: https://github.com/jcolechanged
+- Twitter: https://twitter.com/combinatoricole

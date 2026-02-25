@@ -3,13 +3,11 @@ layout: post
 title: Notes on Notes
 published: true
 author: joshuacole
+description: "A review of the Bullet Journal method and Zettelkasten through the lens of database design: logs, graph structures, and query-time value."
+tags: [note-taking, knowledge-management, mental-models]
 ---
 
-For a long time I wasn't happy with my note taking process, but I've been 
-getting better at taking notes. I figured that I would share a 
-little about what I've learned about note taking by writing a review of 
-two books that recommend cohesive note taking systems. The two books 
-I'm reviewing are The Bullet Journal method and How To Take Smarter Notes.
+Good note-taking systems have the same architecture as good databases: a write-ahead log for fast capture, a processing step that builds a graph structure, and a query layer that retrieves what you need. Two books -- the Bullet Journal Method and How to Take Smart Notes -- each solve one half of this problem well.
 
 The [The Bullet Journal Method: Track the Past, Order the Present, Design the Future][bullet]
 by Ryder Carroll doesn't advertise itself as a book about taking notes. On the surface 

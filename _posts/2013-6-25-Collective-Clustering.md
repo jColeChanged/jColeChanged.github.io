@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Clustering
-published: true
+published: false
 ---
 
 Clustering is a bit like classification in that data points need to be 

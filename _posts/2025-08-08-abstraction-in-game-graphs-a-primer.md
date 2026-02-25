@@ -5,9 +5,9 @@ description: "Bridging game-graph abstraction with familiar graph-coloring ideas
 tags: [game-theory, graph-theory, abstraction]
 ---
 
-This short note bridges a standard abstraction technique from game theory with graph-coloring language that may feel familiar if you come from graph theory or algorithms.
+At [Mieza](https://tacktech.ai) we compute equilibrium strategies for imperfect-information games.  Abstraction -- compressing a game’s state space without losing the strategic information needed to reason and learn -- is core infrastructure for that work.
 
-The goal: compress a game’s state space without losing the strategic information needed to reason and learn. When the graph is huge (which it often is), we also sketch how to approximate this abstraction in a controlled way and how to start learning before the full graph is known.
+This short note bridges the abstraction technique we use with graph-coloring language that may feel familiar if you come from graph theory or algorithms.  When the graph is huge (which it often is), we also sketch how to approximate this abstraction in a controlled way and how to start learning before the full graph is known.
 
 ### Abstraction in graph language
 
@@ -45,4 +45,3 @@ I've been calling this **online abstraction** (abstraction as you go) to disting
 - It supports real‑world learning where the graph is discovered over time.
 
 If you’re working on related problems or have feedback, feel free to reach out: joshua@tacktech.ai.
-

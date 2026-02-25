@@ -6,7 +6,7 @@ layout: default
 ## Research notes and directions
 
 <section class="mt-4">
-  <p>I lead research at TackTech on decision systems and safe exploitation in multi‑agent settings. This page collects in‑progress notes, ideas, and write‑ups connected to that work. These are not formal publications; they aim to communicate clearly and invite feedback.</p>
+  <p>I lead research at Mieza on decision systems and safe exploitation in multi‑agent settings. This page collects in‑progress notes, ideas, and write‑ups connected to that work. These are not formal publications; they aim to communicate clearly and invite feedback.</p>
 
   <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
     <div class="ring-1 ring-slate-200 rounded-xl p-5 bg-white">

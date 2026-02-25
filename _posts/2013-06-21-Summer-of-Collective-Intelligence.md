@@ -1,7 +1,7 @@
 ---
 layout: post
 title: A Summer of Collective Intelligence
-published: true
+published: false
 ---
 
 During the summer of 2013 I was reading [Programming Collective Intelligence](book) as part of

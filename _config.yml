@@ -6,11 +6,10 @@ destination: ./_site
 plugins_dir: ./_plugins
 comments: true
 
-title: Joshua Cole's Personal Website
+title: Joshua Cole
 description:
-  This is Joshua Cole's personal website. Among other things, I write 
-  here about software engineering, machine learning, competitive
-  gaming, and game theory.
+  Joshua Cole's personal website. Writing on game theory,
+  information theory, software engineering, and machine learning.
 
 future:      true
 lsi:         false
@@ -28,20 +27,16 @@ plugins:
 markdown: kramdown
 
 
-author: joshuacole
+author:
+  name: Joshua Cole
+  url: https://joshuacol.es
+  email: joshua@tacktech.ai
 
-maruku:
-  use_tex:    false
-  use_divs:   false
-  png_engine: blahtex
-  png_dir:    images/latex
-  png_url:    /images/latex
-
-rdiscount:
-  extensions: []
-
-redcarpet:
-  extensions: []
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: /img/joshua.png
 
 kramdown:
   auto_ids: true

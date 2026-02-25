@@ -3,9 +3,11 @@ layout: post
 title: Compressing Game Trees
 published: true
 author: joshuacole
+description: "Applying Huffman coding to game tree action sequences. Entropy sets the floor, skewed action distributions make the payoff immediate."
+tags: [game-theory, compression, information-theory, mieza]
 ---
 
-Something is complex when it consists of many different and connected parts.  So complexity is a great word for describing the central challenge faced by game solving algorithms.  Game graphs branch with each action and then branch again with the next, growing combinatorially, a growth rate which outpaces even exponential growth.  To make progress, we need clever ways to manage this complexity.
+Game graphs branch with each action and then branch again with the next, growing combinatorially -- a growth rate which outpaces even exponential growth.  To make progress, we need clever ways to manage this complexity.
 
 I cover in another post on [graph abstraction](/2025/08/08/abstraction-in-game-graphs-a-primer.html) how to take a game graph which is complex and reduce it to an equivalent or near equivalent graph which is less complex.  However, even with this technique we're still left with a staggering amount of complexity.  How can we make things more tractable?
 
@@ -113,4 +115,12 @@ Here is the code that builds the tree and the corresponding codebook:
 
 ## Game Actions To Efficient Game Actions
 
-Next we take the simple step of figuring out the frequencies over actions.  Then assign them the shortest code.  In combination with a technique like bitpacking to store things in a single computer-word I've seen this technique decrease memory usage by 90% on terabyte-sized game model datasets.
+Next we take the simple step of figuring out the frequencies over actions.  Then assign them the shortest code.  In combination with a technique like bitpacking to store things in a single computer-word, the results are dramatic.
+
+## In Practice
+
+At [Mieza](https://tacktech.ai), we build game-theoretic AI -- solvers that compute equilibrium strategies for domains with hidden information and adversarial dynamics.  The compression pipeline described in this post is production infrastructure.
+
+The composite codec (Huffman encoding followed by 64-bit packing) achieves compression ratios of 8:1 or better for the heavily skewed action distributions that arise in imperfect-information games.  An entire decision history -- potentially dozens of choice points -- packed into a single machine word.
+
+When your solver models occupy hundreds of gigabytes of RAM, that ratio is the difference between fitting on one machine and needing a cluster.  The technique is simple, the theory is well-understood, and the payoff is immediate.  Shannon before Huffman.  Entropy before encoding.  Measure the distribution, then exploit its structure.

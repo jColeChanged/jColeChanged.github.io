@@ -3,16 +3,13 @@ layout: post
 title: Dissolving the Problem Of Evil
 published: true
 author: joshuacole
+description: "The problem of evil assumes an omniscient evaluator and a limited observer produce identical judgments. A simulation shows why that assumption fails with even one extra unit of information."
+tags: [philosophy, information-theory, game-theory, theology]
 ---
 
-I've discussed in [Modeling Technical Income](/2020/03/06/modeling-technical-income.html) how in a short project, best practices are a waste of time, but over a long project those best practices are a huge time savings. 
-This isn't unexpected in theory: if we have the same evaluation function and we apply it to two different datasets we quite obviously have the capacity to get different results. 
-Yet sometimes, in practice rather than theory, people fail to recognize this triviality. 
-For example, people often explain cognitive bias in terms of the errors they cause rather than the good they produce, but a lot of what people treat as fallacious biased thinking is really just good thinking given tight time constraints. 
-The time saving optimizations that their mind is taking advantage of short-circuit the evaluation in situations where knowing one of the datasets is hard.
+The problem of evil has a hidden assumption: that a limited observer and an omniscient evaluator must reach the same judgment about what constitutes good action. They can't. Provably. The divergence appears the moment you add even one unit of additional information.
 
-For a more contentious example of the same flawed thinking let's consider the infamous problem of evil.
-It states:
+The argument states:
 
 <div class="p">
   <div class="marginnote">
@@ -65,15 +62,9 @@ It states:
 
 > __C1.__ Therefore, an omnipotent, omnibenevolent and omniscient god does not exist.   
 
-Thinking through the implications of being omniscient is, when reasoning about the 
-evil that we observe in the world, rather hard. A lot of strategic laziness has been 
-applied to not thinking about what omniscience would actually imply. Obviously if we 
-point to evil, it is evil. Case closed right?
+P1 is where the argument breaks. It assumes that an omniscient evaluator and a limited observer, applying the same value function to different datasets, must agree on what is good. They don't have to. Below is a simulation that shows why.
 
-Not so fast. Literally, don't try to think fast. Your mind is good at being hasty, 
-but that doesn't mean you are right. It just means you skipped thinking. 
-
-Let's think about this more slowly. Below I've built a simulation. It has two agents.
+Two agents share the same reward function. One agent can see one space ahead. The other can see two.
 One agent can see one space in front of it. The other is ever so slightly expanded 
 in terms of what it can see. It can see one additional unit. Observe that despite 
 sharing the same function for valuing situations, the two agents can disagree as 
@@ -116,21 +107,11 @@ the time to do so.
 If just one step of additional information is enough to cause differing evaluation functions, it is quite obvious that extending it an infinite amount 
 opens up the opportunity to even more divergence.
 
-This might feel like sloppy reasoning to someone who really likes the problem of evil.
-There are, after all, very evil things.
-Innocent children, for example, die horrible deaths.
+This might feel like sloppy reasoning to someone who really likes the problem of evil. There are, after all, genuinely terrible things. Innocent children die horrible deaths.
 
-As a Creator myself - though I understand this is horrible from the perspective of the time bound - I create metrics by which agents are evaluated then I very intentionally set out to find the areas in which those metrics are not properly maximized toward good with full intention to get them to be good.
-An algorithm that experiences itself temporally would, over small time periods, conclude that I am evil because I subject it to evil experience which point out the minimization of those metrics.
-Yet nevertheless the end result given a larger time bound creates the condition that the evaluation of what I did maximized, not minimized, but maximized the metric.
+But the argument isn't about whether evil exists from our perspective. It is about whether observing evil is sufficient to conclude that an omniscient agent is not acting toward good. The simulation shows it isn't. More knowledge can lead to optimal decisions that appear sub-optimal to a less informed observer. The two-space agent accepts short-term negative rewards because it can see that they lead to higher total return.
 
-More knowledge can lead to optimal decisions which appear sub-optimal to the
-blind. As a consequence, prefer learning to judgement. This logic extends 
-especially unto God who knows more then all. The fall out of this would seem 
-to be that a person should prefer gaining more information in order to make 
-better decisions. Also worth noting is that the two space agent who knows more 
-can prefer longer paths and have worse then one-move only average short-terms 
-despite being logically greater in the long-term.
+The practical takeaway extends beyond theology: prefer learning to judgment. When someone with more information makes a decision that looks wrong to you, the gap might be in your information, not their values.
 
 
 

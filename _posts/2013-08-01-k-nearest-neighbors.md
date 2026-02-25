@@ -1,7 +1,7 @@
 ---
 layout: post
 title: K Nearest Neighbors
-published: true
+published: false
 ---
 
 The eighth chapter of [Programming Collective Intelligence][1] was on

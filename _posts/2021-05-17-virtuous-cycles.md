@@ -3,80 +3,15 @@ layout: post
 title: Virtuous Cycles
 published: true
 author: joshuacole
+description: "Virtuous cycles compound improvement across iterations. Recognizing them changes predictions about feasibility and sustains motivation through early failure."
+tags: [strategy, mental-models, self-play]
 ---
 
-A cycle is something which repeats over and over again. Clothes go through
-a cycle. You put them on. You take them off. You wash them. You fold them.
-Then you put them on again. On and on it goes until the stress of the
-experience renders the clothing unsuitable for further use.
+When you are trying to do something hard -- become the best in the world at something, start a company, master an unfamiliar domain -- your own current inadequacy dominates your prediction of the future. You project failure, lose motivation, and quit. The dangerous part: you will look correct to yourself, because your lack of motivation caused the failure you predicted.
 
-Cycles are common. They ought to be. If something is working people are
-going to continue doing it. If something doesn't work, people are less
-likely to continue doing it. So successful things are more likely to
-lead to the production of cyclicity than failure is.
+A virtuous cycle is one where each stage of the process improves the next, and the last stage feeds back into the first. Self-play in machine learning is the clearest example: an agent plays against itself, its failures become signal, the signal improves the agent, and a slightly better agent plays against itself again. After enough iterations, the agent surpasses the best humans. The key property is that improvement compounds.
 
-Since cycles are common and because they ought to be common we're going
-to see them in many different cycles over the course of our life. Given their
-nature we'll also see the same cycles repeated many times. As a result,
-getting an understanding of cycles is important. Just like basic math
-skills are certain to find application because of the generality of
-mathematics, an understanding of cycles is sure to prove useful because
-of the omnipresence of cycles.
-
-This blog post is about how not all cycles are alike. It explores how some
-cycles have valuable properties that a wise person can take advantage of to
-get better outcomes for themselves and the people around them. In particular
-It is about a type of cycle people commonly call a virtuous cycle. Virtue
-means to show high moral standards. So a virtuous cycle is a label used to get
-at the idea that not only is a cycle occurring, but that the cycle tends to make
-things better over time.
-
-One notable virtuous cycle, notable because of how effective it has been
-throughout time, is the reproductive cycle. In the case of clothing the end
-of the cycle is the destruction of the clothing, but the reproductive cycle
-takes advantage of wear and tear. Instead of the stresses destroying, the
-the reproductive cycle turns the stress into a means by which organisms are improved.
-Some organisms die out, but the ones which don't are the ones which continue to
-reproduce. This produces not just a cycle, but a cycle which gets more fit over
-time.
-
-A virtuous cycle is one in which each stage of the cyclic process helps to improve
-the next stage and at the end of it the last stage loops back around to the first
-stage. This sort of system can end up optimizing itself to greatness with relatively
-little effort on the part of the person who worked to set up the cycle.
-
-The reproductive cycle is a great example of how powerful virtuous cycles can be after
-many iterations, but it is a harder example of the cycle for some people to wrap their
-heads around. The timescale of the virtues expression and the gain in fitness can be
-lead to a revelation on a longer time scale. Long time scales and fast thinking don't
-play well with each other. So it is worth giving more examples of virtuous cycles.
-
-Another example of a virtuous cycle are most online platforms that allow users to post
-content which have a revenue sharing model wherein users who post content receive income
-in proportion to the popularity of their content. On a platform like that the people
-who create good content keep producing it, because they know they will get paid for doing
-so. This ends up creating more and more content over time. That good content attracts
-audience. This results in greater revenue. Which attracts more people. Which leads to a
-competition in producing good content. Which leads to greater content. Which leads to
-greater revenue. Which attracts more people. So as time goes on the platform ends up
-having people who are producing truly professional content and being rewarded for doing so.
-
-A third example of a virtuous cycle is bootstrapping an intelligence such that it can play
-a game at a superhuman level. If you start with something that makes random moves and
-have it play against itself it will make terrible moves, but presumably one of the agents
-will eventually win. That win can be used as signal to determine what good play actually
-looks like. The game playing agent can be modified by that signal such that in the future it
-plays a little better. Now you can have the agent which is slightly better play against
-itself. Doing this repeatedly leads to a better and better agent. After many iterations the
-the resulting game playing agent will be better than the best humans. This type of virtuous
-the cycle has the name of self play in the context of machine learning research.
-
-At this point you should have an idea of what virtuous cycles are about. They are about a
-loop in which improvement occurs. This is a pretty simple idea. So why it is worth thinking
-about more deeply?
-
-Let's say you are trying to do something hard. Maybe you are trying to become the best in the
-world at something or you are trying to start a billion dollar company.
+Recognizing that you are inside a virtuous cycle changes the prediction.
 
 In a situation like that the task is so hard that it isn't reasonable to expect that you will
 achieve your goal in a short time frame. Yet you think in real time. You can't afford the cost
@@ -135,17 +70,6 @@ that you are going to trend in the direction you want to go and the measurements
 heading in that direction then you have a lot of reason to be confident that the cycle is actually taking
 you in the direction you think it is.
 
-There is a kind of intentionality that can be applied here. You have a bit of a superpower.
+This gives you a tool. You can build virtuous cycles deliberately. The diagnostic questions are simple: Are there things you should be rewarding but aren't? Are there places where feedback loops should be created? If you are already in a cycle, is there a way to go through it more quickly?
 
-You know what a virtuous cycle is. You know how to create one. Just like a person can make a hammer a person
-can make a virtuous cycle. Just like you can use a hammer to solve a problem you can use a virtuous cycle
-to solve as a tool.
-
-Are there things you should be rewarding but aren't? Are there places where feedback loops should be created?
-If you are already in a cycle is there a way to go through it more quickly so that you can get more benefit
-from that cycle?
-
-Understanding implies the existence of under‑walking which implies the existence of under‑sprinting. So get
-going. Knowing without applying means little.
-
-
+Knowing without applying means little. So get going.

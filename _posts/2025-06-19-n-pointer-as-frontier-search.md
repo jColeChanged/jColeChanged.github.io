@@ -3,6 +3,8 @@ layout: post
 title: N-Pointer as Frontier Search
 published: true
 author: joshuacole
+description: "N-pointer problems are frontier search in disguise. Refactoring reveals explicable properties that enable better testing and code reuse."
+tags: [algorithms, search, clojure, software-engineering]
 ---
 
 # Frontier Search for N-Pointer Problems

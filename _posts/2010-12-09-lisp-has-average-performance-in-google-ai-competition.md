@@ -2,75 +2,24 @@
 layout: post
 title: Lisp Has Average Performance in Google AI Competition
 published: true
+description: "Scraping and analyzing the Google AI Competition rankings with Clojure. Lisp entries were closer to average than Java, despite the winner being a Lisp program."
+tags: [clojure, data-analysis, ai]
 ---
-A while back a [blog][1] at [r-chart][2] analyzed the Google AI Competition
-rankings. That blog post inspired me to try applying some of the things I've
-been learning about in courses offered through Carnegie Mellon's Open Learning
-Initiative.
+An [r-chart blog post][1] analyzed the Google AI Competition rankings. Paul Graham's strong advocacy for Lisp made the natural question obvious: did Lisp actually outperform other languages?
 
-The first step was to get the data. To do that I used a really cool scraping
-library called [Enlive][3] which lets you scrape HTML using CSS selectors.
-Enlive is actually a templating library, but it allows for such clean
-separation of presentation and logic that it handles scraping too.
+The naive question -- “Is Lisp better?” -- can't be answered from competition rankings due to [selection bias][5]. Average programmers don't enter AI competitions. A narrower question works: among competition entrants, how did Lisp and Java Elo ratings compare?
 
-Here is a [public google spreadsheet][4] that has the scraped data.
+I scraped the rankings using [Enlive][3] ([data here][4]) and found that the average Elo across all programs was about 2030, while Java programs averaged close to 2060 -- well within one standard deviation. Java programs are pretty average.
 
-The next step was to come up with some questions to answer. I've read a lot
-of the writing of Paul Graham, including his strong advocation for Lisp. So
-some of the questions which popped into my head as worth investigating were
-related to the truth of the language's superiority. I wondered things like,
-“Is Java really the language of the average programmer?” and “How did Lisp do
-in comparison to Java?”
-
-Unfortunately, those questions can't be answered with these rankings for
-several reasons, including [selection bias][5]. There is a sample bias in the
-dataset. Average programmers aren't joining AI competitions. So I had to come
-up with a better, more narrow, set of questions.
-
-My second go produced much tamer variants of the previous questions. The first
-was: How close to the average are the Java programmers in this tournament?
-Unfortunately, it would be a while before I managed to answer that, as I had to
-fix a bug. Where did the bug come from? The answer will shock you. Canada. Yep, you
-heard that right, it came from Canada. Here is the proof, see how this Canadian
-doesn't come from an organization? My code expected a string.
-
-<figure>
-<img src="/img/ai-comp/snippet.png" alt="Snippet of Google AI Competition Rankings" />
-</figure>
-
-That really *bugged* me, but I ended up getting my hat on straight. It turned
-out that the average Elo of all the programs was about 2030, while the average
-Elo of the Java programs was close to 2060. This is well within one standard
-deviation so the answer to my first question is that Java programs are
-pretty average.
-
-The second question was also fairly tame. I asked whether or not Lisp programs
-tended to do better than Java programs. It turned out that they didn't. The
-average Lisp program's Elo was 2040, which is lower than Java, which I wouldn't
-expect given the sort of things that Paul Graham says about Lisp. This
-intrigued me enough to try to ask the same question in a different way. There
-are multiple measures of center after all. That investigation led to a
-box plot of the Java and Lisp Elo scores.
-
+The average Lisp program's Elo was 2040 -- lower than Java. Not what Paul Graham's essays would predict. But averages hide structure. A box plot tells a more interesting story:
 
 <figure>
 <img src="/img/ai-comp/boxplot.png" alt="Boxplot of Java and Lisp Elo Rankings" />
 </figure>
 
-What I noticed when I looked at this was that the winner of the competition, a Lisp
-program, was an outlier. That seems to go against some of the
-[language attribution][8] that was going on when the winner was first
-announced. Lisp does get a little redemption though as the median Lisp program
-was a good bit above the average. This means that most of the Lisp programs
-were above average, but the ones that weren't tended to be so below average as
-to drag them down. The [density diagram][9] shown on the blog that I mentioned
-earlier seems to support this assessment.
+The competition winner was a Lisp program, but it was an outlier -- which undercuts the [language attribution][8] that followed the announcement. The median Lisp program ranked above average, but the worst Lisp entries were bad enough to drag the mean below Java. The [density diagram][9] from the original analysis supports this: Lisp had a wider spread with more extreme tails.
 
-The programming competition hasn't shown Lisp to be special. Though most Lisp
-users ranked above the median, they were even closer to average than Java. Java
-on the other hand was just as expected, average to the core.
-
-That wasn't what I expected going into this, so I'm glad I got this result.
+The competition didn't show Lisp to be special. It showed that language choice matters less than programmer skill, and that outliers drive narratives more than distributions do.
 
 [1]: https://web.archive.org/web/20120204055202/http://www.r-chart.com/2010/12/google-ai-challenge-languages-used-by.html
 [2]: https://web.archive.org/web/20101104134158/http://www.r-chart.com/

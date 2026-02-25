@@ -49,9 +49,7 @@ Now Alice knows that it must be either a Diamond or a Heart, but she still isn't
 
 Now Alice knows that it must be a Diamond, but she still doesn't know what the rank is. Still, her guesses have been quite good. She has been eliminating half of the options with every question she asks.
 
-It is possible to do worse than that.
-
-Alice could, for example, ask if the sky was green. Bobby would say yes, because in this world the sky is green. You see, they don't live on Earth. They're not even human. The deck of cards is a souvenir from when they visited the Milky Way on a spaceship. But the point is that this question wouldn't tell Alice anything about the card that Bobby has.
+It is possible to do worse than that. Alice could ask whether Bobby had breakfast. That wouldn't tell her anything about the card. The point is that not all questions are equal -- some eliminate half the remaining possibilities, others eliminate none.
 
 There are nine numbered cards (2 through 10), plus the Ace and three face cards, for a total of thirteen unique ranks. So Alice would learn a lot more if she asked whether the card was above seven or a face card, since that would eliminate another half of the cards that Bobby could potentially have.
 
@@ -67,7 +65,7 @@ But that wasn't what led to it being discovered: it was discovered in the proces
 
 Which brings us back to the idea of a race. A quintessence of intelligence is that winners are first. In a race, what does it mean to be first? It means to cross the distance before others do. There is a path length in doing so.
 
-Entropy is the average shortest path length. It is the number of questions you ask if you ask the right questions, not silly ones, like what food Bob ate that morning, which happens to be tolanassy, a spongy tentacled creature, known, among other things, for its invisibility. But we are getting distracted again.
+Entropy is the average shortest path length. It is the number of questions you ask if you ask the right questions.
 
 **Entropy.**
 

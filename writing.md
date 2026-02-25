@@ -4,7 +4,7 @@ layout: default
 ---
 
 <section class="mt-4">
-  <h2 class="h4 mb-3">Writing</h2>
+  <h2 class="text-lg font-semibold text-slate-900 mb-3">Writing</h2>
   <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
     {% for post in site.posts %}
       <article class="ring-1 ring-slate-200 rounded-lg p-4 bg-white hover:ring-slate-300 transition">

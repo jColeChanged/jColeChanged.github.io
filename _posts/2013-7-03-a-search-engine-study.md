@@ -1,7 +1,7 @@
 ---
 layout: post
 title: A Search Engine Study
-published: true
+published: false
 ---
 I just finished reading through chapter four of [Programming Collective
 Intelligence](https://www.amazon.com/gp/product/0596529325/ref=as_li_tl?ie=UTF8&tag=joshuacoles-20&camp=1789&creative=9325&linkCode=as2&creativeASIN=0596529325&linkId=6e48c22fa422df9f35994c4acd00ac10). It went over crawlers, search engines, and neural networks.

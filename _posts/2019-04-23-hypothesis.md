@@ -2,6 +2,8 @@
 layout: post
 title: Toward Better Tests
 published: true
+description: "An introduction to property-based testing with Hypothesis. Stochastic tests find edge cases that hand-picked examples miss."
+tags: [testing, software-engineering, python]
 ---
 
 <div class="epigraph">
@@ -183,45 +185,8 @@ For example, `pytest` provides a higher-order function that accepts
 argument sets and a parameterized test and returns a test which tests
 every test variation.
 
-## [Installing Pytest](#installing-pytest)
-
-Before I can show what parameterized tests look like in `pytest`, we
-need to install `pytest` and set it up to work in an ipython notebook.
-
-First, find the Python installation we're using to run Jupyter.
-
-``` python
-import sys
-sys.executable
-```
-
-    '/usr/bin/python3'
-
-Next, install the dependencies we need into the environment.
-
-``` python
-! /usr/bin/python3 -m pip install pytest ipython-pytest
-```
-
-    Requirement already satisfied: pytest in /usr/local/lib/python3.6/dist-packages (3.6.4)
-    Requirement already satisfied: ipython-pytest in /usr/local/lib/python3.6/dist-packages (0.0.1)
-    Requirement already satisfied: atomicwrites>=1.0 in /usr/local/lib/python3.6/dist-packages (from pytest) (1.3.0)
-    Requirement already satisfied: attrs>=17.4.0 in /usr/local/lib/python3.6/dist-packages (from pytest) (19.1.0)
-    Requirement already satisfied: pluggy<0.8,>=0.5 in /usr/local/lib/python3.6/dist-packages (from pytest) (0.7.1)
-    Requirement already satisfied: more-itertools>=4.0.0 in /usr/local/lib/python3.6/dist-packages (from pytest) (7.0.0)
-    Requirement already satisfied: six>=1.10.0 in /usr/local/lib/python3.6/dist-packages (from pytest) (1.11.0)
-    Requirement already satisfied: py>=1.5.0 in /usr/local/lib/python3.6/dist-packages (from pytest) (1.8.0)
-    Requirement already satisfied: setuptools in /usr/local/lib/python3.6/dist-packages (from pytest) (40.9.0)
-
-
-Finally, tell ipython to load the `ipython_pytest` extension.
-
-``` python
-%load_ext ipython_pytest
-```
-
-Now with `pytest` installed, we can use it to write some parameterized
-tests.
+Most testing frameworks support parameterized tests. Here is what they
+look like in `pytest`:
 
 
 ``` python
@@ -475,19 +440,9 @@ using it - no new services to run, no new test runners to learn.
 </blockquote>
 </div>
 
-## [Installing Hypothesis](#installing-hypothesis)
+## [Using Hypothesis](#using-hypothesis)
 
-Let's begin with hypothesis where we left off with a paramterized
-testing strategy. To do that, we will first need to install it.
-
-``` python
-! /usr/bin/python3 -m pip install hypothesis
-```
-
-    Requirement already satisfied: hypothesis in /usr/local/lib/python3.6/dist-packages (4.15.0)
-    Requirement already satisfied: attrs>=16.0.0 in /usr/local/lib/python3.6/dist-packages (from hypothesis) (19.1.0)
-
-Now that we've installed it, we can write out our more scientific
+`hypothesis` (`pip install hypothesis`) lets us write that more scientific
 search strategy.
 
 ``` python
@@ -923,18 +878,13 @@ flow can be fast so as to maximize engineer productivity.
 
 ## [Library integration](#library-integration)
 
-Hypothesis has support for many popular Python libraries, including
-django. It can infer strategy creation from a Django model or form. In a
-hypothetical example, let's say you have an email address model which
-is related to a contact model, which is related to an organization
-model. In order to get a strategy which could automatically fill in all
-the data for instances of those models all that would be needed would
-be:
+Hypothesis has support for many popular Python libraries, including Django (`hypothesis[django]`), NumPy (`hypothesis[numpy]`), and Pandas. For Django, it can infer strategy creation directly from model and form definitions -- no manual strategy construction needed.
 
 ## In Summary
 
-Cast aside the hard coded test cases and accept a better violin.
-[hypothesis.works](https://hypothesis.works/)
+Hand-picked test cases are a biased sample. Property-based testing with Hypothesis generates hundreds of stochastic samples per test function, finds edge cases you wouldn't think to check, and shrinks failures to minimal reproducible examples. The `sympy` project found errors after millions of generated examples that hand-specified tests had missed for years.
+
+The investment is small: a `@given` decorator and a strategy. The return is a testing practice that scales with your codebase rather than with your ability to imagine failure modes. [hypothesis.works](https://hypothesis.works/)
 
 # Footnotes
 

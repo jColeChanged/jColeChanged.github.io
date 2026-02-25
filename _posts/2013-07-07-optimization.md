@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Searching A Solution Space
-published: true
+published: false
 ---
 
 In chapter five of [Programming Collective Intelligence][1] I was introduced to

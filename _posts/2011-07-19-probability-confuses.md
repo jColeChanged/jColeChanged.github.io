@@ -2,75 +2,22 @@
 layout: post
 title: Probability Confuses
 published: true
+description: "From Pascal and Fermat to the Monty Hall problem: probability trips up even experts. A Clojure simulation confirms the math."
+tags: [probability, clojure, mathematics]
 ---
 
-It took a long time before humanity got a grip on modeling probabilities.
-The first formal treatment of the subject I'm aware of were the [letters][1] between [Blaise Pascal][3] and [Pierre de Fermat][4].
-In these letters which [changed the way people see the world][2] the two intellectual giants were trying to figure out the correct way to solve the [divide the pot of an unfinished game][5], but they did not agree about how to do it.
-Even from the start probability problems were showing themselves to be confusing to the brightest.
-This, despite thousands of years of preparation for contending with the problems.
-Now, mere hundreds of years later, probability still confuses.
+When your intuition disagrees with the math on a probability problem, simulate. A few lines of code settles arguments that have stumped [PhDs][8], [doctors][11], and [sports fans][10] alike. The [Monty Hall problem][7] is the famous case: even people with the [highest recorded IQs][6] drew fire from credentialed experts for getting the right answer.
 
-In 1975 [Marilyn vos Savant][6] who was in the record books for having the
-world's highest IQ, published what is now known as the
-[Monty Hall problem][7]:
-
-> Suppose you're on a game show, and you're given the choice of three doors:
-> Behind one door is a car; behind the others, goats. You pick a door, say No.
-> 1, and the host, who knows what's behind the doors, opens another door, say
-> No. 3, which has a goat. He then says to you, “Do you want to pick door No.
-> 2?” Is it to your advantage to switch your choice?
-
-Savant claimed that the best thing to do in this situation would be to switch
-doors. She correctly reasoned that by switching doors you would give yourself
-a 2/3 chance of having the right door, but that by staying with the door you
-had chosen you would have only a 1/3 chance at having selected the correct
-door. Many people disagreed with her. Not just people who knew nothing about
-probability, even [PhDs were telling her][8] she had gotten the wrong answer.
-The Monty Hall problem is famous for having sparked so much disagreement. It is
-taught about in statistics courses across the country. The
-[problem has even been covered in the movie 21][9].
-
-People get probability wrong all the time; this is just a famous example.
-
-Sports fans believe that hot streaks are a real thing. They might be angry
-with a coach for not putting the game in the hands of a hot player. Studies
-don't agree with them. They have looked at the [so-called streaks][10] in
-sports. It turns out that there is no such thing. What we see as a streak is
-actually just chance. We get confused about streaks outside of sports
-too. Peter Norvig wrote about our inability to spot true randomness in an
-article about [proper experimental design][11].
-
-There is also a study in which doctors were asked to determine
-how likely a patient was to have cancer. They were given all the numbers they
-would need to come to the right answer, but almost all of them didn't. Most of
-the doctors claimed that the patients were likely to have cancer. In
-truth, their chance of having cancer wasn't high. The doctors got
-the answer wrong by an order of magnitude despite their education.
-
-The list of ways humans make mistakes when thinking and working with
-probability is long. We are able to calculate probabilities, but we don't find
-it intuitive.
-
-I did a probability problem which I found in the back of
-[Introduction To Algorithms][12]. Here is the problem:
+Probability problems have been confusing brilliant people since [Pascal and Fermat][1] first [disagreed][2] about how to [divide a pot][5]. The pattern repeats. Here is a problem from [Introduction to Algorithms][12]:
 
 > A deck of 10 cards, each bearing a distinct number from 1 to 10, is shuffled
 > to mix the cards thoroughly. Three cards are removed one at a time from the
 > deck. What is the probability that the three cards are selected in sorted
 > (increasing) order?
 
-I decided that the answer to the problem was that 1/6 of the time the cards
-would be drawn in ascending order. After all, for each set
-of three cards there are six different orders in which they can be drawn, but
-only one of these orderings will be sorted properly. When I shared this answer
-with my dad, he rejected it immediately. Minutes later I found myself with ten
-cards in my hand running through things manually and trying to prove to him
-that my answer was the right one. We went through twenty deals without ever
-having seen the cards dealt in ascending order and suddenly my father was
-sure: I was wrong, and he was right.
+The answer is 1/6: for any set of three cards there are six possible orderings, and exactly one is sorted. But twenty manual deals might not show a single hit, which is enough to convince someone watching that 1/6 is wrong. Small samples are treacherous.
 
-A thousand draws tell a different story:
+Six thousand draws tell a different story:
 
 ```clojure
 ;; A deck of ten cards each bearing a distinct number
@@ -104,6 +51,7 @@ A thousand draws tell a different story:
 ;; 1027
 ```
 
+1027 out of 6000 is about 17% -- close enough to 1/6 that the math checks out. Simulation is the cheapest way to calibrate probabilistic intuition. Write the ten-line program before you argue.
 
 [1]: https://www.york.ac.uk/depts/maths/histstat/pascal.pdf
 [2]: https://www.youtube.com/watch?v=3pRM4v0O29o#t=5m00s

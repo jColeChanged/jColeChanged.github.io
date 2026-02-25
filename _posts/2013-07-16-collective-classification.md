@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Collective Classification
-published: true
+published: false
 ---
 This is another blog post in my series of blog posts covering my reading of
 [Programming Collective Intelligence](book). A lot of the group members have had
