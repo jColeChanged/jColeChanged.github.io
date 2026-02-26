@@ -56,35 +56,29 @@ technical income as an __effort scalar__ with an acquisition cost.
 Interestingly, a lot of the common wisdom about engineering excellence and
 technical debt emerges <a href="#fn-code" id="visualization" rel="footnote">from the model</a>. 
 
-<div class="p">
-  <div class="marginnote">
-      <figure > 
-        <span id="effortToAccomplishmentChartShortTimeFrame"></span>
-      </figure>
-    </div>
-    Notice that in short projects all the usual caveats people give about technical
-    debt being fine and the practice of engineering excellence being premature are
-    present. As you add technical debt to a project, it increases the amount of
-    effort needed to accomplish a given unit of work. If a project only needed ten
-    units of accomplishment, you accomplish it more quickly with a hasty approach.
-    The added accomplishment from easing future work doesn't produce enough benefit
-    to pay for its creation.
-</div>
+<figure>
+  <span id="effortToAccomplishmentChartShortTimeFrame"></span>
+</figure>
 
-<div class="p">
-  <div class="marginnote">
-    <figure>
-      <div id="effortToAccomplishmentChartLongTimeFrame"></div>
-    </figure>
-  </div>
-  However, the benefits of technical income are immense in long
-  term projects. Over short time frames the hasty approach is fine, but as an
-  ongoing trend it will mean disaster. Eventually the amount of work accomplished
-  per effort invested will approach zero with the hasty approach. In contrast,
-  as you add technical income to a project, over the long term it will mean an
-  abundance of accomplishment. Eventually large amounts of work will be
-  accomplishable with minimal amounts of effort investment.
-</div>
+Notice that in short projects all the usual caveats people give about technical
+debt being fine and the practice of engineering excellence being premature are
+present. As you add technical debt to a project, it increases the amount of
+effort needed to accomplish a given unit of work. If a project only needed ten
+units of accomplishment, you accomplish it more quickly with a hasty approach.
+The added accomplishment from easing future work doesn't produce enough benefit
+to pay for its creation.
+
+<figure>
+  <div id="effortToAccomplishmentChartLongTimeFrame"></div>
+</figure>
+
+However, the benefits of technical income are immense in long
+term projects. Over short time frames the hasty approach is fine, but as an
+ongoing trend it will mean disaster. Eventually the amount of work accomplished
+per effort invested will approach zero with the hasty approach. In contrast,
+as you add technical income to a project, over the long term it will mean an
+abundance of accomplishment. Eventually large amounts of work will be
+accomplishable with minimal amounts of effort investment.
 
 This model shows us that short projects aren't helped by paying for technical income. 
 The gains from the effort investment take too long to accrue for the investment to be 
